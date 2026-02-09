@@ -1,8 +1,6 @@
 <footer id="footer">
     <div class="container">
-        <div class="footer-ribbon">
-            <span>İletişime Geçin</span>
-        </div>
+
         <div class="row py-5 my-4">
             <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
                 <a href="{{ route('home.index') }}" class="">
