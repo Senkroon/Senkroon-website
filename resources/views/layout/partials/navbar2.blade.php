@@ -1,7 +1,7 @@
 <header id="header" class="header-effect-shrink" style="margin-top: 0 !important; padding-top: 0 !important;"
     data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 70}">
     <div class="header-body header-body-bottom-border border-top-0">
-        <div class="header-container container">
+        <div class="header-container mx-1 mx-lg-5 ">
             <div class="header-row">
                 <div class="header-column">
                     <div class="header-row">
@@ -20,26 +20,19 @@
                                 class="header-nav-main header-nav-main-text-capitalize header-nav-main-effect-2 header-nav-main-sub-effect-1">
                                 <nav class="collapse">
                                     <ul class="nav nav-pills" id="mainNav">
-                                        {{-- <li>
-                                              <a href="{{ url('/') }}" class="nav-link active">Home</a>
-                                          </li> --}}
-
-
                                         <li>
                                             <a class="nav-link" href="{{ route('home.index') }}">
                                                 Anasayfa
                                             </a>
                                         </li>
-
                                         <li>
                                             <a class="nav-link" href="{{ route('home.about') }}">
                                                 Hakkımızda
                                             </a>
                                         </li>
-
                                         <li class="dropdown dropdown-mega d-none d-lg-block">
                                             <a class="nav-link dropdown-toggle"
-                                                href="{{ route('modules.index', 'workcube') }}">
+                                                href="{{ route('home.products-and-solutions') }}">
                                                 Ürünler & Çözümler
                                             </a>
                                             <ul class="dropdown-menu">
@@ -47,7 +40,11 @@
                                                     <div class="dropdown-mega-content">
                                                         <div class="row">
                                                             <div class="col-lg-4">
-                                                                <div class="dropdown-mega-sub-title">Workcube
+                                                                <div class="dropdown-mega-sub-title">
+                                                                    <a class="font-weight-bold text-4 "
+                                                                        href="{{ route('modules.index', 'workcube') }}">
+                                                                        Tüm Workcube Çözümleri</a>
+
                                                                 </div>
                                                                 <a href="{{ route('modules.index', 'workcube') }}"
                                                                     class="d-block mb-3">
@@ -94,7 +91,12 @@
                                                                 </div>
                                                             </div>
                                                             <div class="col-lg-4">
-                                                                <div class="dropdown-mega-sub-title">Mikro
+
+                                                                <div class="dropdown-mega-sub-title">
+                                                                    <a class="font-weight-bold text-4 "
+                                                                        href="{{ route('modules.index', 'mikro') }}">
+                                                                        Tüm Mikro Çözümleri</a>
+
                                                                 </div>
                                                                 <a href="{{ route('modules.index', 'mikro') }}"
                                                                     class="d-block mb-3">
@@ -133,8 +135,12 @@
                                                             </div>
 
                                                             <div class="col-lg-4">
-                                                                <div class="dropdown-mega-sub-title">Danışmanlık
-                                                                    Çözümleri</div>
+                                                                <div class="dropdown-mega-sub-title">
+                                                                    <a class="font-weight-bold text-4 "
+                                                                        href="{{ route('advisors.index') }}">
+                                                                        Danışmalık Hizmetleri </a>
+
+                                                                </div>
                                                                 <div class="dropdown-mega-sub-nav">
 
 
@@ -392,39 +398,57 @@
 
                                         <!-- Ürünler & Çözümler - Mega Menu (Desktop) -->
 
-
                                         <li>
                                             <a class="nav-link" href="{{ route('contact-us') }}">
                                                 İletişim
                                             </a>
                                         </li>
 
+
+
+                                        <li class="d-none d-lg-block d-sm-block hide-1000-1100">
+                                            <a class="nav-link " href="{{ route('home.faq') }}">
+                                                Sık sorulan sorular
+                                            </a>
+                                        </li>
+
+
                                     </ul>
+                                    <div class="d-flex   justify-content-center align-items-center mt-3 mt-lg-0 ">
+                                        <a class="  d-lg-block d-none  btn btn-primary"
+                                            href="{{ route('contact-us') }}">
+                                            Demo Talep Et
+                                        </a>
+                                    </div>
+
+
                                 </nav>
+
+
                             </div>
                         </div>
                         {{-- <div class="header-nav-features header-nav-features-no-border">
-                              <div class="header-nav-feature header-nav-features-search d-inline-flex">
-                                  <a href="#" class="header-nav-features-toggle text-decoration-none"
-                                      data-focus="headerSearch" aria-label="Search">
-                                      <i
-                                          class="icons icon-magnifier header-nav-top-icon font-weight-bold text-4 top-2 text-color-hover-primary"></i>
-                                  </a>
-                                  <div class="header-nav-features-dropdown header-nav-features-dropdown-mobile-fixed"
-                                      id="headerTopSearchDropdown">
-                                      <form role="search" action="page-search-results.html" method="get">
-                                          <div class="simple-search input-group">
-                                              <input class="form-control text-1" id="headerSearch" name="q"
-                                                  type="search" value="" placeholder="Search...">
-                                              <button class="btn" type="submit" aria-label="Search">
-                                                  <i
-                                                      class="icons icon-magnifier header-nav-top-icon font-weight-bold text-color-dark text-4 text-color-hover-primary top-2"></i>
-                                              </button>
-                                          </div>
-                                      </form>
-                                  </div>
-                              </div>
-                          </div> --}}
+                            <div class="header-nav-feature header-nav-features-search d-inline-flex">
+                                <a href="#" class="header-nav-features-toggle text-decoration-none"
+                                    data-focus="headerSearch" aria-label="Search">
+                                    <i
+                                        class="icons icon-magnifier header-nav-top-icon font-weight-bold text-4 top-2 text-color-hover-primary"></i>
+                                </a>
+                                <div class="header-nav-features-dropdown header-nav-features-dropdown-mobile-fixed"
+                                    id="headerTopSearchDropdown">
+                                    <form role="search" action="page-search-results.html" method="get">
+                                        <div class="simple-search input-group">
+                                            <input class="form-control text-1" id="headerSearch" name="q" type="search"
+                                                value="" placeholder="Search...">
+                                            <button class="btn" type="submit" aria-label="Search">
+                                                <i
+                                                    class="icons icon-magnifier header-nav-top-icon font-weight-bold text-color-dark text-4 text-color-hover-primary top-2"></i>
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div> --}}
                         <button class="btn header-btn-collapse-nav" data-bs-toggle="collapse"
                             data-bs-target=".header-nav-main nav">
                             <i class="fas fa-bars"></i>
@@ -435,3 +459,5 @@
         </div>
     </div>
 </header>
+
+

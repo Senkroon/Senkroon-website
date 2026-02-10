@@ -55,21 +55,34 @@
                 </div>
             </div>
 
-                  <div class="row">
-                            <div class="form-group col mb-4">
-                                <label class="d-flex align-items-start">
-                                    <input type="checkbox" name="kvkk" id="kvkk" class="mt-1" required>
-                                    <span class="ms-2 text-1">
-                                        Kişisel verilerimin, iletişim talebimin yanıtlanması amacıyla işlenmesine
-                                        <a href="{{ route('kvkk') }}" target="_blank" class="text-primary text-decoration-underline">KVKK Aydınlatma Metni</a>
-                                        kapsamında açık rıza veriyorum.
-                                    </span>
-                                </label>
-                                @error('kvkk')
-                                    <div class="invalid-feedback d-block text-danger mt-2">{{ $message }}</div>
-                                @enderror
-                            </div>
+
+
+
+            <div class="row">
+                <div class="col-12 mb-4">
+                    <div class="d-flex  gap-2">
+                        <div class="mr-2">
+
+                            <input type="checkbox" name="kvkk" id="kvkk" required style="margin-top: 4px;">
                         </div>
+
+                        <label for="kvkk" class="mb-0 text-1">
+
+                            Kişisel verilerimin, iletişim talebimin yanıtlanması amacıyla işlenmesine
+                            <a href="{{ route('kvkk') }}" target="_blank"
+                                class="text-primary text-decoration-underline">
+                                KVKK Aydınlatma Metni
+                            </a>
+                            kapsamında açık rıza veriyorum.
+                        </label>
+                    </div>
+
+                    @error('kvkk')
+                        <div class="text-danger mt-1">{{ $message }}</div>
+                    @enderror
+                </div>
+            </div>
+
 
 
             <div class="row">

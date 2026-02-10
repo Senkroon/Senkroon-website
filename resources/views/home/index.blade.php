@@ -1,57 +1,70 @@
 @extends('layout.master')
 @section('content')
-    <div class="owl-carousel owl-carousel-light owl-carousel-light-init-fadeIn owl-theme manual nav-style-1 nav-arrows-thin nav-inside nav-inside-plus nav-dark nav-lg nav-font-size-lg rounded-nav nav-borders show-nav-hover mb-0"
-        data-plugin-options="{'autoplay': true, 'autoplayTimeout': 7000}"
-         style="height: 650px; background-color:#f4f4f4" >
+    <div class="owl-carousel owl-carousel-light owl-carousel-light-init-fadeIn owl-theme manual nav-style-1 nav-arrows-thin nav-inside nav-inside-plus nav-dark nav-lg nav-font-size-lg rounded-nav nav-borders show-nav-hover mb-0 home-hero-carousel"
+        data-plugin-options="{'autoplay': true, 'autoplayTimeout': 14000}" style=" min-height: 500px; max-height: 1000px;
+                                          height: calc(80vh - 20px); background-color:#f4f4f4">
         <div class="owl-stage-outer">
             <div class="owl-stage">
 
                 <!-- Carousel Slide 1 -->
                 @foreach ($sliders as $slider)
                     <div class="owl-item p-relative overflow-hidden {{ $loop->first ? 'active' : '' }}">
-                        <div  class=" border-radius-2 p-relative z-index-1 overflow-hidden">
-                            <div class="container">
-                                <div class="row justify-content-center align-items-center" style="min-height: 400px;" >
-                                    <div class="col-lg-5 text-center text-lg-start px-2 px-lg-4 order-2 order-lg-1">
+                        <div class=" border-radius-2 p-relative z-index-1 overflow-hidden">
+                            <div class="mx-5">
+                                <div class="row justify-content-center align-items-center">
 
-                                        <h1 class="text-10 text-lg-12 font-weight-semibold line-height-1  mb-4 appear-animation"
+
+                                    <div class=" col-lg-5 text-center text-lg-start   order-2 order-lg-1">
+
+                                        <h1 class="text-4 text-lg-6 font-weight-semibold line-height-1  mb-4 appear-animation"
                                             data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
                                             {{ $slider->title }}
                                         </h1>
                                         <div class="appear-animation" data-appear-animation="fadeInUpShorter"
                                             data-appear-animation-delay="400">
-                                            <h4 class="text-5 text-lg-6 font-weight-light mb-4 appear-animation"
+                                            <h4 class="text-2 text-lg-4 font-weight-light  line-height-5 mb-4 appear-animation"
                                                 data-appear-animation="fadeInUpShorter" data-appear-animation-delay="0">
                                                 {{ $slider->subtitle }}
                                             </h4>
 
-                                            <p class="text-4 text-lg-5 pe-lg-5 line-height-5 text-dark opacity-7 mb-2 mb-lg-4">
+                                            <h4
+                                                class="text-2 text-lg-4 pe-lg-5  font-weight-light line-height-5   mb-2 mb-lg-4">
                                                 {{ $slider->description }}
-                                            </p>
+                                            </h4>
                                         </div>
-                                        @if($slider->button_text )
+                                        @if($slider->button_text)
                                             <div class="appear-animation" data-appear-animation="fadeIn"
                                                 data-appear-animation-delay="600">
                                                 <a href="{{ $slider->button_link }}" data-hash data-hash-offset="0"
                                                     data-hash-offset-lg="0"
-                                                    class="btn btn-light btn-effect-2 transition-3ms border-0 btn-rounded btn-xl text-3 py-4 btn-with-arrow-solid mt-3">
-                                                    <strong
-                                                        class="d-inline-flex text-dark font-weight-medium text-3-5 text-lg-4 me-3 px-3">{{ $slider->button_text }}</strong>
-                                                    <span class="bg-transparent box-shadow-6"><i
-                                                            class="fa-solid fa-arrow-right text-dark"></i></span>
+                                                    class="
+                                                                                                                                                                                            btn btn-light btn-effect-2 transition-3ms border-0 btn-rounded
+                                                                                                                                                                                            text-2 text-sm-3 text-lg-3
+                                                                                                                                                                                            py-2 py-sm-3 py-lg-4
+                                                                                                                                                                                            px-4 px-sm-5 px-lg-5
+                                                                                                                                                                                            btn-with-arrow-solid mt-1
+                                                                                                                                                                                        ">
+                                                    <strong class="d-inline-flex text-dark font-weight-medium me-3 px-2 px-lg-3">
+                                                        {{ $slider->button_text }}
+                                                    </strong>
+                                                    <span class="bg-transparent box-shadow-6">
+                                                        <i class="fa-solid fa-arrow-right text-dark"></i>
+                                                    </span>
                                                 </a>
                                             </div>
                                         @endif
                                     </div>
-                                    <div class="col-8 col-lg-7 mt-1 mt-lg-3 px-2 px-md-5 ps-xl-5 pe-xxl-0 order-1 order-lg-2">
+                                    <div class="col-8 col-lg-6  mt-lg-3 px-2 px-md-5 ps-xl-5 pe-xxl-0 order-1 order-lg-2">
                                         <div class="p-relative">
                                             <div class="custom-mask-img custom-mask-img-1">
-                                                <img class="img-fluid" src="{{ asset('storage/' . $slider->background_image) }}"
+                                                <img class="" src="{{ asset('storage/' . $slider->background_image) }}"
                                                     loading="lazy" alt="{{ $slider->title }}">
                                             </div>
 
                                         </div>
                                     </div>
+
+
                                 </div>
                             </div>
                         </div>
@@ -79,103 +92,26 @@
 
     <section class="section bg-secondary border-0 m-0">
         <div class="container">
-            <div class="row align-items-center py-3">
-                <div class="col-lg-8">
-                    <div class="call-to-action-content">
-                        <h3 class="text-white mb-2">
-                            <strong class="font-weight-extra-bold">Ücretsiz</strong> Workcube ERP demo için
-                            <strong class="font-weight-extra-bold">Teklif Al!</strong>
-                        </h3>
-                        <p class="mb-0 text-white opacity-8">
-                            <i class="fas fa-clock me-2"></i>30 dakikalık online demoda Workcube ERP'nin
-                            işletmenize uygun çözümlerini keşfedin
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-4 text-center text-lg-end">
-                    <div class="call-to-action-btn">
-                        <a href="{{ url('iletisim') }}"
-                            class="btn btn-light font-weight-bold text-primary text-3 btn-px-5 btn-py-3 popup-with-form">
-                            <i class="fas fa-calendar-alt me-2"></i>Teklif Al
-                        </a>
-                    </div>
+            <div class="row text-center">
+                <div class="col-md-12 mx-auto ">
+
+                    <h2 class="text-white slide font-weight-bold text-5 mb-2 ">Senkroon; danışmanlık, yazılım ve dijital dönüşüm alanlarında uzman, işletmelerin uçtan uca
+                        dönüşümünü üstlenen bir iş ortağıdır.</h2>
+
+                    <h2 class="word-rotator slide font-weight-bold text-white text-4 mb-2">
+                        <span>ERP, süreç, İK, finans ve e-ticaret başlıklarında; sahadaki deneyimi analitik bakış ve teknolojiyle birleştirerek  </span>
+                        <span class="word-rotator-words bg-transparent">
+                            <b class="is-visible">ölçülebilir</b>
+                            <b>sürdürülebilir</b>
+                            <b>güvenilir</b>
+                        </span>
+                        <span> iş modelleri tasarlarız.</span>
+                    </h2>
+
+
                 </div>
             </div>
         </div>
-
-        <!-- Randevu Form Modal -->
-        <form id="randevu-form" class="contact-form white-popup-block mfp-hide" method="POST">
-            <div class="row mt-2">
-                <div class="col-sm-12">
-                    <h2 class="font-weight-bold text-center text-7 mb-4">Ücretsiz Workcube ERP Demo</h2>
-                    <p class="text-center mb-4">30 dakikalık online demoda Workcube ERP'nin işletmenize özel
-                        çözümlerini keşfedin.</p>
-                </div>
-            </div>
-
-            <div class="custom-form-style-1 custom-form-style-1-rounded">
-                <div class="row">
-                    <div class="form-group col-lg-6 mb-3">
-                        <input type="text" name="name" class="form-control" value="" placeholder="Adınız Soyadınız*"
-                            required>
-                    </div>
-                    <div class="form-group col-lg-6 mb-3">
-                        <input type="text" name="company" class="form-control" value="" placeholder="Şirket Adı*" required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="form-group col-lg-6 mb-3">
-                        <input type="email" name="email" class="form-control" value="" placeholder="E-posta*" required>
-                    </div>
-                    <div class="form-group col-lg-6 mb-3">
-                        <input type="tel" name="phone" class="form-control" value="" placeholder="Telefon*" required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="form-group col-lg-6 mb-3">
-                        <select name="sector" class="form-control" required>
-                            <option value="">Sektörünüz*</option>
-                            <option value="imalat">İmalat</option>
-                            <option value="ticaret">Ticaret</option>
-                            <option value="hizmet">Hizmet</option>
-                            <option value="lojistik">Lojistik</option>
-                            <option value="teknoloji">Teknoloji</option>
-                            <option value="diger">Diğer</option>
-                        </select>
-                    </div>
-                    <div class="form-group col-lg-6 mb-3">
-                        <select name="employee_count" class="form-control" required>
-                            <option value="">Çalışan Sayısı*</option>
-                            <option value="1-10">1-10 kişi</option>
-                            <option value="11-50">11-50 kişi</option>
-                            <option value="51-100">51-100 kişi</option>
-                            <option value="101+">100+ kişi</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="form-group col mb-3">
-                        <textarea name="message" class="form-control" rows="4"
-                            placeholder="Workcube ERP hakkında merak ettiklerinizi ve işletmenizin ihtiyaçlarını belirtiniz..."></textarea>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="form-group col mb-0">
-                        <input type="submit"
-                            class="btn btn-primary font-weight-semibold text-center text-4 btn-py-3 w-100 mb-3"
-                            value="Demo Talebimi Gönder" data-loading-text="Gönderiliyor...">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col text-center">
-                        <small class="text-muted">
-                            <i class="fas fa-shield-alt me-1"></i>Bilgileriniz güvenli, sadece randevu
-                            koordinasyonu için kullanılacaktır.
-                        </small>
-                    </div>
-                </div>
-            </div>
-        </form>
     </section>
 
 
@@ -361,7 +297,7 @@
 
 
 
-    <section class="container mb-5">
+    <section class=" mb-5">
         <div class="row">
             <div class="col">
                 <div class="row mb-5">

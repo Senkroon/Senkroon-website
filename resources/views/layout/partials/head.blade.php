@@ -34,11 +34,14 @@
      <link rel="stylesheet" href="{{ asset('porto/vendor/owl.carousel/assets/owl.theme.default.min.css') }}">
      <link rel="stylesheet" href="{{ asset('porto/vendor/magnific-popup/magnific-popup.min.css') }}">
 
+
+		<link rel="stylesheet" href="{{ asset('porto/css/examples/examples-spotlight-cursor-text.css') }}">
+		<link rel="stylesheet" href="{{ asset('porto/css/examples/examples-text-bg-clip-animation.css') }}">
+
+
      <!-- Theme CSS -->
      <link rel="stylesheet" href="{{ asset('porto/css/theme.css') }}">
      <link rel="stylesheet" href="{{ asset('porto/css/theme-elements.css') }}">
-     <link rel="stylesheet" href="{{ asset('porto/css/theme-blog.css') }}">
-     <link rel="stylesheet" href="{{ asset('porto/css/theme-shop.css') }}">
 
      <!-- Demo CSS -->
      <link rel="stylesheet" href="{{ asset('porto/css/demos/demo-insurance.css') }}">

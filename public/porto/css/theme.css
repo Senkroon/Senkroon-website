@@ -5932,22 +5932,9 @@ section.page-header.custom-product {
 	border-top-color: var(--primary-300);
 }
 
-/* Container */
-@media (min-width: 1200px) {
-	.container:not(.container-bs):not(.container-xl-custom):not(.container-xxl-custom) {
-		max-width: 1140px;
-	}
-}
 
-@media (min-width: 1440px) {
-	.container-xl-custom {
-		max-width: 1440px;
-	}
 
-	.container-xxl-custom {
-		max-width: 1630px;
-	}
-}
+
 
 /* Fluid Col */
 [class*="fluid-col-"] {
@@ -6051,8 +6038,8 @@ section.page-header.custom-product {
 	padding-right: 10px;
 }
 
-/* 
- * Order (Extending to 10) 
+/*
+ * Order (Extending to 10)
  * Bootstrap 5 has until 5 order class
 */
 .order-6 {

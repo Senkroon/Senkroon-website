@@ -16,24 +16,24 @@
                     $cardImg = $m->cover_image_url;
                     // $iconClass = $m->icon ?: 'fas fa-cubes';
                 @endphp
-                <div class="col-md-6 col-lg-4 mb-4">
+                <div class="col-md-6 col-lg-3 mb-4">
                     <div class="card border-0 shadow-sm h-100">
-                        <img src="{{ $cardImg }}" class="card-img-top" alt="{{ $m->title }}">
-                        <div class="card-body p-4">
-                            <h4 class="text-color-dark  mb-2">
-                                {{-- <i
-                                    class="{{ $iconClass }} text-primary me-2"></i> --}}
-
-                                {{ $m->title }}</h4>
+                        <img src="{{ $cardImg }}" class="card-img-top" alt="{{ $m->title }}" style="height: 200px; object-fit: cover;">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h4 class="text-color-dark mb-2" style="min-height: 56px; overflow: hidden;">
+                                {{ $m->title }}
+                            </h4>
                             @if ($m->short_description)
-                                <p class="text-3 opacity-8">{{ Str::limit($m->short_description, 120) }}</p>
+                                <p class="text-3 opacity-8 mb-3" style="min-height: 60px; overflow: hidden;">
+                                    {{ Str::limit($m->short_description, 120) }}
+                                </p>
+                            @else
+                                <p class="text-3 opacity-8 mb-3" style="min-height: 60px;"></p>
                             @endif
 
-
-                            <div class="d-flex align-items-end justify-content-end">
-                                <a href="{{ route('modules.show', [$category, $m->slug]) }}" class="btn btn-primary  mt-2 ">Detay</a>
+                            <div class="d-flex align-items-end justify-content-end mt-auto">
+                                <a href="{{ route('modules.show', [$category, $m->slug]) }}" class="btn btn-primary mt-2">Detay</a>
                             </div>
-
                         </div>
                     </div>
                 </div>

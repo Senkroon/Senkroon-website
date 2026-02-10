@@ -152,12 +152,20 @@
 
 
 @media (max-width: 1199px) {
-    .slider-carousel { height: 650px; }
-    .slider-row { min-height: 650px; }
+    .slider-carousel {
+        height: 650px;
+    }
+
+    .slider-row {
+        min-height: 650px;
+    }
 }
 
 @media (max-width: 991px) {
-    .slider-carousel { height: 550px; }
+    .slider-carousel {
+        height: 550px;
+    }
+
     .slider-row {
         min-height: 550px;
         align-items: flex-start;
@@ -165,12 +173,20 @@
 }
 
 @media (max-width: 767px) {
-    .slider-carousel { height: 480px; }
-    .slider-row { min-height: 480px; }
+    .slider-carousel {
+        height: 480px;
+    }
+
+    .slider-row {
+        min-height: 480px;
+    }
 }
 
 @media (max-width: 575px) {
-    .slider-carousel { height: 420px; }
+    .slider-carousel {
+        height: 420px;
+    }
+
     .slider-row {
         min-height: 420px;
         padding-top: 1.5rem;
@@ -182,5 +198,69 @@
 @media (max-width: 991px) {
     .custom-stamp-1 {
         display: none;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1199px) {
+    .home-hero-carousel .row.justify-content-center.align-items-center {
+        min-height: 600px;
+    }
+}
+
+
+
+
+/* Ortak kapsayıcı */
+.custom-mask-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Görsel varsayılan */
+.custom-mask-img img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* 📱 Mobil */
+@media (max-width: 576px) {
+    .custom-mask-img img {
+        max-width: 260px;
+        max-height: 220px;
+    }
+}
+
+/* 📱 Tablet */
+@media (min-width: 577px) and (max-width: 768px) {
+    .custom-mask-img img {
+        max-width: 250px;
+        max-height: 250px;
+    }
+}
+
+/* 💻 Laptop (PROBLEMLİ ARALIK) */
+@media (min-width: 769px) and (max-width: 1200px) {
+    .custom-mask-img img {
+        max-width: 300px;
+        max-height: 300px;
+    }
+}
+
+/* 🖥️ Büyük ekran */
+@media (min-width: 1201px) {
+    .custom-mask-img img {
+        max-width: 641px;
+        max-height: 641px;
+    }
+}
+
+
+
+@media (min-width: 1000px) and (max-width: 1100px) {
+    .hide-1000-1100 {
+        display: none !important;
     }
 }
