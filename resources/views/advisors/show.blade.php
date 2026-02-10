@@ -19,6 +19,8 @@
             <div class="card-body p-4">
 
                 <div class="clearfix">
+                    <h2 class="font-weight-bold">{{ $advisor->title }}</h2>
+
                     <img src="{{ asset("storage/{$advisor->image}") }}" alt="{{ $advisor->title }}"
                         class="img-fluid float-start me-3 mb-3" style="max-width: 45%; height: auto; object-fit: cover;" />
 
