@@ -93,12 +93,12 @@
     <section class="section bg-secondary border-0 m-0">
         <div class="container">
             <div class="row text-center">
-                <div class="col-md-12 mx-auto ">
+                <div class="col-md-12 ">
 
                     <h2 class="text-white slide font-weight-bold text-4 mb-2 ">Senkroon; danışmanlık, yazılım ve dijital dönüşüm alanlarında uzman, işletmelerin uçtan uca
                         dönüşümünü üstlenen bir iş ortağıdır.</h2>
 
-                    <h2 class="word-rotator slide font-weight-bold text-white text-3 mb-2">
+                    <h2 class="word-rotator slide font-weight-bold text-white text-4 mb-2">
                         <span>ERP, süreç, İK, finans ve e-ticaret başlıklarında; sahadaki deneyimi analitik bakış ve teknolojiyle birleştirerek  </span>
                         <span class="word-rotator-words bg-transparent">
                             <b class="is-visible">ölçülebilir</b>
