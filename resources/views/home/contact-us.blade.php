@@ -70,6 +70,12 @@
                                     placeholder="E-posta Adresiniz">
                             </div>
                             <div class="form-group col-lg-6 mb-4">
+                                <input type="text" value="" maxlength="100" class="form-control" name="company"
+                                    id="company" placeholder="Şirket Adı">
+                            </div>
+                        </div>
+                        <div class="row row-gutter-sm">
+                            <div class="form-group col-lg-12 mb-4">
                                 <input type="text" value="" data-msg-required="Lütfen konuyu girin."
                                     maxlength="100" class="form-control" name="subject" id="subject" required
                                     placeholder="Konu">
@@ -81,6 +87,23 @@
                                     name="message" id="message" required placeholder="Mesajınız"></textarea>
                             </div>
                         </div>
+
+                        <div class="row">
+                            <div class="form-group col mb-4">
+                                <label class="d-flex align-items-start">
+                                    <input type="checkbox" name="kvkk" id="kvkk" class="mt-1" required>
+                                    <span class="ms-2 text-3">
+                                        Kişisel verilerimin, iletişim talebimin yanıtlanması amacıyla işlenmesine
+                                        <a href="{{ route('kvkk') }}" target="_blank" class="text-primary text-decoration-underline">KVKK Aydınlatma Metni</a>
+                                        kapsamında açık rıza veriyorum.
+                                    </span>
+                                </label>
+                                @error('kvkk')
+                                    <div class="invalid-feedback d-block text-danger mt-2">{{ $message }}</div>
+                                @enderror
+                            </div>
+                        </div>
+
                         <div class="row">
                             <div class="form-group col mb-3 d-flex justify-content-end ">
                                 <button type="submit"
@@ -88,6 +111,8 @@
                                     data-loading-text="Yükleniyor...">MESAJ GÖNDER</button>
                             </div>
                         </div>
+
+
                     </form>
 
                     <hr class="my-5">

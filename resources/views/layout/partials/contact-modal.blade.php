@@ -10,45 +10,68 @@
             @csrf
 
             <div class="row row-gutter-sm">
-                <div class="form-group col-lg-12 mb-1">
-                    <input type="text" value="" maxlength="100" class="form-control" name="company"
-                        id="company" placeholder="Şirket Adı ">
-                    <div class="invalid-feedback" id="company-error"></div>
-                </div>
-
-                <div class="form-group col-lg-12 mb-1">
+                <div class="form-group col-lg-12 mb-2">
                     <input type="text" value="" data-msg-required="Lütfen adınızı girin." maxlength="100"
                         class="form-control" name="name" id="name" required placeholder="Adınız">
                     <div class="invalid-feedback" id="name-error"></div>
                 </div>
-                <div class="form-group col-lg-12 mb-1">
-                    <input type="text" value="" data-msg-required="Lütfen telefon numaranızı girin."
-                        maxlength="100" class="form-control" name="phone" id="phone" required
-                        placeholder="Telefon Numarası">
+                <div class="form-group col-lg-12 mb-2">
+                    <input type="text" value="" data-msg-required="Lütfen telefon numaranızı girin." maxlength="100"
+                        class="form-control" name="phone" id="phone" required placeholder="Telefon Numarası">
                     <div class="invalid-feedback" id="phone-error"></div>
                 </div>
-
             </div>
+
             <div class="row row-gutter-sm">
-                <div class="form-group col-lg-12 mb-1">
+                <div class="form-group col-lg-12 mb-2">
                     <input type="email" value="" data-msg-required="Lütfen e-posta adresinizi girin."
                         data-msg-email="Lütfen geçerli bir e-posta adresi girin." maxlength="100" class="form-control"
                         name="email" id="email" required placeholder="E-posta Adresiniz">
                     <div class="invalid-feedback" id="email-error"></div>
                 </div>
-                <div class="form-group col-lg-12 mb-1">
+            </div>
+
+            <div class="row row-gutter-sm">
+                <div class="form-group col-lg-12 mb-2">
+                    <input type="text" value="" maxlength="100" class="form-control" name="company" id="company"
+                        placeholder="Şirket Adı (İsteğe Bağlı)">
+                    <div class="invalid-feedback" id="company-error"></div>
+                </div>
+            </div>
+
+            <div class="row row-gutter-sm">
+                <div class="form-group col-lg-12 mb-2">
                     <input type="text" value="" data-msg-required="Lütfen konuyu girin." maxlength="100"
                         class="form-control" name="subject" id="subject" required placeholder="Konu">
                     <div class="invalid-feedback" id="subject-error"></div>
                 </div>
             </div>
+
             <div class="row">
-                <div class="form-group col mb-1">
-                    <textarea maxlength="1000" data-msg-required="Lütfen mesajınızı girin." rows="2" class="form-control"
-                        name="message" id="message" required placeholder="Mesajınız"></textarea>
+                <div class="form-group col mb-2">
+                    <textarea maxlength="5000" data-msg-required="Lütfen mesajınızı girin." rows="3"
+                        class="form-control" name="message" id="message" required placeholder="Mesajınız"></textarea>
                     <div class="invalid-feedback" id="message-error"></div>
                 </div>
             </div>
+
+                  <div class="row">
+                            <div class="form-group col mb-4">
+                                <label class="d-flex align-items-start">
+                                    <input type="checkbox" name="kvkk" id="kvkk" class="mt-1" required>
+                                    <span class="ms-2 text-1">
+                                        Kişisel verilerimin, iletişim talebimin yanıtlanması amacıyla işlenmesine
+                                        <a href="{{ route('kvkk') }}" target="_blank" class="text-primary text-decoration-underline">KVKK Aydınlatma Metni</a>
+                                        kapsamında açık rıza veriyorum.
+                                    </span>
+                                </label>
+                                @error('kvkk')
+                                    <div class="invalid-feedback d-block text-danger mt-2">{{ $message }}</div>
+                                @enderror
+                            </div>
+                        </div>
+
+
             <div class="row">
                 <div class="form-group col mb-1 d-flex justify-content-end ">
                     <button type="submit"
@@ -69,14 +92,14 @@
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
         const contactForm = document.getElementById('contactForm');
         const submitBtn = document.getElementById('submit-btn');
         const submitText = document.querySelector('.submit-text');
         const loadingText = document.querySelector('.loading-text');
 
         if (contactForm) {
-            contactForm.addEventListener('submit', function(e) {
+            contactForm.addEventListener('submit', function (e) {
                 e.preventDefault();
 
                 // Clear previous errors
@@ -90,13 +113,13 @@
 
                 // Send AJAX request
                 fetch('{{ route('contact-us.submit') }}', {
-                        method: 'POST',
-                        body: formData,
-                        headers: {
-                            'X-Requested-With': 'XMLHttpRequest',
-                            'X-CSRF-TOKEN': document.querySelector('input[name="_token"]').value
-                        }
-                    })
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'X-Requested-With': 'XMLHttpRequest',
+                        'X-CSRF-TOKEN': document.querySelector('input[name="_token"]').value
+                    }
+                })
                     .then(response => response.json())
                     .then(data => {
                         setLoadingState(false);
