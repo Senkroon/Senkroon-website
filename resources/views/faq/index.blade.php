@@ -24,72 +24,72 @@
 
                             <div class="toggle toggle-primary m-0" data-plugin-toggle>
                                 <section class="toggle active">
-                                    <a class="toggle-title">Workcube ERP kimler icin gerekli?</a>
+                                    <a class="toggle-title">Workcube ERP kimler için gerekli?</a>
                                     <div class="toggle-content container">
-                                        <p>Uretim yapan, birden fazla departmani olan, sube/depo yapisiyla calisan ve buyume hedefi bulunan isletmeler icin Workcube ERP luks degil, gercek bir ihtiyactir.</p>
+                                        <p>Üretim yapan, birden fazla departmanı olan, şube/depo yapısıyla çalışan ve büyüme hedefi bulunan işletmeler için Workcube ERP lüks değil, gerçek bir ihtiyaçtır.</p>
                                     </div>
                                 </section>
 
                                 <section class="toggle">
-                                    <a class="toggle-title">Muhasebe programim varken neden Workcube'e geceyim?</a>
+                                    <a class="toggle-title">Muhasebe programım varken neden Workcube'e geçeyim?</a>
                                     <div class="toggle-content container">
-                                        <p>Muhasebe programi yasal kayit tutar; Workcube ise satistan uretime, stoktan finansa tum isi tek platformda yonetmenizi ve resmi butun olarak gormenizi saglar.</p>
+                                        <p>Muhasebe programı yasal kayıt tutar; Workcube ise satıştan üretime, stoktan finansa tüm işi tek platformda yönetmenizi ve resmi bütün olarak görmenizi sağlar.</p>
                                     </div>
                                 </section>
 
                                 <section class="toggle">
-                                    <a class="toggle-title">Workcube ERP'ye gecmek isi aksatir mi?</a>
+                                    <a class="toggle-title">Workcube ERP'ye geçmek işi aksatır mı?</a>
                                     <div class="toggle-content container">
-                                        <p>Dogru planlandiginda hayir. Proje fazlara bolunur, once kritik surecler devreye alinir, isletme adim adim yeni sisteme tasinir.</p>
+                                        <p>Doğru planlandığında hayır. Proje fazlara bölünür, önce kritik süreçler devreye alınır, işletme adım adım yeni sisteme taşınır.</p>
                                     </div>
                                 </section>
 
                                 <section class="toggle">
-                                    <a class="toggle-title">Workcube ERP'nin maliyeti nasil belirleniyor?</a>
+                                    <a class="toggle-title">Workcube ERP'nin maliyeti nasıl belirleniyor?</a>
                                     <div class="toggle-content container">
-                                        <p>Kullanici sayisi, modul kapsami, sektorunuze ozel ihtiyaclar ve altyapi tercihinize (bulut / sunucu) gore proje bazli olarak hesaplanir.</p>
+                                        <p>Kullanıcı sayısı, modül kapsamı, sektörünüze özel ihtiyaçlar ve altyapı tercihinize (bulut / sunucu) göre proje bazlı olarak hesaplanır.</p>
                                     </div>
                                 </section>
 
                                 <section class="toggle">
-                                    <a class="toggle-title">Tum surecleri ayni anda sisteme tasimak zorunda miyiz?</a>
+                                    <a class="toggle-title">Tüm süreçleri aynı anda sisteme taşımak zorunda mıyız?</a>
                                     <div class="toggle-content container">
-                                        <p>Hayir. Genellikle omurga surecler (satis-satinalma-stok-finans) once kurulur, diger surecler kontrollu sekilde sonra eklenir.</p>
+                                        <p>Hayır. Genellikle omurga süreçler (satış-satınalma-stok-finans) önce kurulur, diğer süreçler kontrollü şekilde sonra eklenir.</p>
                                     </div>
                                 </section>
 
                                 <section class="toggle">
-                                    <a class="toggle-title">Workcube ERP firmama ozel uyarlanabilir mi?</a>
+                                    <a class="toggle-title">Workcube ERP firmama özel uyarlanabilir mi?</a>
                                     <div class="toggle-content container">
-                                        <p>Evet. Ekranlar, raporlar ve is akislari; sektorunuze, is modelinize ve firma ihtiyaclariniza gore parametrik ve gelistirilebilir yapidadir.</p>
+                                        <p>Evet. Ekranlar, raporlar ve iş akışları; sektörünüze, iş modelinize ve firma ihtiyaçlarınıza göre parametrik ve geliştirilebilir yapıdadır.</p>
                                     </div>
                                 </section>
 
                                 <section class="toggle">
-                                    <a class="toggle-title">Kullanicilar Workcube'e alismakta zorlanir mi?</a>
+                                    <a class="toggle-title">Kullanıcılar Workcube'e alışmakta zorlanır mı?</a>
                                     <div class="toggle-content container">
-                                        <p>Surece dahil edilir, gercek is senaryolariyla egitim alir ve ilk donemde desteklenirlerse; zorluk yerine konfor artisi yasarlar.</p>
+                                        <p>Sürece dahil edilir, gerçek iş senaryolarıyla eğitim alır ve ilk dönemde desteklenirlerse; zorluk yerine konfor artışı yaşarlar.</p>
                                     </div>
                                 </section>
 
                                 <section class="toggle">
-                                    <a class="toggle-title">Workcube bulut ortamda mi, kendi sunucumuzda mi calisir?</a>
+                                    <a class="toggle-title">Workcube bulut ortamda mı, kendi sunucumuzda mı çalışır?</a>
                                     <div class="toggle-content container">
-                                        <p>Her iki model de mumkundur. Guvenlik, BT altyapisi ve butce tercihinize gore bulut veya on-premise kurulabilir.</p>
+                                        <p>Her iki model de mümkündür. Güvenlik, BT altyapısı ve bütçe tercihinize göre bulut veya on-premise kurulabilir.</p>
                                     </div>
                                 </section>
 
                                 <section class="toggle">
-                                    <a class="toggle-title">"Workcube + Senkroon" yaklasimi ne kazandirir?</a>
+                                    <a class="toggle-title">"Workcube + Senkroon" yaklaşımı ne kazandırır?</a>
                                     <div class="toggle-content container">
-                                        <p>Yalnizca yazilim kurulmaz; surec, organizasyon ve raporlama birlikte tasarlanir. Boylece ERP, sadece program degil, sirketin isletim sistemi haline gelir.</p>
+                                        <p>Yalnızca yazılım kurulmaz; süreç, organizasyon ve raporlama birlikte tasarlanır. Böylece ERP, sadece program değil, şirketin işletim sistemi haline gelir.</p>
                                     </div>
                                 </section>
 
                                 <section class="toggle">
-                                    <a class="toggle-title">Workcube ERP icin dogru zaman geldigini nasil anlarim?</a>
+                                    <a class="toggle-title">Workcube ERP için doğru zamanı geldiğini nasıl anlarım?</a>
                                     <div class="toggle-content container">
-                                        <p>Her departman farkli Excel kullaniyorsa, rakamlar celisiyorsa, toplantilarda tablo toplamak saatler aliyorsa ve buyudukce karmasa artiyorsa, zaman gelmis demektir.</p>
+                                        <p>Her departman farklı Excel kullanıyorsa, rakamlar çelişiyorsa, toplantılarda tablo toplamak saatler alıyorsa ve büyüdükçe karmaşa artıyorsa, zaman gelmiş demektir.</p>
                                     </div>
                                 </section>
                             </div>
