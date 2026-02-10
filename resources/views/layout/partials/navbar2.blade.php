@@ -248,27 +248,20 @@
                                                 </li>
 
                                                 <li><a class="dropdown-item py-2"
-                                                        href="{{ url('danismanlik-cozumleri/idari-danismanlik-hizmetleri') }}">
-                                                        <i class="fas fa-building-shield me-2 text-muted"></i>İdari
-                                                        Danışmanlık
-                                                        Hizmetleri</a>
+                                                        href="{{ url('danismanlik-cozumleri/finans-muhasebe-ic-denetim-ic-kontrol') }}">
+                                                        <i class="fas fa-chart-line me-2 text-muted"></i>Finans, Muhasebe, İç Denetim & İç Kontrol</a>
                                                 </li>
                                                 <li><a class="dropdown-item py-2"
-                                                        href="{{ url('danismanlik-cozumleri/raporlama-ve-analiz-hizmetleri') }}">
-                                                        <i class="fas fa-chart-pie me-2 text-muted"></i>Raporlama ve
-                                                        Analiz
-                                                        Hizmetleri</a>
+                                                        href="{{ url('danismanlik-cozumleri/is-surecleri-yonetim-ve-organizasyon') }}">
+                                                        <i class="fas fa-sitemap me-2 text-muted"></i>İş Süreçleri, Yönetim ve Organizasyon</a>
                                                 </li>
                                                 <li><a class="dropdown-item py-2"
-                                                        href="{{ url('danismanlik-cozumleri/teknik-destek-hizmetleri') }}">
-                                                        <i class="fas fa-headset me-2 text-muted"></i>Teknik Destek
-                                                        Hizmetleri</a>
+                                                        href="{{ url('danismanlik-cozumleri/erp-mrp-danismanligi') }}">
+                                                        <i class="fas fa-cubes me-2 text-muted"></i>ERP & MRP Danışmanlığı</a>
                                                 </li>
                                                 <li><a class="dropdown-item py-2"
-                                                        href="{{ url('danismanlik-cozumleri/erp-mrp-proje-danismanligi') }}">
-                                                        <i class="fas fa-project-diagram me-2 text-muted"></i>ERP – MRP
-                                                        Proje
-                                                        Danışmanlığı</a>
+                                                        href="{{ url('danismanlik-cozumleri/raporlama-ve-analiz-danismanligi') }}">
+                                                        <i class="fas fa-chart-pie me-2 text-muted"></i>Raporlama ve Analiz Danışmanlığı</a>
                                                 </li>
                                                 <li>
                                                     <hr class="dropdown-divider my-2">
@@ -289,20 +282,13 @@
                                             </a>
                                             <ul class="dropdown-menu">
                                                 <li><a class="dropdown-item"
-                                                        href="{{ url('danismanlik-cozumleri/idari-danismanlik-hizmetleri') }}">İdari
-                                                        Danışmanlık Hizmetleri</a></li>
+                                                        href="{{ url('danismanlik-cozumleri/finans-muhasebe-ic-denetim-ic-kontrol') }}">Finans, Muhasebe, İç Denetim & İç Kontrol</a></li>
                                                 <li><a class="dropdown-item"
-                                                        href="{{ url('danismanlik-cozumleri/raporlama-ve-analiz-hizmetleri') }}">Raporlama
-                                                        ve Analiz Hizmetleri</a></li>
+                                                        href="{{ url('danismanlik-cozumleri/is-surecleri-yonetim-ve-organizasyon') }}">İş Süreçleri, Yönetim ve Organizasyon</a></li>
                                                 <li><a class="dropdown-item"
-                                                        href="{{ url('danismanlik-cozumleri/teknik-destek-hizmetleri') }}">Teknik
-                                                        Destek Hizmetleri</a></li>
+                                                        href="{{ url('danismanlik-cozumleri/erp-mrp-danismanligi') }}">ERP & MRP Danışmanlığı</a></li>
                                                 <li><a class="dropdown-item"
-                                                        href="{{ url('danismanlik-cozumleri/egitim-ve-uygulama-hizmetleri') }}">Eğitim
-                                                        ve Uygulama Hizmetleri</a></li>
-                                                <li><a class="dropdown-item"
-                                                        href="{{ url('danismanlik-cozumleri/erp-mrp-proje-danismanligi') }}">ERP
-                                                        – MRP Proje Danışmanlığı</a></li>
+                                                        href="{{ url('danismanlik-cozumleri/raporlama-ve-analiz-danismanligi') }}">Raporlama ve Analiz Danışmanlığı</a></li>
                                                 <li>
                                                     <hr class="dropdown-divider">
                                                 </li>
