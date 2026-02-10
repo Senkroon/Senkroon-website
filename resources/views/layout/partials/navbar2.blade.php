@@ -148,32 +148,28 @@
                                                                         <ul class="list list-unstyled">
                                                                             <li>
                                                                                 <a class="dropdown-item d-flex align-items-center"
-                                                                                    href="{{ url('danismanlik-cozumleri/idari-danismanlik-hizmetleri') }}">
-                                                                                    <span>İdari Danışmanlık
-                                                                                        Hizmetleri</span>
+                                                                                    href="{{ url('danismanlik-cozumleri/finans-muhasebe-ic-denetim-ic-kontrol') }}">
+                                                                                    <span>Finans, Muhasebe, İç Denetim & İç Kontrol </span>
                                                                                 </a>
                                                                             </li>
                                                                             <li>
                                                                                 <a class="dropdown-item d-flex align-items-center"
-                                                                                    href="{{ url('danismanlik-cozumleri/raporlama-ve-analiz-hizmetleri') }}">
+                                                                                    href="{{ url('danismanlik-cozumleri/is-surecleri-yonetim-ve-organizasyon') }}">
 
-                                                                                    <span>Raporlama ve Analiz
-                                                                                        Hizmetleri</span>
+                                                                                    <span>İş Süreçleri, Yönetim ve Organizasyon</span>
                                                                                 </a>
                                                                             </li>
                                                                             <li>
                                                                                 <a class="dropdown-item d-flex align-items-center"
-                                                                                    href="{{ url('danismanlik-cozumleri/teknik-destek-hizmetleri') }}">
+                                                                                    href="{{ url('danismanlik-cozumleri/erp-mrp-danismanligi') }}">
 
-                                                                                    <span>Teknik Destek
-                                                                                        Hizmetleri</span>
+                                                                                    <span>ERP & MRP Danışmanlığı</span>
                                                                                 </a>
                                                                             </li>
                                                                             <li>
                                                                                 <a class="dropdown-item d-flex align-items-center"
-                                                                                    href="{{ url('danismanlik-cozumleri/erp-mrp-proje-danismanligi') }}">
-                                                                                    <span>ERP – MRP Proje
-                                                                                        Danışmanlığı</span>
+                                                                                    href="{{ url('danismanlik-cozumleri/raporlama-ve-analiz-danismanligi') }}">
+                                                                                    <span>Raporlama ve Analiz Danışmanlığı</span>
                                                                                 </a>
                                                                             </li>
                                                                         </ul>
