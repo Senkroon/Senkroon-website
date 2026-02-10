@@ -8,6 +8,7 @@ use Artesaos\SEOTools\Facades\SEOTools;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\ContactMail;
 use App\Models\Advisor;
+use App\Models\Module;
 use App\Models\Slider;
 
 class Homecontroller extends Controller
@@ -131,9 +132,20 @@ class Homecontroller extends Controller
                 'phone' => 'required|string|max:20',
                 'subject' => 'required|string|max:255',
                 'company' => 'nullable|string|max:255',
+                'kvkk' => 'required|accepted',
+            ], [
+                'kvkk.required' => 'KVKK Aydınlatma Metni\'ni kabul etmelisiniz.',
+                'kvkk.accepted' => 'KVKK Aydınlatma Metni\'ni kabul etmelisiniz.',
             ]);
 
-            message::create($validated);
+            // KVKK ve IP adresi bilgilerini ekle
+            $data = array_merge($validated, [
+                'kvkk_approved' => true,
+                'kvkk_approved_at' => now(),
+                'ip_address' => $request->ip(),
+            ]);
+
+            message::create($data);
 
             try {
                 // Mail::to("celalettin.elbir@senkroon.com")->send(new ContactMail($validated));
@@ -182,5 +194,45 @@ class Homecontroller extends Controller
 
     }
 
+    public function faq()
+    {
+        SEOTools::setTitle('Sıkça Sorulan Sorular - Workcube ERP | Senkroon Yazılım');
+        SEOTools::setDescription('Workcube ERP hakkında sıkça sorulan soruların cevapları. Kurulum, maliyet, kullanıcı eğitimi ve daha fazla bilgi için SSS sayfamızı ziyaret edin.');
+        SEOTools::metatags()->setKeywords(['sıkça sorulan sorular', 'FAQ', 'SSS', 'Workcube ERP', 'ERP soruları', 'Workcube kurulum', 'ERP maliyeti', 'ERP eğitimi', 'senkroon yazılım']);
+        SEOTools::metatags()->addMeta('robots', 'index,follow');
+        SEOTools::metatags()->addMeta('author', 'Senkroon Yazılım');
+        SEOTools::metatags()->addMeta('viewport', 'width=device-width, initial-scale=1');
+        SEOTools::opengraph()->setUrl(url()->current());
+        SEOTools::setCanonical(url()->current());
+        SEOTools::opengraph()->addProperty('type', 'website');
+        SEOTools::opengraph()->addProperty('site_name', 'Senkroon Yazılım');
+        SEOTools::opengraph()->addProperty('locale', 'tr_TR');
+        SEOTools::opengraph()->addImage(asset('porto/simages/senkroonlogo2.png'));
+        SEOTools::twitter()->setSite('@senkroonyazilim');
+        SEOTools::twitter()->setType('summary_large_image');
+        SEOTools::twitter()->addImage(asset('porto/simages/senkroonlogo2.png'));
+        SEOTools::jsonLd()->addValue('@context', 'https://schema.org');
+        SEOTools::jsonLd()->addValue('@type', 'FAQPage');
+        SEOTools::jsonLd()->addValue('name', 'Sıkça Sorulan Sorular - Workcube ERP');
+
+        return view('faq.index');
+    }
+
+
+    public function productsAndSolutions(){
+
+        $advisors = Advisor::all();
+        $mikroModules = Module::where('category', 'mikro')->get();
+        $WorkcubeModules = Module::where('category', 'workcube')->get();
+        return view('home.products-and-solutions', compact('advisors', 'mikroModules', 'WorkcubeModules'));
+
+    }
+
+    public function kvkk(){
+        SEOTools::setTitle('KVKK Aydınlatma Metni - Senkroon Yazılım');
+        SEOTools::setDescription('Senkroon Yazılım tarafından kişisel verilerinizin işlenmesine ilişkin KVKK Aydınlatma Metni.');
+        SEOTools::metatags()->addMeta('robots', 'index,follow');
+        return view('kvkk.index');
+    }
 
 }
