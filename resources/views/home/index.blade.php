@@ -1,12 +1,12 @@
 @extends('layout.master')
 @section('content')
-    <div class="owl-carousel owl-carousel-light owl-carousel-light-init-fadeIn owl-theme manual nav-style-1 nav-arrows-thin nav-inside nav-inside-plus nav-dark nav-lg nav-font-size-lg rounded-nav nav-borders show-nav-hover mb-0 home-hero-carousel"
-        data-plugin-options="{'autoplay': true, 'autoplayTimeout': 14000}" style=" min-height: 500px; max-height: 1000px;
-                                          height: calc(80vh - 20px); background-color:#f4f4f4">
+
+    <div class="owl-carousel owl-carousel-light owl-carousel-light-init-fadeIn owl-theme manual dots-inside dots-horizontal-center show-dots-hover nav-inside nav-inside-plus nav-dark nav-md nav-font-size-md show-nav-hover mb-0"
+        data-plugin-options="{'autoplayTimeout': 7000}" data-dynamic-height="['670px','670px','670px','550px','500px']"
+        style="height: 600px; background-color: #f4f4f4;">
         <div class="owl-stage-outer">
             <div class="owl-stage">
 
-                <!-- Carousel Slide 1 -->
                 @foreach ($sliders as $slider)
                     <div class="owl-item p-relative overflow-hidden {{ $loop->first ? 'active' : '' }}">
                         <div class=" border-radius-2 p-relative z-index-1 overflow-hidden">
@@ -14,7 +14,7 @@
                                 <div class="row justify-content-center align-items-center">
 
 
-                                    <div class=" col-lg-5 text-center text-lg-start   order-2 order-lg-1">
+                                    <div class=" col-lg-5 text-center text-lg-start  mt-lg-5  order-2 order-lg-1">
 
                                         <h1 class="text-4 text-lg-6 font-weight-semibold line-height-1  mb-4 appear-animation"
                                             data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
@@ -38,12 +38,12 @@
                                                 <a href="{{ $slider->button_link }}" data-hash data-hash-offset="0"
                                                     data-hash-offset-lg="0"
                                                     class="
-                                                                                                                                                                                            btn btn-light btn-effect-2 transition-3ms border-0 btn-rounded
-                                                                                                                                                                                            text-2 text-sm-3 text-lg-3
-                                                                                                                                                                                            py-2 py-sm-3 py-lg-4
-                                                                                                                                                                                            px-4 px-sm-5 px-lg-5
-                                                                                                                                                                                            btn-with-arrow-solid mt-1
-                                                                                                                                                                                        ">
+                                                                                                                                                                                                                                                                                                                                btn btn-light btn-effect-2 transition-3ms border-0 btn-rounded
+                                                                                                                                                                                                                                                                                                                                text-2 text-sm-3 text-lg-3
+                                                                                                                                                                                                                                                                                                                                py-2 py-sm-3 py-lg-4
+                                                                                                                                                                                                                                                                                                                                px-4 px-sm-5 px-lg-5
+                                                                                                                                                                                                                                                                                                                                btn-with-arrow-solid mt-1
+                                                                                                                                                                                                                                                                                                                            ">
                                                     <strong class="d-inline-flex text-dark font-weight-medium me-3 px-2 px-lg-3">
                                                         {{ $slider->button_text }}
                                                     </strong>
@@ -70,9 +70,6 @@
                         </div>
                     </div>
                 @endforeach
-
-
-
             </div>
         </div>
         <div class="owl-nav">
@@ -80,26 +77,28 @@
             <button type="button" role="presentation" class="owl-next" aria-label="Next"></button>
         </div>
         @if ($sliders->count() > 1)
-            <div class="owl-dots mb-5">
-                @foreach ($sliders as $slider)
-                    <button role="button" class="owl-dot {{ $loop->first ? 'active' : '' }}"><span></span></button>
-                @endforeach
+                <div class="owl-dots mb-5">
+                    @foreach ($sliders as $slider)
+                        <button role="button" class="owl-dot {{ $loop->first ? 'active' : '' }}"><span></span></button>
+                    @endforeach
+                </div>
             </div>
         @endif
     </div>
 
 
 
-    <section class="section bg-secondary border-0 m-0">
+
+
+
+    <div class="home-intro bg-secondary" id="home-intro">
         <div class="container">
-            <div class="row text-center">
-                <div class="col-md-12 ">
 
-                    <h2 class="text-white slide font-weight-bold text-4 mb-2 ">Senkroon; danışmanlık, yazılım ve dijital dönüşüm alanlarında uzman, işletmelerin uçtan uca
-                        dönüşümünü üstlenen bir iş ortağıdır.</h2>
-
-                    <h2 class="word-rotator slide font-weight-bold text-white text-4 mb-2">
-                        <span>ERP, süreç, İK, finans ve e-ticaret başlıklarında; sahadaki deneyimi analitik bakış ve teknolojiyle birleştirerek  </span>
+            <div class="row align-items-center  ">
+                <div class="col-lg-12">
+                    <h2 class="word-rotator slide font-weight-bold text-white text-lg-4 text-4 mb-2 text-center ">
+                        <span>ERP, süreç, İK, finans ve e-ticaret başlıklarında; sahadaki deneyimi analitik bakış ve
+                            teknolojiyle birleştirerek </span>
                         <span class="word-rotator-words bg-transparent">
                             <b class="is-visible">ölçülebilir</b>
                             <b>sürdürülebilir</b>
@@ -107,15 +106,13 @@
                         </span>
                         <span> iş modelleri tasarlarız.</span>
                     </h2>
-
-
                 </div>
+
+
             </div>
+
         </div>
-    </section>
-
-
-
+    </div>
 
 
 
