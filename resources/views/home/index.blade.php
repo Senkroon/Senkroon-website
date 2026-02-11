@@ -54,7 +54,7 @@
                                             </div>
                                         @endif
                                     </div>
-                                    <div class="col-8 col-lg-6  mt-lg-3 px-2 px-md-5 ps-xl-5 pe-xxl-0 order-1 order-lg-2">
+                                    <div class="col-8 col-lg-6   order-1 order-lg-2">
                                         <div class="p-relative">
                                             <div class="custom-mask-img custom-mask-img-1">
                                                 <img class="" src="{{ asset('storage/' . $slider->background_image) }}"

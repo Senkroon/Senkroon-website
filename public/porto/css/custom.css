@@ -242,7 +242,7 @@
 }
 
 /* 💻 Laptop (PROBLEMLİ ARALIK) */
-@media (min-width: 769px) and (max-width: 1200px) {
+@media (min-width: 769px) and (max-width: 1000px) {
     .custom-mask-img img {
         max-width: 300px;
         max-height: 300px;
@@ -250,10 +250,10 @@
 }
 
 /* 🖥️ Büyük ekran */
-@media (min-width: 1201px) {
+@media (min-width: 1001px) {
     .custom-mask-img img {
-        max-width: 641px;
-        max-height: 641px;
+        max-width: 500px;
+        max-height: 500px;
     }
 }
 
