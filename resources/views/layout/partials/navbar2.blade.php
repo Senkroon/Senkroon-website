@@ -27,7 +27,7 @@
                                         </li>
 
                                         <li class="dropdown">
-                                            <a class="dropdown-item dropdown-toggle " href="index.html">
+                                            <a class="dropdown-item dropdown-toggle " href="{{ route('home.about') }}">
                                                 Kurumsal
                                             </a>
                                             <ul class="dropdown-menu">
