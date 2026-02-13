@@ -51,11 +51,30 @@
                         @endif
 
                         <div class="row row-gutter-sm">
+
                             <div class="form-group col-lg-6 mb-4">
-                                <input type="text" value="" data-msg-required="Lütfen adınızı girin."
-                                    maxlength="100" class="form-control" name="name" id="name" required
-                                    placeholder="Adınız">
+                                <input type="text" value="" maxlength="100" class="form-control" name="company" id="company"
+                                    placeholder="Şirket Adı">
                             </div>
+
+
+
+                            <div class="form-group col-lg-6 mb-4">
+                                <input type="text" value="" data-msg-required="Lütfen adınızı girin." maxlength="100"
+                                    class="form-control" name="name" id="name" required placeholder="Adınız">
+                            </div>
+
+
+
+
+                        </div>
+                        <div class="row row-gutter-sm">
+                            <div class="form-group col-lg-6 mb-4">
+                                <input type="email" value="" data-msg-required="Lütfen e-posta adresinizi girin."
+                                    data-msg-email="Lütfen geçerli bir e-posta adresi girin." maxlength="100"
+                                    class="form-control" name="email" id="email" required placeholder="E-posta Adresiniz">
+                            </div>
+
                             <div class="form-group col-lg-6 mb-4">
                                 <input type="text" value="" data-msg-required="Lütfen telefon numaranızı girin."
                                     maxlength="100" class="form-control" name="phone" id="phone" required
@@ -63,28 +82,16 @@
                             </div>
                         </div>
                         <div class="row row-gutter-sm">
-                            <div class="form-group col-lg-6 mb-4">
-                                <input type="email" value="" data-msg-required="Lütfen e-posta adresinizi girin."
-                                    data-msg-email="Lütfen geçerli bir e-posta adresi girin." maxlength="100"
-                                    class="form-control" name="email" id="email" required
-                                    placeholder="E-posta Adresiniz">
-                            </div>
-                            <div class="form-group col-lg-6 mb-4">
-                                <input type="text" value="" maxlength="100" class="form-control" name="company"
-                                    id="company" placeholder="Şirket Adı">
-                            </div>
-                        </div>
-                        <div class="row row-gutter-sm">
                             <div class="form-group col-lg-12 mb-4">
-                                <input type="text" value="" data-msg-required="Lütfen konuyu girin."
-                                    maxlength="100" class="form-control" name="subject" id="subject" required
-                                    placeholder="Konu">
+                                <input type="text" value="" data-msg-required="Lütfen konuyu girin." maxlength="100"
+                                    class="form-control" name="subject" id="subject" required placeholder="Konu">
                             </div>
                         </div>
                         <div class="row">
                             <div class="form-group col mb-4">
-                                <textarea maxlength="5000" data-msg-required="Lütfen mesajınızı girin." rows="3" class="form-control"
-                                    name="message" id="message" required placeholder="Mesajınız"></textarea>
+                                <textarea maxlength="5000" data-msg-required="Lütfen mesajınızı girin." rows="3"
+                                    class="form-control" name="message" id="message" required
+                                    placeholder="Mesajınız"></textarea>
                             </div>
                         </div>
 
@@ -94,7 +101,8 @@
                                     <input type="checkbox" name="kvkk" id="kvkk" class="mt-1" required>
                                     <span class="ms-2 text-3">
                                         Kişisel verilerimin, iletişim talebimin yanıtlanması amacıyla işlenmesine
-                                        <a href="{{ route('kvkk') }}" target="_blank" class="text-primary text-decoration-underline">KVKK Aydınlatma Metni</a>
+                                        <a href="{{ route('kvkk') }}" target="_blank"
+                                            class="text-primary text-decoration-underline">KVKK Aydınlatma Metni</a>
                                         kapsamında açık rıza veriyorum.
                                     </span>
                                 </label>
@@ -127,8 +135,9 @@
                     <div class="row py-4 mb-5">
                         <div class="col-lg-6 pb-4 pb-lg-0">
 
-                            <p class="text-4-5 pe-lg-2 text-dark font-weight-bold"> Polatlar Office, Tecde, Mıhlıdut Sk. A Blok No: 37/B<br>
-                                    44090 Kat 1 No:3 Yeşilyurt/Malatya</p>
+                            <p class="text-4-5 pe-lg-2 text-dark font-weight-bold"> Polatlar Office, Tecde, Mıhlıdut Sk. A
+                                Blok No: 37/B<br>
+                                44090 Kat 1 No:3 Yeşilyurt/Malatya</p>
                             <ul class="list list-unstyled">
                                 <li class="d-flex align-items-center mb-3">
                                     <i
