@@ -235,4 +235,12 @@ class Homecontroller extends Controller
         return view('kvkk.index');
     }
 
+
+
+    public function whySenkroon(){
+
+        return view('home.why-senkroon');
+
+    }
+
 }
