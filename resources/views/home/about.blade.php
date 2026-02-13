@@ -173,7 +173,7 @@
                     </div>
                 </div>
             </div>
-
+            {{--
             <div class="col-lg-6 mb-4">
                 <div class="feature-box feature-box-style-2 appear-animation" data-appear-animation="fadeInUpShorter"
                     data-appear-animation-delay="1100">
@@ -182,11 +182,10 @@
                     </div>
                     <div class="feature-box-info">
                         <h4 class="font-weight-bold text-4 mb-2">ERP - MRP Proje Danışmanlığı</h4>
-                        <p>İşletmelerin verimliliğini artırmak ve iş süreçlerini optimize etmek için
-                            kullanılan yazılım sistemleri konusunda profesyonel danışmanlık hizmeti sunuyoruz.</p>
+                        <p></p>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
 
         <!-- Workcube Çözümleri -->
