@@ -38,12 +38,12 @@
                                                 <a href="{{ $slider->button_link }}" data-hash data-hash-offset="0"
                                                     data-hash-offset-lg="0"
                                                     class="
-                                                                                                                                                                                                                                                                                                                                btn btn-light btn-effect-2 transition-3ms border-0 btn-rounded
-                                                                                                                                                                                                                                                                                                                                text-2 text-sm-3 text-lg-3
-                                                                                                                                                                                                                                                                                                                                py-2 py-sm-3 py-lg-4
-                                                                                                                                                                                                                                                                                                                                px-4 px-sm-5 px-lg-5
-                                                                                                                                                                                                                                                                                                                                btn-with-arrow-solid mt-1
-                                                                                                                                                                                                                                                                                                                            ">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            btn btn-light btn-effect-2 transition-3ms border-0 btn-rounded
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            text-2 text-sm-3 text-lg-3
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            py-2 py-sm-3 py-lg-4
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            px-4 px-sm-5 px-lg-5
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            btn-with-arrow-solid mt-1
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ">
                                                     <strong class="d-inline-flex text-dark font-weight-medium me-3 px-2 px-lg-3">
                                                         {{ $slider->button_text }}
                                                     </strong>
@@ -92,26 +92,24 @@
 
 
     <div class="home-intro bg-secondary" id="home-intro">
-        <div class="container">
 
-            <div class="row align-items-center  ">
-                <div class="col-lg-12">
-                    <h2 class="word-rotator slide font-weight-bold text-white text-lg-4 text-4 mb-2 text-center ">
-                        <span>ERP, süreç, İK, finans ve e-ticaret başlıklarında; sahadaki deneyimi analitik bakış ve
-                            teknolojiyle birleştirerek </span>
-                        <span class="word-rotator-words bg-transparent">
-                            <b class="is-visible">ölçülebilir</b>
-                            <b>sürdürülebilir</b>
-                            <b>güvenilir</b>
-                        </span>
-                        <span> iş modelleri tasarlarız.</span>
-                    </h2>
-                </div>
+        <div class="row align-items-center">
+            <h2 class="word-rotator slide font-weight-bold text-white text-3 text-sm-4 text-lg-5 line-height-2 mb-2 text-center ">
+                <span>Senkroon; süreçlerinizi girişimci bir bakış açısıyla yeniden tasarlayarak, bugünkü operasyonel
+                    yükünüzü hafifletip yarın için </span>
+                <span class="word-rotator-words bg-primary d-inline-block mx-1">
+                    <b class="is-visible">esnek</b>
+                    <b>şeffaf</b>
+                    <b>yönetilebilir</b>
+                    <b>sürdürülebilir</b>
+                </span>
+                <span> bir iş modeli
+                    kurmanıza yardımcı olur.</span>
+            </h2>
 
-
-            </div>
 
         </div>
+
     </div>
 
 
@@ -343,15 +341,35 @@
 
 
     <section class="container py-5" id="process">
+
+
+
         <div class="row mb-5">
             <div class="col text-center">
-                <h2 class="font-weight-bold line-height-2 text-7 mb-1">Nasıl Çalışıyoruz?</h2>
-                <span class="d-block text-color-dark text-5 pb-2 mb-4 opacity-7">Her projede aynı disiplinle
-                    ilerliyoruz</span>
-                <p class="text-4 mb-4">Workcube güçlü bir platform, Senkroon ise onu sizin iş modelinize çeviren
-                    mimardır. Hazır şablon dayatmıyor; süreç, organizasyon ve finans yapınızı birlikte analiz
-                    ederek Workcube üzerinde kurumunuza özel ekranlar, akışlar ve raporlar tasarlıyoruz.</p>
+
+                <h2 class="font-weight-bold">Workcube + Senkroon Yaklaşımı</h2>
+                <p class="d-block text-color-dark text-4 pb-2 mb-2 opacity-7">Workcube güçlü bir platform, Senkroon ise onu
+                    sizin iş modelinize çeviren mimardır.
+                    Hazır şablon dayatmıyor; süreç, organizasyon ve finans yapınızı birlikte analiz ederek Workcube üzerinde
+                    kurumunuza özel ekranlar, akışlar ve raporlar tasarlıyoruz. Proje sonunda “Workcube kullanıyoruz” değil,
+                    “işimizi Workcube üzerinde yönetiyoruz” diyebilmenizi hedefliyoruz.</p>
+
+
             </div>
+        </div>
+
+
+        <div class="row">
+
+            <div class="col">
+
+                <h3 class=" mb-3">Nasıl Çalışıyoruz? </h3>
+                <p class="mb-0">Her projede aynı disiplinle ilerliyoruz;
+                    böylece hem süreç hem bütçe hem de çıktılar daha baştan netleşiyor. ERP, süreç ve organizasyon
+                    tarafındaki tüm çalışmalarımızı bu çerçevede kurguluyoruz.</p>
+
+            </div>
+
         </div>
 
         <div class="row">
@@ -363,12 +381,11 @@
                             <strong class="process-step-circle-content">1</strong>
                         </div>
                         <div class="process-step-content">
-                            <h4 class="mb-3 text-5 font-weight-bold text-primary">Keşif & Analiz</h4>
-                            <p class="mb-0">İşletmenizin mevcut durumunu, ihtiyaçlarını ve hedeflerini detaylı
-                                olarak analiz ediyoruz.
-                                Hangi Workcube modüllerinin size uygun olacağını, mevcut sistemlerinizle
-                                entegrasyon imkanlarını
-                                ve özel geliştirme gereksinimlerinizi belirliyoruz.</p>
+                            <h4 class="mb-3 text-5 font-weight-bold text-primary">Firma Analizi</h4>
+                            <p class="mb-0">Mevcut süreçlerinizi, kullandığınız ERP/yazılımları, organizasyon yapınızı ve
+                                finansal/operasyonel fotoğrafınızı dinliyor, birlikte net bir durum analizi çıkarıyoruz.
+                                Hangi noktada olduğunuzu ve nereye gitmek istediğinizi aynı çerçeveden görmeden hiçbir adım
+                                atmıyoruz.</p>
                         </div>
                     </div>
                     <div class="process-step appear-animation" data-appear-animation="fadeInUpShorter"
@@ -377,12 +394,11 @@
                             <strong class="process-step-circle-content">2</strong>
                         </div>
                         <div class="process-step-content">
-                            <h4 class="mb-3 text-5 font-weight-bold text-primary">Teklif & Planlama</h4>
-                            <p class="mb-0">İhtiyaç analiziniz doğrultusunda size özel Workcube ERP çözümü
-                                hazırlayıp
-                                detaylı teklif sunuyoruz. Lisans türleri, kurulum süreci, eğitim planı ve
-                                destek hizmetleri dahil şeffaf bir fiyatlandırma ile net yol haritası
-                                çıkarıyoruz.</p>
+                            <h4 class="mb-3 text-5 font-weight-bold text-primary">Planlama & Fiyatlandırma</h4>
+                            <p class="mb-0">Kapsamı, fazları, süreyi ve bütçeyi netleştiriyoruz. ERP mi, süreç mi,
+                                organizasyon mu, yoksa hepsinin birleşimi mi olacağı; hangi modüllerin devreye alınacağı ve
+                                hangi adımların hangi sırayla ilerleyeceği konusunda şeffaf bir yol haritası çıkarıyoruz.
+                                Sürpriz maliyet yaratmayan, baştan konuşulmuş bir model kuruyoruz.</p>
                         </div>
                     </div>
                     <div class="process-step appear-animation" data-appear-animation="fadeInUpShorter"
@@ -391,11 +407,11 @@
                             <strong class="process-step-circle-content">3</strong>
                         </div>
                         <div class="process-step-content">
-                            <h4 class="mb-3 text-5 font-weight-bold text-primary">Kurulum & Konfigürasyon</h4>
-                            <p class="mb-0">Workcube ERP'yi işletmenizin altyapısına kuruyoruz ve
-                                ihtiyaçlarınıza göre
-                                konfigüre ediyoruz. Kullanıcı yetkileri, iş akışları, özel alanlar ve raporları
-                                işletmenizin süreçlerine uyacak şekilde ayarlıyor, test ortamında doğruluyoruz.
+                            <h4 class="mb-3 text-5 font-weight-bold text-primary">Tasarım</h4>
+                            <p class="mb-0">İş süreçleri, organizasyon, ekran ve rapor tasarımlarını; kurum kültürünüz, ekip
+                                yapınız ve hedeflerinizle uyumlu şekilde modelliyoruz. Workcube ERP ve diğer çözümler
+                                üzerinde; iş akışları, kod yapısı, yetkiler ve rapor setlerini “kitaptaki ideal”e değil,
+                                sizin gerçek işleyişinize göre kurguluyoruz.
                             </p>
                         </div>
                     </div>
@@ -405,11 +421,11 @@
                             <strong class="process-step-circle-content">4</strong>
                         </div>
                         <div class="process-step-content">
-                            <h4 class="mb-3 text-5 font-weight-bold text-primary">Eğitim & Devreye Alma</h4>
-                            <p class="mb-0">Kullanıcılarınız için kapsamlı Workcube ERP eğitimi düzenliyoruz.
-                                Teorik ve pratik eğitimlerle
-                                ekibinizin sistemi etkin kullanmasını sağlıyoruz. Kontrollü geçiş süreciyle
-                                canlıya alıyor ve ilk günden itibaren verimli kullanım garantisi veriyoruz.</p>
+                            <h4 class="mb-3 text-5 font-weight-bold text-primary">Uygulama</h4>
+                            <p class="mb-0">ERP kurulumu, parametrik ayarlar, test ortamı, pilot uygulamalar ve kullanıcı
+                                eğitimleriyle tasarımı sahaya indiriyoruz. İlgili departmanlarla birlikte ilerleyerek;
+                                satınalma, satış, üretim, depo, finans, İK, lojistik ve diğer süreçlerinizin gerçekten
+                                ekranlara yansımasını sağlıyoruz.</p>
                         </div>
                     </div>
                     <div class="process-step appear-animation" data-appear-animation="fadeInUpShorter"
@@ -418,12 +434,12 @@
                             <strong class="process-step-circle-content">5</strong>
                         </div>
                         <div class="process-step-content">
-                            <h4 class="mb-3 text-5 font-weight-bold text-primary">Destek & Güncelleme
+                            <h4 class="mb-3 text-5 font-weight-bold text-primary">Eğitim & Sürekli İyileştirme
                             </h4>
-                            <p class="mb-0">Canlıya geçiş sonrası da yanınızdayız. 7/24 teknik destek, düzenli
-                                sistem
-                                güncellemeleri ve yeni özelliklerin eklenmesi için sürekli hizmet veriyoruz.
-                                İşletmeniz büyüdükçe Workcube ERP çözümünüz de gelişiyor ve genişletiyor.</p>
+                            <p class="mb-0">Canlıya geçişi bir “bitiş” değil, projenin ikinci yarısı olarak görüyoruz.
+                                Kullanıcı desteği, rapor iyileştirmeleri, yeni ihtiyaçların tasarımı ve süreçlerin gözden
+                                geçirilmesi için periyodik olarak yanınızda oluyoruz. Böylece ERP ve süreç yapınız, işiniz
+                                büyüdükçe sizinle birlikte gelişiyor.</p>
                         </div>
                     </div>
                 </div>

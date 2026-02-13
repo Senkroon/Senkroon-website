@@ -116,10 +116,11 @@
                 <div class="feature-box feature-box-style-2 appear-animation" data-appear-animation="fadeInUpShorter"
                     data-appear-animation-delay="300">
                     <div class="feature-box-icon">
-                        <i class="icons icon-settings text-color-primary text-6"></i>
+                        <i class="icons icon-graph text-color-primary text-6"></i>
+
                     </div>
                     <div class="feature-box-info">
-                        <h4 class="font-weight-bold text-4 mb-2">İdari Danışmanlık Hizmetleri</h4>
+                        <h4 class="font-weight-bold text-4 mb-2">Finans, Muhasebe, İç Denetim & İç Kontrol</h4>
                         <p>İşletme stratejisi geliştirme, yönetim danışmanlığı ve süreç optimizasyonu
                             hizmetleriyle işletmelerin stratejik hedeflerine ulaşmalarına destek oluyoruz.</p>
                     </div>
@@ -130,12 +131,17 @@
                 <div class="feature-box feature-box-style-2 appear-animation" data-appear-animation="fadeInUpShorter"
                     data-appear-animation-delay="500">
                     <div class="feature-box-icon">
-                        <i class="icons icon-graph text-color-primary text-6"></i>
+                        <i class="icons icon-settings text-color-primary text-6"></i>
                     </div>
                     <div class="feature-box-info">
-                        <h4 class="font-weight-bold text-4 mb-2">Raporlama ve Analiz Hizmetleri</h4>
-                        <p>Veri analizi ve raporlama çözümleriyle işletmelerin karar verme süreçlerini
-                            destekliyoruz. Gerçek zamanlı analitik ve öngörülebilir raporlar sunuyoruz.</p>
+                        <h4 class="font-weight-bold text-4 mb-2">İş Süreçleri, Yönetim ve Organizasyon</h4>
+                        <p>
+                            İş süreçlerinizi uçtan uca analiz ederek organizasyon yapınızı daha verimli,
+                            şeffaf ve yönetilebilir hale getiriyoruz. Operasyonel darboğazları tespit ediyor,
+                            görev ve sorumlulukları netleştirerek sürdürülebilir bir yönetim modeli
+                            oluşturmanıza destek oluyoruz.
+                        </p>
+
                     </div>
                 </div>
             </div>
@@ -147,9 +153,9 @@
                         <i class="icons icon-support text-color-primary text-6"></i>
                     </div>
                     <div class="feature-box-info">
-                        <h4 class="font-weight-bold text-4 mb-2">Teknik Destek Hizmetleri</h4>
-                        <p>7/24 teknik destek hizmetimizle işletmenizin iş sürekliliğini garanti altına alıyoruz.
-                            Uzman ekibimiz her zaman yanınızda.</p>
+                        <h4 class="font-weight-bold text-4 mb-2">ERP & MRP Danışmanlığı</h4>
+                        <p>İşletmelerin verimliliğini artırmak ve iş süreçlerini optimize etmek için
+                            kullanılan yazılım sistemleri konusunda profesyonel danışmanlık hizmeti sunuyoruz.</p>
                     </div>
                 </div>
             </div>
@@ -161,9 +167,9 @@
                         <i class="icons icon-graduation text-color-primary text-6"></i>
                     </div>
                     <div class="feature-box-info">
-                        <h4 class="font-weight-bold text-4 mb-2">Eğitim Ve Uygulama Hizmetleri</h4>
-                        <p>Yeni sisteme geçiş sürecinde ekibinizin hızla adapte olması için kapsamlı
-                            eğitim programları ve uygulama desteği sağlıyoruz.</p>
+                        <h4 class="font-weight-bold text-4 mb-2">Raporlama ve Analiz Danışmanlığı</h4>
+                        <p>Veri analizi ve raporlama çözümleriyle işletmelerin karar verme süreçlerini destekliyoruz. Gerçek
+                            zamanlı analitik ve öngörülebilir raporlar sunuyoruz.</p>
                     </div>
                 </div>
             </div>

@@ -25,11 +25,31 @@
                                                 Anasayfa
                                             </a>
                                         </li>
-                                        <li>
-                                            <a class="nav-link" href="{{ route('home.about') }}">
-                                                Hakkımızda
+
+                                        <li class="dropdown">
+                                            <a class="dropdown-item dropdown-toggle " href="index.html">
+                                                Kurumsal
                                             </a>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a class="dropdown-item" href="{{ route('home.about') }}">
+                                                        Hakkımızda
+                                                    </a>
+                                                </li>
+
+                                                <li class=" ">
+                                                    <a class="dropdown-item" href="{{ route('home.faq') }}">
+                                                        Sık sorulan sorular
+                                                    </a>
+                                                </li>
+                                                <li class=" ">
+                                                    <a class="dropdown-item" href="{{ route('home.why-senkroon') }}">
+                                                        Neden Senkroon ?
+                                                    </a>
+                                                </li>
+                                            </ul>
                                         </li>
+
                                         <li class="dropdown dropdown-mega d-none d-lg-block">
                                             <a class="nav-link dropdown-toggle"
                                                 href="{{ route('home.products-and-solutions') }}">
@@ -50,7 +70,8 @@
                                                                     class="d-block mb-3">
                                                                     <img src="{{ asset('porto/simages/W3_logo.png') }}"
                                                                         alt="Workcube" class="img-fluid rounded mb-2">
-                                                                    <p class="text-2 mb-0">ERP + CRM + HR + PMS +
+                                                                    <p class="text-2 mb-0">ERP + CRM + HR + PMS
+                                                                        +
                                                                         PAM + CMS + DAM + LMS SUBO + Intranet +
                                                                         E-Devlet ve daha fazlası...</p>
                                                                 </a>
@@ -102,7 +123,8 @@
                                                                     class="d-block mb-3">
                                                                     <img src="{{ asset('porto/simages/mikro.png') }}"
                                                                         alt="Mikro" class="img-fluid rounded mb-2 ">
-                                                                    <p class="text-2 mb-0">Mikro Run + Mikro Jump +
+                                                                    <p class="text-2 mb-0">Mikro Run + Mikro
+                                                                        Jump +
                                                                         Mikro Fly + Mikro Jump Basic ve daha
                                                                         fazlası...</p>
                                                                 </a>
@@ -149,27 +171,33 @@
                                                                             <li>
                                                                                 <a class="dropdown-item d-flex align-items-center"
                                                                                     href="{{ url('danismanlik-cozumleri/finans-muhasebe-ic-denetim-ic-kontrol') }}">
-                                                                                    <span>Finans, Muhasebe, İç Denetim & İç Kontrol </span>
+                                                                                    <span>Finans, Muhasebe, İç
+                                                                                        Denetim &
+                                                                                        İç Kontrol </span>
                                                                                 </a>
                                                                             </li>
                                                                             <li>
                                                                                 <a class="dropdown-item d-flex align-items-center"
                                                                                     href="{{ url('danismanlik-cozumleri/is-surecleri-yonetim-ve-organizasyon') }}">
 
-                                                                                    <span>İş Süreçleri, Yönetim ve Organizasyon</span>
+                                                                                    <span>İş Süreçleri, Yönetim
+                                                                                        ve
+                                                                                        Organizasyon</span>
                                                                                 </a>
                                                                             </li>
                                                                             <li>
                                                                                 <a class="dropdown-item d-flex align-items-center"
                                                                                     href="{{ url('danismanlik-cozumleri/erp-mrp-danismanligi') }}">
 
-                                                                                    <span>ERP & MRP Danışmanlığı</span>
+                                                                                    <span>ERP & MRP
+                                                                                        Danışmanlığı</span>
                                                                                 </a>
                                                                             </li>
                                                                             <li>
                                                                                 <a class="dropdown-item d-flex align-items-center"
                                                                                     href="{{ url('danismanlik-cozumleri/raporlama-ve-analiz-danismanligi') }}">
-                                                                                    <span>Raporlama ve Analiz Danışmanlığı</span>
+                                                                                    <span>Raporlama ve Analiz
+                                                                                        Danışmanlığı</span>
                                                                                 </a>
                                                                             </li>
                                                                         </ul>
@@ -204,11 +232,13 @@
                                                         ERP</a></li>
                                                 <li><a class="dropdown-item py-2"
                                                         href="{{ route('modules.show', ['workcube', 'crm-musteri-iliskileri-yonetimi']) }}">
-                                                        <i class="fas fa-users me-2 text-muted"></i>Workcube CRM</a>
+                                                        <i class="fas fa-users me-2 text-muted"></i>Workcube
+                                                        CRM</a>
                                                 </li>
                                                 <li><a class="dropdown-item py-2"
                                                         href="{{ route('modules.show', ['workcube', 'insan-kaynaklari-ik']) }}">
-                                                        <i class="fas fa-user-tie me-2 text-muted"></i>Workcube HR</a>
+                                                        <i class="fas fa-user-tie me-2 text-muted"></i>Workcube
+                                                        HR</a>
                                                 </li>
                                                 <li><a class="dropdown-item fw-bold text-primary py-2"
                                                         href="{{ route('modules.index', 'workcube') }}">
@@ -224,18 +254,22 @@
                                                 </li>
                                                 <li><a class="dropdown-item py-2"
                                                         href="{{ route('modules.show', ['mikro', 'mikro-run']) }}">
-                                                        <i class="fas fa-play me-2 text-muted"></i>Mikro Run</a></li>
+                                                        <i class="fas fa-play me-2 text-muted"></i>Mikro Run</a>
+                                                </li>
                                                 <li><a class="dropdown-item py-2"
                                                         href="{{ route('modules.show', ['mikro', 'mikro-jump']) }}">
-                                                        <i class="fas fa-arrow-up me-2 text-muted"></i>Mikro Jump</a>
+                                                        <i class="fas fa-arrow-up me-2 text-muted"></i>Mikro
+                                                        Jump</a>
                                                 </li>
                                                 <li><a class="dropdown-item py-2"
                                                         href="{{ route('modules.show', ['mikro', 'mikro-fly']) }}">
-                                                        <i class="fas fa-paper-plane me-2 text-muted"></i>Mikro Fly</a>
+                                                        <i class="fas fa-paper-plane me-2 text-muted"></i>Mikro
+                                                        Fly</a>
                                                 </li>
                                                 <li><a class="dropdown-item fw-bold text-primary py-2"
                                                         href="{{ route('modules.index', 'mikro') }}">
-                                                        <i class="fas fa-arrow-right me-2"></i>Tüm Mikro Çözümleri</a>
+                                                        <i class="fas fa-arrow-right me-2"></i>Tüm Mikro
+                                                        Çözümleri</a>
                                                 </li>
                                                 <li>
                                                     <hr class="dropdown-divider my-2">
@@ -249,19 +283,25 @@
 
                                                 <li><a class="dropdown-item py-2"
                                                         href="{{ url('danismanlik-cozumleri/finans-muhasebe-ic-denetim-ic-kontrol') }}">
-                                                        <i class="fas fa-chart-line me-2 text-muted"></i>Finans, Muhasebe, İç Denetim & İç Kontrol</a>
+                                                        <i class="fas fa-chart-line me-2 text-muted"></i>Finans,
+                                                        Muhasebe, İç Denetim & İç Kontrol</a>
                                                 </li>
                                                 <li><a class="dropdown-item py-2"
                                                         href="{{ url('danismanlik-cozumleri/is-surecleri-yonetim-ve-organizasyon') }}">
-                                                        <i class="fas fa-sitemap me-2 text-muted"></i>İş Süreçleri, Yönetim ve Organizasyon</a>
+                                                        <i class="fas fa-sitemap me-2 text-muted"></i>İş
+                                                        Süreçleri,
+                                                        Yönetim ve Organizasyon</a>
                                                 </li>
                                                 <li><a class="dropdown-item py-2"
                                                         href="{{ url('danismanlik-cozumleri/erp-mrp-danismanligi') }}">
-                                                        <i class="fas fa-cubes me-2 text-muted"></i>ERP & MRP Danışmanlığı</a>
+                                                        <i class="fas fa-cubes me-2 text-muted"></i>ERP & MRP
+                                                        Danışmanlığı</a>
                                                 </li>
                                                 <li><a class="dropdown-item py-2"
                                                         href="{{ url('danismanlik-cozumleri/raporlama-ve-analiz-danismanligi') }}">
-                                                        <i class="fas fa-chart-pie me-2 text-muted"></i>Raporlama ve Analiz Danışmanlığı</a>
+                                                        <i class="fas fa-chart-pie me-2 text-muted"></i>Raporlama
+                                                        ve
+                                                        Analiz Danışmanlığı</a>
                                                 </li>
                                                 <li>
                                                     <hr class="dropdown-divider my-2">
@@ -282,13 +322,17 @@
                                             </a>
                                             <ul class="dropdown-menu">
                                                 <li><a class="dropdown-item"
-                                                        href="{{ url('danismanlik-cozumleri/finans-muhasebe-ic-denetim-ic-kontrol') }}">Finans, Muhasebe, İç Denetim & İç Kontrol</a></li>
+                                                        href="{{ url('danismanlik-cozumleri/finans-muhasebe-ic-denetim-ic-kontrol') }}">Finans,
+                                                        Muhasebe, İç Denetim & İç Kontrol</a></li>
                                                 <li><a class="dropdown-item"
-                                                        href="{{ url('danismanlik-cozumleri/is-surecleri-yonetim-ve-organizasyon') }}">İş Süreçleri, Yönetim ve Organizasyon</a></li>
+                                                        href="{{ url('danismanlik-cozumleri/is-surecleri-yonetim-ve-organizasyon') }}">İş
+                                                        Süreçleri, Yönetim ve Organizasyon</a></li>
                                                 <li><a class="dropdown-item"
-                                                        href="{{ url('danismanlik-cozumleri/erp-mrp-danismanligi') }}">ERP & MRP Danışmanlığı</a></li>
+                                                        href="{{ url('danismanlik-cozumleri/erp-mrp-danismanligi') }}">ERP
+                                                        & MRP Danışmanlığı</a></li>
                                                 <li><a class="dropdown-item"
-                                                        href="{{ url('danismanlik-cozumleri/raporlama-ve-analiz-danismanligi') }}">Raporlama ve Analiz Danışmanlığı</a></li>
+                                                        href="{{ url('danismanlik-cozumleri/raporlama-ve-analiz-danismanligi') }}">Raporlama
+                                                        ve Analiz Danışmanlığı</a></li>
                                                 <li>
                                                     <hr class="dropdown-divider">
                                                 </li>
@@ -300,10 +344,7 @@
 
                                         <!-- Hizmetlerimiz - Mega Menu (Desktop) -->
                                         <li class="dropdown dropdown-mega d-none d-lg-block">
-                                            {{-- <a class="nav-link dropdown-toggle"
-                                                href="{{ url('danismanlik-cozumleri') }}">
-                                                Hizmetlerimiz
-                                            </a> --}}
+
                                             <ul class="dropdown-menu">
                                                 <li>
                                                     <div class="dropdown-mega-content">
@@ -388,11 +429,7 @@
 
 
 
-                                        <li class="d-none d-lg-block d-sm-block hide-1000-1100">
-                                            <a class="nav-link " href="{{ route('home.faq') }}">
-                                                Sık sorulan sorular
-                                            </a>
-                                        </li>
+
 
 
                                     </ul>
@@ -441,5 +478,3 @@
         </div>
     </div>
 </header>
-
-

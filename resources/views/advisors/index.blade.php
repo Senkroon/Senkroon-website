@@ -20,7 +20,7 @@
     <div class="container pb-5 mb-5">
         <div class="row">
             @foreach ($advisors as $advisor)
-                <div class="col-md-6 col-lg-4 mb-4">
+                <div class="col-md-6 col-lg-3 mb-4">
                     <div class="card border-0 shadow-sm h-100">
                         <img src="{{ asset('storage/' . $advisor->image) }}" class="card-img-top"
                             alt="{{ $advisor->title }}">

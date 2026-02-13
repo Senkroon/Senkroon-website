@@ -18,6 +18,9 @@ Route::controller(Homecontroller::class)->group(function () {
     Route::get('/sss', 'faq')->name('home.faq');
     Route::get('/urunler-ve-cozumler', 'productsAndSolutions')->name('home.products-and-solutions');
     Route::get('/kvkk-aydinlatma-metni', 'kvkk')->name('kvkk');
+
+
+    Route::get('/neden-senkroon', 'whySenkroon')->name('home.why-senkroon');
 });
 
 
