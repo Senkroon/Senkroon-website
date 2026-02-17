@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use Artesaos\SEOTools\Facades\SEOTools;
 
 
-class projectController extends Controller
+class ProjectController extends Controller
 {
       /**
      * Tüm projeleri listele
