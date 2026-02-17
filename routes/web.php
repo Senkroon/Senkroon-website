@@ -9,7 +9,6 @@ use App\Http\Controllers\ProjectController;
 
 
 
-
 Route::controller(Homecontroller::class)->group(function () {
     Route::get('/', 'index')->name('home.index');
     Route::get('/hakkimizda', 'about')->name('home.about');
