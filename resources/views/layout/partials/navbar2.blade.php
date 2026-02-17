@@ -215,6 +215,15 @@
                                                 </li>
                                             </ul>
                                         </li>
+
+                                       <li>
+                                            <a class="nav-link" href="{{ route('projects.index') }}">
+                                                Projelerimiz
+                                            </a>
+                                        </li>
+
+
+
                                         <!-- Ürünler & Çözümler - Basit Dropdown (Mobil) -->
                                         <li class="dropdown d-lg-none">
                                             <a class="nav-link dropdown-toggle"

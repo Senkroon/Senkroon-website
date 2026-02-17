@@ -61,7 +61,7 @@
                     <i class="icons icon-settings text-color-primary text-6"></i>
                 </div>
                 <div class="feature-box-info">
-                    <h4 class="font-weight-bold text-4 mb-2">İdari Danışmanlık Hizmetleri</h4>
+                    <h4 class="font-weight-bold text-4 mb-2">Finans, Muhasebe, İç Denetim & İç Kontrol</h4>
                     <p>İşletme stratejisi geliştirme, yönetim danışmanlığı ve süreç optimizasyonu
                     hizmetleriyle işletmelerin stratejik hedeflerine ulaşmalarına destek oluyoruz.</p>
                 </div>
@@ -74,7 +74,7 @@
                     <i class="icons icon-graph text-color-primary text-6"></i>
                 </div>
                 <div class="feature-box-info">
-                    <h4 class="font-weight-bold text-4 mb-2">Raporlama ve Analiz Hizmetleri</h4>
+                    <h4 class="font-weight-bold text-4 mb-2">İş Süreçleri, Yönetim ve Organizasyon</h4>
                     <p>Veri analizi ve raporlama çözümleriyle işletmelerin karar verme süreçlerini
                     destekliyoruz. Gerçek zamanlı analitik ve öngörülebilir raporlar sunuyoruz.</p>
                 </div>
@@ -87,20 +87,20 @@
                     <i class="icons icon-support text-color-primary text-6"></i>
                 </div>
                 <div class="feature-box-info">
-                    <h4 class="font-weight-bold text-4 mb-2">Teknik Destek Hizmetleri</h4>
+                    <h4 class="font-weight-bold text-4 mb-2">ERP & MRP Danışmanlığı</h4>
                     <p>7/24 teknik destek hizmetimizle işletmenizin iş sürekliliğini garanti altına alıyoruz.
                     Uzman ekibimiz her zaman yanınızda.</p>
                 </div>
             </div>
         </div>
 
-        <div class="col-lg-6 mb-4">
+        {{-- <div class="col-lg-6 mb-4">
             <div class="feature-box feature-box-style-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="900">
                 <div class="feature-box-icon">
                     <i class="icons icon-graduation text-color-primary text-6"></i>
                 </div>
                 <div class="feature-box-info">
-                    <h4 class="font-weight-bold text-4 mb-2">Eğitim Ve Uygulama Hizmetleri</h4>
+                    <h4 class="font-weight-bold text-4 mb-2">Raporlama ve Analiz Danışmanlığı</h4>
                     <p>Yeni sisteme geçiş sürecinde ekibinizin hızla adapte olması için kapsamlı
                     eğitim programları ve uygulama desteği sağlıyoruz.</p>
                 </div>
@@ -118,7 +118,7 @@
                     kullanılan yazılım sistemleri konusunda profesyonel danışmanlık hizmeti sunuyoruz.</p>
                 </div>
             </div>
-        </div>
+        </div> --}}
     </div>
 
     <!-- Workcube Çözümleri -->

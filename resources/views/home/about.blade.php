@@ -188,6 +188,16 @@
             </div> --}}
         </div>
 
+
+
+
+
+
+
+
+
+
+
         <!-- Workcube Çözümleri -->
         <div class="row py-5">
             <div class="col-12">
@@ -330,8 +340,12 @@
             </div>
         </div>
 
+
+
+
+
         <!-- Sektörel Uygulamalar -->
-        <div class="row py-5">
+        {{-- <div class="row py-5">
             <div class="col-12">
                 <div class="text-center mb-5">
                     <h2 class="text-color-primary font-weight-bold text-6 mb-3">Sektörel Uygulamalar</h2>
@@ -392,7 +406,11 @@
                     <h6 class="font-weight-bold">Sivil Toplum</h6>
                 </div>
             </div>
-        </div>
+        </div> --}}
+
+
+
+
 
         <!-- Çağrı-İçin-Eylem -->
         {{-- <div class="row py-5">

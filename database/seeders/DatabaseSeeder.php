@@ -32,6 +32,7 @@ class DatabaseSeeder extends Seeder
             SUBO::class,
             BI::class,
             LMS::class,
+            B2B::class,
         ]);
 
         $this->command->info('🎉 Tüm ERP modül seederlari başarıyla çalıştırıldı!');

@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Homecontroller;
 use App\Http\Controllers\ModuleController;
 use App\Http\Controllers\SectorController;
+use App\Http\Controllers\ProjectController;
 
 
 
@@ -44,4 +45,10 @@ Route::prefix('sektorel-uygulamalar')->group(function () {
 Route::prefix("danismanlik-cozumleri")->group(function () {
     Route::get('/', [AdvisorController::class, 'index'])->name('advisors.index');
     Route::get('/{slug}', [AdvisorController::class, 'show'])->name('advisors.show');
+});
+
+
+Route::prefix("projelerimiz")->group(function () {
+    Route::get('/', [ProjectController::class, 'index'])->name('projects.index');
+    Route::get('/{slug}', [ProjectController::class, 'show'])->name('projects.show');
 });
