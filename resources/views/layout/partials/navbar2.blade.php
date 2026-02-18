@@ -1,6 +1,3 @@
-
-
-
 <header id="header"
     data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyStartAt': 45, 'stickySetTop': '-45px', 'stickyChangeLogo': true}">
     <div class="header-body">
@@ -9,7 +6,7 @@
                 <div class="header-column">
                     <div class="header-row">
                         <div class="header-logo">
-                            <a href="index.html">
+                            <a href="{{ route('home.index') }}">
                                 <img src="{{ asset('porto/simages/Normal.png') }}" width="250px" alt="senkroon logo"
                                     class="img-fluid" />
                             </a>
@@ -26,20 +23,24 @@
 
 
                                 <li class="nav-item nav-item-anim-icon d-none d-md-block">
-                                    <a class="nav-link ps-0" href="{{ route('home.index') }}"><i
+                                    <a class="nav-link ps-0 text-3 text-secondary" href="{{ route('home.about') }}"><i
                                             class="fas fa-angle-right"></i>
                                         Güven, Bilgi ve Teknolojinin Senkroon'u</a>
                                 </li>
 
 
-                                 <li
-                                    class=" d-none d-md-block nav-item nav-item-left-border nav-item-left-border-remove nav-item-left-border-md-show">
-                                    <a href="mailto:info@senkroon.com" class="ws-nowrap text-decoration-none"><i class="fas fa-envelope"></i> info@senkroon.com</a>
+                                <li
+                                    class="  d-none d-md-block nav-item nav-item-left-border nav-item-left-border-remove nav-item-left-border-md-show">
+                                    <a href="mailto:info@senkroon.com"
+                                        class=" text-secondary ws-nowrap text-decoration-none"><i
+                                            class="fas fa-envelope"></i> info@senkroon.com</a>
                                 </li>
 
                                 <li
-                                    class=" d-none d-md-block nav-item nav-item-left-border nav-item-left-border-remove nav-item-left-border-md-show">
-                                    <a href="tel:+905306690444" class="ws-nowrap text-decoration-none"><i class="fas fa-phone"></i> 0530 669 04 44 </a>
+                                    class="  d-none d-md-block nav-item nav-item-left-border nav-item-left-border-remove nav-item-left-border-md-show">
+                                    <a href="tel:+905306690444"
+                                        class=" text-secondary ws-nowrap text-decoration-none"><i
+                                            class="fas fa-phone"></i> 0530 669 04 44 </a>
                                 </li>
 
                                 <ul class="header-social-icons social-icons d-none d-sm-block">
