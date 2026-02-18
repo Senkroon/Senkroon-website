@@ -59,18 +59,19 @@
                         </div>
                         <h3 class="font-weight-bold text-center ">Misyonumuz</h3>
                         <p class=" ">
-                            İşletmelerin ERP yatırımlarını doğru konumlandırmasını, iş süreçlerini sadeleştirmesini ve
-                            finansal yapılarını şeffaf, ölçülebilir ve yönetilebilir hale getirmesini sağlamak.
+                            Senkroon olarak misyonumuz; işletmelerin ERP yatırımlarını doğru konumlandırmasını, iş
+                            süreçlerini sadeleştirmesini ve finansal yapılarını şeffaf, ölçülebilir ve yönetilebilir hâle
+                            getirmesini sağlamaktır.
                         </p>
                         <p>
-                            Bunu; ERP danışmanlığı, süreç ve organizasyon tasarımı, muhasebe & finansal modelleme ve
-                            Workcube ERP odaklı yazılım çözümlerini – gerektiğinde Mikro ve Watom gibi tamamlayıcı
-                            yazılımlarla birlikte – bütüncül bir mimari altında birleştirerek yapıyoruz.
+
+                            Bunu; ERP danışmanlığı, süreç ve organizasyon tasarımı ile muhasebe ve finansal modellemeyi,
+                            kurumsal yazılım çözümleriyle bütüncül bir mimari altında birleştirerek gerçekleştiririz.
                         </p>
                         <p class="">
-                            Amacımız, sadece yazılım kurmak değil; kurum kültürüyle uyumlu, sürdürülebilir ve içeride
-                            bağımsız şekilde yönetilebilen bir iş modeli teslim etmek ve böylece müşterilerimizin hem
-                            bugünkü ihtiyaçlarını hem de gelecekteki büyüme hedeflerini desteklemektir.
+                            Amacımız, yalnızca yazılım kurmak değil; kurum kültürüyle uyumlu, sürdürülebilir ve kurum içinde
+                            bağımsız şekilde yönetilebilen bir iş modeli teslim ederek hem mevcut ihtiyaçları hem de
+                            gelecekteki büyüme hedeflerini desteklemektir.
                         </p>
                     </div>
                 </div>
@@ -84,14 +85,15 @@
                         </div>
                         <h3 class="font-weight-bold text-center mb-4">Vizyonumuz</h3>
                         <p class="text-3 ">
-                            Türkiye’de ve bölgemizde; ERP danışmanlığı, iş süreçleri ve finansal yapılandırma denince ilk
-                            akla gelen, özellikle Workcube ERP tabanlı projelerde referans gösterilen çözüm ortağı olmak.
+                            Senkroon olarak vizyonumuz; Türkiye’de ve bölgemizde ERP danışmanlığı, iş süreçleri ve finansal
+                            yapılandırma denince ilk akla gelen; ERP ve kurumsal yazılım çözümleri projelerinde referans
+                            gösterilen çözüm ortağı olmaktır.
                         </p>
 
                         <p>
-                            Şirketleri kişiye bağlı işleyişten çıkarıp; veriye, sürece ve kurumsal yönetişime dayalı
-                            yapılara dönüştüren, karar anlarında güven veren ve veriye dayalı, ikna edici önerileriyle
-                            ayrışan bir marka olmayı hedefliyoruz.
+                            Şirketleri kişiye bağlı işleyişten çıkarıp veriye, sürece ve kurumsal yönetişime dayalı yapılara
+                            dönüştüren; karar anlarında güven veren ve veri temelli, ikna edici önerileriyle ayrışan bir
+                            marka olmayı hedefliyoruz.
                         </p>
                     </div>
                 </div>
@@ -187,15 +189,6 @@
                 </div>
             </div> --}}
         </div>
-
-
-
-
-
-
-
-
-
 
 
         <!-- Workcube Çözümleri -->

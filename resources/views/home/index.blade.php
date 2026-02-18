@@ -38,12 +38,12 @@
                                                 <a href="{{ $slider->button_link }}" data-hash data-hash-offset="0"
                                                     data-hash-offset-lg="0"
                                                     class="
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            btn btn-light btn-effect-2 transition-3ms border-0 btn-rounded
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            text-2 text-sm-3 text-lg-3
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            py-2 py-sm-3 py-lg-4
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            px-4 px-sm-5 px-lg-5
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            btn-with-arrow-solid mt-1
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        btn btn-light btn-effect-2 transition-3ms border-0 btn-rounded
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        text-2 text-sm-3 text-lg-3
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        py-2 py-sm-3 py-lg-4
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        px-4 px-sm-5 px-lg-5
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        btn-with-arrow-solid mt-1
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ">
                                                     <strong class="d-inline-flex text-dark font-weight-medium me-3 px-2 px-lg-3">
                                                         {{ $slider->button_text }}
                                                     </strong>
@@ -94,7 +94,8 @@
     <div class="home-intro bg-secondary" id="home-intro">
 
         <div class="row align-items-center">
-            <h2 class="word-rotator slide font-weight-bold text-white text-3 text-sm-4 text-lg-5 line-height-2 mb-2 text-center ">
+            <h2
+                class="word-rotator slide font-weight-bold text-white text-3 text-sm-4 text-lg-5 line-height-2 mb-2 text-center ">
                 <span>Senkroon; süreçlerinizi girişimci bir bakış açısıyla yeniden tasarlayarak, bugünkü operasyonel
                     yükünüzü hafifletip yarın için </span>
                 <span class="word-rotator-words bg-primary d-inline-block mx-1">
@@ -130,25 +131,27 @@
                     <div class="appear-animation" data-appear-animation="fadeInLeftShorter"
                         data-appear-animation-delay="300">
                         <p class="text-3 mb-4">
-                            Senkroon; ERP danışmanlığı, iş süreçleri ve organizasyon tasarımı, muhasebe & finansal
-                            yapılandırma
-                            ve Workcube ERP başta olmak üzere kurumsal yazılım çözümlerine odaklanan, işletmelerin uçtan uca
-                            dönüşümünü hedefleyen bir iş ortağıdır.
+                            Senkroon ; ERP danışmanlığı, iş süreçleri ve organizasyon tasarımı ile muhasebe ve finansal
+                            yapılandırma alanlarında uzmanlaşmış, işletmelerin uçtan uca dijital dönüşümünü hedefleyen bir
+                            iş ortağıdır.
+
                         </p>
                         <p class=" text-3 mb-4">
-                            ERP projeleri, süreç ve organizasyon danışmanlığı, muhasebe–finans modellemesi ile Workcube
-                            ERP’nin
-                            konumlandırılması ve devreye alınması; ayrıca ihtiyaç duyulan ölçek ve yapılarda Mikro ve Watom
-                            yazılımlarının doğru kurgulanması alanlarında entegre hizmet sunuyoruz.
+                            ERP projelerinde; Süreç envanteri çıkarımı, rol ve yetki mimarisi, ana veri yönetişimi ve
+                            modüler kurgu (Finans-Muhasebe, Satınalma, Satış, Stok, Üretim, MRP, Proje, CRM) üzerine kurulu
+                            bir işletim modeli tasarlarız. Entegrasyon mimarisi (banka, e-belge, dış sistemler), veri
+                            migrasyonu, iç kontrol ve denetim mekanizmaları, KPI setleri ve yönetim raporlaması ile finansal
+                            doğruluk, operasyonel izlenebilirlik ve gerçek zamanlı karar destek altyapısını tek bir entegre
+                            platformda tesis ederiz.
                         </p>
                         <p class=" text-3 mb-4">
-                            Sahadaki yönetim ve operasyon tecrübemizi analitik bakış açısı ve teknoloji odaklı
-                            yaklaşımımızla
-                            birleştirerek; hazır kalıplar yerine kurum kültürünüze ve çalışma biçiminize uygun, size özel iş
-                            modelleri tasarlıyoruz. Amacımız; veriye dayalı karar almanızı sağlayan, güvenilir, ölçülebilir
-                            ve
-                            sürdürülebilir bir yönetim altyapısı kurmak; ERP’yi tek başına bir yazılım değil, işinizin
-                            omurgasını güçlendiren stratejik bir araç hâline getirmek.
+                            ERP’nin konumlandırılması ve devreye alınmasının yanı sıra, ihtiyaç duyulan ölçek ve yapılarda
+                            kurumsal yazılım çözümlerinin doğru mimariyle kurgulanmasını sağlayan entegre hizmet sunarız.
+
+                            Saha yönetimi ve operasyon deneyimimizi analitik ve teknoloji odaklı bir yaklaşımla birleştirir;
+                            hazır kalıplar yerine kurum kültürünüze ve çalışma biçiminize uyumlu, size özgü iş modelleri
+                            geliştiririz. Hedefimiz; veriye dayalı, güvenilir ve ölçülebilir bir yönetim altyapısı kurarak
+                            ERP’yi bir yazılım olmaktan çıkarıp işinizin omurgası hâline getirmektir.
                         </p>
                     </div>
                 </div>
@@ -347,14 +350,13 @@
         <div class="row mb-5">
             <div class="col text-center">
 
-                <h2 class="font-weight-bold">Workcube + Senkroon Yaklaşımı</h2>
-                <p class="d-block text-color-dark text-4 pb-2 mb-2 opacity-7">Workcube güçlü bir platform, Senkroon ise onu
-                    sizin iş modelinize çeviren mimardır.
-                    Hazır şablon dayatmıyor; süreç, organizasyon ve finans yapınızı birlikte analiz ederek Workcube üzerinde
-                    kurumunuza özel ekranlar, akışlar ve raporlar tasarlıyoruz. Proje sonunda “Workcube kullanıyoruz” değil,
-                    “işimizi Workcube üzerinde yönetiyoruz” diyebilmenizi hedefliyoruz.</p>
-
-
+                <h2 class="font-weight-bold">Senkroon’un ERP Yaklaşımı</h2>
+                <p class="d-block text-color-dark text-4 pb-2 mb-2 opacity-7">Senkroon Yazılım Danışmanlık Dijital Dönüşüm
+                    Ltd. Şti., ERP’yi hazır kalıplarla değil, iş modelinizin mimarisiyle kurar. Süreçlerinizi, organizasyon
+                    yapınızı ve finansal işleyişinizi uçtan uca analiz eder; kurumunuza özel ekranlar, iş akışları ve
+                    yönetim raporları tasarlar. Amaç, bir yazılım kullanmanız değil; operasyonlarınızı tek bir entegre
+                    platformda ölçülebilir, denetlenebilir ve ölçeklenebilir şekilde yönetmenizdir. Proje sonunda “ERP
+                    kullanıyoruz” değil, “işimizi veriyle yönetiyoruz” seviyesine geçersiniz.</p>
             </div>
         </div>
 
@@ -409,9 +411,9 @@
                         <div class="process-step-content">
                             <h4 class="mb-3 text-5 font-weight-bold text-primary">Tasarım</h4>
                             <p class="mb-0">İş süreçleri, organizasyon, ekran ve rapor tasarımlarını; kurum kültürünüz, ekip
-                                yapınız ve hedeflerinizle uyumlu şekilde modelliyoruz. Workcube ERP ve diğer çözümler
-                                üzerinde; iş akışları, kod yapısı, yetkiler ve rapor setlerini “kitaptaki ideal”e değil,
-                                sizin gerçek işleyişinize göre kurguluyoruz.
+                                yapınız ve hedeflerinizle uyumlu şekilde modelliyoruz. ERP ve diğer çözümler üzerinde; iş
+                                akışları, kod yapısı, yetkiler ve rapor setlerini “kitaptaki ideal”e değil, sizin gerçek
+                                işleyişinize göre kurguluyoruz.
                             </p>
                         </div>
                     </div>
