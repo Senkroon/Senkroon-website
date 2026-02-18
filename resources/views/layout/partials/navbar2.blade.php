@@ -1,12 +1,15 @@
-<header id="header" class="header-effect-shrink" style="margin-top: 0 !important; padding-top: 0 !important;"
-    data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 70}">
-    <div class="header-body header-body-bottom-border border-top-0">
-        <div class="header-container mx-1 mx-lg-5 ">
+
+
+
+<header id="header"
+    data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyStartAt': 45, 'stickySetTop': '-45px', 'stickyChangeLogo': true}">
+    <div class="header-body">
+        <div class="header-container mx-1 mx-lg-5">
             <div class="header-row">
                 <div class="header-column">
                     <div class="header-row">
-                        <div class="">
-                            <a href="{{ url('/') }}">
+                        <div class="header-logo">
+                            <a href="index.html">
                                 <img src="{{ asset('porto/simages/Normal.png') }}" width="250px" alt="senkroon logo"
                                     class="img-fluid" />
                             </a>
@@ -14,12 +17,51 @@
                     </div>
                 </div>
                 <div class="header-column justify-content-end">
+                    <div class="header-row pt-3">
+                        <nav class="header-nav-top">
+                            <ul class="nav nav-pills">
+
+
+
+
+
+                                <li class="nav-item nav-item-anim-icon d-none d-md-block">
+                                    <a class="nav-link ps-0" href="{{ route('home.index') }}"><i
+                                            class="fas fa-angle-right"></i>
+                                        Güven, Bilgi ve Teknolojinin Senkroon'u</a>
+                                </li>
+
+
+                                 <li
+                                    class=" d-none d-md-block nav-item nav-item-left-border nav-item-left-border-remove nav-item-left-border-md-show">
+                                    <a href="mailto:info@senkroon.com" class="ws-nowrap text-decoration-none"><i class="fas fa-envelope"></i> info@senkroon.com</a>
+                                </li>
+
+                                <li
+                                    class=" d-none d-md-block nav-item nav-item-left-border nav-item-left-border-remove nav-item-left-border-md-show">
+                                    <a href="tel:+905306690444" class="ws-nowrap text-decoration-none"><i class="fas fa-phone"></i> 0530 669 04 44 </a>
+                                </li>
+
+                                <ul class="header-social-icons social-icons d-none d-sm-block">
+                                    <li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank"
+                                            title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li class="social-icons-x"><a href="http://www.x.com/" target="_blank" title="X"><i
+                                                class="fab fa-x-twitter"></i></a></li>
+                                    <li class="social-icons-linkedin"><a href="http://www.linkedin.com/" target="_blank"
+                                            title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+                                </ul>
+
+                            </ul>
+                        </nav>
+
+                    </div>
                     <div class="header-row">
-                        <div class="header-nav header-nav-links">
-                            <div
-                                class="header-nav-main header-nav-main-text-capitalize header-nav-main-effect-2 header-nav-main-sub-effect-1">
+                        <div class="header-nav pt-1">
+                            <div class="header-nav-main header-nav-main-effect-1 header-nav-main-sub-effect-1">
                                 <nav class="collapse">
                                     <ul class="nav nav-pills" id="mainNav">
+
+
                                         <li>
                                             <a class="nav-link" href="{{ route('home.index') }}">
                                                 Anasayfa
@@ -216,13 +258,11 @@
                                             </ul>
                                         </li>
 
-                                       <li>
+                                        <li>
                                             <a class="nav-link" href="{{ route('projects.index') }}">
                                                 Projelerimiz
                                             </a>
                                         </li>
-
-
 
                                         <!-- Ürünler & Çözümler - Basit Dropdown (Mobil) -->
                                         <li class="dropdown d-lg-none">
@@ -437,50 +477,15 @@
                                         </li>
 
 
-
-
-
-
                                     </ul>
-                                    <div class="d-flex   justify-content-center align-items-center mt-3 mt-lg-0 ">
-                                        <a class="  d-lg-block d-none  btn btn-primary"
-                                            href="{{ route('contact-us') }}">
-                                            Demo Talep Et
-                                        </a>
-                                    </div>
-
-
                                 </nav>
-
-
                             </div>
+
+                            <button class="btn header-btn-collapse-nav" data-bs-toggle="collapse"
+                                data-bs-target=".header-nav-main nav">
+                                <i class="fas fa-bars"></i>
+                            </button>
                         </div>
-                        {{-- <div class="header-nav-features header-nav-features-no-border">
-                            <div class="header-nav-feature header-nav-features-search d-inline-flex">
-                                <a href="#" class="header-nav-features-toggle text-decoration-none"
-                                    data-focus="headerSearch" aria-label="Search">
-                                    <i
-                                        class="icons icon-magnifier header-nav-top-icon font-weight-bold text-4 top-2 text-color-hover-primary"></i>
-                                </a>
-                                <div class="header-nav-features-dropdown header-nav-features-dropdown-mobile-fixed"
-                                    id="headerTopSearchDropdown">
-                                    <form role="search" action="page-search-results.html" method="get">
-                                        <div class="simple-search input-group">
-                                            <input class="form-control text-1" id="headerSearch" name="q" type="search"
-                                                value="" placeholder="Search...">
-                                            <button class="btn" type="submit" aria-label="Search">
-                                                <i
-                                                    class="icons icon-magnifier header-nav-top-icon font-weight-bold text-color-dark text-4 text-color-hover-primary top-2"></i>
-                                            </button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div> --}}
-                        <button class="btn header-btn-collapse-nav" data-bs-toggle="collapse"
-                            data-bs-target=".header-nav-main nav">
-                            <i class="fas fa-bars"></i>
-                        </button>
                     </div>
                 </div>
             </div>
