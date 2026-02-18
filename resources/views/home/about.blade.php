@@ -100,8 +100,8 @@
             </div>
         </div>
 
-        <!-- Hizmetlerimiz -->
-        <div class="row py-5 bg-light rounded">
+
+        {{-- <div class="row py-5 bg-light rounded">
             <div class="col-12">
                 <div class="text-center mb-5">
                     <h2 class="text-color-primary font-weight-bold text-6 mb-3">Hizmetlerimiz</h2>
@@ -175,24 +175,12 @@
                     </div>
                 </div>
             </div>
-            {{--
-            <div class="col-lg-6 mb-4">
-                <div class="feature-box feature-box-style-2 appear-animation" data-appear-animation="fadeInUpShorter"
-                    data-appear-animation-delay="1100">
-                    <div class="feature-box-icon">
-                        <i class="icons icon-briefcase text-color-primary text-6"></i>
-                    </div>
-                    <div class="feature-box-info">
-                        <h4 class="font-weight-bold text-4 mb-2">ERP - MRP Proje Danışmanlığı</h4>
-                        <p></p>
-                    </div>
-                </div>
-            </div> --}}
-        </div>
+
+        </div> --}}
 
 
         <!-- Workcube Çözümleri -->
-        <div class="row py-5">
+        {{-- <div class="row py-5">
             <div class="col-12">
                 <div class="text-center mb-5">
                     <h2 class="text-color-primary font-weight-bold text-6 mb-3">ERP Çözüm Alanlarımız</h2>
@@ -271,7 +259,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
 
 
 
@@ -406,7 +394,7 @@
 
 
         <!-- Çağrı-İçin-Eylem -->
-        {{-- <div class="row py-5">
+         <div class="row py-5">
             <div class="col-12">
                 <div class="bg-color-primary rounded text-center py-5 px-4">
                     <h3 class="text-white font-weight-bold mb-3">Dijital Dönüşüme Hazır Mısınız?</h3>
@@ -416,21 +404,16 @@
                     </p>
                     <div class="row justify-content-center">
                         <div class="col-auto">
-                            <a href="#contact"
+                            <a href="{{ route('contact-us') }}"
                                 class="btn btn-light btn-rounded font-weight-semibold text-3 btn-px-5 btn-py-3 me-3">
                                 İletişime Geçin
                             </a>
                         </div>
-                        <div class="col-auto">
-                            <a href="#demo"
-                                class="btn btn-outline btn-light btn-rounded font-weight-semibold text-3 btn-px-5 btn-py-3">
-                                Demo İsteyin
-                            </a>
-                        </div>
+
                     </div>
                 </div>
             </div>
-        </div> --}}
+        </div>
 
     </div>
 @endsection
