@@ -148,7 +148,7 @@ class Homecontroller extends Controller
             message::create($data);
 
             try {
-                Mail::to("celalettin.elbir@senkroon.com")->send(new ContactMail($validated));
+                Mail::to("info@senkroon.com")->send(new ContactMail($validated));
                 $message = 'Mesajınız başarıyla gönderildi!';
             } catch (\Exception $e) {
                 $message = 'Mesajınız veritabanına kaydedildi ancak e-posta gönderilemedi.';
