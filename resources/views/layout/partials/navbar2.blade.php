@@ -44,12 +44,15 @@
                                 </li>
 
                                 <ul class="header-social-icons social-icons d-none d-sm-block">
-                                    <li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank"
-                                            title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li class="social-icons-x"><a href="http://www.x.com/" target="_blank" title="X"><i
-                                                class="fab fa-x-twitter"></i></a></li>
-                                    <li class="social-icons-linkedin"><a href="http://www.linkedin.com/" target="_blank"
-                                            title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li class="social-icons-instagram"><a
+                                            href="https://www.instagram.com/senkroon_?igsh=MWtvc2U0ZGJwZ3M4aA%3D%3D&utm_source=qr"
+                                            target="_blank" title="Facebook"><i class="fab fa-instagram"></i></a></li>
+                                    <li class="social-icons-youtube"><a
+                                            href="https://youtube.com/@senkroon_danismanlik?si=XX8n0lWNscFMN9cP"
+                                            target="_blank" title="Twitter"><i class="fab fa-youtube"></i></a></li>
+                                    <li class="social-icons-linkedin"><a
+                                            href="https://www.linkedin.com/company/green-world-enerji%CC%87-teksti%CC%87l-i%CC%87n%C5%9Faat-taah-di%C5%9F-ti%CC%87caret-ltd-%C5%9Fti%CC%87/"
+                                            target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
                                 </ul>
 
                             </ul>
