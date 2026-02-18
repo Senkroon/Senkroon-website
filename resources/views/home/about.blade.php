@@ -23,11 +23,11 @@
                     <h2 class="text-color-primary font-weight-bold text-6 mb-2">Hakkımızda</h2>
                     <p class="text-3 mb-4">
                         Senkroon; ERP danışmanlığı, iş süreçleri ve organizasyon tasarımı, muhasebe & finansal yapılandırma
-                        ve Workcube ERP başta olmak üzere kurumsal yazılım çözümlerine odaklanan, işletmelerin uçtan uca
+                        ve  ERP başta olmak üzere kurumsal yazılım çözümlerine odaklanan, işletmelerin uçtan uca
                         dönüşümünü hedefleyen bir iş ortağıdır.
                     </p>
                     <p class=" text-3 mb-4">
-                        ERP projeleri, süreç ve organizasyon danışmanlığı, muhasebe–finans modellemesi ile Workcube ERP’nin
+                        ERP projeleri, süreç ve organizasyon danışmanlığı, muhasebe–finans modellemesi ile  ERP’nin
                         konumlandırılması ve devreye alınması; ayrıca ihtiyaç duyulan ölçek ve yapılarda Mikro ve Watom
                         yazılımlarının doğru kurgulanması alanlarında entegre hizmet sunuyoruz.
                     </p>
@@ -106,7 +106,7 @@
                 <div class="text-center mb-5">
                     <h2 class="text-color-primary font-weight-bold text-6 mb-3">Hizmetlerimiz</h2>
                     <p class="text-4">Türkiye’de ve bölgemizde; ERP danışmanlığı, iş süreçleri ve finansal yapılandırma
-                        denince ilk akla gelen, özellikle Workcube ERP tabanlı projelerde referans gösterilen çözüm ortağı
+                        denince ilk akla gelen, özellikle  ERP tabanlı projelerde referans gösterilen çözüm ortağı
                         olmak.</p>
 
 
@@ -206,7 +206,7 @@
                         <div class="mb-3">
                             <i class="fas fa-cogs text-color-primary text-6"></i>
                         </div>
-                        <h5 class="font-weight-bold mb-3">Workcube ERP</h5>
+                        <h5 class="font-weight-bold mb-3">ERP</h5>
                         <p class="text-3">Entegre işletme kaynak planlaması sistemi</p>
                     </div>
                 </div>
@@ -218,7 +218,7 @@
                         <div class="mb-3">
                             <i class="fas fa-users text-color-primary text-6"></i>
                         </div>
-                        <h5 class="font-weight-bold mb-3">Workcube CRM</h5>
+                        <h5 class="font-weight-bold mb-3">CRM</h5>
                         <p class="text-3">Müşteri ilişkileri yönetim sistemi</p>
                     </div>
                 </div>
@@ -230,7 +230,7 @@
                         <div class="mb-3">
                             <i class="fas fa-user-tie text-color-primary text-6"></i>
                         </div>
-                        <h5 class="font-weight-bold mb-3">Workcube HR</h5>
+                        <h5 class="font-weight-bold mb-3">HR</h5>
                         <p class="text-3">İnsan kaynakları yönetim sistemi</p>
                     </div>
                 </div>
@@ -242,7 +242,7 @@
                         <div class="mb-3">
                             <i class="fas fa-shield-alt text-color-primary text-6"></i>
                         </div>
-                        <h5 class="font-weight-bold mb-3">Workcube PAM</h5>
+                        <h5 class="font-weight-bold mb-3">PAM</h5>
                         <p class="text-3">Fiziki varlık yönetim sistemi</p>
                     </div>
                 </div>
@@ -254,7 +254,7 @@
                         <div class="mb-3">
                             <i class="fas fa-project-diagram text-color-primary text-6"></i>
                         </div>
-                        <h5 class="font-weight-bold mb-3">Workcube PMS</h5>
+                        <h5 class="font-weight-bold mb-3">PMS</h5>
                         <p class="text-3">Proje yönetim sistemi</p>
                     </div>
                 </div>
@@ -266,7 +266,7 @@
                         <div class="mb-3">
                             <i class="fas fa-graduation-cap text-color-primary text-6"></i>
                         </div>
-                        <h5 class="font-weight-bold mb-3">Workcube LMS</h5>
+                        <h5 class="font-weight-bold mb-3">LMS</h5>
                         <p class="text-3">Öğrenme yönetim sistemi</p>
                     </div>
                 </div>

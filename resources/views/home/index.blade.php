@@ -202,8 +202,8 @@
                         <div class="mb-3">
                             <i class="fas fa-cogs text-primary text-6"></i>
                         </div>
-                        <h4 class="card-title mb-3 text-5 font-weight-bold">Workcube ERP Satış & Lisanslama</h4>
-                        <p class="card-text">Workcube ERP'nin tüm modüllerini uygun fiyatlarla temin edin.
+                        <h4 class="card-title mb-3 text-5 font-weight-bold"> ERP Satış & Lisanslama</h4>
+                        <p class="card-text">ERP'nin tüm modüllerini uygun fiyatlarla temin edin.
                             Lisanslama, kurulum ve ilk konfigürasyon hizmetlerimizle işe başlayın.</p>
                     </div>
                 </div>
@@ -218,7 +218,7 @@
                             <i class="fas fa-project-diagram text-primary text-6"></i>
                         </div>
                         <h4 class="card-title mb-3 text-5 font-weight-bold">Kurulum & Konfigürasyon</h4>
-                        <p class="card-text">Uzman ekibimiz Workcube ERP'yi işletmenizin ihtiyaçlarına göre
+                        <p class="card-text">Uzman ekibimiz ERP'yi işletmenizin ihtiyaçlarına göre
                             kurar ve konfigüre eder. Hızlı ve sorunsuz başlangıç garantisi.</p>
                     </div>
                 </div>
@@ -233,7 +233,7 @@
                             <i class="fas fa-chart-line text-primary text-6"></i>
                         </div>
                         <h4 class="card-title mb-3 text-5 font-weight-bold">Eğitim & Sertifikasyon</h4>
-                        <p class="card-text">Kullanıcılarınız için kapsamlı Workcube ERP eğitimleri ve
+                        <p class="card-text">Kullanıcılarınız için kapsamlı ERP eğitimleri ve
                             sertifikasyon programları. Sistem kullanımında uzmanlaşma sağlayın.</p>
                     </div>
                 </div>
@@ -248,7 +248,7 @@
                             <i class="fas fa-users text-primary text-6"></i>
                         </div>
                         <h4 class="card-title mb-3 text-5 font-weight-bold">7/24 Teknik Destek</h4>
-                        <p class="card-text">Workcube ERP kullanımında karşılaştığınız tüm sorunlar için
+                        <p class="card-text">ERP kullanımında karşılaştığınız tüm sorunlar için
                             kesintisiz teknik destek hizmeti. Uzman ekibimiz her zaman yanınızda.</p>
                     </div>
                 </div>
@@ -263,7 +263,7 @@
                             <i class="fas fa-chart-bar text-primary text-6"></i>
                         </div>
                         <h4 class="card-title mb-3 text-5 font-weight-bold">Özel Modül Geliştirme</h4>
-                        <p class="card-text">Sektörünüze ve işletmenize özel Workcube modülleri geliştiriyoruz.
+                        <p class="card-text">Sektörünüze ve işletmenize özel ERP modülleri geliştiriyoruz.
                             Standart çözümlerin yetmediği durumlarda tam uyumlu eklentiler.</p>
                     </div>
                 </div>
@@ -278,7 +278,7 @@
                             <i class="fas fa-digital-tachograph text-primary text-6"></i>
                         </div>
                         <h4 class="card-title mb-3 text-5 font-weight-bold">Veri Migrasyon Hizmeti</h4>
-                        <p class="card-text">Mevcut sisteminizdeki verileri Workcube ERP'ye güvenle taşıyoruz.
+                        <p class="card-text">Mevcut sisteminizdeki verileri ERP'ye güvenle taşıyoruz.
                             Veri kaybı olmadan güvenli geçiş sağlıyoruz.</p>
                     </div>
                 </div>
