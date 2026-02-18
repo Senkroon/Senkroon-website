@@ -44,7 +44,7 @@
                             <h3 class="font-weight-bold text-primary mb-3">
                                 <i class="fas fa-info-circle"></i> Proje Özeti
                             </h3>
-                            <p class="lead text-muted">{{ $project->short_description }}</p>
+                            <p class="lead text-muted text-4">{{ $project->short_description }}</p>
                         </div>
                     </div>
                 @endif

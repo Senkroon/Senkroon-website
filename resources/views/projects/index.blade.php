@@ -132,7 +132,7 @@
                             @endif
 
                             <div class="mt-auto">
-                                @if($project->technologies_used && is_array($project->technologies_used) && count($project->technologies_used) > 0)
+                                {{-- @if($project->technologies_used && is_array($project->technologies_used) && count($project->technologies_used) > 0)
                                     <div class="mb-3">
                                         @foreach(array_slice($project->technologies_used, 0, 3) as $tech)
                                             <span class="badge bg-secondary me-1 mb-1 small">{{ $tech }}</span>
@@ -141,7 +141,7 @@
                                             <span class="badge bg-secondary small">+{{ count($project->technologies_used) - 3 }}</span>
                                         @endif
                                     </div>
-                                @endif
+                                @endif --}}
 
                                 <a href="{{ route('projects.show', $project->slug) }}"
                                    class="btn btn-primary btn-sm w-100">
