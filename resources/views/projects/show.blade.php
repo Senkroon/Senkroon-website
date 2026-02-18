@@ -266,7 +266,7 @@
                 </div>
 
                 <!-- Teknolojiler -->
-                @if($project->technologies_used && is_array($project->technologies_used) && count($project->technologies_used) > 0)
+                {{-- @if($project->technologies_used && is_array($project->technologies_used) && count($project->technologies_used) > 0)
                     <div class="card mb-4 border-0 shadow-sm">
                         <div class="card-header  text-white bg-secondary">
                             <h5 class="mb-0 font-weight-bold">
@@ -279,7 +279,7 @@
                             @endforeach
                         </div>
                     </div>
-                @endif
+                @endif --}}
 
                 <!-- İletişim CTA -->
                 <div class="card border-0 shadow-sm bg-light">
