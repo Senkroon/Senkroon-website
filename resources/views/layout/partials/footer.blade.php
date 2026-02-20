@@ -4,11 +4,13 @@
         <div class="row py-5 my-4">
             <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
                 <a href="{{ route('home.index') }}" class="">
-                    <img alt="Senkroon Logo" src="{{ asset('porto/simages/senkroon_koyu.png') }}" class="opacity-7 bottom-4 img-fluid mb-4"
-                        width="250px">
+                    <img alt="Senkroon Logo" src="{{ asset('porto/simages/senkroon_koyu.png') }}"
+                        class="opacity-7 bottom-4 img-fluid mb-4" width="250px">
                 </a>
                 <p class="mt-2 mb-2">GÜVEN, BİLGİ VE TEKNOLOJİNİN SENKROON’U</p>
-                {{-- <p class="mb-0"><a href="{{ route('home.about') }}" class="btn-flat btn-xs text-color-light"><strong class="text-2">DAHA FAZLA</strong><i class="fas fa-angle-right p-relative top-1 ps-2"></i></a></p> --}}
+                {{-- <p class="mb-0"><a href="{{ route('home.about') }}"
+                        class="btn-flat btn-xs text-color-light"><strong class="text-2">DAHA FAZLA</strong><i
+                            class="fas fa-angle-right p-relative top-1 ps-2"></i></a></p> --}}
             </div>
             <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
                 <h5 class="text-3 mb-3">İLETİŞİM</h5>
@@ -30,7 +32,8 @@
                 <ul class="list list-icons list-icons-sm">
                     <li><i class="fas fa-angle-right"></i><a href="{{ route('home.index') }}"
                             class="link-hover-style-1 ms-1"> Anasayfa</a></li>
-                    {{-- <li><i class="fas fa-angle-right"></i><a href="{{ route('home.about') }}" class="link-hover-style-1 ms-1"> Hakkımızda</a></li> --}}
+                    {{-- <li><i class="fas fa-angle-right"></i><a href="{{ route('home.about') }}"
+                            class="link-hover-style-1 ms-1"> Hakkımızda</a></li> --}}
                     <li><i class="fas fa-angle-right"></i><a href="{{ route('modules.index', 'workcube') }}"
                             class="link-hover-style-1 ms-1"> Workcube Modülleri</a></li>
                     <li><i class="fas fa-angle-right"></i><a href="{{ route('modules.index', 'mikro') }}"
@@ -45,15 +48,13 @@
             </div>
             <div class="col-md-6 col-lg-2">
                 <h5 class="text-3 mb-3">BİZİ TAKİP EDİN</h5>
-                <ul class="social-icons">
-                    <li class="social-icons-instagram"><a
-                            href="https://www.instagram.com/senkroon_?igsh=MWtvc2U0ZGJwZ3M4aA%3D%3D&utm_source=qr"
+                <ul class="header-social-icons social-icons d-none d-sm-block">
+                    <li class="social-icons-instagram"><a href="https://www.instagram.com/senkroon_yazilimdanismanlik/"
                             target="_blank" title="Facebook"><i class="fab fa-instagram"></i></a></li>
                     <li class="social-icons-youtube"><a
                             href="https://youtube.com/@senkroon_danismanlik?si=XX8n0lWNscFMN9cP" target="_blank"
                             title="Twitter"><i class="fab fa-youtube"></i></a></li>
-                    <li class="social-icons-linkedin"><a
-                            href="https://www.linkedin.com/company/green-world-enerji%CC%87-teksti%CC%87l-i%CC%87n%C5%9Faat-taah-di%C5%9F-ti%CC%87caret-ltd-%C5%9Fti%CC%87/"
+                    <li class="social-icons-linkedin"><a href="https://www.linkedin.com/company/aisenkroonyazilim"
                             target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
                 </ul>
             </div>
