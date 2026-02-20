@@ -71,8 +71,8 @@
                             <strong class="process-step-circle-content">4</strong>
                         </div>
                         <div class="process-step-content">
-                            <h4 class="mb-1 text-4 font-weight-bold">Workcube ERP’de derin uzmanlık</h4>
-                            <p class="mb-0">Workcube ERP’yi sadece kuran değil, modül, süreç, rol, yetki ve raporlama
+                            <h4 class="mb-1 text-4 font-weight-bold">ERP’de derin uzmanlık</h4>
+                            <p class="mb-0">ERP’yi sadece kuran değil, modül, süreç, rol, yetki ve raporlama
                                 yapısını birlikte tasarlayan bir ekibiz. Hedefimiz: ERP’yi günlük işleyişin doğal bir
                                 parçası haline getirmek.</p>
                         </div>
