@@ -48,7 +48,7 @@
                                             href="https://www.instagram.com/senkroon_yazilimdanismanlik/"
                                             target="_blank" title="Facebook"><i class="fab fa-instagram"></i></a></li>
                                     <li class="social-icons-youtube"><a
-                                            href="https://youtube.com/@senkroon_danismanlik?si=XX8n0lWNscFMN9cP"
+                                            href="https://www.youtube.com/channel/UCWpzXhLoaI0xWrOocNW9Taw"
                                             target="_blank" title="Twitter"><i class="fab fa-youtube"></i></a></li>
                                     <li class="social-icons-linkedin"><a
                                             href="https://www.linkedin.com/company/aisenkroonyazilim"
