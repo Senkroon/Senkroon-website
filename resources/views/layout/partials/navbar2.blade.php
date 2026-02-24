@@ -368,7 +368,7 @@
                                                         Çözümlerimiz</a></li>
                                             </ul>
                                         </li>
-                                        <li class="dropdown d-lg-none">
+                                        {{-- <li class="dropdown d-lg-none">
                                             <a class="nav-link dropdown-toggle"
                                                 href="{{ url('danismanlik-cozumleri') }}">
                                                 Hizmetlerimiz
@@ -393,7 +393,7 @@
                                                         href="{{ url('danismanlik-cozumleri') }}">Tümünü Gör</a>
                                                 </li>
                                             </ul>
-                                        </li>
+                                        </li> --}}
 
                                         <!-- Hizmetlerimiz - Mega Menu (Desktop) -->
                                         <li class="dropdown dropdown-mega d-none d-lg-block">
