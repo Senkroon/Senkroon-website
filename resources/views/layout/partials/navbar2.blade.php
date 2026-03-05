@@ -262,11 +262,11 @@
                                             </ul>
                                         </li>
 
-                                        <li>
+                                        {{-- <li>
                                             <a class="nav-link" href="{{ route('projects.index') }}">
                                                 Projelerimiz
                                             </a>
-                                        </li>
+                                        </li> --}}
 
                                         <!-- Ürünler & Çözümler - Basit Dropdown (Mobil) -->
                                         <li class="dropdown d-lg-none">

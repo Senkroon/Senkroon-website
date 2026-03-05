@@ -448,9 +448,9 @@
             </div>
         </div>
     </section>
-    <hr class="mb-5">
+      {{--<hr class="mb-5">
 
-    <section class="container mb-5">
+   <section class="container mb-5">
         <div class="row">
             <div class="col">
                 <h4>Referanslarımız</h4>
@@ -490,7 +490,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
 
 
