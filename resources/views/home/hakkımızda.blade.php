@@ -136,7 +136,7 @@
                     <div class="mb-3">
                         <i class="fas fa-cogs text-color-primary text-6"></i>
                     </div>
-                    <h5 class="font-weight-bold mb-3">Workcube ERP</h5>
+                    <h5 class="font-weight-bold mb-3"> ERP</h5>
                     <p class="text-3">Entegre işletme kaynak planlaması sistemi</p>
                 </div>
             </div>
