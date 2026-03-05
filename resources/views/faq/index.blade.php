@@ -26,7 +26,7 @@
                                 <section class="toggle active">
                                     <a class="toggle-title"> ERP kimler için gerekli?</a>
                                     <div class="toggle-content container">
-                                        <p>Üretim yapan, birden fazla departmanı olan, şube/depo yapısıyla çalışan ve büyüme hedefi bulunan işletmeler için Workcube ERP lüks değil, gerçek bir ihtiyaçtır.</p>
+                                        <p>Üretim yapan, birden fazla departmanı olan, şube/depo yapısıyla çalışan ve büyüme hedefi bulunan işletmeler için  ERP lüks değil, gerçek bir ihtiyaçtır.</p>
                                     </div>
                                 </section>
 
