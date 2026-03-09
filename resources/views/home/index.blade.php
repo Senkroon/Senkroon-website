@@ -540,9 +540,6 @@
 </style>
 
 <section class="stats stats-section js-stats-counter mega-section">
-    <div class="overlay-photo-image-bg" data-bg-img="/assets/images/sections-bg-images/pattern-bg-3.jpg"
-        data-bg-opacity=".2"
-        style="background-image: url('/assets/images/sections-bg-images/pattern-bg-3.jpg'); opacity: 0.2;"></div>
     <div class="container">
         <div class="stats-inner">
             <div class="row g-4">
