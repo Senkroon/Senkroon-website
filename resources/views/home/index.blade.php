@@ -550,7 +550,7 @@
                     <div class="stat-box-inner" data-tilt="data-tilt">
                         <i class="fas fa-diagram-project stat-icon" style="color: #ff8500;"></i>
                         <p class="stat-num">
-                            <span class="counter" data-from="1" data-to="750" data-speed="3000" data-refresh-interval="50">0</span><span class="sign">+</span>
+                            <span class="counter" data-from="1" data-to="100" data-speed="3000" data-refresh-interval="50">0</span><span class="sign">+</span>
                         </p>
                         <span class="stat-desc">Tamamlanan Proje</span>
                     </div>
@@ -560,7 +560,7 @@
                     <div class="stat-box-inner" data-tilt="data-tilt">
                         <i class="fas fa-business-time stat-icon" style="color: #ff8500;"></i>
                         <p class="stat-num">
-                            <span class="counter" data-from="100" data-to="23000" data-speed="3000" data-refresh-interval="50">0</span><span class="sign">+</span>
+                            <span class="counter" data-from="100" data-to="10000" data-speed="3000" data-refresh-interval="50">0</span><span class="sign">+</span>
                         </p>
                         <span class="stat-desc">Calisma / Saat</span>
                     </div>
@@ -580,7 +580,7 @@
                     <div class="stat-box-inner" data-tilt="data-tilt">
                         <i class="fas fa-bullseye stat-icon" style="color: #ff8500;"></i>
                         <p class="stat-num">
-                            <span class="counter" data-from="0" data-to="28" data-speed="3000" data-refresh-interval="50">0</span><span class="sign">+</span>
+                            <span class="counter" data-from="0" data-to="10" data-speed="3000" data-refresh-interval="50">0</span><span class="sign">+</span>
                         </p>
                         <span class="stat-desc">Yil Deneyim</span>
                     </div>
