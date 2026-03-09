@@ -172,7 +172,7 @@
 
                             <div class="owl-item " style="width: 456px; margin-right: 10px;">
                                 <div>
-                                    <img alt="" class="img-fluid"
+                                    <img alt="Senkroon Yazilim ERP danismanligi hakkimizda gorseli" class="img-fluid"
                                         src="{{ asset('porto/simages/workcube-about-us.png') }}">
                                 </div>
                             </div>
@@ -604,22 +604,22 @@
                             style="transform: translate3d(0px, 0px, 0px); transition: all; width: 2967px; padding-left: 40px; padding-right: 40px;">
                             <div class="owl-item active" style="width: 278.667px; margin-right: 10px;">
                                 <div>
-                                    <img alt="" class="img-fluid rounded" src="{{ asset('porto/simages/netline.png') }}">
+                                    <img alt="Netline firmasina sunulan ERP danismanlik referans gorseli" class="img-fluid rounded" src="{{ asset('porto/simages/netline.png') }}">
 </div>
 </div>
 <div class="owl-item active" style="width: 278.667px; margin-right: 10px;">
     <div>
-        <img alt="" class="img-fluid rounded" src="{{ asset('porto/simages/ygz.png') }}">
+        <img alt="YGZ firmasina sunulan ERP danismanlik referans gorseli" class="img-fluid rounded" src="{{ asset('porto/simages/ygz.png') }}">
     </div>
 </div>
 <div class="owl-item active" style="width: 278.667px; margin-right: 10px;">
     <div>
-        <img alt="" class="img-fluid rounded" src="{{ asset('porto/simages/ekomaxi.png') }}">
+        <img alt="Ekomaxi firmasina sunulan ERP cozumleri referans gorseli" class="img-fluid rounded" src="{{ asset('porto/simages/ekomaxi.png') }}">
     </div>
 </div>
 <div class="owl-item" style="width: 278.667px; margin-right: 10px;">
     <div>
-        <img alt="" class="img-fluid rounded" src="{{ asset('porto/simages/teknosis.png') }}">
+        <img alt="Teknosis firmasina sunulan ERP danismanlik referans gorseli" class="img-fluid rounded" src="{{ asset('porto/simages/teknosis.png') }}">
     </div>
 </div>
 </div>
@@ -651,7 +651,7 @@
                     <a href="#" class="text-decoration-none">
                         <span class="thumb-info thumb-info-no-borders custom-thumb-info-style-1 pb-2 mb-2 mb-md-4">
                             <span class="thumb-info-wrapper">
-                                <img src="img/demos/seo/blog/blog-1.jpg" class="img-fluid" alt="">
+                                <img src="img/demos/seo/blog/blog-1.jpg" class="img-fluid" alt="Workcube ERP neden tercih edilmeli blog kapak gorseli">
                                 <span class="custom-thumb-info-date text-color-light bg-primary">
                                     27
                                     <span>KAS</span>
@@ -673,7 +673,7 @@
                     <a href="#" class="text-decoration-none">
                         <span class="thumb-info thumb-info-no-borders custom-thumb-info-style-1 pb-2 mb-2 mb-md-4">
                             <span class="thumb-info-wrapper">
-                                <img src="img/demos/seo/blog/blog-2.jpg" class="img-fluid" alt="">
+                                <img src="img/demos/seo/blog/blog-2.jpg" class="img-fluid" alt="Workcube ERP modulleri ve ozellikleri blog kapak gorseli">
                                 <span class="custom-thumb-info-date text-color-light bg-primary">
                                     12
                                     <span>ARA</span>
@@ -696,7 +696,7 @@
                     <a href="#" class="text-decoration-none">
                         <span class="thumb-info thumb-info-no-borders custom-thumb-info-style-1 pb-2 mb-2 mb-md-4">
                             <span class="thumb-info-wrapper">
-                                <img src="img/demos/seo/blog/blog-3.jpg" class="img-fluid" alt="">
+                                <img src="img/demos/seo/blog/blog-3.jpg" class="img-fluid" alt="Workcube ERP basari hikayeleri blog kapak gorseli">
                                 <span class="custom-thumb-info-date text-color-light bg-primary">
                                     12
                                     <span>ARA</span>

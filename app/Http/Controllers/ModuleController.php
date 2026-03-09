@@ -12,31 +12,33 @@ class ModuleController extends Controller
     {
         // SEO için category'ye göre başlık ayarla
         if ($category === 'mikro') {
-            SEOTools::setTitle('Mikro Modüllerimiz - Senkron Yazılım | Hafif Çözümler');
-            SEOTools::setDescription('Senkron Yazılım tarafından geliştirilen hafif mikro yazılım modülleri. Hızlı ve etkili çözümlerimizi keşfedin.');
-            SEOTools::metatags()->setKeywords(['mikro modüller', 'micro modules', 'hafif yazılım', 'lightweight software', 'senkron yazılım', 'hızlı çözümler', 'quick solutions', 'mini yazılımlar', 'mini software', 'basit modüller', 'simple modules', 'yazılım bileşenleri', 'software components']);
-            SEOTools::jsonLd()->addValue('name', 'Mikro Modüller');
+            // "Hafif çözümler" yerine KOBİ'lerin doğrudan aradığı terimler eklendi
+            SEOTools::setTitle('Mikro Yazılım Çözümleri ve Modüller | Senkroon Yazılım');
+            SEOTools::setDescription('KOBİ\'ler ve ticari işletmeler için Mikro yazılım entegrasyonları, ön muhasebe, e-dönüşüm ve iş süreçlerini hızlandıran özel modüller.');
+            SEOTools::metatags()->setKeywords(['Mikro yazılım modülleri', 'Malatya Mikro entegrasyonu', 'Ön muhasebe programı', 'KOBİ ticari yazılım', 'e-fatura entegrasyonu', 'özel mikro çözümler', 'stok takip modülü', 'ticari yazılım Malatya']);
+            SEOTools::jsonLd()->addValue('name', 'Mikro Yazılım Modülleri');
         } else {
-            SEOTools::setTitle('Yazılım Modüllerimiz - Senkron Yazılım | Özel Çözümler');
-            SEOTools::setDescription('Senkron Yazılım tarafından geliştirilen özel yazılım modülleri. CRM, ERP, e-ticaret, muhasebe ve daha fazlası. Hazır çözümlerimizi keşfedin.');
-            SEOTools::metatags()->setKeywords(['yazılım modülleri', 'software modules', 'crm', 'erp', 'e-ticaret', 'e-commerce', 'muhasebe', 'accounting', 'hazır yazılım', 'ready software', 'senkron yazılım', 'özel modüller', 'custom modules', 'işletme yazılımı', 'business software', 'yazılım çözümleri', 'software solutions']);
-            SEOTools::jsonLd()->addValue('name', 'Yazılım Modülleri');
+            // Jenerik "Özel çözümler" yerine Workcube, OSB ve ERP odaklı terimler eklendi
+            SEOTools::setTitle('Workcube ERP Modülleri | Üretim, Finans ve CRM Yönetimi');
+            SEOTools::setDescription('OSB fabrikaları ve büyük ölçekli sanayi işletmeleri için Workcube ERP üretim yönetimi (MES), stok, İK ve finans modülleri detayları.');
+            SEOTools::metatags()->setKeywords(['Workcube ERP modülleri', 'Üretim yönetim sistemi (MES)', 'Malatya Workcube', 'ERP finans modülü', 'Depo yönetim sistemi (WMS)', 'Fabrika ERP çözümleri', 'Kurumsal kaynak planlama modülleri', 'İşletme yönetim sistemi']);
+            SEOTools::jsonLd()->addValue('name', 'Workcube ERP Modülleri');
         }
+
         SEOTools::metatags()->addMeta('robots', 'index,follow');
-        SEOTools::metatags()->addMeta('author', 'Senkron Yazılım');
+        SEOTools::metatags()->addMeta('author', 'Senkroon Yazılım');
         SEOTools::metatags()->addMeta('viewport', 'width=device-width, initial-scale=1');
         SEOTools::opengraph()->setUrl(url()->current());
         SEOTools::setCanonical(url()->current());
         SEOTools::opengraph()->addProperty('type', 'website');
-        SEOTools::opengraph()->addProperty('site_name', 'Senkron Yazılım');
+        SEOTools::opengraph()->addProperty('site_name', 'Senkroon Yazılım');
         SEOTools::opengraph()->addProperty('locale', 'tr_TR');
-        SEOTools::opengraph()->addImage(asset('porto/simages/senkronlogo2.png'));
-        SEOTools::twitter()->setSite('@senkronyazilim');
+        SEOTools::opengraph()->addImage(asset('porto/simages/senkroonlogo2.png')); // Yazım yanlışı düzeltildi
+        SEOTools::twitter()->setSite('@senkroonyazilim');
         SEOTools::twitter()->setType('summary_large_image');
-        SEOTools::twitter()->addImage(asset('porto/simages/senkronlogo2.png'));
+        SEOTools::twitter()->addImage(asset('porto/simages/senkroonlogo2.png'));
         SEOTools::jsonLd()->addValue('@context', 'https://schema.org');
         SEOTools::jsonLd()->addValue('@type', 'ItemList');
-        SEOTools::jsonLd()->addValue('name', 'Yazılım Modülleri');
         SEOTools::jsonLd()->addValue('logo', [
             '@type' => 'ImageObject',
             'url' => asset('porto/simages/senkroonlogo2.png'),
@@ -67,43 +69,62 @@ class ModuleController extends Controller
 
         abort_if(!$module->is_active, 404);
 
-        SEOTools::setTitle($module->title . ' Modülü - Senkron Yazılım | Detaylı Bilgiler');
-        SEOTools::setDescription($module->short_description ?? 'Senkron Yazılım ' . $module->title . ' modülü hakkında detaylı bilgiler, özellikleri ve kullanım alanları.');
-        SEOTools::metatags()->setKeywords([strtolower($module->title), strtolower($module->title) . ' modülü', strtolower($module->title) . ' module', 'yazılım modülü', 'software module', 'senkron yazılım', 'detay', 'details', 'özellikler', 'features', 'kullanım alanı', 'use case', 'işletme yazılımı', 'business software']);
+        // Dinamik başlığa ERP ve marka otoritesi eklendi
+        SEOTools::setTitle($module->title . ' Modülü | Kurumsal ERP Çözümleri - Senkroon Yazılım');
+
+        // Eğer kısa açıklama yoksa, fallback (yedek) açıklama bölgesel SEO'ya hizmet edecek şekilde güçlendirildi
+        $fallbackDescription = 'Senkroon Yazılım tarafından sunulan ' . $module->title . ' modülü ile işletmenizin verimliliğini artırın. OSB fabrikalarına özel kurumsal yazılım çözümleri.';
+        SEOTools::setDescription($module->short_description ?? $fallbackDescription);
+
+        // Anahtar kelimeler dinamik ve yüksek arama hacimli kombinasyonlarla oluşturuldu (Örn: "Üretim modülü", "Üretim programı")
+        SEOTools::metatags()->setKeywords([
+            strtolower($module->title),
+            strtolower($module->title) . ' modülü',
+            strtolower($module->title) . ' programı',
+            strtolower($module->title) . ' yazılımı',
+            'Malatya ' . strtolower($module->title),
+            'ERP modülleri',
+            'Workcube ' . strtolower($module->title),
+            'fabrika yazılım çözümleri',
+            'Senkroon Yazılım'
+        ]);
+
         SEOTools::metatags()->addMeta('robots', 'index,follow');
-        SEOTools::metatags()->addMeta('author', 'Senkron Yazılım');
+        SEOTools::metatags()->addMeta('author', 'Senkroon Yazılım');
         SEOTools::metatags()->addMeta('viewport', 'width=device-width, initial-scale=1');
         SEOTools::opengraph()->setUrl(url()->current());
         SEOTools::setCanonical(url()->current());
         SEOTools::opengraph()->addProperty('type', 'article');
-        SEOTools::opengraph()->addProperty('site_name', 'Senkron Yazılım');
+        SEOTools::opengraph()->addProperty('site_name', 'Senkroon Yazılım');
         SEOTools::opengraph()->addProperty('locale', 'tr_TR');
-        SEOTools::opengraph()->addProperty('article:author', 'Senkron Yazılım');
-        SEOTools::twitter()->setSite('@senkronyazilim');
+        SEOTools::opengraph()->addProperty('article:author', 'Senkroon Yazılım');
+        SEOTools::twitter()->setSite('@senkroonyazilim');
         SEOTools::twitter()->setType('summary_large_image');
+
         if ($module->cover_image) {
             SEOTools::opengraph()->addImage(asset('storage/' . $module->cover_image));
             SEOTools::twitter()->addImage(asset('storage/' . $module->cover_image));
         } else {
-            SEOTools::opengraph()->addImage(asset('porto/simages/senkronlogo2.png'));
-            SEOTools::twitter()->addImage(asset('porto/simages/senkronlogo2.png'));
+            SEOTools::opengraph()->addImage(asset('porto/simages/senkroonlogo2.png')); // Yazım yanlışı düzeltildi
+            SEOTools::twitter()->addImage(asset('porto/simages/senkroonlogo2.png'));
         }
+
         SEOTools::jsonLd()->addValue('@context', 'https://schema.org');
         SEOTools::jsonLd()->addValue('@type', 'SoftwareApplication');
         SEOTools::jsonLd()->addValue('name', $module->title);
-        SEOTools::jsonLd()->addValue('description', $module->short_description);
+        SEOTools::jsonLd()->addValue('description', $module->short_description ?? $fallbackDescription);
         SEOTools::jsonLd()->addValue('logo', [
             '@type' => 'ImageObject',
-            'url' => asset('porto/simages/senkroonlogo2.png'),
+            'url' => asset('porto/simages/senkroonlogo2.png'), // Yazım yanlışı düzeltildi
             'width' => 400,
             'height' => 400
         ]);
         SEOTools::jsonLd()->addValue('url', url()->current());
         SEOTools::jsonLd()->addValue('applicationCategory', 'BusinessApplication');
-        SEOTools::jsonLd()->addValue('operatingSystem', 'Web-based');
+        SEOTools::jsonLd()->addValue('operatingSystem', 'Web-based, Windows, iOS, Android'); // ERP'nin çoklu platform özelliğini belirtmek SEO'ya katkı sağlar
         SEOTools::jsonLd()->addValue('author', [
             '@type' => 'Organization',
-            'name' => 'Senkron Yazılım',
+            'name' => 'Senkroon Yazılım', // Yazım yanlışı düzeltildi
             'logo' => [
                 '@type' => 'ImageObject',
                 'url' => asset('porto/simages/senkroonlogo2.png'),

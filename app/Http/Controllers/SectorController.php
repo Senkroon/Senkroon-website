@@ -10,24 +10,32 @@ class SectorController extends Controller
 {
     public function index()
     {
-        SEOTools::setTitle('Hizmet Verdiğimiz Sektörler - Senkron Yazılım | Sektörel Deneyim');
-        SEOTools::setDescription('Senkron Yazılım olarak eğitim, sağlık, finans, e-ticaret, üretim ve daha birkçok sektörde yazılım çözümleri sunuyoruz. Sektörel deneyimimizi keşfedin.');
-        SEOTools::metatags()->setKeywords(['sektörler', 'eğitim yazılımı', 'sağlık yazılımı', 'finans yazılımı', 'e-ticaret', 'üretim yazılımı', 'senkron yazılım', 'industry solutions']);
+        // Başlık ve açıklama sanayi/üretim odaklı hale getirildi
+        SEOTools::setTitle('Sektörel Yazılım Çözümleri | OSB ve Sanayi Deneyimimiz');
+        SEOTools::setDescription('Senkroon Yazılım; gıda, tekstil, makine imalatı ve mobilya başta olmak üzere tüm sanayi sektörlerine özel Workcube ERP ve dijital dönüşüm çözümleri sunar.');
+
+        // Yüksek hacimli sektörel anahtar kelimeler
+        SEOTools::metatags()->setKeywords([
+            'sektörel erp çözümleri', 'gıda fabrikası yazılımı', 'tekstil üretim takip',
+            'sanayi yazılımları Malatya', 'makine imalat erp', 'kurumsal yazılım çözümleri',
+            'OSB sektör yazılımları', 'Senkroon Yazılım'
+        ]);
+
         SEOTools::metatags()->addMeta('robots', 'index,follow');
-        SEOTools::metatags()->addMeta('author', 'Senkron Yazılım');
+        SEOTools::metatags()->addMeta('author', 'Senkroon Yazılım');
         SEOTools::opengraph()->setUrl(url()->current());
         SEOTools::setCanonical(url()->current());
         SEOTools::opengraph()->addProperty('type', 'website');
-        SEOTools::opengraph()->addProperty('site_name', 'Senkron Yazılım');
+        SEOTools::opengraph()->addProperty('site_name', 'Senkroon Yazılım');
         SEOTools::opengraph()->addProperty('locale', 'tr_TR');
-        SEOTools::opengraph()->addImage(asset('porto/simages/senkronlogo2.png'));
-        SEOTools::twitter()->setSite('@senkronyazilim');
+        SEOTools::opengraph()->addImage(asset('porto/simages/senkroonlogo2.png'));
+        SEOTools::twitter()->setSite('@senkroonyazilim');
         SEOTools::twitter()->setType('summary_large_image');
-        SEOTools::twitter()->addImage(asset('porto/simages/senkronlogo2.png'));
+        SEOTools::twitter()->addImage(asset('porto/simages/senkroonlogo2.png'));
+
         SEOTools::jsonLd()->addValue('@context', 'https://schema.org');
         SEOTools::jsonLd()->addValue('@type', 'ItemList');
-        SEOTools::jsonLd()->addValue('name', 'Hizmet Verdiğimiz Sektörler');
-        SEOTools::jsonLd()->addValue('logo', asset('porto/simages/senkroonlogo2.png'));
+        SEOTools::jsonLd()->addValue('name', 'Hizmet Verdiğimiz Sektörler ve Çözümler');
         SEOTools::jsonLd()->addValue('url', url()->current());
 
         $sectors = Sector::query()
@@ -46,39 +54,53 @@ class SectorController extends Controller
             abort(404);
         }
 
-        SEOTools::setTitle($sector->name . ' Sektörü Yazılım Çözümleri - Senkron Yazılım');
-        SEOTools::setDescription($sector->description ?? $sector->name . ' sektöründe Senkron Yazılım tarafından geliştirilen özel yazılım çözümleri, hizmetler ve başarı öykelerimiz.');
-        SEOTools::metatags()->setKeywords([strtolower($sector->name), strtolower($sector->name) . ' yazılımı', 'sektörel çözüm', 'senkron yazılım', 'industry software']);
+        // Yerel SEO: "Sektör Adı + Malatya + Çözümleri" kombinasyonu
+        SEOTools::setTitle($sector->name . ' Sektörü ERP ve Yazılım Çözümleri | Malatya');
+
+        $fallbackDesc = "Malatya OSB ve çevresindeki " . $sector->name . " firmaları için özel olarak geliştirilmiş Workcube ERP entegrasyonu ve dijital dönüşüm çözümlerimiz.";
+        SEOTools::setDescription($sector->description ?? $fallbackDesc);
+
+        // Dinamik ve lokasyon bazlı anahtar kelimeler
+        SEOTools::metatags()->setKeywords([
+            strtolower($sector->name) . ' yazılımı',
+            strtolower($sector->name) . ' erp çözümleri',
+            'Malatya ' . strtolower($sector->name) . ' sektörü',
+            'OSB ' . strtolower($sector->name) . ' fabrikaları',
+            'üretim takip sistemi',
+            'Senkroon Yazılım'
+        ]);
+
         SEOTools::metatags()->addMeta('robots', 'index,follow');
-        SEOTools::metatags()->addMeta('author', 'Senkron Yazılım');
+        SEOTools::metatags()->addMeta('author', 'Senkroon Yazılım');
         SEOTools::opengraph()->setUrl(url()->current());
         SEOTools::setCanonical(url()->current());
         SEOTools::opengraph()->addProperty('type', 'article');
-        SEOTools::opengraph()->addProperty('site_name', 'Senkron Yazılım');
-        SEOTools::opengraph()->addProperty('locale', 'tr_TR');
-        SEOTools::opengraph()->addProperty('article:author', 'Senkron Yazılım');
-        SEOTools::twitter()->setSite('@senkronyazilim');
-        SEOTools::twitter()->setType('summary_large_image');
+        SEOTools::opengraph()->addProperty('site_name', 'Senkroon Yazılım');
+
         if(isset($sector->image)) {
             SEOTools::opengraph()->addImage(asset($sector->image));
             SEOTools::twitter()->addImage(asset($sector->image));
         } else {
-            SEOTools::opengraph()->addImage(asset('porto/simages/senkronlogo2.png'));
-            SEOTools::twitter()->addImage(asset('porto/simages/senkronlogo2.png'));
+            SEOTools::opengraph()->addImage(asset('porto/simages/senkroonlogo2.png'));
+            SEOTools::twitter()->addImage(asset('porto/simages/senkroonlogo2.png'));
         }
+
         SEOTools::jsonLd()->addValue('@context', 'https://schema.org');
         SEOTools::jsonLd()->addValue('@type', 'Service');
-        SEOTools::jsonLd()->addValue('name', $sector->name . ' Sektörü Yazılım Çözümleri');
-        SEOTools::jsonLd()->addValue('description', $sector->description);
-        SEOTools::jsonLd()->addValue('logo', asset('porto/simages/senkroonlogo2.png'));
+        SEOTools::jsonLd()->addValue('name', $sector->name . ' Sektörel Yazılım Hizmetleri');
+        SEOTools::jsonLd()->addValue('description', $sector->description ?? $fallbackDesc);
         SEOTools::jsonLd()->addValue('url', url()->current());
         SEOTools::jsonLd()->addValue('provider', [
-            '@type' => 'Organization',
-            'name' => 'Senkron Yazılım'
+            '@type' => 'LocalBusiness', // Sanayi odaklı yerel işletme vurgusu
+            'name' => 'Senkroon Yazılım',
+            'image' => asset('porto/simages/senkroonlogo2.png'),
+            'address' => [
+                '@type' => 'PostalAddress',
+                'addressLocality' => 'Malatya',
+                'addressCountry' => 'TR'
+            ]
         ]);
 
         return view('sectors.show', ['sector' => $sector]);
     }
-
-
 }

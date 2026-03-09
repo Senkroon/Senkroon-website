@@ -16,9 +16,9 @@ class Homecontroller extends Controller
 
     public function index()
     {
-        SEOTools::setTitle('Senkroon Yazılım - Workcube Yetkili Bayisi | Modern Yazılım Çözümleri');
-        SEOTools::setDescription('Senkroon Yazılım olarak Workcube yetkili bayisiyiz. Modern yazılım çözümleri, web tasarım, mobil uygulama geliştirme ve IT danışmanlık hizmetleri sunuyoruz. Workcube ERP çözümleri ile işletmenizi dijitalleştirin.');
-        SEOTools::metatags()->setKeywords(['senkroon yazılım', 'workcube bayisi', 'workcube yetkili bayi', 'workcube partner', 'erp çözümleri', 'yazılım çözümleri', 'web tasarım', 'web design', 'mobil uygulama', 'mobile app', 'IT danışmanlık', 'IT consulting', 'iş yönetimi', 'business management', 'dijital dönüşüm', 'digital transformation', 'yazılım geliştirme', 'software development']);
+        SEOTools::setTitle('Senkroon Yazılım | Malatya Workcube ERP & Özel Yazılım Çözümleri');
+        SEOTools::setDescription('Malatya ve OSB sanayi işletmeleri için Workcube ERP entegrasyonu, üretim takip (MES), stok yönetimi ve kurumsal kaynak planlama hizmetleri sunan yetkili bayi.');
+        SEOTools::metatags()->setKeywords(['Malatya ERP yazılımı', 'Workcube bayisi', 'Kurumsal kaynak planlama', 'Stok takip programı', 'Organize sanayi bölgesi ERP', 'Özel yazılım geliştirme Malatya', 'KOBİ ERP sistemleri', 'Üretim yönetim sistemi']);
         SEOTools::metatags()->addMeta('robots', 'index,follow');
         SEOTools::metatags()->addMeta('author', 'Senkroon Yazılım');
         SEOTools::metatags()->addMeta('viewport', 'width=device-width, initial-scale=1');
@@ -32,7 +32,7 @@ class Homecontroller extends Controller
         SEOTools::twitter()->setType('summary_large_image');
         SEOTools::twitter()->addImage(asset('porto/simages/senkroonlogo2.png'));
         SEOTools::jsonLd()->addValue('@context', 'https://schema.org');
-        SEOTools::jsonLd()->addValue('@type', 'Organization');
+        SEOTools::jsonLd()->addValue('@type', 'LocalBusiness');
         SEOTools::jsonLd()->addValue('name', 'Senkroon Yazılım');
         SEOTools::jsonLd()->addValue('logo', [
             '@type' => 'ImageObject',
@@ -51,19 +51,16 @@ class Homecontroller extends Controller
             'availableLanguage' => 'Turkish'
         ]);
 
-
         $advisors = Advisor::all();
-
         $sliders = Slider::getActiveSliders();
         return view('home.index',compact('advisors', 'sliders'));
     }
 
-
     public function about()
     {
-        SEOTools::setTitle('Hakkımızda - Senkroon Yazılım | Misyonumuz ve Vizyonumuz');
-        SEOTools::setDescription('Senkroon Yazılım olarak 2020 yılından bu yana modern yazılım çözümleri sunuyoruz. Deneyimli ekibimiz, misyonumuz ve vizyonumuz hakkında detaylı bilgi.');
-        SEOTools::metatags()->setKeywords(['hakkımızda', 'about us', 'senkroon yazılım', 'yazılım şirketi', 'software company', 'misyon', 'mission', 'vizyon', 'vision', 'ekip', 'team', 'deneyim', 'experience', 'kurumsal', 'corporate', 'yazılım geliştirme', 'software development', 'teknoloji', 'technology']);
+        SEOTools::setTitle('Hakkımızda | Malatya\'nın Lider ERP ve Yazılım Danışmanlık Firması');
+        SEOTools::setDescription('Senkroon Yazılım olarak Doğu Anadolu\'daki sanayi tesislerine ve KOBİ\'lere Workcube ERP, dijital dönüşüm ve özel yazılım geliştirme hizmetleri sunuyoruz.');
+        SEOTools::metatags()->setKeywords(['hakkımızda', 'Senkroon yazılım ekibi', 'Malatya yazılım firmaları', 'ERP danışmanlık şirketi', 'kurumsal yazılım çözümleri', 'dijital dönüşüm danışmanlığı']);
         SEOTools::metatags()->addMeta('robots', 'index,follow');
         SEOTools::metatags()->addMeta('author', 'Senkroon Yazılım');
         SEOTools::metatags()->addMeta('viewport', 'width=device-width, initial-scale=1');
@@ -90,12 +87,11 @@ class Homecontroller extends Controller
         return view('home.about');
     }
 
-
     public function contactUs()
     {
-        SEOTools::setTitle('İletişim - Senkroon Yazılım | Bize Ulaşın');
-        SEOTools::setDescription('Senkroon Yazılım ile iletişime geçin. Yazılım projeniz, danışmanlık hizmetleri ve tüm sorularınız için bizimle iletişime geçebilirsiniz.');
-        SEOTools::metatags()->setKeywords(['iletişim', 'contact', 'senkroon yazılım', 'yazılım teklifi', 'software quote', 'danışmanlık', 'consulting', 'proje teklifi', 'project quote', 'teklif al', 'get quote', 'yazılım projesi', 'software project', 'destek', 'support', 'müşteri hizmetleri', 'customer service']);
+        SEOTools::setTitle('İletişim | Fabrikanızın Dijital Dönüşümü İçin Bize Ulaşın');
+        SEOTools::setDescription('Workcube ERP entegrasyonu, özel yazılım projeleriniz ve ücretsiz sistem analizi için Malatya\'daki uzman ekibimizle iletişime geçin.');
+        SEOTools::metatags()->setKeywords(['iletişim', 'Senkroon yazılım iletişim', 'Malatya ERP firması telefonu', 'yazılım proje teklifi', 'Workcube demo talebi', 'ücretsiz ERP analizi']);
         SEOTools::metatags()->addMeta('robots', 'index,follow');
         SEOTools::metatags()->addMeta('author', 'Senkroon Yazılım');
         SEOTools::metatags()->addMeta('viewport', 'width=device-width, initial-scale=1');
@@ -186,19 +182,23 @@ class Homecontroller extends Controller
         }
     }
 
-
-    public function whyWorkcube(){
-
+    public function whyWorkcube()
+    {
+        SEOTools::setTitle('Neden Workcube ERP? | %100 Web Tabanlı İşletme Yönetimi');
+        SEOTools::setDescription('Üretim, finans, CRM ve stok yönetiminde Workcube ERP\'nin sanayi işletmelerine ve KOBİ\'lere sağladığı avantajları, hız ve esnekliği keşfedin.');
+        SEOTools::metatags()->setKeywords(['neden workcube', 'workcube erp avantajları', 'web tabanlı erp', 'bulut erp sistemleri', 'B2B erp çözümleri', 'fabrika erp programı']);
+        SEOTools::metatags()->addMeta('robots', 'index,follow');
+        SEOTools::opengraph()->setUrl(url()->current());
+        SEOTools::setCanonical(url()->current());
 
         return view('home.WhyWorkcube');
-
     }
 
     public function faq()
     {
-        SEOTools::setTitle('Sıkça Sorulan Sorular - Workcube ERP | Senkroon Yazılım');
-        SEOTools::setDescription('Workcube ERP hakkında sıkça sorulan soruların cevapları. Kurulum, maliyet, kullanıcı eğitimi ve daha fazla bilgi için SSS sayfamızı ziyaret edin.');
-        SEOTools::metatags()->setKeywords(['sıkça sorulan sorular', 'FAQ', 'SSS', 'Workcube ERP', 'ERP soruları', 'Workcube kurulum', 'ERP maliyeti', 'ERP eğitimi', 'senkroon yazılım']);
+        SEOTools::setTitle('Sıkça Sorulan Sorular | Workcube ERP Kurulum ve Entegrasyon');
+        SEOTools::setDescription('Workcube ERP kurulum süreçleri, modül fiyatlandırmaları, sunucu gereksinimleri ve sanayi entegrasyonları hakkında en çok merak edilen soruların yanıtları.');
+        SEOTools::metatags()->setKeywords(['sıkça sorulan sorular', 'Workcube ERP kurulumu', 'ERP fiyatları', 'Workcube sunucu gereksinimleri', 'ERP entegrasyon süreci']);
         SEOTools::metatags()->addMeta('robots', 'index,follow');
         SEOTools::metatags()->addMeta('author', 'Senkroon Yazılım');
         SEOTools::metatags()->addMeta('viewport', 'width=device-width, initial-scale=1');
@@ -218,29 +218,38 @@ class Homecontroller extends Controller
         return view('faq.index');
     }
 
-
-    public function productsAndSolutions(){
+    public function productsAndSolutions()
+    {
+        SEOTools::setTitle('Kurumsal ERP Çözümleri ve Modüller | Üretim, Stok, CRM');
+        SEOTools::setDescription('İşletmenizin tüm süreçlerini optimize eden üretim yönetim sistemi (MES), stok takip programı, CRM ve finans modüllerimizle tanışın.');
+        SEOTools::metatags()->setKeywords(['ERP programları', 'Üretim planlama yazılımı', 'Stok takip programı', 'Müşteri ilişkileri yönetimi (CRM)', 'B2B sipariş sistemi', 'Mikro yazılım entegrasyonu', 'Workcube modülleri']);
+        SEOTools::metatags()->addMeta('robots', 'index,follow');
+        SEOTools::opengraph()->setUrl(url()->current());
+        SEOTools::setCanonical(url()->current());
 
         $advisors = Advisor::all();
         $mikroModules = Module::where('category', 'mikro')->get();
         $WorkcubeModules = Module::where('category', 'workcube')->get();
         return view('home.products-and-solutions', compact('advisors', 'mikroModules', 'WorkcubeModules'));
-
     }
 
-    public function kvkk(){
-        SEOTools::setTitle('KVKK Aydınlatma Metni - Senkroon Yazılım');
-        SEOTools::setDescription('Senkroon Yazılım tarafından kişisel verilerinizin işlenmesine ilişkin KVKK Aydınlatma Metni.');
+    public function kvkk()
+    {
+        SEOTools::setTitle('KVKK Aydınlatma Metni | Senkroon Yazılım');
+        SEOTools::setDescription('Senkroon Yazılım tarafından kişisel verilerinizin işlenmesine ve korunmasına ilişkin KVKK Aydınlatma Metni.');
         SEOTools::metatags()->addMeta('robots', 'index,follow');
         return view('kvkk.index');
     }
 
-
-
-    public function whySenkroon(){
+    public function whySenkroon()
+    {
+        SEOTools::setTitle('Neden Senkroon Yazılım? | Güvenilir Dijital Dönüşüm Partneriniz');
+        SEOTools::setDescription('Bölgesel deneyimimiz, hızlı teknik desteğimiz ve OSB fabrikalarına özel geliştirdiğimiz başarılı ERP projeleriyle neden Senkroon\'u seçmelisiniz?');
+        SEOTools::metatags()->setKeywords(['neden senkroon', 'güvenilir yazılım firması', 'Malatya yazılım destek', 'OSB dijital dönüşüm', 'uzman erp danışmanları']);
+        SEOTools::metatags()->addMeta('robots', 'index,follow');
+        SEOTools::opengraph()->setUrl(url()->current());
+        SEOTools::setCanonical(url()->current());
 
         return view('home.why-senkroon');
-
     }
-
 }

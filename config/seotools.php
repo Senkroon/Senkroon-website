@@ -10,13 +10,22 @@ return [
          * The default configurations to be used by the meta generator.
          */
         'defaults'       => [
-            'title'        => 'Senkroon Yazılım - Workcube Bayisi | Modern Yazılım Çözümleri', // set false to total remove
-            'titleBefore'  => false, // Put defaults.title before page title, like 'It's Over 9000! - Dashboard'
-            'description'  => 'Senkroon Yazılım olarak Workcube yetkili bayisiyiz. Modern yazılım çözümleri, web tasarım, mobil uygulama geliştirme ve IT danışmanlık hizmetleri sunuyoruz.', // set false to total remove
-            'separator'    => ' - ',
-            'keywords'     => ['workcube bayisi', 'workcube partner', 'workcube yetkili bayi', 'yazılım çözümleri', 'web tasarım', 'mobil uygulama', 'IT danışmanlık', 'Senkroon yazılım', 'erp çözümleri', 'iş yönetimi'],
-            'canonical'    => 'current', // Set to null or 'full' to use Url::full(), set to 'current' to use Url::current(), set false to total remove
-            'robots'       => 'index,follow', // Set to 'all', 'none' or any combination of index/noindex and follow/nofollow
+            // Ana başlıkta hem özel yazılım hem de yüksek hacimli "ERP" kelimesi birleştirildi.
+            'title'        => 'Senkroon Yazılım | Özel Yazılım & Kurumsal ERP Çözümleri',
+            'titleBefore'  => false,
+            // Açıklamaya "kurumsal kaynak planlama" ve "stok yönetimi" gibi yüksek hacimli terimler eklendi.
+            'description'  => 'Malatya ve çevre illerdeki OSB fabrikaları için kurumsal kaynak planlama (ERP), üretim takip (MES), stok yönetimi ve özel yazılım geliştirme hizmetleri sunan yetkili danışmanlık firması.',
+            'separator'    => ' | ', // SEO standartlarında daha net okunabilirlik sağlar.
+            'keywords'     => [
+                // 1. Yerel ve Niş (Dönüşüm Oranı Yüksek)
+                'Malatya ERP yazılımı', 'Malatya Workcube bayisi', 'Organize sanayi bölgesi ERP çözümleri', 'Özel yazılım geliştirme Malatya',
+                // 2. Yüksek Hacimli ve Jenerik (Trafik Çekici)
+                'ERP programları', 'Kurumsal kaynak planlama', 'Stok takip programı', 'KOBİ ERP sistemleri',
+                // 3. Sektörel ve Modüler
+                'Üretim yönetim sistemi (MES)', 'Fabrika otomasyon sistemleri', 'Depo ve stok yönetim yazılımı'
+            ],
+            'canonical'    => 'current',
+            'robots'       => 'index,follow',
         ],
         /*
          * Webmaster tags are always added.
@@ -37,9 +46,10 @@ return [
          * The default configurations to be used by the opengraph generator.
          */
         'defaults' => [
-            'title'       => 'Senkroon Yazılım - Workcube Bayisi | Modern Yazılım Çözümleri', // set false to total remove
-            'description' => 'Senkroon Yazılım olarak Workcube yetkili bayisiyiz. Modern yazılım çözümleri, web tasarım, mobil uygulama geliştirme ve IT danışmanlık hizmetleri sunuyoruz.', // set false to total remove
-            'url'         => 'current', // Set null for using Url::current(), set false to total remove
+            // WhatsApp, LinkedIn vb. paylaşımlarda tıklama oranını artıracak iddialı başlık.
+            'title'       => 'Senkroon Yazılım | OSB Fabrikaları İçin Özel Yazılım ve ERP Çözümleri',
+            'description' => 'Malatya ve Doğu Anadolu bölgesindeki sanayi işletmeleri için dijital dönüşüm, Workcube ERP entegrasyonu ve ticari yazılım danışmanlığı hizmetleri.',
+            'url'         => 'current',
             'type'        => 'website',
             'site_name'   => 'Senkroon Yazılım',
             'images'      => ['/images/Senkroon-logo.png'],
@@ -53,8 +63,8 @@ return [
             'card'        => 'summary_large_image',
             'site'        => '@Senkroonyazilim',
             'creator'     => '@Senkroonyazilim',
-            'title'       => 'Senkroon Yazılım - Workcube Bayisi',
-            'description' => 'Workcube yetkili bayisi. Modern yazılım çözümleri, web tasarım, mobil uygulama geliştirme ve IT danışmanlık hizmetleri.',
+            'title'       => 'Senkroon Yazılım - Workcube ERP Çözümleri',
+            'description' => 'OSB fabrikaları için Workcube ERP yetkili bayisi. Üretim, stok ve finans yönetiminde profesyonel yazılım çözümleri.',
             'image'       => '/images/Senkroon-logo.png',
         ],
     ],
@@ -63,10 +73,11 @@ return [
          * The default configurations to be used by the json-ld generator.
          */
         'defaults' => [
-            'title'       => 'Senkroon Yazılım - Workcube Bayisi | Modern Yazılım Çözümleri', // set false to total remove
-            'description' => 'Senkroon Yazılım olarak Workcube yetkili bayisiyiz. Modern yazılım çözümleri, web tasarım, mobil uygulama geliştirme ve IT danışmanlık hizmetleri sunuyoruz.', // set false to total remove
-            'url'         => 'current', // Set to null or 'full' to use Url::full(), set to 'current' to use Url::current(), set false to total remove
-            'type'        => 'Organization',
+            'title'       => 'Senkroon Yazılım | Malatya Workcube ERP & OSB Yazılım Çözümleri',
+            'description' => 'Malatya ve çevre illerdeki OSB fabrikaları için Workcube ERP entegrasyonu, üretim takip (MES) ve özel yazılım geliştirme hizmetleri.',
+            'url'         => 'current',
+            // KRİTİK DEĞİŞİKLİK: 'Organization' yerine 'LocalBusiness' yapıldı. Yerel SEO için şarttır.
+            'type'        => 'LocalBusiness',
             'images'      => ['/images/Senkroon-logo.png'],
         ],
     ],
