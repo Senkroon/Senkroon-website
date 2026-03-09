@@ -264,59 +264,59 @@
 
 
         <!-- Değerlerimiz ve İlkelerimiz -->
-        <div class="row py-5 bg-light rounded">
+        <div class="row py-5 bg-light rounded px-2 px-md-4">
             <div class="col-12">
                 <div class="text-center mb-5">
                     <h2 class="text-color-primary font-weight-bold text-6 mb-3">Değerlerimiz</h2>
-                    <p class="text-4">Başarımızın temelini oluşturan değerler</p>
+                    <p class="text-4 mb-0">Senkroon olarak tüm projelerimizde aşağıdaki temel değerlere bağlı kalırız:</p>
                 </div>
             </div>
 
-            <div class="col-lg-3 col-md-6 mb-4">
-                <div class="text-center">
-                    <div class="icon-box icon-box-primary mb-3">
-                        <div class="icon-box-icon">
-                            <i class="fas fa-handshake text-6"></i>
-                        </div>
-                    </div>
-                    <h5 class="font-weight-bold mb-2">Güvenilirlik</h5>
-                    <p class="text-3">Güvene dayalı insani ilişkiler</p>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="h-100 p-4 bg-white rounded shadow-sm">
+                    <div class="mb-3 text-color-primary text-center"><i class="fas fa-handshake text-6"></i></div>
+                    <h5 class="font-weight-bold mb-3 text-center">Güven</h5>
+                    <p class="text-3 mb-0">İlişkilerimizi şeffaflık, dürüstlük ve karşılıklı saygı üzerine kurarız. Verdiğimiz sözleri tutar, uzun vadeli ve sürdürülebilir iş ilişkileri kurmayı hedefleriz.</p>
                 </div>
             </div>
 
-            <div class="col-lg-3 col-md-6 mb-4">
-                <div class="text-center">
-                    <div class="icon-box icon-box-primary mb-3">
-                        <div class="icon-box-icon">
-                            <i class="fas fa-star text-6"></i>
-                        </div>
-                    </div>
-                    <h5 class="font-weight-bold mb-2">Kalite</h5>
-                    <p class="text-3">Yüksek kalite standartları</p>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="h-100 p-4 bg-white rounded shadow-sm">
+                    <div class="mb-3 text-color-primary text-center"><i class="fas fa-graduation-cap text-6"></i></div>
+                    <h5 class="font-weight-bold mb-3 text-center">Bilgi ve Uzmanlık</h5>
+                    <p class="text-3 mb-0">Deneyimimizi güncel bilgiyle sürekli besler, her projede en doğru ve güncel yaklaşımları uygulamaya özen gösteririz. Öğrenen ve öğreten bir ekip kültürüne sahibiz.</p>
                 </div>
             </div>
 
-            <div class="col-lg-3 col-md-6 mb-4">
-                <div class="text-center">
-                    <div class="icon-box icon-box-primary mb-3">
-                        <div class="icon-box-icon">
-                            <i class="fas fa-lightbulb text-6"></i>
-                        </div>
-                    </div>
-                    <h5 class="font-weight-bold mb-2">Yenilikçilik</h5>
-                    <p class="text-3">Sürekli yenilenen yapılanma</p>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="h-100 p-4 bg-white rounded shadow-sm">
+                    <div class="mb-3 text-color-primary text-center"><i class="fas fa-microchip text-6"></i></div>
+                    <h5 class="font-weight-bold mb-3 text-center">Teknoloji Odaklılık</h5>
+                    <p class="text-3 mb-0">Teknolojiyi tek başına bir amaç olarak değil, doğru kullanıldığında değer üreten stratejik bir araç olarak görürüz. Tüm projelerimizi bu anlayışla kurgularız.</p>
                 </div>
             </div>
 
-            <div class="col-lg-3 col-md-6 mb-4">
-                <div class="text-center">
-                    <div class="icon-box icon-box-primary mb-3">
-                        <div class="icon-box-icon">
-                            <i class="fas fa-chart-line text-6"></i>
-                        </div>
-                    </div>
-                    <h5 class="font-weight-bold mb-2">Verimlilik</h5>
-                    <p class="text-3">Sürekli pozitif adımlar</p>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="h-100 p-4 bg-white rounded shadow-sm">
+                    <div class="mb-3 text-color-primary text-center"><i class="fas fa-puzzle-piece text-6"></i></div>
+                    <h5 class="font-weight-bold mb-3 text-center">Çözüm Odaklılık</h5>
+                    <p class="text-3 mb-0">Sorunları yalnızca tespit etmekle yetinmez, uygulanabilir ve ölçülebilir çözümler üretmeye odaklanırız. Sonuç almayan hiçbir öneriyi başarı olarak görmeyiz.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="h-100 p-4 bg-white rounded shadow-sm">
+                    <div class="mb-3 text-color-primary text-center"><i class="fas fa-people-arrows text-6"></i></div>
+                    <h5 class="font-weight-bold mb-3 text-center">Şeffaflık ve İşbirliği</h5>
+                    <p class="text-3 mb-0">Tüm süreçleri müşterilerimizle birlikte ve açık bir iletişimle yürütür, ortak akılla şekillenen projeler üretiriz. Karar süreçlerine müşterilerimizi dâhil etmeyi önemseriz.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="h-100 p-4 bg-white rounded shadow-sm">
+                    <div class="mb-3 text-color-primary text-center"><i class="fas fa-infinity text-6"></i></div>
+                    <h5 class="font-weight-bold mb-3 text-center">Süreklilik</h5>
+                    <p class="text-3 mb-0">Projeyi teslim etmekle sorumluluğun bitmediğine inanırız. Üretilen çıktının yaşaması, gelişmesi ve kuruma gerçek değer katması için gerekli desteği sürdürmeyi asli görevimiz kabul ederiz.</p>
                 </div>
             </div>
         </div>
