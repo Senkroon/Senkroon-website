@@ -1,4 +1,4 @@
-﻿@extends('layout.master')
+@extends('layout.master')
 
 @section('content')
     <!-- Header Breadcrumb -->
@@ -23,32 +23,44 @@
                     <h2 class="text-color-primary font-weight-bold text-6 mb-2">Hakkımızda</h2>
                     <h3 class="text-3 font-weight-bold mb-3">Dönüşümün Mimarı, İşinizin Stratejik Ortağı</h3>
                     <p class="text-3 mb-4">
-                        Senkroon, işletmelerin dijital ve operasyonel yolculuklarında sadece danışman değil; uçtan uca
-                        dönüşümü yöneten stratejik bir iş ortağıdır. ERP danışmanlığından iş süreçleri tasarımına,
-                        muhasebe ve finansal yapılandırmadan özel yazılım çözümlerine kadar geniş bir yelpazede,
+                        Senkroon, danışmanlık, yazılım ve dijital dönüşüm alanlarında uzmanlaşmış; işletmelerin dijital ve
+                        operasyonel yolculuklarında sadece bir rehber değil, uçtan uca dönüşümü yöneten stratejik bir iş
+                        ortağıdır. ERP danışmanlığından iş süreçleri tasarımına, muhasebe ve finansal yapılandırmadan
+                        kurumsal yazılım çözümlerine kadar geniş bir yelpazede,
                         modern iş dünyasının karmaşık ihtiyaçlarına yanıt veriyoruz.
                     </p>
 
-                    <h4 class="text-color-primary font-weight-bold text-4 mb-2">ERP ve Özel Yazılım Çözümleri</h4>
+                    <h4 class="text-color-primary font-weight-bold text-4 mb-2">Çok Boyutlu Yazılım ve Süreç Yönetimi</h4>
+                    <p class="text-3 mb-3">
+                        Bizim için teknoloji, işinizin yaşayan bir parçasıdır. Sahadaki derin deneyimimizi analitik bakış
+                        açısı ve teknolojiyle birleştirerek; işletmenizin ihtiyaç duyduğu her alanda yanınızdayız:
+                    </p>
                     <ul class="text-3 mb-4 ps-3">
-                        <li>ERP, kurumun dijital hafızası ve stratejik karar merkezidir.</li>
-                        <li>İş akışınıza %100 uyum sağlayan, talebe özel yazılım çözümleri sunuyoruz.</li>
-                        <li>Veri disiplinini, operasyonel hız ve şeffaflıkla birleştiriyoruz.</li>
+                        <li>Uçtan Uca Yönetim: ERP süreç yönetimi, CRM (Müşteri İlişkileri Yönetimi), İnsan Kaynakları ve Proje Yönetimi sistemleri.</li>
+                        <li>Varlık ve İçerik Kontrolü: Fiziki Varlık Yönetimi, İçerik Yönetimi ve Intranet çözümleri.</li>
+                        <li>Dijital Ticaret: B2B, B2C ve e-ticaret platformlarının iş modelinize tam entegrasyonu.</li>
                     </ul>
 
-                    <h4 class="text-color-primary font-weight-bold text-4 mb-2">Yaklaşımımız</h4>
+                    <h4 class="text-color-primary font-weight-bold text-4 mb-2">Yaklaşımımız: Analitik Güç, Sahadaki Tecrübe</h4>
+                    <p class="text-3 mb-3">
+                        Hazır kalıplar yerine; kurum kültürünüze, çalışma biçiminize ve güncel ihtiyaçlarınıza en uygun
+                        "terzi usulü" iş modelleri tasarlıyoruz. Standart yazılımların sınırlarını zorlayarak,
+                        taleplerinize %100 uyum sağlayan özel yazılım kurguları inşa ediyor; veri disiplinini operasyonel
+                        hız ve şeffaflıkla birleştiriyoruz.
+                    </p>
                     <ul class="text-3 mb-4 ps-3">
-                        <li>Analitik güç + sahadaki tecrübe</li>
-                        <li>Kurum kültürüne ve çalışma biçimine özel "terzi usulü" iş modelleri</li>
-                        <li>Süreç ve organizasyonu standardize edip verimliliği artırıyoruz</li>
-                        <li>Muhasebe ve finansal yapı ile geleceği öngörülebilir kılıyoruz</li>
+                        <li>Süreç ve Organizasyon Tasarımı: Karmaşıklığı gideriyor, verimliliği standardize ediyoruz.</li>
+                        <li>Muhasebe ve Finansal Modelleme: Güçlü bir finansal yapılandırma ile geleceği öngörülebilir kılıyoruz.</li>
+                        <li>Stratejik Entegrasyon: Teknolojiyi tek başına bir araç değil, işinizin omurgasını güçlendiren stratejik bir yapı hâline getiriyoruz.</li>
                     </ul>
 
-                    <h4 class="text-color-primary font-weight-bold text-4 mb-2">Amacımız</h4>
-                    <ul class="text-3 mb-0 ps-3">
-                        <li>Güvenilir, ölçülebilir ve sürdürülebilir yönetim altyapısı</li>
-                        <li>ERP ve özel yazılımları, işinizi güçlendiren ve rekabet avantajı sağlayan stratejik bir yapı hâline getiriyoruz</li>
-                    </ul>
+                    <h4 class="text-color-primary font-weight-bold text-4 mb-2">Amacımız: Veriyle Yönetilen Sürdürülebilir Gelecek</h4>
+                    <p class="text-3 mb-0">
+                        Temel hedefimiz; her aşamada güvenilir, ölçülebilir ve sürdürülebilir bir yönetim altyapısı
+                        kurmaktır. Senkroon ile dijital dönüşüm; sadece bir sistem geçişi değil, işletmenize rekabet
+                        avantajı sağlayan ve stratejik karar alma mekanizmanızı güçlendirerek geleceği bugünden inşa eden
+                        bir başarı hikayesidir.
+                    </p>
                 </div>
             </div>
             <div class="col-lg-5 mb-5">
