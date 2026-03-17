@@ -20,8 +20,9 @@
         <div class="row py-2">
             <div class="col-lg-7  mb-lg-0">
                 <div class="appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="300">
-                    <h2 class="text-color-primary font-weight-bold text-6 mb-2">Hakkımızda</h2>
-                    <h3 class="text-3 font-weight-bold mb-3">Dönüşümün Mimarı, İşinizin Stratejik Ortağı</h3>
+                     <h3 class="font-weight-bold  ">Hakkımızda</h3>
+                       <h4 class="text-color-primary font-weight-bold text-4 mb-2">Dönüşümün Mimarı, İşinizin Stratejik Ortağı</h4>
+
                     <p class="text-3 mb-4">
                         Senkroon, danışmanlık, yazılım ve dijital dönüşüm alanlarında uzmanlaşmış; işletmelerin dijital ve
                         operasyonel yolculuklarında sadece bir rehber değil, uçtan uca dönüşümü yöneten stratejik bir iş
