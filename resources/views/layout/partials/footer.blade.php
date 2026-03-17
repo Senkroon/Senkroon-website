@@ -49,7 +49,7 @@
             <div class="col-md-6 col-lg-2">
                 <h5 class="text-3 mb-3">BİZİ TAKİP EDİN</h5>
                 <ul class="header-social-icons social-icons d-none d-sm-block">
-                    <li class="social-icons-instagram"><a href="https://www.instagram.com/senkroon_yazilimdanismanlik/"
+                    <li class="social-icons-instagram"><a href="https://www.instagram.com/senkroon_yazilim?igsh=MWtvc2U0ZGJwZ3M4aA%3D%3D&utm_source=qr"
                             target="_blank" title="Facebook"><i class="fab fa-instagram"></i></a></li>
                     <li class="social-icons-youtube"><a
                             href="https://www.youtube.com/channel/UCWpzXhLoaI0xWrOocNW9Taw" target="_blank"
