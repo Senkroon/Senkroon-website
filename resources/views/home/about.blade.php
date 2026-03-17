@@ -21,23 +21,34 @@
             <div class="col-lg-7  mb-lg-0">
                 <div class="appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="300">
                     <h2 class="text-color-primary font-weight-bold text-6 mb-2">Hakkımızda</h2>
+                    <h3 class="text-3 font-weight-bold mb-3">Dönüşümün Mimarı, İşinizin Stratejik Ortağı</h3>
                     <p class="text-3 mb-4">
-                        Senkroon; ERP danışmanlığı, iş süreçleri ve organizasyon tasarımı, muhasebe & finansal yapılandırma
-                        ve  ERP başta olmak üzere kurumsal yazılım çözümlerine odaklanan, işletmelerin uçtan uca
-                        dönüşümünü hedefleyen bir iş ortağıdır.
+                        Senkroon, işletmelerin dijital ve operasyonel yolculuklarında sadece danışman değil; uçtan uca
+                        dönüşümü yöneten stratejik bir iş ortağıdır. ERP danışmanlığından iş süreçleri tasarımına,
+                        muhasebe ve finansal yapılandırmadan özel yazılım çözümlerine kadar geniş bir yelpazede,
+                        modern iş dünyasının karmaşık ihtiyaçlarına yanıt veriyoruz.
                     </p>
-                    <p class=" text-3 mb-4">
-                        ERP projeleri, süreç ve organizasyon danışmanlığı, muhasebe–finans modellemesi ile  ERP’nin
-                        konumlandırılması ve devreye alınması; ayrıca ihtiyaç duyulan ölçek ve yapılarda Mikro ve Watom
-                        yazılımlarının doğru kurgulanması alanlarında entegre hizmet sunuyoruz.
-                    </p>
-                    <p class=" text-3 mb-4">
-                        Sahadaki yönetim ve operasyon tecrübemizi analitik bakış açısı ve teknoloji odaklı yaklaşımımızla
-                        birleştirerek; hazır kalıplar yerine kurum kültürünüze ve çalışma biçiminize uygun, size özel iş
-                        modelleri tasarlıyoruz. Amacımız; veriye dayalı karar almanızı sağlayan, güvenilir, ölçülebilir ve
-                        sürdürülebilir bir yönetim altyapısı kurmak; ERP’yi tek başına bir yazılım değil, işinizin
-                        omurgasını güçlendiren stratejik bir araç hâline getirmek.
-                    </p>
+
+                    <h4 class="text-color-primary font-weight-bold text-4 mb-2">ERP ve Özel Yazılım Çözümleri</h4>
+                    <ul class="text-3 mb-4 ps-3">
+                        <li>ERP, kurumun dijital hafızası ve stratejik karar merkezidir.</li>
+                        <li>İş akışınıza %100 uyum sağlayan, talebe özel yazılım çözümleri sunuyoruz.</li>
+                        <li>Veri disiplinini, operasyonel hız ve şeffaflıkla birleştiriyoruz.</li>
+                    </ul>
+
+                    <h4 class="text-color-primary font-weight-bold text-4 mb-2">Yaklaşımımız</h4>
+                    <ul class="text-3 mb-4 ps-3">
+                        <li>Analitik güç + sahadaki tecrübe</li>
+                        <li>Kurum kültürüne ve çalışma biçimine özel "terzi usulü" iş modelleri</li>
+                        <li>Süreç ve organizasyonu standardize edip verimliliği artırıyoruz</li>
+                        <li>Muhasebe ve finansal yapı ile geleceği öngörülebilir kılıyoruz</li>
+                    </ul>
+
+                    <h4 class="text-color-primary font-weight-bold text-4 mb-2">Amacımız</h4>
+                    <ul class="text-3 mb-0 ps-3">
+                        <li>Güvenilir, ölçülebilir ve sürdürülebilir yönetim altyapısı</li>
+                        <li>ERP ve özel yazılımları, işinizi güçlendiren ve rekabet avantajı sağlayan stratejik bir yapı hâline getiriyoruz</li>
+                    </ul>
                 </div>
             </div>
             <div class="col-lg-5 mb-5">
