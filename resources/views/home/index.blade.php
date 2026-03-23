@@ -115,8 +115,63 @@
 
 
 
+<div class="row py-2 mx-5">
+    <div class="col-lg-7  mb-lg-0">
+        <div class="appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="300">
+            <h3 class="font-weight-bold  ">Hakkımızda</h3>
+            <h4 class="text-color-primary font-weight-bold text-4 mb-2">Dönüşümün Mimarı, İşinizin Stratejik Ortağı</h4>
+
+            <p class="text-3 mb-4">
+                Senkroon, danışmanlık, yazılım ve dijital dönüşüm alanlarında uzmanlaşmış; işletmelerin dijital ve
+                operasyonel yolculuklarında sadece bir rehber değil, uçtan uca dönüşümü yöneten stratejik bir iş
+                ortağıdır. ERP danışmanlığından iş süreçleri tasarımına, muhasebe ve finansal yapılandırmadan
+                kurumsal yazılım çözümlerine kadar geniş bir yelpazede,
+                modern iş dünyasının karmaşık ihtiyaçlarına yanıt veriyoruz.
+            </p>
+
+            <h4 class="text-color-primary font-weight-bold text-4 mb-2">Çok Boyutlu Yazılım ve Süreç Yönetimi</h4>
+            <p class="text-3 mb-3">
+                Bizim için teknoloji, işinizin yaşayan bir parçasıdır. Sahadaki derin deneyimimizi analitik bakış
+                açısı ve teknolojiyle birleştirerek; işletmenizin ihtiyaç duyduğu her alanda yanınızdayız:
+            </p>
+            <ul class="text-3 mb-4 ps-3">
+                <li>Uçtan Uca Yönetim: ERP süreç yönetimi, CRM (Müşteri İlişkileri Yönetimi), İnsan Kaynakları ve Proje Yönetimi sistemleri.</li>
+                <li>Varlık ve İçerik Kontrolü: Fiziki Varlık Yönetimi, İçerik Yönetimi ve Intranet çözümleri.</li>
+                <li>Dijital Ticaret: B2B, B2C ve e-ticaret platformlarının iş modelinize tam entegrasyonu.</li>
+            </ul>
+
+            <h4 class="text-color-primary font-weight-bold text-4 mb-2">Yaklaşımımız: Analitik Güç, Sahadaki Tecrübe</h4>
+            <p class="text-3 mb-3">
+                Hazır kalıplar yerine; kurum kültürünüze, çalışma biçiminize ve güncel ihtiyaçlarınıza en uygun
+                "terzi usulü" iş modelleri tasarlıyoruz. Standart yazılımların sınırlarını zorlayarak,
+                taleplerinize %100 uyum sağlayan özel yazılım kurguları inşa ediyor; veri disiplinini operasyonel
+                hız ve şeffaflıkla birleştiriyoruz.
+            </p>
+            <ul class="text-3 mb-4 ps-3">
+                <li>Süreç ve Organizasyon Tasarımı: Karmaşıklığı gideriyor, verimliliği standardize ediyoruz.</li>
+                <li>Muhasebe ve Finansal Modelleme: Güçlü bir finansal yapılandırma ile geleceği öngörülebilir kılıyoruz.</li>
+                <li>Stratejik Entegrasyon: Teknolojiyi tek başına bir araç değil, işinizin omurgasını güçlendiren stratejik bir yapı hâline getiriyoruz.</li>
+            </ul>
+
+            <h4 class="text-color-primary font-weight-bold text-4 mb-2">Amacımız: Veriyle Yönetilen Sürdürülebilir Gelecek</h4>
+            <p class="text-3 mb-0">
+                Temel hedefimiz; her aşamada güvenilir, ölçülebilir ve sürdürülebilir bir yönetim altyapısı
+                kurmaktır. Senkroon ile dijital dönüşüm; sadece bir sistem geçişi değil, işletmenize rekabet
+                avantajı sağlayan ve stratejik karar alma mekanizmanızı güçlendirerek geleceği bugünden inşa eden
+                bir başarı hikayesidir.
+            </p>
+        </div>
+    </div>
+    <div class="col-lg-5 mb-5">
+        <div class="appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="300">
+            <img src="{{ asset('porto/simages/workcube-about-us.png') }}" class="img-fluid mt-5 rounded shadow-lg"
+                alt="Şirket Hikayesi">
+        </div>
+    </div>
+</div>
+
 <!-- about us  -->
-<section class="section section-default border-0  appear-animation animated fadeIn appear-animation-visible"
+<!-- <section class="section section-default border-0  appear-animation animated fadeIn appear-animation-visible"
     data-appear-animation="fadeIn" data-appear-animation-delay="750" style="animation-delay: 750ms;">
     <div class="container py-4">
 
@@ -184,7 +239,7 @@
         </div>
 
     </div>
-</section>
+</section> -->
 
 
 <section class="container py-5" id="services">
