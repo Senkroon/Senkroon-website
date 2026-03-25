@@ -222,7 +222,7 @@ class Homecontroller extends Controller
     {
         SEOTools::setTitle('Kurumsal ERP Çözümleri ve Modüller | Üretim, Stok, CRM');
         SEOTools::setDescription('İşletmenizin tüm süreçlerini optimize eden üretim yönetim sistemi (MES), stok takip programı, CRM ve finans modüllerimizle tanışın.');
-        SEOTools::metatags()->setKeywords(['ERP programları', 'Üretim planlama yazılımı', 'Stok takip programı', 'Müşteri ilişkileri yönetimi (CRM)', 'B2B sipariş sistemi', 'Mikro yazılım entegrasyonu', 'Workcube modülleri']);
+        SEOTools::metatags()->setKeywords(['ERP programları', 'Üretim planlama yazılımı', 'Stok takip programı', 'Müşteri ilişkileri yönetimi (CRM)', 'B2B sipariş sistemi', 'Mikro yazılım entegrasyonu', 'Workcube modülleri', 'Uyumsoft Girus Ticari', 'Ticari yönetim sistemi']);
         SEOTools::metatags()->addMeta('robots', 'index,follow');
         SEOTools::opengraph()->setUrl(url()->current());
         SEOTools::setCanonical(url()->current());
@@ -230,7 +230,11 @@ class Homecontroller extends Controller
         $advisors = Advisor::all();
         $mikroModules = Module::where('category', 'mikro')->get();
         $WorkcubeModules = Module::where('category', 'workcube')->get();
-        return view('home.products-and-solutions', compact('advisors', 'mikroModules', 'WorkcubeModules'));
+         $uyumsoftModules = Module::where('category', 'uyumsoft')
+            ->whereNull('parent_id')
+            ->where('is_active', true)
+            ->get();
+        return view('home.products-and-solutions', compact('advisors', 'mikroModules', 'WorkcubeModules', 'uyumsoftModules'));
     }
 
     public function kvkk()

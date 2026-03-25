@@ -17,6 +17,11 @@ class ModuleController extends Controller
             SEOTools::setDescription('KOBİ\'ler ve ticari işletmeler için Mikro yazılım entegrasyonları, ön muhasebe, e-dönüşüm ve iş süreçlerini hızlandıran özel modüller.');
             SEOTools::metatags()->setKeywords(['Mikro yazılım modülleri', 'Malatya Mikro entegrasyonu', 'Ön muhasebe programı', 'KOBİ ticari yazılım', 'e-fatura entegrasyonu', 'özel mikro çözümler', 'stok takip modülü', 'ticari yazılım Malatya']);
             SEOTools::jsonLd()->addValue('name', 'Mikro Yazılım Modülleri');
+        } elseif ($category === 'uyumsoft') {
+            SEOTools::setTitle('Uyumsoft Girus Ticari Yazılım Çözümleri | Senkroon Yazılım');
+            SEOTools::setDescription('Uyumsoft Girus Ticari Yönetim Sistemi ile muhasebe, depo yönetimi ve ticari işlemleri entegre şekilde yönetin. KOBİ\'ler için ideal çözüm.');
+            SEOTools::metatags()->setKeywords(['Uyumsoft', 'Girus Ticari', 'Ticari yönetim sistemi', 'Muhasebe yazılımı', 'Depo yönetimi', 'KOBİ yazılımı', 'Malatya Uyumsoft', 'Ticari yazılım çözümleri']);
+            SEOTools::jsonLd()->addValue('name', 'Uyumsoft Çözümleri');
         } else {
             // Jenerik "Özel çözümler" yerine Workcube, OSB ve ERP odaklı terimler eklendi
             SEOTools::setTitle('Workcube ERP Modülleri | Üretim, Finans ve CRM Yönetimi');

@@ -105,7 +105,7 @@
                                                 <li>
                                                     <div class="dropdown-mega-content">
                                                         <div class="row">
-                                                            <div class="col-lg-4">
+                                                            <div class="col-lg-3">
                                                                 <div class="dropdown-mega-sub-title">
                                                                     <a class="font-weight-bold text-4 "
                                                                         href="{{ route('modules.index', 'workcube') }}">
@@ -157,7 +157,7 @@
                                                                     </a>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-lg-4">
+                                                            <div class="col-lg-3">
 
                                                                 <div class="dropdown-mega-sub-title">
                                                                     <a class="font-weight-bold text-4 "
@@ -202,7 +202,41 @@
                                                                 </div>
                                                             </div>
 
-                                                            <div class="col-lg-4">
+
+
+                                                            <div class="col-lg-3">
+                                                                <div class="dropdown-mega-sub-title">
+                                                                    <a class="font-weight-bold text-4 "
+                                                                        href="{{ route('modules.index', 'uyumsoft') }}">
+                                                                        Tüm Uyumsoft Çözümleri</a>
+                                                                </div>
+                                                                <a href="{{ route('modules.index', 'uyumsoft') }}"
+                                                                    class="d-block mb-3">
+                                                                    <img src="{{ asset('porto/simages/uyumsoft.png') }}"
+                                                                        alt="Uyumsoft" class="img-fluid rounded mb-2 ">
+                                                                    <p class="text-2 mb-0">Girus Ticari Yönetim Sistemi Muhasebe Depo Yönetimi ve daha fazlası...</p>
+                                                                </a>
+                                                                <div class="dropdown-mega-sub-nav">
+                                                                    <div class="row">
+                                                                        <div class="col-6">
+                                                                            <ul class="list list-unstyled">
+                                                                                <li><a class="dropdown-item"
+                                                                                        href="{{ route('modules.show', ['uyumsoft', 'girus-ticari']) }}">Girus Ticari</a></li>
+
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a href="{{ route('modules.index', 'uyumsoft') }}"
+                                                                        class="btn btn-link text-decoration-none ps-0">
+                                                                        <i class="fas fa-angle-right me-1"></i>
+                                                                        Tüm Uyumsoft Çözümleri
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+
+
+
+                                                            <div class="col-lg-3">
                                                                 <div class="dropdown-mega-sub-title">
                                                                     <a class="font-weight-bold text-4 "
                                                                         href="{{ route('advisors.index') }}">
@@ -256,6 +290,8 @@
                                                                 </div>
                                                             </div>
 
+
+
                                                         </div>
                                                     </div>
                                                 </li>
@@ -264,8 +300,8 @@
 
                                         {{-- <li>
                                             <a class="nav-link" href="{{ route('projects.index') }}">
-                                                Projelerimiz
-                                            </a>
+                                        Projelerimiz
+                                        </a>
                                         </li> --}}
 
                                         <!-- Ürünler & Çözümler - Basit Dropdown (Mobil) -->
@@ -371,28 +407,28 @@
                                         {{-- <li class="dropdown d-lg-none">
                                             <a class="nav-link dropdown-toggle"
                                                 href="{{ url('danismanlik-cozumleri') }}">
-                                                Hizmetlerimiz
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item"
-                                                        href="{{ url('danismanlik-cozumleri/finans-muhasebe-ic-denetim-ic-kontrol') }}">Finans,
-                                                        Muhasebe, İç Denetim & İç Kontrol</a></li>
-                                                <li><a class="dropdown-item"
-                                                        href="{{ url('danismanlik-cozumleri/is-surecleri-yonetim-ve-organizasyon') }}">İş
-                                                        Süreçleri, Yönetim ve Organizasyon</a></li>
-                                                <li><a class="dropdown-item"
-                                                        href="{{ url('danismanlik-cozumleri/erp-mrp-danismanligi') }}">ERP
-                                                        & MRP Danışmanlığı</a></li>
-                                                <li><a class="dropdown-item"
-                                                        href="{{ url('danismanlik-cozumleri/raporlama-ve-analiz-danismanligi') }}">Raporlama
-                                                        ve Analiz Danışmanlığı</a></li>
-                                                <li>
-                                                    <hr class="dropdown-divider">
-                                                </li>
-                                                <li><a class="dropdown-item fw-bold"
-                                                        href="{{ url('danismanlik-cozumleri') }}">Tümünü Gör</a>
-                                                </li>
-                                            </ul>
+                                        Hizmetlerimiz
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item"
+                                                    href="{{ url('danismanlik-cozumleri/finans-muhasebe-ic-denetim-ic-kontrol') }}">Finans,
+                                                    Muhasebe, İç Denetim & İç Kontrol</a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="{{ url('danismanlik-cozumleri/is-surecleri-yonetim-ve-organizasyon') }}">İş
+                                                    Süreçleri, Yönetim ve Organizasyon</a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="{{ url('danismanlik-cozumleri/erp-mrp-danismanligi') }}">ERP
+                                                    & MRP Danışmanlığı</a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="{{ url('danismanlik-cozumleri/raporlama-ve-analiz-danismanligi') }}">Raporlama
+                                                    ve Analiz Danışmanlığı</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item fw-bold"
+                                                    href="{{ url('danismanlik-cozumleri') }}">Tümünü Gör</a>
+                                            </li>
+                                        </ul>
                                         </li> --}}
 
                                         <!-- Hizmetlerimiz - Mega Menu (Desktop) -->

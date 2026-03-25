@@ -33,6 +33,7 @@ class DatabaseSeeder extends Seeder
             BI::class,
             LMS::class,
             B2B::class,
+            UyumsoftSeeder::class,
         ]);
 
         $this->command->info('🎉 Tüm ERP modül seederlari başarıyla çalıştırıldı!');
