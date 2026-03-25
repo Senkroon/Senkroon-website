@@ -214,7 +214,7 @@
                                                                     class="d-block mb-3">
                                                                     <img src="{{ asset('porto/simages/uyumsoft.png') }}"
                                                                         alt="Uyumsoft" class="img-fluid rounded mb-2 ">
-                                                                    <p class="text-2 mb-0">Girus Ticari Yönetim Sistemi Muhasebe Depo Yönetimi ve daha fazlası...</p>
+                                                                    <p class="text-2 mb-0">Girus Ticari + Girus CRM + Girus HR ile ticari, müşteri ve insan kaynakları süreçlerinizi tek platformda yönetin.</p>
                                                                 </a>
                                                                 <div class="dropdown-mega-sub-nav">
                                                                     <div class="row">
@@ -222,7 +222,14 @@
                                                                             <ul class="list list-unstyled">
                                                                                 <li><a class="dropdown-item"
                                                                                         href="{{ route('modules.show', ['uyumsoft', 'girus-ticari']) }}">Girus Ticari</a></li>
-
+                                                                                <li><a class="dropdown-item"
+                                                                                        href="{{ route('modules.show', ['uyumsoft', 'girus-crm']) }}">Girus CRM</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="col-6">
+                                                                            <ul class="list list-unstyled">
+                                                                                <li><a class="dropdown-item"
+                                                                                        href="{{ route('modules.show', ['uyumsoft', 'girus-hr']) }}">Girus HR</a></li>
                                                                             </ul>
                                                                         </div>
                                                                     </div>
