@@ -371,6 +371,31 @@
                                                     <hr class="dropdown-divider my-2">
                                                 </li>
 
+                                                <!-- Uyumsoft Çözümleri -->
+                                                <li class="dropdown-header text-primary fw-bold">
+                                                    <i class="fas fa-layer-group me-1"></i> Uyumsoft Çözümleri
+                                                </li>
+                                                <li><a class="dropdown-item py-2"
+                                                    href="{{ route('modules.show', ['uyumsoft', 'girus-ticari']) }}">
+                                                    <i class="fas fa-briefcase me-2 text-muted"></i>Girus Ticari</a>
+                                                </li>
+                                                <li><a class="dropdown-item py-2"
+                                                    href="{{ route('modules.show', ['uyumsoft', 'girus-crm']) }}">
+                                                    <i class="fas fa-address-book me-2 text-muted"></i>Girus CRM</a>
+                                                </li>
+                                                <li><a class="dropdown-item py-2"
+                                                    href="{{ route('modules.show', ['uyumsoft', 'girus-hr']) }}">
+                                                    <i class="fas fa-user-friends me-2 text-muted"></i>Girus HR</a>
+                                                </li>
+                                                <li><a class="dropdown-item fw-bold text-primary py-2"
+                                                    href="{{ route('modules.index', 'uyumsoft') }}">
+                                                    <i class="fas fa-arrow-right me-2"></i>Tüm Uyumsoft
+                                                    Çözümleri</a>
+                                                </li>
+                                                <li>
+                                                    <hr class="dropdown-divider my-2">
+                                                </li>
+
                                                 <!-- Danışmanlık Çözümleri -->
 
                                                 <li class="dropdown-header text-primary fw-bold">
