@@ -143,7 +143,7 @@
 
 
 
-<div class="row py-2 mx-5">
+<!-- <div class="row py-2 mx-5">
     <div class="col-lg-7  mb-lg-0">
         <div class="appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="300">
             <h3 class="font-weight-bold  ">Hakkımızda</h3>
@@ -196,7 +196,7 @@
                 alt="Şirket Hikayesi">
         </div>
     </div>
-</div>
+</div> -->
 
 <!-- about us  -->
 <!-- <section class="section section-default border-0  appear-animation animated fadeIn appear-animation-visible"
