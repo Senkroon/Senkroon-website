@@ -68,52 +68,6 @@
 
 
 
-    <section class="container mb-5">
-        <div class="row">
-            <div class="col">
-                <div class="row mb-5">
-                    <div class="col text-center">
-                        <h2 class="font-weight-bold line-height-2 text-7 mb-1">Mikro </h2>
-                        <span class="d-block text-color-dark text-5 pb-2 mb-2 opacity-7">Uzman kadromuzla size özel
-                            çözümler sunuyoruz</span>
-
-                    </div>
-                </div>
-
-                <div class="container pb-5 mb-5">
-                    <div class="row">
-                        @foreach ($mikroModules->take(3) as $module)
-                            <div class="col-md-6 col-lg-4 mb-4">
-                                <div class="card border-0 shadow-sm h-100">
-                                    <img src="{{ $module->cover_image_url }}" class="card-img-top" alt="{{ $module->title }}">
-                                    <div class="card-body">
-                                        <h5 class="card-title font-weight-bold">{{ $module->title }}</h5>
-                                        <p class="card-text">{!! Str::limit($module->description, 100) !!}</p>
-                                        @if ($module->slug)
-                                            <a href="{{ route('modules.show', ['category' => 'mikro', 'module' => $module->slug]) }}"
-                                                class="btn btn-primary">Detayları Görüntüle</a>
-                                        @endif
-                                    </div>
-                                </div>
-                            </div>
-                        @endforeach
-                    </div>
-
-                    @if ($mikroModules->count() > 3)
-                        <div class="row">
-                            <div class="col text-center">
-                                <a href="{{ route('modules.index', ['category' => 'mikro']) }}"
-                                    class="btn btn-primary btn-outline btn-rounded font-weight-semibold text-3 btn-px-4 btn-py-2">
-                                    Tüm Modülleri Görüntüle
-                                </a>
-                            </div>
-                        </div>
-                    @endif
-                </div>
-            </div>
-        </div>
-    </section>
-    <hr class="my-5">
 
 
 

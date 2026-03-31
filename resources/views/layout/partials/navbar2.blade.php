@@ -105,7 +105,7 @@
                                                 <li>
                                                     <div class="dropdown-mega-content">
                                                         <div class="row">
-                                                            <div class="col-lg-3">
+                                                            <div class="col-lg-4">
                                                                 <div class="dropdown-mega-sub-title">
                                                                     <a class="font-weight-bold text-4 "
                                                                         href="{{ route('modules.index', 'workcube') }}">
@@ -157,54 +157,11 @@
                                                                     </a>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-lg-3">
-
-                                                                <div class="dropdown-mega-sub-title">
-                                                                    <a class="font-weight-bold text-4 "
-                                                                        href="{{ route('modules.index', 'mikro') }}">
-                                                                        Tüm Mikro Çözümleri</a>
-
-                                                                </div>
-                                                                <a href="{{ route('modules.index', 'mikro') }}"
-                                                                    class="d-block mb-3">
-                                                                    <img src="{{ asset('porto/simages/mikro.png') }}"
-                                                                        alt="Mikro" class="img-fluid rounded mb-2 ">
-                                                                    <p class="text-2 mb-0">Mikro Run + Mikro
-                                                                        Jump +
-                                                                        Mikro Fly + Mikro Jump Basic ve daha
-                                                                        fazlası...</p>
-                                                                </a>
-                                                                <div class="dropdown-mega-sub-nav">
-                                                                    <div class="row">
-                                                                        <div class="col-6">
-                                                                            <ul class="list list-unstyled">
-                                                                                <li><a class="dropdown-item"
-                                                                                        href="{{ route('modules.show', ['mikro', 'mikro-run']) }}">Mikro
-                                                                                        Run</a></li>
-                                                                                <li><a class="dropdown-item"
-                                                                                        href="{{ route('modules.show', ['mikro', 'mikro-jump']) }}">Mikro
-                                                                                        Jump</a></li>
-                                                                            </ul>
-                                                                        </div>
-                                                                        <div class="col-6">
-                                                                            <ul class="list list-unstyled">
-                                                                                <li><a class="dropdown-item"
-                                                                                        href="{{ route('modules.show', ['mikro', 'mikro-fly']) }}">Mikro
-                                                                                        Fly</a></li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </div>
-                                                                    <a href="{{ route('modules.index', 'mikro') }}"
-                                                                        class="btn btn-link text-decoration-none ps-0">
-                                                                        <i class="fas fa-angle-right me-1"></i>
-                                                                        Tüm Mikro Çözümleri
-                                                                    </a>
-                                                                </div>
-                                                            </div>
 
 
 
-                                                            <div class="col-lg-3">
+
+                                                            <div class="col-lg-4">
                                                                 <div class="dropdown-mega-sub-title">
                                                                     <a class="font-weight-bold text-4 "
                                                                         href="{{ route('modules.index', 'uyumsoft') }}">
@@ -243,7 +200,7 @@
 
 
 
-                                                            <div class="col-lg-3">
+                                                            <div class="col-lg-4">
                                                                 <div class="dropdown-mega-sub-title">
                                                                     <a class="font-weight-bold text-4 "
                                                                         href="{{ route('advisors.index') }}">
@@ -344,32 +301,6 @@
                                                     <hr class="dropdown-divider my-2">
                                                 </li>
 
-                                                <!-- Mikro Çözümleri -->
-                                                <li class="dropdown-header text-primary fw-bold">
-                                                    <i class="fas fa-microchip me-1"></i> Mikro Çözümleri
-                                                </li>
-                                                <li><a class="dropdown-item py-2"
-                                                        href="{{ route('modules.show', ['mikro', 'mikro-run']) }}">
-                                                        <i class="fas fa-play me-2 text-muted"></i>Mikro Run</a>
-                                                </li>
-                                                <li><a class="dropdown-item py-2"
-                                                        href="{{ route('modules.show', ['mikro', 'mikro-jump']) }}">
-                                                        <i class="fas fa-arrow-up me-2 text-muted"></i>Mikro
-                                                        Jump</a>
-                                                </li>
-                                                <li><a class="dropdown-item py-2"
-                                                        href="{{ route('modules.show', ['mikro', 'mikro-fly']) }}">
-                                                        <i class="fas fa-paper-plane me-2 text-muted"></i>Mikro
-                                                        Fly</a>
-                                                </li>
-                                                <li><a class="dropdown-item fw-bold text-primary py-2"
-                                                        href="{{ route('modules.index', 'mikro') }}">
-                                                        <i class="fas fa-arrow-right me-2"></i>Tüm Mikro
-                                                        Çözümleri</a>
-                                                </li>
-                                                <li>
-                                                    <hr class="dropdown-divider my-2">
-                                                </li>
 
                                                 <!-- Uyumsoft Çözümleri -->
                                                 <li class="dropdown-header text-primary fw-bold">
