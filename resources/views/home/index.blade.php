@@ -330,7 +330,7 @@
                     <div class="mb-3">
                         <i class="fas fa-users text-primary text-6"></i>
                     </div>
-                    <h4 class="card-title mb-3 text-5 font-weight-bold">7/24 Teknik Destek</h4>
+                    <h4 class="card-title mb-3 text-5 font-weight-bold">Teknik Destek</h4>
                     <p class="card-text">ERP kullanımında karşılaştığınız tüm sorunlar için
                         kesintisiz teknik destek hizmeti. Uzman ekibimiz her zaman yanınızda.</p>
                 </div>
@@ -345,8 +345,8 @@
                     <div class="mb-3">
                         <i class="fas fa-chart-bar text-primary text-6"></i>
                     </div>
-                    <h4 class="card-title mb-3 text-5 font-weight-bold">Özel Modül Geliştirme</h4>
-                    <p class="card-text">Sektörünüze ve işletmenize özel ERP modülleri geliştiriyoruz.
+                    <h4 class="card-title mb-3 text-5 font-weight-bold">Özel Yazılım Geliştirme</h4>
+                    <p class="card-text">Sektörünüze ve işletmenize özel yazılım çözümleri geliştiriyoruz.
                         Standart çözümlerin yetmediği durumlarda tam uyumlu eklentiler.</p>
                 </div>
             </div>
