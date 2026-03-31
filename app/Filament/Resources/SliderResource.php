@@ -30,15 +30,38 @@ class SliderResource extends Resource
                     ->default(null),
                 Forms\Components\Textarea::make('description')
                     ->columnSpanFull(),
+                Forms\Components\TagsInput::make('features')
+                    ->label('Özellikler Listesi')
+                    ->placeholder('Özellik yazıp Enter\'a basın')
+                    ->columnSpanFull(),
                 Forms\Components\FileUpload::make('background_image')
-                    ->label('Görsel')
+                    ->label('Arka Plan Görseli')
+                    ->image()->directory(directory: 'sliders')
+                    ->visibility('public')
+                    ->disk('public'),
+                Forms\Components\FileUpload::make('front_image')
+                    ->label('Ön Görsel (Cihazlar vb.)')
                     ->image()->directory(directory: 'sliders')
                     ->visibility('public')
                     ->disk('public'),
                 Forms\Components\TextInput::make('button_text')
+                    ->label('Birinci Buton Metni')
                     ->maxLength(255)
                     ->default(null),
                 Forms\Components\TextInput::make('button_link')
+                    ->label('Birinci Buton Linki')
+                    ->maxLength(255)
+                    ->default(null),
+                Forms\Components\TextInput::make('secondary_button_text')
+                    ->label('İkinci Buton Metni')
+                    ->maxLength(255)
+                    ->default(null),
+                Forms\Components\TextInput::make('secondary_button_link')
+                    ->label('İkinci Buton Linki')
+                    ->maxLength(255)
+                    ->default(null),
+                Forms\Components\TextInput::make('bottom_text')
+                    ->label('Alt Bilgi Metni (Butonların Altı)')
                     ->maxLength(255)
                     ->default(null),
                 Forms\Components\TextInput::make('order')

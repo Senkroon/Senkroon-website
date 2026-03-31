@@ -11,9 +11,14 @@ class Slider extends Model
         'title',
         'subtitle',
         'description',
+        'features',
         'background_image',
+        'front_image',
         'button_text',
         'button_link',
+        'secondary_button_text',
+        'secondary_button_link',
+        'bottom_text',
         'order',
         'is_active',
         'animation_delay',
@@ -26,7 +31,8 @@ class Slider extends Model
     protected $casts = [
         'is_active' => 'boolean',
         'order' => 'integer',
-        'animation_delay' => 'integer'
+        'animation_delay' => 'integer',
+        'features' => 'array'
     ];
 
     // Aktif slider'ları sıralı şekilde getir

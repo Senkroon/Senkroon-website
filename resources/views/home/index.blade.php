@@ -2,68 +2,96 @@
 @section('content')
 
 <div class="owl-carousel owl-carousel-light owl-carousel-light-init-fadeIn owl-theme manual dots-inside dots-horizontal-center show-dots-hover nav-inside nav-inside-plus nav-dark nav-md nav-font-size-md show-nav-hover mb-0"
-    data-plugin-options="{'autoplayTimeout': 7000}" data-dynamic-height="['670px','670px','670px','550px','500px']"
-    style="height: 600px; background-color: #f4f4f4;">
+    data-plugin-options="{'autoplayTimeout': 7000, 'autoHeight': true}"
+    style=" height: 650px ; background-color: #030612; background-image: url('{{ $sliders->first() ? asset('storage/' . $sliders->first()->background_image) : '' }}'); background-size: cover; background-position: center; background-attachment: fixed;">
     <div class="owl-stage-outer">
         <div class="owl-stage">
 
             @foreach ($sliders as $slider)
-            <div class="owl-item p-relative overflow-hidden {{ $loop->first ? 'active' : '' }}">
-                <div class=" border-radius-2 p-relative z-index-1 overflow-hidden">
-                    <div class="mx-5">
-                        <div class="row justify-content-center align-items-center">
+            <div class="owl-item p-relative {{ $loop->first ? 'active' : '' }}">
+                <div class="border-radius-2 p-relative z-index-1">
+                    <style>
+                        @media (max-width: 767px) {
+                            .slider-img-mobile {
+                                max-height: 200px !important;
+                            }
 
+                            .slider-subtitle-mobile p {
+                                font-size: 0.9rem !important;
+                                line-height: 1.4 !important;
+                                margin-bottom: 5px !important;
+                            }
 
-                            <div class=" col-lg-5 text-center text-lg-start  mt-lg-5  order-2 order-lg-1">
+                            .slider-title-mobile {
+                                font-size: 1.4rem !important;
+                                margin-bottom: 10px !important;
+                            }
+                        }
+                    </style>
+                    <div class="container py-2 py-md-5 ">
+                        <div class="row align-items-center">
 
-                                <h1 class="text-4 text-lg-6 font-weight-semibold line-height-1  mb-4 appear-animation"
-                                    data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
-                                    {{ $slider->title }}
+                            <!-- Mobil İçin Üst Başlık (Sadece Mobilde Görünür) -->
+                            <div class="col-12 d-block d-md-none text-center mt-3 mt-md-0 order-1">
+                                <h1 class="text-color-light slider-title-mobile font-weight-bold line-height-2 mb-2">
+                                    {!! $slider->title !!}
                                 </h1>
-                                <div class="appear-animation" data-appear-animation="fadeInUpShorter"
-                                    data-appear-animation-delay="400">
-                                    <h4 class="text-2 text-lg-4 font-weight-light  line-height-5 mb-4 appear-animation"
-                                        data-appear-animation="fadeInUpShorter" data-appear-animation-delay="0">
-                                        {{ $slider->subtitle }}
-                                    </h4>
+                            </div>
 
-                                    <h4
-                                        class="text-2 text-lg-4 pe-lg-5  font-weight-light line-height-5   mb-2 mb-lg-4">
-                                        {{ $slider->description }}
-                                    </h4>
+                            <!-- Yazılar Col-md-4 (Masaüstünde Başlık + İçerik, Mobilde Sadece İçerik) -->
+                            <div class="col-md-4 text-center text-md-start order-3 order-md-1 mt-2 mt-md-0 pb-2 pb-md-0">
+
+                                <!-- Masaüstü Başlık (Sadece Masaüstünde Görünür) -->
+                                <h1 class="text-color-light text-md-7 text-lg-8 font-weight-bold line-height-2 mb-3 d-none d-md-block">
+                                    {!! $slider->title !!}
+                                </h1>
+
+                                <div class="text-color-light text-4 font-weight-light line-height-6 mb-2 mb-md-4 opacity-9 slider-subtitle-mobile">
+                                    {!! $slider->description !!}
                                 </div>
-                                @if($slider->button_text)
-                                <div class="appear-animation" data-appear-animation="fadeIn"
-                                    data-appear-animation-delay="600">
-                                    <a href="{{ $slider->button_link }}" data-hash data-hash-offset="0"
-                                        data-hash-offset-lg="0"
-                                        class="
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        btn btn-light btn-effect-2 transition-3ms border-0 btn-rounded
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        text-2 text-sm-3 text-lg-3
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        py-2 py-sm-3 py-lg-4
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        px-4 px-sm-5 px-lg-5
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        btn-with-arrow-solid mt-1
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ">
-                                        <strong class="d-inline-flex text-dark font-weight-medium me-3 px-2 px-lg-3">
-                                            {{ $slider->button_text }}
-                                        </strong>
-                                        <span class="bg-transparent box-shadow-6">
-                                            <i class="fa-solid fa-arrow-right text-dark"></i>
-                                        </span>
+
+                                @if(is_array($slider->features))
+                                <ul class="list list-unstyled text-color-light text-3 text-md-4 font-weight-semibold mb-2 mb-md-4">
+                                    @foreach($slider->features as $feature)
+                                    <li class="mb-1 mb-md-2 d-flex align-items-center justify-content-center justify-content-md-start text-start">
+                                        <i class="fas fa-check text-4 text-md-5 me-2 me-md-3" style="color: #ff8c00;"></i> {!! $feature !!}
+                                    </li>
+                                    @endforeach
+                                </ul>
+                                @endif
+
+                                <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-md-start align-items-center mb-0 mb-md-3">
+                                    @if($slider->button_text)
+                                    <a href="{{ $slider->button_link }}" data-hash data-hash-offset="0" data-hash-offset-lg="0"
+                                        class="btn btn-rounded font-weight-bold text-2 text-md-3 px-4 px-md-5 py-2 py-md-3 mb-2 mb-sm-0 me-sm-4 d-inline-flex align-items-center text-color-light"
+                                        style="background: linear-gradient(90deg, #ff8c00 0%, #ff5100 100%); border: none;">
+                                        {{ $slider->button_text }} <i class="fas fa-chevron-right ms-2 mt-1" style="font-size: 0.8em;"></i>
                                     </a>
+                                    @endif
+                                    @if($slider->secondary_button_text)
+                                    <a href="{{ $slider->secondary_button_link }}" data-hash data-hash-offset="0" data-hash-offset-lg="0"
+                                        class="btn btn-light btn-rounded font-weight-bold text-color-dark text-2 text-md-3 px-4 px-md-5 py-2 py-md-3 d-inline-flex align-items-center">
+                                        {{ $slider->secondary_button_text }}
+                                    </a>
+                                    @endif
+                                </div>
+
+                                @if($slider->bottom_text)
+                                <div class="text-color-light text-1 text-md-2 opacity-7 mt-2 mt-md-3">
+                                    {!! str_replace('•', '<span class="mx-2">&bull;</span>', $slider->bottom_text) !!}
                                 </div>
                                 @endif
-                            </div>
-                            <div class="col-8 col-lg-6   order-1 order-lg-2">
-                                <div class="p-relative">
-                                    <div class="custom-mask-img custom-mask-img-1">
-                                        <img class="" src="{{ asset('storage/' . $slider->background_image) }}"
-                                            loading="lazy" alt="{{ $slider->title }}">
-                                    </div>
 
+                            </div>
+
+                            <!-- Resim Col-md-8 -->
+                            <div class="col-md-8 order-2 order-md-2 mb-2 mb-md-0 text-center d-flex align-items-center justify-content-center">
+                                <div class="p-relative d-inline-block w-100 text-center">
+                                    <img class="img-fluid mx-auto d-block slider-img-mobile"
+                                        src="{{ $slider->front_image ? asset('storage/' . $slider->front_image) : asset('storage/' . $slider->background_image) }}"
+                                        alt="{{ strip_tags($slider->title) }}" style="max-height: 550px; width: auto; object-fit: contain; mix-blend-mode: lighten; filter: drop-shadow(0px 0px 20px rgba(0,0,0,0.5));">
                                 </div>
                             </div>
-
 
                         </div>
                     </div>
