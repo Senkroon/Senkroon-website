@@ -264,3 +264,21 @@
         display: none !important;
     }
 }
+
+
+@media (max-width: 767px) {
+    .slider-img-mobile {
+        max-height: 200px !important;
+    }
+
+    .slider-subtitle-mobile p {
+        font-size: 0.9rem !important;
+        line-height: 1.4 !important;
+        margin-bottom: 5px !important;
+    }
+
+    .slider-title-mobile {
+        font-size: 1.4rem !important;
+        margin-bottom: 10px !important;
+    }
+}

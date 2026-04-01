@@ -10,24 +10,7 @@
             @foreach ($sliders as $slider)
             <div class="owl-item p-relative {{ $loop->first ? 'active' : '' }}">
                 <div class="border-radius-2 p-relative z-index-1">
-                    <style>
-                        @media (max-width: 767px) {
-                            .slider-img-mobile {
-                                max-height: 200px !important;
-                            }
 
-                            .slider-subtitle-mobile p {
-                                font-size: 0.9rem !important;
-                                line-height: 1.4 !important;
-                                margin-bottom: 5px !important;
-                            }
-
-                            .slider-title-mobile {
-                                font-size: 1.4rem !important;
-                                margin-bottom: 10px !important;
-                            }
-                        }
-                    </style>
                     <div class="container py-2 py-md-5 ">
                         <div class="row align-items-center">
 
@@ -42,11 +25,11 @@
                             <div class="col-md-4 text-center text-md-start order-3 order-md-1 mt-2 mt-md-0 pb-2 pb-md-0">
 
                                 <!-- Masaüstü Başlık (Sadece Masaüstünde Görünür) -->
-                                <h1 class="text-color-light text-md-7 text-lg-8 font-weight-bold line-height-2 mb-3 d-none d-md-block">
+                                <h1 class="text-color-light text-md-9 text-lg-12 font-weight-bold line-height-2 mb-3 d-none d-md-block">
                                     {!! $slider->title !!}
                                 </h1>
 
-                                <div class="text-color-light text-4 font-weight-light line-height-6 mb-2 mb-md-4 opacity-9 slider-subtitle-mobile">
+                                <div class="text-color-light text-md-5 line-height-6 mb-2 mb-md-4  slider-subtitle-mobile">
                                     {!! $slider->description !!}
                                 </div>
 
@@ -104,14 +87,7 @@
         <button type="button" role="presentation" class="owl-prev" aria-label="Previous"></button>
         <button type="button" role="presentation" class="owl-next" aria-label="Next"></button>
     </div>
-    @if ($sliders->count() > 1)
-    <div class="owl-dots mb-5">
-        @foreach ($sliders as $slider)
-        <button role="button" class="owl-dot {{ $loop->first ? 'active' : '' }}"><span></span></button>
-        @endforeach
-    </div>
-</div>
-@endif
+
 </div>
 
 
