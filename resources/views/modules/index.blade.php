@@ -8,8 +8,6 @@
             <h1 class="text-color-white font-weight-bold mb-2">
                 @if ($category === 'uyumsoft')
                     Uyumsoft Çözümleri
-                @elseif ($category === 'mikro')
-                    Mikro Çözümleri
                 @else
                     Workcube Modülleri
                 @endif

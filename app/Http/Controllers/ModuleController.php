@@ -11,13 +11,8 @@ class ModuleController extends Controller
     public function index($category = 'workcube')
     {
         // SEO için category'ye göre başlık ayarla
-        if ($category === 'mikro') {
-            // "Hafif çözümler" yerine KOBİ'lerin doğrudan aradığı terimler eklendi
-            SEOTools::setTitle('Mikro Yazılım Çözümleri ve Modüller | Senkroon Yazılım');
-            SEOTools::setDescription('KOBİ\'ler ve ticari işletmeler için Mikro yazılım entegrasyonları, ön muhasebe, e-dönüşüm ve iş süreçlerini hızlandıran özel modüller.');
-            SEOTools::metatags()->setKeywords(['Mikro yazılım modülleri', 'Malatya Mikro entegrasyonu', 'Ön muhasebe programı', 'KOBİ ticari yazılım', 'e-fatura entegrasyonu', 'özel mikro çözümler', 'stok takip modülü', 'ticari yazılım Malatya']);
-            SEOTools::jsonLd()->addValue('name', 'Mikro Yazılım Modülleri');
-        } elseif ($category === 'uyumsoft') {
+
+        if($category === 'uyumsoft') {
             SEOTools::setTitle('Uyumsoft Girus Ticari Yazılım Çözümleri | Senkroon Yazılım');
             SEOTools::setDescription('Uyumsoft Girus Ticari Yönetim Sistemi ile muhasebe, depo yönetimi ve ticari işlemleri entegre şekilde yönetin. KOBİ\'ler için ideal çözüm.');
             SEOTools::metatags()->setKeywords(['Uyumsoft', 'Girus Ticari', 'Ticari yönetim sistemi', 'Muhasebe yazılımı', 'Depo yönetimi', 'KOBİ yazılımı', 'Malatya Uyumsoft', 'Ticari yazılım çözümleri']);
@@ -59,7 +54,7 @@ class ModuleController extends Controller
             ->get();
 
         // Category'ye göre view seç
-        $viewName = ($category === 'mikro') ? 'modules.mikro_index' : 'modules.index';
+        $viewName =  'modules.index';
 
         return view($viewName, compact('modules', 'category'));
     }
@@ -139,7 +134,7 @@ class ModuleController extends Controller
         ]);
 
         // Category'ye göre view seç
-        $viewName = ($category === 'mikro') ? 'modules.mikro_show' : 'modules.show';
+        $viewName = 'modules.show';
 
         return view($viewName, compact('module'));
     }

@@ -65,8 +65,7 @@ class ModuleResource extends Resource
                                 Forms\Components\Select::make('category')
                                     ->label('Kategori')
                                     ->options([
-                                        'workcube' => 'Workcube',
-                                        'mikro' => 'Mikro',
+                                        'workcube' => 'Workcube'
                                     ])
                                     ->required(),
 
