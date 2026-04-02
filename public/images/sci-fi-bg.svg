@@ -1,0 +1,36 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <radialGradient id="bgGradient" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#15253e" stop-opacity="0.86" />
+      <stop offset="55%" stop-color="#081219" stop-opacity="0.98" />
+      <stop offset="100%" stop-color="#02040a" stop-opacity="1" />
+    </radialGradient>
+    <filter id="blurLarge" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="60" />
+    </filter>
+    <filter id="blurMedium" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="24" />
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" fill="url(#bgGradient)" />
+
+  <circle cx="310" cy="140" r="220" fill="rgba(72, 146, 255, 0.24)" filter="url(#blurLarge)" />
+  <circle cx="1580" cy="180" r="210" fill="rgba(255, 138, 68, 0.22)" filter="url(#blurLarge)" />
+  <circle cx="260" cy="760" r="190" fill="rgba(56, 227, 183, 0.20)" filter="url(#blurMedium)" />
+  <circle cx="1520" cy="760" r="210" fill="rgba(196, 110, 250, 0.18)" filter="url(#blurMedium)" />
+
+  <circle cx="960" cy="360" r="70" fill="rgba(255, 255, 255, 0.12)" filter="url(#blurMedium)" />
+  <circle cx="1360" cy="520" r="40" fill="rgba(255, 196, 128, 0.18)" />
+  <circle cx="440" cy="480" r="34" fill="rgba(88, 194, 255, 0.20)" />
+  <circle cx="760" cy="880" r="28" fill="rgba(160, 240, 195, 0.16)" />
+
+  <path d="M180 900 C 360 760, 620 980, 820 820" stroke="rgba(255,255,255,0.08)" stroke-width="2" fill="none" />
+  <path d="M1300 220 C 1500 140, 1670 320, 1810 220" stroke="rgba(255,255,255,0.06)" stroke-width="2" fill="none" />
+
+  <g fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1">
+    <circle cx="300" cy="600" r="110" />
+    <circle cx="1620" cy="310" r="75" />
+    <circle cx="980" cy="720" r="125" />
+  </g>
+</svg>

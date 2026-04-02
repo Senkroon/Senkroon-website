@@ -1,5 +1,5 @@
 .sci-fi-section {
-    background: radial-gradient(circle at center, #0a1024 0%, #02040a 100%);
+    background: #02040a url('/images/backgorund.png') center center/cover no-repeat fixed;
     color: #e0e6ed;
     position: relative;
     overflow: hidden;
@@ -10,16 +10,28 @@
 .sci-fi-section::after {
     content: '';
     position: absolute;
-    width: 200%;
-    height: 200%;
-    top: -50%;
-    left: -50%;
+    width: 250%;
+    height: 250%;
+    top: -60%;
+    left: -60%;
     background-image:
-        radial-gradient(circle at 50% 50%, rgba(20, 80, 150, 0.1) 0%, transparent 40%),
-        radial-gradient(circle at 30% 70%, rgba(2, 40, 90, 0.15) 0%, transparent 30%),
-        radial-gradient(circle at 70% 30%, rgba(25, 120, 255, 0.05) 0%, transparent 40%);
+        radial-gradient(circle at 22% 22%, rgba(80, 200, 255, 0.2) 0%, transparent 18%),
+        radial-gradient(circle at 70% 18%, rgba(255, 140, 90, 0.18) 0%, transparent 16%),
+        radial-gradient(circle at 40% 70%, rgba(80, 255, 170, 0.15) 0%, transparent 18%),
+        radial-gradient(circle at 65% 80%, rgba(190, 100, 255, 0.12) 0%, transparent 20%),
+        radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.08) 0%, transparent 30%);
+    filter: blur(28px);
     pointer-events: none;
     z-index: 0;
+}
+
+.sci-fi-section::after {
+    background-image:
+        radial-gradient(circle at 35% 35%, rgba(255, 255, 255, 0.12) 0%, transparent 20%),
+        radial-gradient(circle at 85% 30%, rgba(255, 200, 120, 0.12) 0%, transparent 22%),
+        radial-gradient(circle at 25% 80%, rgba(120, 220, 255, 0.14) 0%, transparent 20%),
+        radial-gradient(circle at 60% 75%, rgba(180, 130, 255, 0.12) 0%, transparent 22%);
+    opacity: 0.75;
 }
 
 .bg-grid {
@@ -29,7 +41,12 @@
     width: 100%;
     height: 100%;
     background-size: 40px 40px;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    background-image:
+        linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+        radial-gradient(circle at 12% 18%, rgba(255, 255, 255, 0.06) 0%, transparent 2%),
+        radial-gradient(circle at 78% 25%, rgba(255, 255, 255, 0.05) 0%, transparent 2%),
+        radial-gradient(circle at 45% 65%, rgba(255, 255, 255, 0.04) 0%, transparent 2%);
     pointer-events: none;
     z-index: 0;
 }
@@ -387,7 +404,7 @@
 
 /* Global Dark Theme additions for entire background */
 .sci-fi-theme-main {
-    background: #060a17;
+    background: #060a17 url('/images/backgorund.png') center center/cover no-repeat fixed;
     /* Fallback solid color */
     color: #e0e6ed;
     position: relative;
