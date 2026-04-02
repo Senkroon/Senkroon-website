@@ -17,9 +17,14 @@ class AdvisorController extends Controller
 
         // Ticari aramalar için optimize edilmiş anahtar kelimeler
         SEOTools::metatags()->setKeywords([
-            'ERP danışmanları', 'Workcube uzmanı', 'yazılım danışmanlığı Malatya',
-            'dijital dönüşüm uzmanı', 'Senkroon yazılım ekibi', 'kurumsal yazılım danışmanı',
-            'iş süreçleri analisti', 'Malatya teknoloji danışmanlığı'
+            'ERP danışmanları',
+            'Workcube uzmanı',
+            'yazılım danışmanlığı Malatya',
+            'dijital dönüşüm uzmanı',
+            'Senkroon yazılım ekibi',
+            'kurumsal yazılım danışmanı',
+            'iş süreçleri analisti',
+            'Malatya teknoloji danışmanlığı'
         ]);
 
         SEOTools::metatags()->addMeta('robots', 'index,follow');
