@@ -350,3 +350,33 @@ body {
     margin-top: 0 !important;
     border-top: 1px solid rgba(50, 150, 255, 0.1) !important;
 }
+
+/* Glass Panel Toggles for FAQ */
+.toggle.glass-panel {
+    background: rgba(255, 255, 255, 0.03) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 10px;
+    margin-bottom: 15px !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.toggle.glass-panel > .toggle-title {
+    background: transparent !important;
+    color: #fff !important;
+    border: none !important;
+    padding-left: 45px;
+}
+
+.toggle.glass-panel.active > .toggle-title {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: #a0d2ff !important;
+}
+
+.toggle.glass-panel > .toggle-content {
+    background: transparent !important;
+    color: #cbd5e1 !important;
+    border: none !important;
+    padding: 20px;
+}

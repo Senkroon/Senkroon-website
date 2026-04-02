@@ -1,4 +1,4 @@
-﻿@extends('layout.master')
+@extends('layout.master')
 
 @section('content')
     <!-- Page Header -->
@@ -22,71 +22,71 @@
                         <div class="col">
 
 
-                            <div class="toggle toggle-primary m-0" data-plugin-toggle>
-                                <section class="toggle active">
+                            <div class="toggle m-0" data-plugin-toggle>
+                                <section class="toggle glass-panel active">
                                     <a class="toggle-title"> ERP kimler için gerekli?</a>
                                     <div class="toggle-content container">
                                         <p>Üretim yapan, birden fazla departmanı olan, şube/depo yapısıyla çalışan ve büyüme hedefi bulunan işletmeler için  ERP lüks değil, gerçek bir ihtiyaçtır.</p>
                                     </div>
                                 </section>
 
-                                <section class="toggle">
+                                <section class="toggle glass-panel">
                                     <a class="toggle-title">Muhasebe programım varken neden Erp'ye geçeyim?</a>
                                     <div class="toggle-content container">
                                         <p>Muhasebe programı yasal kayıt tutar; Erp ise satıştan üretime, stoktan finansa tüm işi tek platformda yönetmenizi ve resmi bütün olarak görmenizi sağlar.</p>
                                     </div>
                                 </section>
 
-                                <section class="toggle">
+                                <section class="toggle glass-panel">
                                     <a class="toggle-title">ERP'ye geçmek işi aksatır mı?</a>
                                     <div class="toggle-content container">
                                         <p>Doğru planlandığında hayır. Proje fazlara bölünür, önce kritik süreçler devreye alınır, işletme adım adım yeni sisteme taşınır.</p>
                                     </div>
                                 </section>
 
-                                <section class="toggle">
+                                <section class="toggle glass-panel">
                                     <a class="toggle-title">ERP'nin maliyeti nasıl belirleniyor?</a>
                                     <div class="toggle-content container">
                                         <p>Kullanıcı sayısı, modül kapsamı, sektörünüze özel ihtiyaçlar ve altyapı tercihinize (bulut / sunucu) göre proje bazlı olarak hesaplanır.</p>
                                     </div>
                                 </section>
 
-                                <section class="toggle">
+                                <section class="toggle glass-panel">
                                     <a class="toggle-title">Tüm süreçleri aynı anda sisteme taşımak zorunda mıyız?</a>
                                     <div class="toggle-content container">
                                         <p>Hayır. Genellikle omurga süreçler (satış-satınalma-stok-finans) önce kurulur, diğer süreçler kontrollü şekilde sonra eklenir.</p>
                                     </div>
                                 </section>
 
-                                <section class="toggle">
+                                <section class="toggle glass-panel">
                                     <a class="toggle-title">ERP firmama özel uyarlanabilir mi?</a>
                                     <div class="toggle-content container">
                                         <p>Evet. Ekranlar, raporlar ve iş akışları; sektörünüze, iş modelinize ve firma ihtiyaçlarınıza göre parametrik ve geliştirilebilir yapıdadır.</p>
                                     </div>
                                 </section>
 
-                                <section class="toggle">
+                                <section class="toggle glass-panel">
                                     <a class="toggle-title">Kullanıcılar ERP'e alışmakta zorlanır mı?</a>
                                     <div class="toggle-content container">
                                         <p>Sürece dahil edilir, gerçek iş senaryolarıyla eğitim alır ve ilk dönemde desteklenirlerse; zorluk yerine konfor artışı yaşarlar.</p>
                                     </div>
                                 </section>
 
-                                <section class="toggle">
+                                <section class="toggle glass-panel">
                                     <a class="toggle-title">ERP bulut ortamda mı, kendi sunucumuzda mı çalışır?</a>
                                     <div class="toggle-content container">
                                         <p>Her iki model de mümkündür. Güvenlik, BT altyapısı ve bütçe tercihinize göre bulut veya on-premise kurulabilir.</p>
                                     </div>
                                 </section>
 
-                                <section class="toggle">
+                                <section class="toggle glass-panel">
                                     <a class="toggle-title">"ERP + Senkroon" yaklaşımı ne kazandırır?</a>
                                     <div class="toggle-content container">
                                         <p>Yalnızca yazılım kurulmaz; süreç, organizasyon ve raporlama birlikte tasarlanır. Böylece ERP, sadece program değil, şirketin işletim sistemi haline gelir.</p>
                                     </div>
                                 </section>
 
-                                <section class="toggle">
+                                <section class="toggle glass-panel">
                                     <a class="toggle-title">ERP için doğru zamanı geldiğini nasıl anlarım?</a>
                                     <div class="toggle-content container">
                                         <p>Her departman farklı Excel kullanıyorsa, rakamlar çelişiyorsa, toplantılarda tablo toplamak saatler alıyorsa ve büyüdükçe karmaşa artıyorsa, zaman gelmiş demektir.</p>
