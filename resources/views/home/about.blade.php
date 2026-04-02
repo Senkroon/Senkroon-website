@@ -1,131 +1,131 @@
 @extends('layout.master')
 
 @section('content')
-    <!-- Header Breadcrumb -->
+<!-- Header Breadcrumb -->
 
 
 
-    <section class="page-header page-header-modern section position-relative border-0 m-0"
-        style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('images/modules/all.jpg') }}); background-position: center; background-size: cover;">
-        <div class="col-md-12 align-self-center p-static order-2 text-center">
-            <h1 class="text-light font-weight-bold text-8">Hakkımızda</h1>
-            <span class="sub-title text-light">Dijital Dönüşümde Güvenilir Ortağınız</span>
-        </div>
-    </section>
+<section class=" page-header mt-5 page-header-modern section position-relative border-0 m-0"
+    style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('images/modules/all.jpg') }}); background-position: center; background-size: cover;">
+    <div class="col-md-12 align-self-center p-static order-2 text-center">
+        <h1 class="text-light font-weight-bold text-8">Hakkımızda</h1>
+        <span class="sub-title text-light">Dijital Dönüşümde Güvenilir Ortağınız</span>
+    </div>
+</section>
 
 
-    <!-- Main Content -->
-    <div class="container py-5">
-        <!-- Şirket Hikayesi -->
-        <div class="row py-2">
-            <div class="col-lg-7  mb-lg-0">
-                <div class="appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="300">
-                    <h3 class="font-weight-bold section-title-glow text-white">Hakkımızda</h3>
-                       <h4 class="text-color-primary font-weight-bold text-4 mb-2">Dönüşümün Mimarı, İşinizin Stratejik Ortağı</h4>
+<!-- Main Content -->
+<div class="container py-5">
+    <!-- Şirket Hikayesi -->
+    <div class="row py-2">
+        <div class="col-lg-7  mb-lg-0">
+            <div class="appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="300">
+                <h3 class="font-weight-bold section-title-glow text-white">Hakkımızda</h3>
+                <h4 class="text-color-primary font-weight-bold text-4 mb-2">Dönüşümün Mimarı, İşinizin Stratejik Ortağı</h4>
 
-                    <p class="text-3 mb-4 text-light">
-                        Senkroon, danışmanlık, yazılım ve dijital dönüşüm alanlarında uzmanlaşmış; işletmelerin dijital ve
-                        operasyonel yolculuklarında sadece bir rehber değil, uçtan uca dönüşümü yöneten stratejik bir iş
-                        ortağıdır. ERP danışmanlığından iş süreçleri tasarımına, muhasebe ve finansal yapılandırmadan
-                        kurumsal yazılım çözümlerine kadar geniş bir yelpazede,
-                        modern iş dünyasının karmaşık ihtiyaçlarına yanıt veriyoruz.
-                    </p>
+                <p class="text-3 mb-4 text-light">
+                    Senkroon, danışmanlık, yazılım ve dijital dönüşüm alanlarında uzmanlaşmış; işletmelerin dijital ve
+                    operasyonel yolculuklarında sadece bir rehber değil, uçtan uca dönüşümü yöneten stratejik bir iş
+                    ortağıdır. ERP danışmanlığından iş süreçleri tasarımına, muhasebe ve finansal yapılandırmadan
+                    kurumsal yazılım çözümlerine kadar geniş bir yelpazede,
+                    modern iş dünyasının karmaşık ihtiyaçlarına yanıt veriyoruz.
+                </p>
 
-                    <h4 class="text-color-primary font-weight-bold text-4 mb-2">Çok Boyutlu Yazılım ve Süreç Yönetimi</h4>
-                    <p class="text-3 mb-3 text-light">
-                        Bizim için teknoloji, işinizin yaşayan bir parçasıdır. Sahadaki derin deneyimimizi analitik bakış
-                        açısı ve teknolojiyle birleştirerek; işletmenizin ihtiyaç duyduğu her alanda yanınızdayız:
-                    </p>
-                    <ul class="text-3 mb-4 ps-3 text-light">
-                        <li>Uçtan Uca Yönetim: ERP süreç yönetimi, CRM (Müşteri İlişkileri Yönetimi), İnsan Kaynakları ve Proje Yönetimi sistemleri.</li>
-                        <li>Varlık ve İçerik Kontrolü: Fiziki Varlık Yönetimi, İçerik Yönetimi ve Intranet çözümleri.</li>
-                        <li>Dijital Ticaret: B2B, B2C ve e-ticaret platformlarının iş modelinize tam entegrasyonu.</li>
-                    </ul>
+                <h4 class="text-color-primary font-weight-bold text-4 mb-2">Çok Boyutlu Yazılım ve Süreç Yönetimi</h4>
+                <p class="text-3 mb-3 text-light">
+                    Bizim için teknoloji, işinizin yaşayan bir parçasıdır. Sahadaki derin deneyimimizi analitik bakış
+                    açısı ve teknolojiyle birleştirerek; işletmenizin ihtiyaç duyduğu her alanda yanınızdayız:
+                </p>
+                <ul class="text-3 mb-4 ps-3 text-light">
+                    <li>Uçtan Uca Yönetim: ERP süreç yönetimi, CRM (Müşteri İlişkileri Yönetimi), İnsan Kaynakları ve Proje Yönetimi sistemleri.</li>
+                    <li>Varlık ve İçerik Kontrolü: Fiziki Varlık Yönetimi, İçerik Yönetimi ve Intranet çözümleri.</li>
+                    <li>Dijital Ticaret: B2B, B2C ve e-ticaret platformlarının iş modelinize tam entegrasyonu.</li>
+                </ul>
 
-                    <h4 class="text-color-primary font-weight-bold text-4 mb-2">Yaklaşımımız: Analitik Güç, Sahadaki Tecrübe</h4>
-                    <p class="text-3 mb-3 text-light">
-                        Hazır kalıplar yerine; kurum kültürünüze, çalışma biçiminize ve güncel ihtiyaçlarınıza en uygun
-                        "terzi usulü" iş modelleri tasarlıyoruz. Standart yazılımların sınırlarını zorlayarak,
-                        taleplerinize %100 uyum sağlayan özel yazılım kurguları inşa ediyor; veri disiplinini operasyonel
-                        hız ve şeffaflıkla birleştiriyoruz.
-                    </p>
-                    <ul class="text-3 mb-4 ps-3 text-light">
-                        <li>Süreç ve Organizasyon Tasarımı: Karmaşıklığı gideriyor, verimliliği standardize ediyoruz.</li>
-                        <li>Muhasebe ve Finansal Modelleme: Güçlü bir finansal yapılandırma ile geleceği öngörülebilir kılıyoruz.</li>
-                        <li>Stratejik Entegrasyon: Teknolojiyi tek başına bir araç değil, işinizin omurgasını güçlendiren stratejik bir yapı hâline getiriyoruz.</li>
-                    </ul>
+                <h4 class="text-color-primary font-weight-bold text-4 mb-2">Yaklaşımımız: Analitik Güç, Sahadaki Tecrübe</h4>
+                <p class="text-3 mb-3 text-light">
+                    Hazır kalıplar yerine; kurum kültürünüze, çalışma biçiminize ve güncel ihtiyaçlarınıza en uygun
+                    "terzi usulü" iş modelleri tasarlıyoruz. Standart yazılımların sınırlarını zorlayarak,
+                    taleplerinize %100 uyum sağlayan özel yazılım kurguları inşa ediyor; veri disiplinini operasyonel
+                    hız ve şeffaflıkla birleştiriyoruz.
+                </p>
+                <ul class="text-3 mb-4 ps-3 text-light">
+                    <li>Süreç ve Organizasyon Tasarımı: Karmaşıklığı gideriyor, verimliliği standardize ediyoruz.</li>
+                    <li>Muhasebe ve Finansal Modelleme: Güçlü bir finansal yapılandırma ile geleceği öngörülebilir kılıyoruz.</li>
+                    <li>Stratejik Entegrasyon: Teknolojiyi tek başına bir araç değil, işinizin omurgasını güçlendiren stratejik bir yapı hâline getiriyoruz.</li>
+                </ul>
 
-                    <h4 class="text-color-primary font-weight-bold text-4 mb-2">Amacımız: Veriyle Yönetilen Sürdürülebilir Gelecek</h4>
-                    <p class="text-3 mb-0 text-light">
-                        Temel hedefimiz; her aşamada güvenilir, ölçülebilir ve sürdürülebilir bir yönetim altyapısı
-                        kurmaktır. Senkroon ile dijital dönüşüm; sadece bir sistem geçişi değil, işletmenize rekabet
-                        avantajı sağlayan ve stratejik karar alma mekanizmanızı güçlendirerek geleceği bugünden inşa eden
-                        bir başarı hikayesidir.
-                    </p>
-                </div>
-            </div>
-            <div class="col-lg-5 mb-5">
-                <div class="appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="300">
-                    <img src="{{ asset('porto/simages/workcube-about-us.png') }}" class="img-fluid mt-5 rounded shadow-lg"
-                        alt="Şirket Hikayesi">
-                </div>
+                <h4 class="text-color-primary font-weight-bold text-4 mb-2">Amacımız: Veriyle Yönetilen Sürdürülebilir Gelecek</h4>
+                <p class="text-3 mb-0 text-light">
+                    Temel hedefimiz; her aşamada güvenilir, ölçülebilir ve sürdürülebilir bir yönetim altyapısı
+                    kurmaktır. Senkroon ile dijital dönüşüm; sadece bir sistem geçişi değil, işletmenize rekabet
+                    avantajı sağlayan ve stratejik karar alma mekanizmanızı güçlendirerek geleceği bugünden inşa eden
+                    bir başarı hikayesidir.
+                </p>
             </div>
         </div>
+        <div class="col-lg-5 mb-5">
+            <div class="appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="300">
+                <img src="{{ asset('porto/simages/workcube-about-us.png') }}" class="img-fluid mt-5 rounded shadow-lg"
+                    alt="Şirket Hikayesi">
+            </div>
+        </div>
+    </div>
 
 
-        <!-- Misyon & Vizyon -->
-        <div class="row py-5">
-            <div class="col-lg-6 mb-4 mb-lg-0">
-                <div class="card glass-panel text-white border-0 h-100">
-                    <div class="card-body p-5">
-                        <div class="text-center mb-4">
-                            <i class="fas fa-bullseye  text-primary text-6"></i>
-                        </div>
-                        <h3 class="font-weight-bold text-center text-white">Misyonumuz</h3>
-                        <p class="text-light">
-                            Senkroon olarak misyonumuz; işletmelerin ERP yatırımlarını doğru konumlandırmasını, iş
-                            süreçlerini sadeleştirmesini ve finansal yapılarını şeffaf, ölçülebilir ve yönetilebilir hâle
-                            getirmesini sağlamaktır.
-                        </p>
-                        <p class="text-light">
-
-                            Bunu; ERP danışmanlığı, süreç ve organizasyon tasarımı ile muhasebe ve finansal modellemeyi,
-                            kurumsal yazılım çözümleriyle bütüncül bir mimari altında birleştirerek gerçekleştiririz.
-                        </p>
-                        <p class="text-light">
-                            Amacımız, yalnızca yazılım kurmak değil; kurum kültürüyle uyumlu, sürdürülebilir ve kurum içinde
-                            bağımsız şekilde yönetilebilen bir iş modeli teslim ederek hem mevcut ihtiyaçları hem de
-                            gelecekteki büyüme hedeflerini desteklemektir.
-                        </p>
+    <!-- Misyon & Vizyon -->
+    <div class="row py-5">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+            <div class="card glass-panel text-white border-0 h-100">
+                <div class="card-body p-5">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-bullseye  text-primary text-6"></i>
                     </div>
-                </div>
-            </div>
+                    <h3 class="font-weight-bold text-center text-white">Misyonumuz</h3>
+                    <p class="text-light">
+                        Senkroon olarak misyonumuz; işletmelerin ERP yatırımlarını doğru konumlandırmasını, iş
+                        süreçlerini sadeleştirmesini ve finansal yapılarını şeffaf, ölçülebilir ve yönetilebilir hâle
+                        getirmesini sağlamaktır.
+                    </p>
+                    <p class="text-light">
 
-            <div class="col-lg-6">
-                <div class="card glass-panel text-white border-0 h-100">
-                    <div class="card-body p-5">
-                        <div class="text-center mb-4">
-                            <i class="fas fa-eye text-primary text-6"></i>
-                        </div>
-                        <h3 class="font-weight-bold text-center mb-4 text-white">Vizyonumuz</h3>
-                        <p class="text-3 text-light">
-                            Senkroon olarak vizyonumuz; Türkiye’de ve bölgemizde ERP danışmanlığı, iş süreçleri ve finansal
-                            yapılandırma denince ilk akla gelen; ERP ve kurumsal yazılım çözümleri projelerinde referans
-                            gösterilen çözüm ortağı olmaktır.
-                        </p>
-
-                        <p class="text-light">
-                            Şirketleri kişiye bağlı işleyişten çıkarıp veriye, sürece ve kurumsal yönetişime dayalı yapılara
-                            dönüştüren; karar anlarında güven veren ve veri temelli, ikna edici önerileriyle ayrışan bir
-                            marka olmayı hedefliyoruz.
-                        </p>
-                    </div>
+                        Bunu; ERP danışmanlığı, süreç ve organizasyon tasarımı ile muhasebe ve finansal modellemeyi,
+                        kurumsal yazılım çözümleriyle bütüncül bir mimari altında birleştirerek gerçekleştiririz.
+                    </p>
+                    <p class="text-light">
+                        Amacımız, yalnızca yazılım kurmak değil; kurum kültürüyle uyumlu, sürdürülebilir ve kurum içinde
+                        bağımsız şekilde yönetilebilen bir iş modeli teslim ederek hem mevcut ihtiyaçları hem de
+                        gelecekteki büyüme hedeflerini desteklemektir.
+                    </p>
                 </div>
             </div>
         </div>
 
+        <div class="col-lg-6">
+            <div class="card glass-panel text-white border-0 h-100">
+                <div class="card-body p-5">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-eye text-primary text-6"></i>
+                    </div>
+                    <h3 class="font-weight-bold text-center mb-4 text-white">Vizyonumuz</h3>
+                    <p class="text-3 text-light">
+                        Senkroon olarak vizyonumuz; Türkiye’de ve bölgemizde ERP danışmanlığı, iş süreçleri ve finansal
+                        yapılandırma denince ilk akla gelen; ERP ve kurumsal yazılım çözümleri projelerinde referans
+                        gösterilen çözüm ortağı olmaktır.
+                    </p>
 
-        {{-- <div class="row py-5 bg-light rounded">
+                    <p class="text-light">
+                        Şirketleri kişiye bağlı işleyişten çıkarıp veriye, sürece ve kurumsal yönetişime dayalı yapılara
+                        dönüştüren; karar anlarında güven veren ve veri temelli, ikna edici önerileriyle ayrışan bir
+                        marka olmayı hedefliyoruz.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    {{-- <div class="row py-5 bg-light rounded">
             <div class="col-12">
                 <div class="text-center mb-5">
                     <h2 class="text-color-primary font-weight-bold text-6 mb-3">Hizmetlerimiz</h2>
@@ -203,8 +203,8 @@
         </div> --}}
 
 
-        <!-- Workcube Çözümleri -->
-        {{-- <div class="row py-5">
+    <!-- Workcube Çözümleri -->
+    {{-- <div class="row py-5">
             <div class="col-12">
                 <div class="text-center mb-5">
                     <h2 class="text-color-primary font-weight-bold text-6 mb-3">ERP Çözüm Alanlarımız</h2>
@@ -287,71 +287,71 @@
 
 
 
-        <hr class="sci-fi-divider">
-        <!-- Değerlerimiz ve İlkelerimiz -->
-        <div class="row py-5 rounded px-2 px-md-4">
-            <div class="col-12">
-                <div class="text-center mb-5">
-                    <h2 class="font-weight-bold text-6 mb-3 text-white">Değerlerimiz</h2>
-                    <p class="text-4 mb-0 text-light">Senkroon olarak tüm projelerimizde aşağıdaki temel değerlere bağlı kalırız:</p>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="h-100 p-4 glass-panel rounded shadow-sm text-center">
-                    <div class="mb-3 text-color-primary"><i class="fas fa-handshake text-6"></i></div>
-                    <h5 class="font-weight-bold mb-3 text-white">Güven</h5>
-                    <p class="text-3 mb-0 text-light">İlişkilerimizi şeffaflık, dürüstlük ve karşılıklı saygı üzerine kurarız. Verdiğimiz sözleri tutar, uzun vadeli ve sürdürülebilir iş ilişkileri kurmayı hedefleriz.</p>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="h-100 p-4 glass-panel rounded shadow-sm text-center">
-                    <div class="mb-3 text-color-primary"><i class="fas fa-graduation-cap text-6"></i></div>
-                    <h5 class="font-weight-bold mb-3 text-white">Bilgi ve Uzmanlık</h5>
-                    <p class="text-3 mb-0 text-light">Deneyimimizi güncel bilgiyle sürekli besler, her projede en doğru ve güncel yaklaşımları uygulamaya özen gösteririz. Öğrenen ve öğreten bir ekip kültürüne sahibiz.</p>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="h-100 p-4 glass-panel rounded shadow-sm text-center">
-                    <div class="mb-3 text-color-primary"><i class="fas fa-microchip text-6"></i></div>
-                    <h5 class="font-weight-bold mb-3 text-white">Teknoloji Odaklılık</h5>
-                    <p class="text-3 mb-0 text-light">Teknolojiyi tek başına bir amaç olarak değil, doğru kullanıldığında değer üreten stratejik bir araç olarak görürüz. Tüm projelerimizi bu anlayışla kurgularız.</p>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="h-100 p-4 glass-panel rounded shadow-sm text-center">
-                    <div class="mb-3 text-color-primary"><i class="fas fa-puzzle-piece text-6"></i></div>
-                    <h5 class="font-weight-bold mb-3 text-white">Çözüm Odaklılık</h5>
-                    <p class="text-3 mb-0 text-light">Sorunları yalnızca tespit etmekle yetinmez, uygulanabilir ve ölçülebilir çözümler üretmeye odaklanırız. Sonuç almayan hiçbir öneriyi başarı olarak görmeyiz.</p>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="h-100 p-4 glass-panel rounded shadow-sm text-center">
-                    <div class="mb-3 text-color-primary"><i class="fas fa-people-arrows text-6"></i></div>
-                    <h5 class="font-weight-bold mb-3 text-white">Şeffaflık ve İşbirliği</h5>
-                    <p class="text-3 mb-0 text-light">Tüm süreçleri müşterilerimizle birlikte ve açık bir iletişimle yürütür, ortak akılla şekillenen projeler üretiriz. Karar süreçlerine müşterilerimizi dâhil etmeyi önemseriz.</p>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="h-100 p-4 glass-panel rounded shadow-sm text-center">
-                    <div class="mb-3 text-color-primary"><i class="fas fa-infinity text-6"></i></div>
-                    <h5 class="font-weight-bold mb-3 text-white">Süreklilik</h5>
-                    <p class="text-3 mb-0 text-light">Projeyi teslim etmekle sorumluluğun bitmediğine inanırız. Üretilen çıktının yaşaması, gelişmesi ve kuruma gerçek değer katması için gerekli desteği sürdürmeyi asli görevimiz kabul ederiz.</p>
-                </div>
+    <hr class="sci-fi-divider">
+    <!-- Değerlerimiz ve İlkelerimiz -->
+    <div class="row py-5 rounded px-2 px-md-4">
+        <div class="col-12">
+            <div class="text-center mb-5">
+                <h2 class="font-weight-bold text-6 mb-3 text-white">Değerlerimiz</h2>
+                <p class="text-4 mb-0 text-light">Senkroon olarak tüm projelerimizde aşağıdaki temel değerlere bağlı kalırız:</p>
             </div>
         </div>
 
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="h-100 p-4 glass-panel rounded shadow-sm text-center">
+                <div class="mb-3 text-color-primary"><i class="fas fa-handshake text-6"></i></div>
+                <h5 class="font-weight-bold mb-3 text-white">Güven</h5>
+                <p class="text-3 mb-0 text-light">İlişkilerimizi şeffaflık, dürüstlük ve karşılıklı saygı üzerine kurarız. Verdiğimiz sözleri tutar, uzun vadeli ve sürdürülebilir iş ilişkileri kurmayı hedefleriz.</p>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="h-100 p-4 glass-panel rounded shadow-sm text-center">
+                <div class="mb-3 text-color-primary"><i class="fas fa-graduation-cap text-6"></i></div>
+                <h5 class="font-weight-bold mb-3 text-white">Bilgi ve Uzmanlık</h5>
+                <p class="text-3 mb-0 text-light">Deneyimimizi güncel bilgiyle sürekli besler, her projede en doğru ve güncel yaklaşımları uygulamaya özen gösteririz. Öğrenen ve öğreten bir ekip kültürüne sahibiz.</p>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="h-100 p-4 glass-panel rounded shadow-sm text-center">
+                <div class="mb-3 text-color-primary"><i class="fas fa-microchip text-6"></i></div>
+                <h5 class="font-weight-bold mb-3 text-white">Teknoloji Odaklılık</h5>
+                <p class="text-3 mb-0 text-light">Teknolojiyi tek başına bir amaç olarak değil, doğru kullanıldığında değer üreten stratejik bir araç olarak görürüz. Tüm projelerimizi bu anlayışla kurgularız.</p>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="h-100 p-4 glass-panel rounded shadow-sm text-center">
+                <div class="mb-3 text-color-primary"><i class="fas fa-puzzle-piece text-6"></i></div>
+                <h5 class="font-weight-bold mb-3 text-white">Çözüm Odaklılık</h5>
+                <p class="text-3 mb-0 text-light">Sorunları yalnızca tespit etmekle yetinmez, uygulanabilir ve ölçülebilir çözümler üretmeye odaklanırız. Sonuç almayan hiçbir öneriyi başarı olarak görmeyiz.</p>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="h-100 p-4 glass-panel rounded shadow-sm text-center">
+                <div class="mb-3 text-color-primary"><i class="fas fa-people-arrows text-6"></i></div>
+                <h5 class="font-weight-bold mb-3 text-white">Şeffaflık ve İşbirliği</h5>
+                <p class="text-3 mb-0 text-light">Tüm süreçleri müşterilerimizle birlikte ve açık bir iletişimle yürütür, ortak akılla şekillenen projeler üretiriz. Karar süreçlerine müşterilerimizi dâhil etmeyi önemseriz.</p>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="h-100 p-4 glass-panel rounded shadow-sm text-center">
+                <div class="mb-3 text-color-primary"><i class="fas fa-infinity text-6"></i></div>
+                <h5 class="font-weight-bold mb-3 text-white">Süreklilik</h5>
+                <p class="text-3 mb-0 text-light">Projeyi teslim etmekle sorumluluğun bitmediğine inanırız. Üretilen çıktının yaşaması, gelişmesi ve kuruma gerçek değer katması için gerekli desteği sürdürmeyi asli görevimiz kabul ederiz.</p>
+            </div>
+        </div>
+    </div>
 
 
 
 
-        <!-- Sektörel Uygulamalar -->
-        {{-- <div class="row py-5">
+
+    <!-- Sektörel Uygulamalar -->
+    {{-- <div class="row py-5">
             <div class="col-12">
                 <div class="text-center mb-5">
                     <h2 class="text-color-primary font-weight-bold text-6 mb-3">Sektörel Uygulamalar</h2>
@@ -418,27 +418,27 @@
 
 
 
-        <!-- Çağrı-İçin-Eylem -->
-         <div class="row py-5 mb-5">
-            <div class="col-12">
-                <div class="glass-panel text-center py-5 px-4" style="background: rgba(0, 136, 204, 0.2); border-color: rgba(0, 136, 204, 0.4);">
-                    <h3 class="text-white font-weight-bold mb-3">Dijital Dönüşüme Hazır Mısınız?</h3>
-                    <p class="text-white text-4 mb-4">
-                        İşletmenizin potansiyelini en üst düzeye çıkarmak, kurumsal bir yapılanmayla
-                        yarınlara hazırlanmak için bizimle iletişime geçin.
-                    </p>
-                    <div class="row justify-content-center">
-                        <div class="col-auto">
-                            <a href="{{ route('contact-us') }}"
-                                class="btn btn-primary btn-rounded font-weight-semibold text-3 btn-px-5 btn-py-3 me-3">
-                                İletişime Geçin
-                            </a>
-                        </div>
-
+    <!-- Çağrı-İçin-Eylem -->
+    <div class="row py-5 mb-5">
+        <div class="col-12">
+            <div class="glass-panel text-center py-5 px-4" style="background: rgba(0, 136, 204, 0.2); border-color: rgba(0, 136, 204, 0.4);">
+                <h3 class="text-white font-weight-bold mb-3">Dijital Dönüşüme Hazır Mısınız?</h3>
+                <p class="text-white text-4 mb-4">
+                    İşletmenizin potansiyelini en üst düzeye çıkarmak, kurumsal bir yapılanmayla
+                    yarınlara hazırlanmak için bizimle iletişime geçin.
+                </p>
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <a href="{{ route('contact-us') }}"
+                            class="btn btn-primary btn-rounded font-weight-semibold text-3 btn-px-5 btn-py-3 me-3">
+                            İletişime Geçin
+                        </a>
                     </div>
+
                 </div>
             </div>
         </div>
-
     </div>
+
+</div>
 @endsection
