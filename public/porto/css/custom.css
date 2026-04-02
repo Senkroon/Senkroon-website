@@ -46,7 +46,7 @@
 }
 
 .navbar-top-bar-link:hover {
-    color: #ff8c00 !important;
+    color: #fff !important;
 }
 
 .navbar-top-bar-divider {
@@ -69,7 +69,6 @@
 
 .navbar-top-bar-social:hover {
     color: #fff !important;
-    background: rgba(255, 140, 0, 0.2);
 }
 
 /* =============================================
@@ -88,7 +87,7 @@
 
 .navbar-main-link:hover,
 .navbar-main-link.active {
-    color: #ff8c00 !important;
+    color: #fff !important;
 }
 
 .navbar-main-link::after {

@@ -177,11 +177,28 @@
 
 
 
-                                        {{-- HAKKIMIZDA --}}
-                                        <li class="d-none d-lg-block">
-                                            <a class="nav-link navbar-main-link" href="{{ route('home.about') }}">
-                                                HAKKIMIZDA
+                                        {{-- KURUMSAL dropdown --}}
+                                        <li class="dropdown d-none d-lg-block">
+                                            <a class="nav-link navbar-main-link dropdown-toggle" href="{{ route('home.about') }}">
+                                                KURUMSAL
                                             </a>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a class="dropdown-item" href="{{ route('home.about') }}">
+                                                        <i class="fas fa-building me-2 text-muted"></i>Hakkımızda
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="{{ route('home.faq') }}">
+                                                        <i class="fas fa-question-circle me-2 text-muted"></i>Sıkça Sorulan Sorular
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="{{ route('home.why-senkroon') }}">
+                                                        <i class="fas fa-star me-2 text-muted"></i>Neden Senkroon?
+                                                    </a>
+                                                </li>
+                                            </ul>
                                         </li>
                                         <li class="navbar-separator d-none d-lg-block"><span>|</span></li>
 
