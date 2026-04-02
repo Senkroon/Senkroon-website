@@ -254,13 +254,14 @@
     <div class="row gx-4 gy-4">
         <div class="col-12 col-md-6 col-lg-4 mb-4 appear-animation" data-appear-animation="fadeInUpShorter"
             data-appear-animation-delay="200">
-            <div
-                class="card glass-panel h-100">
+            <div class="card card-sci-fi h-100">
                 <div class="card-body text-center p-4">
-                    <div class="mb-3">
-                        <i class="fas fa-cogs text-primary text-6"></i>
+                    <div class="mb-4 d-flex justify-content-center">
+                        <div class="sci-fi-icon-ring" style="width: 80px; height: 80px; font-size: 2.5rem;">
+                            <i class="fas fa-cogs"></i>
+                        </div>
                     </div>
-                    <h4 class="card-title mb-3 text-5 font-weight-bold text-white"> ERP Satış & Lisanslama</h4>
+                    <h4 class="card-title mb-3 text-5 font-weight-bold text-white">ERP Satış & Lisanslama</h4>
                     <p class="card-text text-light">ERP'nin tüm modüllerini uygun fiyatlarla temin edin.
                         Lisanslama, kurulum ve ilk konfigürasyon hizmetlerimizle işe başlayın.</p>
                 </div>
@@ -269,11 +270,12 @@
 
         <div class="col-12 col-md-6 col-lg-4 mb-4 appear-animation" data-appear-animation="fadeInUpShorter"
             data-appear-animation-delay="400">
-            <div
-                class="card glass-panel h-100">
+            <div class="card card-sci-fi h-100">
                 <div class="card-body text-center p-4">
-                    <div class="mb-3">
-                        <i class="fas fa-project-diagram text-primary text-6"></i>
+                    <div class="mb-4 d-flex justify-content-center">
+                        <div class="sci-fi-icon-ring" style="width: 80px; height: 80px; font-size: 2.5rem;">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
                     </div>
                     <h4 class="card-title mb-3 text-5 font-weight-bold text-white">Kurulum & Konfigürasyon</h4>
                     <p class="card-text text-light">Uzman ekibimiz ERP'yi işletmenizin ihtiyaçlarına göre
@@ -284,11 +286,12 @@
 
         <div class="col-12 col-md-6 col-lg-4 mb-4 appear-animation" data-appear-animation="fadeInUpShorter"
             data-appear-animation-delay="600">
-            <div
-                class="card glass-panel h-100">
+            <div class="card card-sci-fi h-100">
                 <div class="card-body text-center p-4">
-                    <div class="mb-3">
-                        <i class="fas fa-chart-line text-primary text-6"></i>
+                    <div class="mb-4 d-flex justify-content-center">
+                        <div class="sci-fi-icon-ring" style="width: 80px; height: 80px; font-size: 2.5rem;">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
                     </div>
                     <h4 class="card-title mb-3 text-5 font-weight-bold text-white">Eğitim & Sertifikasyon</h4>
                     <p class="card-text text-light">Kullanıcılarınız için kapsamlı ERP eğitimleri ve
@@ -299,11 +302,12 @@
 
         <div class="col-12 col-md-6 col-lg-4 mb-4 appear-animation" data-appear-animation="fadeInUpShorter"
             data-appear-animation-delay="800">
-            <div
-                class="card glass-panel h-100">
+            <div class="card card-sci-fi h-100">
                 <div class="card-body text-center p-4">
-                    <div class="mb-3">
-                        <i class="fas fa-users text-primary text-6"></i>
+                    <div class="mb-4 d-flex justify-content-center">
+                        <div class="sci-fi-icon-ring" style="width: 80px; height: 80px; font-size: 2.5rem;">
+                            <i class="fas fa-users"></i>
+                        </div>
                     </div>
                     <h4 class="card-title mb-3 text-5 font-weight-bold text-white">Teknik Destek</h4>
                     <p class="card-text text-light">ERP kullanımında karşılaştığınız tüm sorunlar için
@@ -314,11 +318,12 @@
 
         <div class="col-12 col-md-6 col-lg-4 mb-4 appear-animation" data-appear-animation="fadeInUpShorter"
             data-appear-animation-delay="1000">
-            <div
-                class="card glass-panel h-100">
+            <div class="card card-sci-fi h-100">
                 <div class="card-body text-center p-4">
-                    <div class="mb-3">
-                        <i class="fas fa-chart-bar text-primary text-6"></i>
+                    <div class="mb-4 d-flex justify-content-center">
+                        <div class="sci-fi-icon-ring" style="width: 80px; height: 80px; font-size: 2.5rem;">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
                     </div>
                     <h4 class="card-title mb-3 text-5 font-weight-bold text-white">Özel Yazılım Geliştirme</h4>
                     <p class="card-text text-light">Sektörünüze ve işletmenize özel yazılım çözümleri geliştiriyoruz.
@@ -329,11 +334,12 @@
 
         <div class="col-12 col-md-6 col-lg-4 mb-4 appear-animation" data-appear-animation="fadeInUpShorter"
             data-appear-animation-delay="1200">
-            <div
-                class="card glass-panel h-100">
+            <div class="card card-sci-fi h-100">
                 <div class="card-body text-center p-4">
-                    <div class="mb-3">
-                        <i class="fas fa-digital-tachograph text-primary text-6"></i>
+                    <div class="mb-4 d-flex justify-content-center">
+                        <div class="sci-fi-icon-ring" style="width: 80px; height: 80px; font-size: 2.5rem;">
+                            <i class="fas fa-digital-tachograph"></i>
+                        </div>
                     </div>
                     <h4 class="card-title mb-3 text-5 font-weight-bold text-white">Veri Migrasyon Hizmeti</h4>
                     <p class="card-text text-light">Mevcut sisteminizdeki verileri ERP'ye güvenle taşıyoruz.
@@ -363,14 +369,19 @@
                 <div class="row">
                     @foreach ($advisors->take(3) as $advisor)
                     <div class="col-md-6 col-lg-4 mb-4">
-                        <div class="card glass-panel border-0 shadow-sm h-100" style="padding: 0; overflow: hidden;">
+                        <div class="card card-sci-fi h-100">
                             <img src="{{ asset('storage/' . $advisor->image) }}" class="card-img-top"
                                 alt="{{ $advisor->title }}">
                             <div class="card-body p-4">
-                                <h5 class="card-title font-weight-bold text-white">{{ $advisor->title }}</h5>
-                                <p class="card-text text-light">{!! Str::limit($advisor->description, 100) !!}</p>
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="sci-fi-icon-ring me-3">
+                                        <i class="fas fa-user-tie"></i>
+                                    </div>
+                                    <h5 class="card-title font-weight-bold text-white mb-0" style="line-height:1.3;">{{ $advisor->title }}</h5>
+                                </div>
+                                <p class="card-text text-light" style="font-size: 0.95rem;">{!! Str::limit($advisor->description, 100) !!}</p>
                                 @if ($advisor->slug)
-                                <a href="{{ route('advisors.show', $advisor->slug) }}" class="btn btn-primary mt-2">Detayları
+                                <a href="{{ route('advisors.show', $advisor->slug) }}" class="btn sci-fi-btn btn-rounded mt-3 w-100">Detayları
                                     Görüntüle</a>
                                 @endif
                             </div>

@@ -34,14 +34,19 @@
                     <div class="row">
                         @foreach ($WorkcubeModules->take(3) as $workmodule)
                             <div class="col-md-6 col-lg-4 mb-4">
-                                <div class="card glass-panel border-0 shadow-sm h-100" style="padding:0; overflow:hidden;">
+                                <div class="card card-sci-fi h-100">
                                     <img src="{{ $workmodule->cover_image_url }}" class="card-img-top" alt="{{ $workmodule->title }}">
                                     <div class="card-body p-4">
-                                        <h5 class="card-title font-weight-bold text-white">{{ $workmodule->title }}</h5>
-                                        <p class="card-text text-light">{!! Str::limit($workmodule->description, 100) !!}</p>
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="sci-fi-icon-ring me-3">
+                                                <i class="fas fa-cube"></i>
+                                            </div>
+                                            <h5 class="card-title font-weight-bold text-white mb-0" style="line-height:1.3;">{{ $workmodule->title }}</h5>
+                                        </div>
+                                        <p class="card-text text-light" style="font-size: 0.95rem;">{!! Str::limit($workmodule->description, 100) !!}</p>
                                         @if ($workmodule->slug)
                                             <a href="{{ route('modules.show', ['category' => 'workcube', 'module' => $workmodule->slug]) }}"
-                                                class="btn btn-primary mt-2">Detayları Görüntüle</a>
+                                                class="btn sci-fi-btn btn-rounded mt-3 w-100">Detayları Görüntüle</a>
                                         @endif
                                     </div>
                                 </div>
@@ -87,14 +92,19 @@
                     <div class="row">
                         @foreach ($uyumsoftModules->take(3) as $module)
                             <div class="col-md-6 col-lg-4 mb-4">
-                                <div class="card glass-panel border-0 shadow-sm h-100" style="padding:0; overflow:hidden;">
+                                <div class="card card-sci-fi gold-theme h-100">
                                     <img src="{{ $module->cover_image_url }}" class="card-img-top" alt="{{ $module->title }}">
                                     <div class="card-body p-4">
-                                        <h5 class="card-title font-weight-bold text-white">{{ $module->title }}</h5>
-                                        <p class="card-text text-light">{!! Str::limit($module->short_description, 100) !!}</p>
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="sci-fi-icon-ring me-3">
+                                                <i class="fas fa-layer-group"></i>
+                                            </div>
+                                            <h5 class="card-title font-weight-bold text-white mb-0" style="line-height:1.3;">{{ $module->title }}</h5>
+                                        </div>
+                                        <p class="card-text text-light" style="font-size: 0.95rem;">{!! Str::limit($module->short_description, 100) !!}</p>
                                         @if ($module->slug)
                                             <a href="{{ route('modules.show', ['uyumsoft', $module->slug]) }}"
-                                                class="btn btn-primary mt-2">Detayları Görüntüle</a>
+                                                class="btn sci-fi-btn btn-rounded mt-3 w-100">Detayları Görüntüle</a>
                                         @endif
                                     </div>
                                 </div>
@@ -136,15 +146,18 @@
                     <div class="row">
                         @foreach ($advisors->take(3) as $advisor)
                             <div class="col-md-6 col-lg-4 mb-4">
-                                <div class="card glass-panel border-0 shadow-sm h-100" style="padding:0; overflow:hidden;">
-                                    <img src="{{ asset('storage/' . $advisor->image) }}" class="card-img-top"
-                                        alt="{{ $advisor->title }}">
+                                <div class="card card-sci-fi h-100">
+                                    <img src="{{ asset('storage/' . $advisor->image) }}" class="card-img-top" alt="{{ $advisor->title }}">
                                     <div class="card-body p-4">
-                                        <h5 class="card-title font-weight-bold text-white">{{ $advisor->title }}</h5>
-                                        <p class="card-text text-light">{!! Str::limit($advisor->description, 100) !!}</p>
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="sci-fi-icon-ring me-3">
+                                                <i class="fas fa-user-tie"></i>
+                                            </div>
+                                            <h5 class="card-title font-weight-bold text-white mb-0" style="line-height:1.3;">{{ $advisor->title }}</h5>
+                                        </div>
+                                        <p class="card-text text-light" style="font-size: 0.95rem;">{!! Str::limit($advisor->description, 100) !!}</p>
                                         @if ($advisor->slug)
-                                            <a href="{{ route('advisors.show', $advisor->slug) }}" class="btn btn-primary mt-2">Detayları
-                                                Görüntüle</a>
+                                            <a href="{{ route('advisors.show', $advisor->slug) }}" class="btn sci-fi-btn btn-rounded mt-3 w-100">Detayları Görüntüle</a>
                                         @endif
                                     </div>
                                 </div>
