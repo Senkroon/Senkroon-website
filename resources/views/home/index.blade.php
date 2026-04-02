@@ -245,7 +245,6 @@
     </div>
 </section> -->
 
-
 <section class="container py-5 z-index-2 position-relative" id="services">
     <div class="row mb-5">
         <div class="col text-center">
@@ -346,13 +345,7 @@
 
 </section>
 
-<hr>
-
-
-
-
-
-
+<hr class="sci-fi-divider">
 
 <section class=" mb-5">
     <div class="row">
@@ -401,8 +394,7 @@
     </div>
 </section>
 
-
-
+<hr class="sci-fi-divider">
 
 <section class="py-5 position-relative" id="process">
     <div class="container sci-fi-content">
@@ -480,9 +472,11 @@
 
 
 
-<section class="stats stats-section js-stats-counter mega-section">
+<hr class="sci-fi-divider">
+
+<section class="stats stats-section js-stats-counter mega-section mb-0 pb-5">
     <div class="container">
-        <div class="stats-inner text-white">
+        <div class="stats-inner stats-glow-panel text-white">
             <div class="row g-4">
                 <div class="col-12 col-md-6 col-lg-3 stat-box">
                     <div class="stat-box-inner" data-tilt="data-tilt">

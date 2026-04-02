@@ -282,3 +282,71 @@
         margin-bottom: 10px !important;
     }
 }
+
+
+/* Stats section glowing white panel */
+.stats-glow-panel {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    padding: 40px 20px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.05), inset 0 0 20px rgba(255, 255, 255, 0.05);
+    transform: translateZ(0);
+    will-change: transform, backdrop-filter;
+    transition: all 0.3s ease;
+}
+
+.stats-glow-panel:hover {
+    border-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.1), inset 0 0 30px rgba(255, 255, 255, 0.1);
+}
+
+.stats-glow-panel .stat-num .counter,
+.stats-glow-panel .stat-num .sign {
+    color: #ffffff !important;
+    font-weight: 800;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.stats-glow-panel .stat-desc {
+    color: #e0e6ed !important;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Glowing Sci-Fi Section Divider */
+hr.sci-fi-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(50, 150, 255, 0.5), transparent);
+    margin: 80px auto;
+    width: 60%;
+    position: relative;
+    box-shadow: 0 0 15px rgba(50, 150, 255, 0.4);
+    border: none;
+    overflow: visible;
+}
+
+hr.sci-fi-divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background: #a0d2ff;
+    border-radius: 50%;
+    box-shadow: 0 0 15px #a0d2ff, 0 0 30px rgba(50, 150, 255, 0.8);
+}
+
+/* Fix for footer white gap */
+body {
+    background-color: #060a17 !important;
+}
+
+#footer {
+    margin-top: 0 !important;
+    border-top: 1px solid rgba(50, 150, 255, 0.1) !important;
+}
