@@ -95,7 +95,7 @@
 
 
 
-<div class="home-intro bg-secondary" id="home-intro">
+<div class="home-intro glass-panel mt-0" style="border-radius: 0; border-left: none; border-right: none;" id="home-intro">
 
     <div class="row align-items-center">
         <h2
@@ -246,23 +246,23 @@
 </section> -->
 
 
-<section class="container py-5" id="services">
+<section class="container py-5 z-index-2 position-relative" id="services">
     <div class="row mb-5">
         <div class="col text-center">
-            <h2 class="font-weight-bold line-height-2 text-7 mb-1">Hizmetlerimiz</h2>
+            <h2 class="font-weight-bold line-height-2 text-7 mb-1 text-white">Hizmetlerimiz</h2>
         </div>
     </div>
     <div class="row gx-4 gy-4">
         <div class="col-12 col-md-6 col-lg-4 mb-4 appear-animation" data-appear-animation="fadeInUpShorter"
             data-appear-animation-delay="200">
             <div
-                class="card card-border card-border-top card-border-hover bg-color-light box-shadow-6 box-shadow-hover anim-hover-translate-top-10px transition-3ms h-100">
+                class="card glass-panel h-100">
                 <div class="card-body text-center p-4">
                     <div class="mb-3">
                         <i class="fas fa-cogs text-primary text-6"></i>
                     </div>
-                    <h4 class="card-title mb-3 text-5 font-weight-bold"> ERP Satış & Lisanslama</h4>
-                    <p class="card-text">ERP'nin tüm modüllerini uygun fiyatlarla temin edin.
+                    <h4 class="card-title mb-3 text-5 font-weight-bold text-white"> ERP Satış & Lisanslama</h4>
+                    <p class="card-text text-light">ERP'nin tüm modüllerini uygun fiyatlarla temin edin.
                         Lisanslama, kurulum ve ilk konfigürasyon hizmetlerimizle işe başlayın.</p>
                 </div>
             </div>
@@ -271,13 +271,13 @@
         <div class="col-12 col-md-6 col-lg-4 mb-4 appear-animation" data-appear-animation="fadeInUpShorter"
             data-appear-animation-delay="400">
             <div
-                class="card card-border card-border-top card-border-hover bg-color-light box-shadow-6 box-shadow-hover anim-hover-translate-top-10px transition-3ms h-100">
+                class="card glass-panel h-100">
                 <div class="card-body text-center p-4">
                     <div class="mb-3">
                         <i class="fas fa-project-diagram text-primary text-6"></i>
                     </div>
-                    <h4 class="card-title mb-3 text-5 font-weight-bold">Kurulum & Konfigürasyon</h4>
-                    <p class="card-text">Uzman ekibimiz ERP'yi işletmenizin ihtiyaçlarına göre
+                    <h4 class="card-title mb-3 text-5 font-weight-bold text-white">Kurulum & Konfigürasyon</h4>
+                    <p class="card-text text-light">Uzman ekibimiz ERP'yi işletmenizin ihtiyaçlarına göre
                         kurar ve konfigüre eder. Hızlı ve sorunsuz başlangıç garantisi.</p>
                 </div>
             </div>
@@ -286,13 +286,13 @@
         <div class="col-12 col-md-6 col-lg-4 mb-4 appear-animation" data-appear-animation="fadeInUpShorter"
             data-appear-animation-delay="600">
             <div
-                class="card card-border card-border-top card-border-hover bg-color-light box-shadow-6 box-shadow-hover anim-hover-translate-top-10px transition-3ms h-100">
+                class="card glass-panel h-100">
                 <div class="card-body text-center p-4">
                     <div class="mb-3">
                         <i class="fas fa-chart-line text-primary text-6"></i>
                     </div>
-                    <h4 class="card-title mb-3 text-5 font-weight-bold">Eğitim & Sertifikasyon</h4>
-                    <p class="card-text">Kullanıcılarınız için kapsamlı ERP eğitimleri ve
+                    <h4 class="card-title mb-3 text-5 font-weight-bold text-white">Eğitim & Sertifikasyon</h4>
+                    <p class="card-text text-light">Kullanıcılarınız için kapsamlı ERP eğitimleri ve
                         sertifikasyon programları. Sistem kullanımında uzmanlaşma sağlayın.</p>
                 </div>
             </div>
@@ -301,13 +301,13 @@
         <div class="col-12 col-md-6 col-lg-4 mb-4 appear-animation" data-appear-animation="fadeInUpShorter"
             data-appear-animation-delay="800">
             <div
-                class="card card-border card-border-top card-border-hover bg-color-light box-shadow-6 box-shadow-hover anim-hover-translate-top-10px transition-3ms h-100">
+                class="card glass-panel h-100">
                 <div class="card-body text-center p-4">
                     <div class="mb-3">
                         <i class="fas fa-users text-primary text-6"></i>
                     </div>
-                    <h4 class="card-title mb-3 text-5 font-weight-bold">Teknik Destek</h4>
-                    <p class="card-text">ERP kullanımında karşılaştığınız tüm sorunlar için
+                    <h4 class="card-title mb-3 text-5 font-weight-bold text-white">Teknik Destek</h4>
+                    <p class="card-text text-light">ERP kullanımında karşılaştığınız tüm sorunlar için
                         kesintisiz teknik destek hizmeti. Uzman ekibimiz her zaman yanınızda.</p>
                 </div>
             </div>
@@ -316,13 +316,13 @@
         <div class="col-12 col-md-6 col-lg-4 mb-4 appear-animation" data-appear-animation="fadeInUpShorter"
             data-appear-animation-delay="1000">
             <div
-                class="card card-border card-border-top card-border-hover bg-color-light box-shadow-6 box-shadow-hover anim-hover-translate-top-10px transition-3ms h-100">
+                class="card glass-panel h-100">
                 <div class="card-body text-center p-4">
                     <div class="mb-3">
                         <i class="fas fa-chart-bar text-primary text-6"></i>
                     </div>
-                    <h4 class="card-title mb-3 text-5 font-weight-bold">Özel Yazılım Geliştirme</h4>
-                    <p class="card-text">Sektörünüze ve işletmenize özel yazılım çözümleri geliştiriyoruz.
+                    <h4 class="card-title mb-3 text-5 font-weight-bold text-white">Özel Yazılım Geliştirme</h4>
+                    <p class="card-text text-light">Sektörünüze ve işletmenize özel yazılım çözümleri geliştiriyoruz.
                         Standart çözümlerin yetmediği durumlarda tam uyumlu eklentiler.</p>
                 </div>
             </div>
@@ -331,13 +331,13 @@
         <div class="col-12 col-md-6 col-lg-4 mb-4 appear-animation" data-appear-animation="fadeInUpShorter"
             data-appear-animation-delay="1200">
             <div
-                class="card card-border card-border-top card-border-hover bg-color-light box-shadow-6 box-shadow-hover anim-hover-translate-top-10px transition-3ms h-100">
+                class="card glass-panel h-100">
                 <div class="card-body text-center p-4">
                     <div class="mb-3">
                         <i class="fas fa-digital-tachograph text-primary text-6"></i>
                     </div>
-                    <h4 class="card-title mb-3 text-5 font-weight-bold">Veri Migrasyon Hizmeti</h4>
-                    <p class="card-text">Mevcut sisteminizdeki verileri ERP'ye güvenle taşıyoruz.
+                    <h4 class="card-title mb-3 text-5 font-weight-bold text-white">Veri Migrasyon Hizmeti</h4>
+                    <p class="card-text text-light">Mevcut sisteminizdeki verileri ERP'ye güvenle taşıyoruz.
                         Veri kaybı olmadan güvenli geçiş sağlıyoruz.</p>
                 </div>
             </div>
@@ -359,8 +359,8 @@
         <div class="col">
             <div class="row mb-5">
                 <div class="col text-center">
-                    <h2 class="font-weight-bold line-height-2 text-7 mb-1">Danışmanlık Alanlarımız</h2>
-                    <span class="d-block text-color-dark text-5 pb-2 mb-2 opacity-7">Uzman kadromuzla size özel
+                    <h2 class="font-weight-bold line-height-2 text-7 mb-1 text-white">Danışmanlık Alanlarımız</h2>
+                    <span class="d-block text-color-light text-5 pb-2 mb-2 opacity-7">Uzman kadromuzla size özel
                         çözümler sunuyoruz</span>
 
                 </div>
@@ -370,14 +370,14 @@
                 <div class="row">
                     @foreach ($advisors->take(3) as $advisor)
                     <div class="col-md-6 col-lg-4 mb-4">
-                        <div class="card border-0 shadow-sm h-100">
+                        <div class="card glass-panel border-0 shadow-sm h-100" style="padding: 0; overflow: hidden;">
                             <img src="{{ asset('storage/' . $advisor->image) }}" class="card-img-top"
                                 alt="{{ $advisor->title }}">
-                            <div class="card-body">
-                                <h5 class="card-title font-weight-bold">{{ $advisor->title }}</h5>
-                                <p class="card-text">{!! Str::limit($advisor->description, 100) !!}</p>
+                            <div class="card-body p-4">
+                                <h5 class="card-title font-weight-bold text-white">{{ $advisor->title }}</h5>
+                                <p class="card-text text-light">{!! Str::limit($advisor->description, 100) !!}</p>
                                 @if ($advisor->slug)
-                                <a href="{{ route('advisors.show', $advisor->slug) }}" class="btn btn-primary">Detayları
+                                <a href="{{ route('advisors.show', $advisor->slug) }}" class="btn btn-primary mt-2">Detayları
                                     Görüntüle</a>
                                 @endif
                             </div>
@@ -404,8 +404,7 @@
 
 
 
-<section class="sci-fi-section" id="process">
-    <div class="bg-grid"></div>
+<section class="py-5 position-relative" id="process">
     <div class="container sci-fi-content">
         <!-- HEADER -->
         <div class="row mb-4">
@@ -483,7 +482,7 @@
 
 <section class="stats stats-section js-stats-counter mega-section">
     <div class="container">
-        <div class="stats-inner">
+        <div class="stats-inner text-white">
             <div class="row g-4">
                 <div class="col-12 col-md-6 col-lg-3 stat-box">
                     <div class="stat-box-inner" data-tilt="data-tilt">

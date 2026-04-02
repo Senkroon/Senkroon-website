@@ -12,7 +12,8 @@
 
 
 
-        <div role="main" class="main">
+        <div role="main" class="main sci-fi-theme-main">
+            <div class="bg-grid-global"></div>
             <!-- Contact Floating Button -->
             <div id="contact-button">
                 <i class="fas fa-envelope"></i>

@@ -41,17 +41,21 @@
 
 .glass-panel {
     background: rgba(10, 20, 40, 0.6);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     border: 1px solid rgba(50, 150, 255, 0.2);
     border-radius: 12px;
     padding: 30px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), inset 0 0 10px rgba(50, 150, 255, 0.1);
     transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    transform: translateZ(0);
+    /* Hardware acceleration */
+    will-change: transform, backdrop-filter;
+    /* Optimize rendering */
 }
 
 .glass-panel:hover {
-    transform: translateY(-8px);
+    transform: translateY(-8px) translateZ(0);
     border-color: rgba(50, 150, 255, 0.5);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4), inset 0 0 20px rgba(50, 150, 255, 0.2);
 }
@@ -84,6 +88,8 @@
     line-height: 1.4;
     z-index: 10;
     animation: pulse 4s infinite alternate;
+    transform: translateZ(0);
+    will-change: box-shadow;
 }
 
 @keyframes pulse {
@@ -104,18 +110,22 @@
     left: 50%;
     transform: translate(-50%, -50%);
     pointer-events: none;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
 }
 
 .orb-ring-1 {
     width: 380px;
     height: 380px;
     animation: rotate 30s linear infinite;
+    will-change: transform;
 }
 
 .orb-ring-2 {
     width: 540px;
     height: 540px;
     animation: rotate-reverse 45s linear infinite;
+    will-change: transform;
 }
 
 .orb-ring-3 {
@@ -152,12 +162,13 @@
     align-items: center;
     gap: 15px;
     transition: all 0.3s ease;
+    transform: translateZ(0);
 }
 
 .orb-node:hover {
     border-color: rgba(100, 200, 255, 0.8);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6), 0 0 20px rgba(100, 200, 255, 0.5);
-    transform: scale(1.05);
+    transform: scale(1.05) translateZ(0);
 }
 
 .orb-node i {
@@ -307,17 +318,18 @@
     align-items: flex-start;
     gap: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4), inset 0 0 15px rgba(50, 150, 255, 0.05);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(8px);
     transition: all 0.3s ease;
     height: 100%;
     position: relative;
     z-index: 2;
+    transform: translateZ(0);
 }
 
 .timeline-node-card:hover {
     box-shadow: 0 0 30px rgba(50, 150, 255, 0.2), inset 0 0 20px rgba(50, 150, 255, 0.1);
     border-color: rgba(100, 200, 255, 0.7);
-    transform: translateY(-5px);
+    transform: translateY(-5px) translateZ(0);
 }
 
 .timeline-node-icon {
@@ -371,4 +383,46 @@
     color: #fff;
     text-shadow: 0 0 15px rgba(100, 200, 255, 0.6);
     font-weight: 800;
+}
+
+/* Global Dark Theme additions for entire background */
+.sci-fi-theme-main {
+    background: #060a17;
+    /* Fallback solid color */
+    color: #e0e6ed;
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.sci-fi-theme-main::before,
+.sci-fi-theme-main::after {
+    content: '';
+    position: fixed;
+    /* Fix to viewport to prevent re-painting on scroll */
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-image:
+        radial-gradient(circle at 50% 10%, rgba(20, 80, 150, 0.1) 0%, transparent 40%),
+        radial-gradient(circle at 30% 50%, rgba(2, 40, 90, 0.15) 0%, transparent 30%),
+        radial-gradient(circle at 70% 30%, rgba(25, 120, 255, 0.05) 0%, transparent 40%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.bg-grid-global {
+    position: fixed;
+    /* Fix to viewport for performance */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: 40px 40px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    pointer-events: none;
+    z-index: 0;
+    transform: translateZ(0);
+    /* Hardware accelerate */
 }
