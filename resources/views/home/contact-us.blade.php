@@ -1,4 +1,4 @@
-﻿@extends('layout.master')
+@extends('layout.master')
 
 
 @section('content')
@@ -20,9 +20,9 @@
     </section>
 
     <section class="section bg-transparent position-relative border-0 m-0 p-0">
-        <div class="container custom-container-background custom-z-index-1 py-5">
+        <div class="container custom-z-index-1 py-5">
             <div class="row position-relative z-index-1 pt-5-5">
-                <div class="col">
+                <div class="col glass-panel p-4 p-md-5 rounded">
 
                     <form class="contact-form custom-form-style-1" action="{{ route('contact-us.submit') }}" method="POST">
                         @csrf
@@ -123,33 +123,33 @@
 
                     </form>
 
-                    <hr class="my-5">
+                    <hr class="sci-fi-divider my-5">
 
-                    <h2 class="text-color-dark font-weight-medium text-8 mt-5 mb-3">
+                    <h2 class="text-white font-weight-bold section-title-glow text-8 mt-5 mb-3">
                         <strong>Konumumuz</strong>
                     </h2>
 
-                    <p class="text-4 line-height-8 mb-4">Aşağıda yer alan lokasyonlarımızdan haberdar olmak için lütfen
+                    <p class="text-4 line-height-8 mb-4 text-light">Aşağıda yer alan lokasyonlarımızdan haberdar olmak için lütfen
                         bizimle iletişime geçin.</p>
 
                     <div class="row py-4 mb-5">
                         <div class="col-lg-6 pb-4 pb-lg-0">
 
-                            <p class="text-4-5 pe-lg-2 text-dark font-weight-bold"> Polatlar Office, Tecde, Mıhlıdut Sk. A
+                            <p class="text-4-5 pe-lg-2 text-white font-weight-bold"> Polatlar Office, Tecde, Mıhlıdut Sk. A
                                 Blok No: 37/B<br>
                                 44090 Kat 1 No:3 Yeşilyurt/Malatya</p>
                             <ul class="list list-unstyled">
                                 <li class="d-flex align-items-center mb-3">
                                     <i
-                                        class="icon icon-envelope text-color-dark text-3 font-weight-bold position-relative top-1 me-3-5"></i>
+                                        class="icon icon-envelope text-white text-3 font-weight-bold position-relative top-1 me-3-5"></i>
                                     <a href="mailto:info@senkroon.com"
-                                        class="d-inline-flex align-items-center text-decoration-none text-color-dark text-color-hover-primary font-weight-semibold text-4-5">info@senkroon.com</a>
+                                        class="d-inline-flex align-items-center text-decoration-none text-light text-color-hover-primary font-weight-semibold text-4-5">info@senkroon.com</a>
                                 </li>
                                 <li class="d-flex align-items-center mb-3">
                                     <i
-                                        class="icon icon-phone text-color-dark text-3 font-weight-bold position-relative top-1 me-3-5"></i>
+                                        class="icon icon-phone text-white text-3 font-weight-bold position-relative top-1 me-3-5"></i>
                                     <a href="tel:+905306690444"
-                                        class="d-inline-flex align-items-center text-decoration-none text-color-dark text-color-hover-primary font-weight-semibold text-4-5">+90
+                                        class="d-inline-flex align-items-center text-decoration-none text-light text-color-hover-primary font-weight-semibold text-4-5">+90
                                         530 669 04 44
                                     </a>
                                 </li>

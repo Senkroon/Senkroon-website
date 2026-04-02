@@ -1,4 +1,4 @@
-﻿@extends("layout.master")
+@extends("layout.master")
 
 
 
@@ -23,8 +23,8 @@
             <div class="col">
                 <div class="row mb-5">
                     <div class="col text-center">
-                        <h2 class="font-weight-bold line-height-2 text-7 mb-1">Workcube  </h2>
-                        <span class="d-block text-color-dark text-5 pb-2 mb-2 opacity-7">Uzman kadromuzla size özel
+                        <h2 class="font-weight-bold line-height-2 text-7 mb-1 text-white">Workcube  </h2>
+                        <span class="d-block text-light text-5 pb-2 mb-2 opacity-7">Uzman kadromuzla size özel
                             çözümler sunuyoruz</span>
 
                     </div>
@@ -34,14 +34,14 @@
                     <div class="row">
                         @foreach ($WorkcubeModules->take(3) as $workmodule)
                             <div class="col-md-6 col-lg-4 mb-4">
-                                <div class="card border-0 shadow-sm h-100">
+                                <div class="card glass-panel border-0 shadow-sm h-100" style="padding:0; overflow:hidden;">
                                     <img src="{{ $workmodule->cover_image_url }}" class="card-img-top" alt="{{ $workmodule->title }}">
-                                    <div class="card-body">
-                                        <h5 class="card-title font-weight-bold">{{ $workmodule->title }}</h5>
-                                        <p class="card-text">{!! Str::limit($workmodule->description, 100) !!}</p>
+                                    <div class="card-body p-4">
+                                        <h5 class="card-title font-weight-bold text-white">{{ $workmodule->title }}</h5>
+                                        <p class="card-text text-light">{!! Str::limit($workmodule->description, 100) !!}</p>
                                         @if ($workmodule->slug)
                                             <a href="{{ route('modules.show', ['category' => 'workcube', 'module' => $workmodule->slug]) }}"
-                                                class="btn btn-primary">Detayları Görüntüle</a>
+                                                class="btn btn-primary mt-2">Detayları Görüntüle</a>
                                         @endif
                                     </div>
                                 </div>
@@ -64,7 +64,7 @@
         </div>
     </section>
 
-    <hr class="my-5">
+    <hr class="sci-fi-divider my-5">
 
 
 
@@ -76,8 +76,8 @@
             <div class="col">
                 <div class="row mb-5">
                     <div class="col text-center">
-                        <h2 class="font-weight-bold line-height-2 text-7 mb-1">Uyumsoft </h2>
-                        <span class="d-block text-color-dark text-5 pb-2 mb-2 opacity-7">Uzman kadromuzla size özel
+                        <h2 class="font-weight-bold line-height-2 text-7 mb-1 text-white">Uyumsoft </h2>
+                        <span class="d-block text-light text-5 pb-2 mb-2 opacity-7">Uzman kadromuzla size özel
                             çözümler sunuyoruz</span>
 
                     </div>
@@ -87,14 +87,14 @@
                     <div class="row">
                         @foreach ($uyumsoftModules->take(3) as $module)
                             <div class="col-md-6 col-lg-4 mb-4">
-                                <div class="card border-0 shadow-sm h-100">
+                                <div class="card glass-panel border-0 shadow-sm h-100" style="padding:0; overflow:hidden;">
                                     <img src="{{ $module->cover_image_url }}" class="card-img-top" alt="{{ $module->title }}">
-                                    <div class="card-body">
-                                        <h5 class="card-title font-weight-bold">{{ $module->title }}</h5>
-                                        <p class="card-text">{!! Str::limit($module->short_description, 100) !!}</p>
+                                    <div class="card-body p-4">
+                                        <h5 class="card-title font-weight-bold text-white">{{ $module->title }}</h5>
+                                        <p class="card-text text-light">{!! Str::limit($module->short_description, 100) !!}</p>
                                         @if ($module->slug)
                                             <a href="{{ route('modules.show', ['uyumsoft', $module->slug]) }}"
-                                                class="btn btn-primary">Detayları Görüntüle</a>
+                                                class="btn btn-primary mt-2">Detayları Görüntüle</a>
                                         @endif
                                     </div>
                                 </div>
@@ -116,7 +116,7 @@
             </div>
         </div>
     </section>
-    <hr class="my-5">
+    <hr class="sci-fi-divider my-5">
 
 
 
@@ -125,8 +125,8 @@
             <div class="col">
                 <div class="row mb-5">
                     <div class="col text-center">
-                        <h2 class="font-weight-bold line-height-2 text-7 mb-1">Danışmanlık Alanlarımız</h2>
-                        <span class="d-block text-color-dark text-5 pb-2 mb-2 opacity-7">Uzman kadromuzla size özel
+                        <h2 class="font-weight-bold line-height-2 text-7 mb-1 text-white">Danışmanlık Alanlarımız</h2>
+                        <span class="d-block text-light text-5 pb-2 mb-2 opacity-7">Uzman kadromuzla size özel
                             çözümler sunuyoruz</span>
 
                     </div>
@@ -136,14 +136,14 @@
                     <div class="row">
                         @foreach ($advisors->take(3) as $advisor)
                             <div class="col-md-6 col-lg-4 mb-4">
-                                <div class="card border-0 shadow-sm h-100">
+                                <div class="card glass-panel border-0 shadow-sm h-100" style="padding:0; overflow:hidden;">
                                     <img src="{{ asset('storage/' . $advisor->image) }}" class="card-img-top"
                                         alt="{{ $advisor->title }}">
-                                    <div class="card-body">
-                                        <h5 class="card-title font-weight-bold">{{ $advisor->title }}</h5>
-                                        <p class="card-text">{!! Str::limit($advisor->description, 100) !!}</p>
+                                    <div class="card-body p-4">
+                                        <h5 class="card-title font-weight-bold text-white">{{ $advisor->title }}</h5>
+                                        <p class="card-text text-light">{!! Str::limit($advisor->description, 100) !!}</p>
                                         @if ($advisor->slug)
-                                            <a href="{{ route('advisors.show', $advisor->slug) }}" class="btn btn-primary">Detayları
+                                            <a href="{{ route('advisors.show', $advisor->slug) }}" class="btn btn-primary mt-2">Detayları
                                                 Görüntüle</a>
                                         @endif
                                     </div>
