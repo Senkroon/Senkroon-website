@@ -402,201 +402,84 @@
 </section>
 
 
-<section class="container py-5" id="process">
 
 
-
-    <div class="row mb-5">
-        <div class="col text-center">
-
-            <h2 class="font-weight-bold">Senkroon’un ERP Yaklaşımı</h2>
-            <p class="d-block text-color-dark text-4 pb-2 mb-2 opacity-7">Senkroon Yazılım Danışmanlık Dijital Dönüşüm
-                Ltd. Şti., ERP’yi hazır kalıplarla değil, iş modelinizin mimarisiyle kurar. Süreçlerinizi, organizasyon
-                yapınızı ve finansal işleyişinizi uçtan uca analiz eder; kurumunuza özel ekranlar, iş akışları ve
-                yönetim raporları tasarlar. Amaç, bir yazılım kullanmanız değil; operasyonlarınızı tek bir entegre
-                platformda ölçülebilir, denetlenebilir ve ölçeklenebilir şekilde yönetmenizdir. Proje sonunda “ERP
-                kullanıyoruz” değil, “işimizi veriyle yönetiyoruz” seviyesine geçersiniz.</p>
-        </div>
-    </div>
-
-
-    <div class="row">
-
-        <div class="col">
-
-            <h3 class=" mb-3">Nasıl Çalışıyoruz? </h3>
-            <p class="mb-0">Her projede aynı disiplinle ilerliyoruz;
-                böylece hem süreç hem bütçe hem de çıktılar daha baştan netleşiyor. ERP, süreç ve organizasyon
-                tarafındaki tüm çalışmalarımızı bu çerçevede kurguluyoruz.</p>
-
+<section class="sci-fi-section" id="process">
+    <div class="bg-grid"></div>
+    <div class="container sci-fi-content">
+        <!-- HEADER -->
+        <div class="row mb-4">
+            <div class="col-lg-10 mx-auto text-center appear-animation" data-appear-animation="fadeInUpShorter">
+                <h2 class="section-title-glow text-8 mb-4">Senkroon’un ERP Yaklaşımı</h2>
+                <p class="text-4 mb-0" style="color: #cbd5e1; line-height: 1.8;">
+                    Senkroon Yazılım Danışmanlık Dijital Dönüşüm Ltd. Şti., ERP’yi hazır kalıplarla değil, iş modelinizin mimarisiyle kurar. Süreçlerinizi, organizasyon yapınızı ve finansal işleyişinizi uçtan uca analiz eder; kurumunuza özel ekranlar, iş akışları ve yönetim raporları tasarlar. Amaç, bir yazılım kullanmanız değil; operasyonlarınızı tek bir entegre platformda ölçülebilir, denetlenebilir ve ölçeklenebilir şekilde yönetmenizdir. Proje sonunda “ERP kullanıyoruz” değil, “işimizi veriyle yönetiyoruz” seviyesine geçersiniz.
+                </p>
+            </div>
         </div>
 
-    </div>
+        <!-- ORB INFOGRAPHIC -->
+        <div class="orb-container appear-animation" data-appear-animation="fadeIn">
+            <div class="orb-ring orb-ring-1"></div>
+            <div class="orb-ring orb-ring-2"></div>
+            <div class="orb-ring orb-ring-3"></div>
 
-    <div class="row">
-        <div class="col">
-            <div class="process process-vertical py-4">
-                <div class="process-step appear-animation" data-appear-animation="fadeInUpShorter"
-                    data-appear-animation-delay="200">
-                    <div class="process-step-circle">
-                        <strong class="process-step-circle-content">1</strong>
-                    </div>
-                    <div class="process-step-content">
-                        <h4 class="mb-3 text-5 font-weight-bold text-primary">Firma Analizi</h4>
-                        <p class="mb-0">Mevcut süreçlerinizi, kullandığınız ERP/yazılımları, organizasyon yapınızı ve
-                            finansal/operasyonel fotoğrafınızı dinliyor, birlikte net bir durum analizi çıkarıyoruz.
-                            Hangi noktada olduğunuzu ve nereye gitmek istediğinizi aynı çerçeveden görmeden hiçbir adım
-                            atmıyoruz.</p>
-                    </div>
+            <div class="glowing-orb">
+                <div>VERİYLE<br>YÖNETİLEN<br>İŞLETME</div>
+            </div>
+
+            <div class="orb-node node-1 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="200">
+                <i class="fas fa-search"></i>
+                <div>
+                    <strong> Firma Analizi</strong>
+                    Mevcut yapı netleşir
                 </div>
-                <div class="process-step appear-animation" data-appear-animation="fadeInUpShorter"
-                    data-appear-animation-delay="400">
-                    <div class="process-step-circle">
-                        <strong class="process-step-circle-content">2</strong>
-                    </div>
-                    <div class="process-step-content">
-                        <h4 class="mb-3 text-5 font-weight-bold text-primary">Planlama & Fiyatlandırma</h4>
-                        <p class="mb-0">Kapsamı, fazları, süreyi ve bütçeyi netleştiriyoruz. ERP mi, süreç mi,
-                            organizasyon mu, yoksa hepsinin birleşimi mi olacağı; hangi modüllerin devreye alınacağı ve
-                            hangi adımların hangi sırayla ilerleyeceği konusunda şeffaf bir yol haritası çıkarıyoruz.
-                            Sürpriz maliyet yaratmayan, baştan konuşulmuş bir model kuruyoruz.</p>
-                    </div>
+            </div>
+
+            <div class="orb-node node-2 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="400">
+                <i class="fas fa-tasks"></i>
+                <div>
+                    <strong> Planlama</strong>
+                    Kapsam ve bütçe belirlenir
                 </div>
-                <div class="process-step appear-animation" data-appear-animation="fadeInUpShorter"
-                    data-appear-animation-delay="600">
-                    <div class="process-step-circle">
-                        <strong class="process-step-circle-content">3</strong>
-                    </div>
-                    <div class="process-step-content">
-                        <h4 class="mb-3 text-5 font-weight-bold text-primary">Tasarım</h4>
-                        <p class="mb-0">İş süreçleri, organizasyon, ekran ve rapor tasarımlarını; kurum kültürünüz, ekip
-                            yapınız ve hedeflerinizle uyumlu şekilde modelliyoruz. ERP ve diğer çözümler üzerinde; iş
-                            akışları, kod yapısı, yetkiler ve rapor setlerini “kitaptaki ideal”e değil, sizin gerçek
-                            işleyişinize göre kurguluyoruz.
-                        </p>
-                    </div>
+            </div>
+
+            <div class="orb-node node-3 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="600">
+                <i class="fas fa-sitemap"></i>
+                <div>
+                    <strong> Tasarım</strong>
+                    Kuruma özel kurgulanır
                 </div>
-                <div class="process-step appear-animation" data-appear-animation="fadeInUpShorter"
-                    data-appear-animation-delay="800">
-                    <div class="process-step-circle">
-                        <strong class="process-step-circle-content">4</strong>
-                    </div>
-                    <div class="process-step-content">
-                        <h4 class="mb-3 text-5 font-weight-bold text-primary">Uygulama</h4>
-                        <p class="mb-0">ERP kurulumu, parametrik ayarlar, test ortamı, pilot uygulamalar ve kullanıcı
-                            eğitimleriyle tasarımı sahaya indiriyoruz. İlgili departmanlarla birlikte ilerleyerek;
-                            satınalma, satış, üretim, depo, finans, İK, lojistik ve diğer süreçlerinizin gerçekten
-                            ekranlara yansımasını sağlıyoruz.</p>
-                    </div>
+            </div>
+
+            <div class="orb-node node-4 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="800">
+                <i class="fas fa-cogs"></i>
+                <div>
+                    <strong> Uygulama</strong>
+                    Sahada hayat bulur
                 </div>
-                <div class="process-step appear-animation" data-appear-animation="fadeInUpShorter"
-                    data-appear-animation-delay="1000">
-                    <div class="process-step-circle">
-                        <strong class="process-step-circle-content">5</strong>
-                    </div>
-                    <div class="process-step-content">
-                        <h4 class="mb-3 text-5 font-weight-bold text-primary">Eğitim & Sürekli İyileştirme
-                        </h4>
-                        <p class="mb-0">Canlıya geçişi bir “bitiş” değil, projenin ikinci yarısı olarak görüyoruz.
-                            Kullanıcı desteği, rapor iyileştirmeleri, yeni ihtiyaçların tasarımı ve süreçlerin gözden
-                            geçirilmesi için periyodik olarak yanınızda oluyoruz. Böylece ERP ve süreç yapınız, işiniz
-                            büyüdükçe sizinle birlikte gelişiyor.</p>
-                    </div>
+            </div>
+
+            <div class="orb-node node-5 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="1000">
+                <i class="fas fa-sync-alt"></i>
+                <div>
+                    <strong> İyileştirme</strong>
+                    Sürekli geliştirilir
                 </div>
             </div>
         </div>
+
+
+
     </div>
 </section>
+<!-- SCI-FI PROCESS SECTION END -->
 
 
 
 
 
 
-<style>
-    .stats-section {
-        position: relative;
-        padding: 64px 0;
-        background-color: #e9edf2;
-        overflow: hidden;
-    }
 
-    .stats-section .overlay-photo-image-bg {
-        position: absolute;
-        inset: 0;
-        background-size: cover;
-        background-position: center;
-        pointer-events: none;
-    }
-
-    .stats-section .stats-inner {
-        position: relative;
-        z-index: 1;
-    }
-
-    .stats-section .stat-box-inner {
-        background: rgba(255, 255, 255, 0.88);
-        border: 1px solid rgba(13, 60, 97, 0.08);
-        border-radius: 14px;
-        text-align: center;
-        padding: 28px 20px;
-        height: 100%;
-        opacity: 0;
-        transform: translateY(18px);
-        transition: transform 0.25s ease, box-shadow 0.25s ease;
-    }
-
-    .stats-section.is-visible .stat-box-inner {
-        opacity: 1;
-        transform: translateY(0);
-        transition: opacity 0.45s ease, transform 0.45s ease, box-shadow 0.25s ease;
-    }
-
-    .stats-section.is-visible .stat-box:nth-child(1) .stat-box-inner {
-        transition-delay: 0.05s;
-    }
-
-    .stats-section.is-visible .stat-box:nth-child(2) .stat-box-inner {
-        transition-delay: 0.15s;
-    }
-
-    .stats-section.is-visible .stat-box:nth-child(3) .stat-box-inner {
-        transition-delay: 0.25s;
-    }
-
-    .stats-section.is-visible .stat-box:nth-child(4) .stat-box-inner {
-        transition-delay: 0.35s;
-    }
-
-    .stats-section .stat-box-inner:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 12px 30px rgba(16, 38, 65, 0.12);
-    }
-
-    .stats-section .stat-icon {
-        font-size: 34px;
-        color: #1f2a37;
-        margin-bottom: 12px;
-    }
-
-    .stats-section .stat-num {
-        margin-bottom: 6px;
-        line-height: 1;
-    }
-
-    .stats-section .stat-num .counter,
-    .stats-section .stat-num .sign {
-        font-size: 34px;
-        font-weight: 700;
-        color: #1f2a37;
-    }
-
-    .stats-section .stat-desc {
-        font-size: 15px;
-        color: #4b5563;
-        font-weight: 600;
-    }
-</style>
 
 <section class="stats stats-section js-stats-counter mega-section">
     <div class="container">

@@ -4,7 +4,7 @@
      <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1">
      @php
-         use Artesaos\SEOTools\Facades\SEOTools;
+     use Artesaos\SEOTools\Facades\SEOTools;
 
      @endphp
 
@@ -35,8 +35,8 @@
      <link rel="stylesheet" href="{{ asset('porto/vendor/magnific-popup/magnific-popup.min.css') }}">
 
 
-		<link rel="stylesheet" href="{{ asset('porto/css/examples/examples-spotlight-cursor-text.css') }}">
-		<link rel="stylesheet" href="{{ asset('porto/css/examples/examples-text-bg-clip-animation.css') }}">
+     <link rel="stylesheet" href="{{ asset('porto/css/examples/examples-spotlight-cursor-text.css') }}">
+     <link rel="stylesheet" href="{{ asset('porto/css/examples/examples-text-bg-clip-animation.css') }}">
 
 
      <!-- Theme CSS -->
@@ -50,15 +50,20 @@
 
      <!-- Theme Custom CSS -->
      <link rel="stylesheet" href="{{ asset('porto/css/custom.css') }}">
+     <link rel="stylesheet" href="{{ asset('porto/css/how_we_work.css') }}">
+
 
  </head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GKWNBDFJL9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+ <!-- Google tag (gtag.js) -->
+ <script async src="https://www.googletagmanager.com/gtag/js?id=G-GKWNBDFJL9"></script>
+ <script>
+     window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-GKWNBDFJL9');
-</script>
+     function gtag() {
+         dataLayer.push(arguments);
+     }
+     gtag('js', new Date());
+
+     gtag('config', 'G-GKWNBDFJL9');
+ </script>
