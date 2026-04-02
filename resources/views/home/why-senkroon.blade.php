@@ -1,138 +1,222 @@
 ﻿@extends("layout.master")
 
-
-
 @section("content")
 
-
+    {{-- Hero Section - Sci-Fi Style --}}
     <section class="page-header page-header-modern section position-relative border-0 m-0"
-        style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('images/modules/all.jpg') }}); background-position: center; background-size: cover;">
-        <div class="col-md-12 align-self-center p-static order-2 text-center">
-            <h1 class="text-light font-weight-bold text-8">Neden Senkroon Yazılım?</h1>
-            <span class="sub-title text-light">Dijital Dönüşümde Güvenilir Ortağınız</span>
+        style="background-color: #030612; background-image: linear-gradient(rgba(3, 6, 18, 0.85), rgba(3, 6, 18, 0.85)), url({{ asset('images/modules/all.jpg') }}); background-position: center; background-size: cover; background-attachment: fixed; min-height: 400px;">
+        <div class="container position-relative pb-5 pt-5 d-flex align-items-center justify-content-center" style="min-height: 400px;">
+            <div class="text-center">
+
+                <h1 class="text-color-light font-weight-bold text-8 mb-3 section-title-glow">Neden Senkroon Yazılım?</h1>
+                <p class="text-color-light text-4 opacity-8">Dijital Dönüşümde Güvenilir Ortağınız</p>
+            </div>
         </div>
     </section>
 
-
-
+    {{-- Main Content --}}
     <div class="container py-5">
-
         <div class="row">
             <div class="col">
-                <h4 class="mb-2 mt-5">Neden Senkroon Yazılım?</h4>
+                <div class="card card-sci-fi mb-5">
+                    <div class="card-body p-4 p-md-5">
+                        <h4 class="mb-4 text-white font-weight-bold text-6">
+                            <i class="fas fa-star me-2" style="color: #ff8500;"></i>
+                            Neden Senkroon Yazılım?
+                        </h4>
 
-                <p>Senkroon; ERP, süreç, organizasyon, finans, İK ve dijital çözümleri tek çatı altında toplayan, uçtan uca
-                    dijital dönüşüm odağında çalışan bir iş ortağıdır. Amacımız; size yazılım satmak değil, ölçülebilir iş
-                    sonuçları üretmek ve yatırımınızın geri dönüşünü (ROI) somutlaştırmaktır.</p>
-
-
-                <div class="process process-vertical py-4">
-                    <div class="process-step appear-animation animated fadeInUpShorter appear-animation-visible"
-                        data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200"
-                        style="animation-delay: 200ms;">
-                        <div class="process-step-circle">
-                            <strong class="process-step-circle-content">1</strong>
-                        </div>
-                        <div class="process-step-content">
-                            <h4 class="mb-1 text-4 font-weight-bold">Tek noktadan çözüm ortağı</h4>
-                            <p class="mb-0">ERP, süreç tasarımı, organizasyon, finans, İK, web ve donanım altyapısını ayrı
-                                ayrı değil, entegre bir model olarak kurguluyoruz. Böylece “her işi başka firmayla çözme”
-                                dağınıklığını ortadan kaldırıyoruz.</p>
-                        </div>
+                        <p class="text-light text-4" style="line-height: 1.8;">
+                            Senkroon; ERP, süreç, organizasyon, finans, İK ve dijital çözümleri tek çatı altında toplayan, uçtan uca
+                            dijital dönüşüm odağında çalışan bir iş ortağıdır. Amacımız; size yazılım satmak değil, ölçülebilir iş
+                            sonuçları üretmek ve yatırımınızın geri dönüşünü (ROI) somutlaştırmaktır.
+                        </p>
                     </div>
-                    <div class="process-step appear-animation animated fadeInUpShorter appear-animation-visible"
-                        data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400"
-                        style="animation-delay: 400ms;">
-                        <div class="process-step-circle">
-                            <strong class="process-step-circle-content">2</strong>
-                        </div>
-                        <div class="process-step-content">
-                            <h4 class="mb-1 text-4 font-weight-bold">Saha deneyimi olan danışmanlık</h4>
-                            <p class="mb-0">Ekibimiz; üretim, inşaat, perakende ve hizmet sektörlerinde saha tecrübesi olan
-                                isimlerden oluşur. Teoriyi değil, gerçekte çalışan modelleri öneriyoruz.</p>
-                        </div>
-                    </div>
-                    <div class="process-step appear-animation animated fadeInUpShorter appear-animation-visible"
-                        data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600"
-                        style="animation-delay: 600ms;">
-                        <div class="process-step-circle">
-                            <strong class="process-step-circle-content">3</strong>
-                        </div>
-                        <div class="process-step-content">
-                            <h4 class="mb-1 text-4 font-weight-bold">Hazır paket değil, kuruma özel model</h4>
-                            <p class="mb-0">“Standart paket” dayatmıyoruz. İşinizi, kültürünüzü ve ekibinizi analiz edip;
-                                size özel süreç, organizasyon ve ERP mimarisi tasarlıyoruz.</p>
-                        </div>
-                    </div>
-                    <div class="process-step appear-animation animated fadeInUpShorter appear-animation-visible"
-                        data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800"
-                        style="animation-delay: 800ms;">
-                        <div class="process-step-circle">
-                            <strong class="process-step-circle-content">4</strong>
-                        </div>
-                        <div class="process-step-content">
-                            <h4 class="mb-1 text-4 font-weight-bold">ERP’de derin uzmanlık</h4>
-                            <p class="mb-0">ERP’yi sadece kuran değil, modül, süreç, rol, yetki ve raporlama
-                                yapısını birlikte tasarlayan bir ekibiz. Hedefimiz: ERP’yi günlük işleyişin doğal bir
-                                parçası haline getirmek.</p>
-                        </div>
-                    </div>
-
-
-                    <div class="process-step appear-animation animated fadeInUpShorter appear-animation-visible"
-                        data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800"
-                        style="animation-delay: 1000ms;">
-                        <div class="process-step-circle">
-                            <strong class="process-step-circle-content">5</strong>
-                        </div>
-                        <div class="process-step-content">
-                            <h4 class="mb-1 text-4 font-weight-bold">Veri odaklı yönetim & şeffaf raporlama</h4>
-                            <p class="mb-0">Kararların “hisse dayalı” değil, veri odaklı alınmasını sağlıyoruz. Yönetimin
-                                kolay okuyabildiği, kârlılık, nakit, risk ve performans odaklı rapor setleri kuruyoruz.</p>
-                        </div>
-                    </div>
-
-
-
-                    <div class="process-step appear-animation animated fadeInUpShorter appear-animation-visible"
-                        data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800"
-                        style="animation-delay: 1200ms;">
-                        <div class="process-step-circle">
-                            <strong class="process-step-circle-content">6</strong>
-                        </div>
-                        <div class="process-step-content">
-                            <h4 class="mb-1 text-4 font-weight-bold">Değişim yönetimi ve kullanıcı odağı</h4>
-                            <p class="mb-0">Kararların “hisse dayalı” değil, veri odaklı alınmasını sağlıyoruz. Yönetimin
-                                kolay okuyabildiği, kârlılık, nakit, risk ve performans odaklı rapor setleri kuruyoruz.</p>
-                        </div>
-                    </div>
-
-
-
-                    <div class="process-step appear-animation animated fadeInUpShorter appear-animation-visible"
-                        data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800"
-                        style="animation-delay: 1400ms;">
-                        <div class="process-step-circle">
-                            <strong class="process-step-circle-content">7</strong>
-                        </div>
-                        <div class="process-step-content">
-                            <h4 class="mb-1 text-4 font-weight-bold">Uzun vadeli iş ortaklığı yaklaşımı</h4>
-                            <p class="mb-0">Bizim için proje sonu bitiş çizgisi değil, başlangıçtır. Sürekli iyileştirme,
-                                yeni ihtiyaçlar ve büyüme hedeflerinizde yanınızda kalmayı taahhüt ediyoruz.</p>
-                        </div>
-                    </div>
-
-
                 </div>
 
+                {{-- Process Steps --}}
+                <div class="process process-vertical py-4">
+                    <div class="process-step appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
+                        <div class="process-step-circle" style="background: linear-gradient(135deg, #ff8500 0%, #ff5100 100%); border: 2px solid #ff8500;">
+                            <strong class="process-step-circle-content text-white">1</strong>
+                        </div>
+                        <div class="process-step-content">
+                            <div class="card card-sci-fi mb-3">
+                                <div class="card-body p-4">
+                                    <h4 class="mb-3 text-white font-weight-bold text-5">
+                                        <i class="fas fa-hand-holding-heart me-2" style="color: #ff8500;"></i>
+                                        Tek noktadan çözüm ortağı
+                                    </h4>
+                                    <p class="mb-0 text-light" style="line-height: 1.8;">
+                                        ERP, süreç tasarımı, organizasyon, finans, İK, web ve donanım altyapısını ayrı
+                                        ayrı değil, entegre bir model olarak kurguluyoruz. Böylece "her işi başka firmayla çözme"
+                                        dağınıklığını ortadan kaldırıyoruz.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="process-step appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
+                        <div class="process-step-circle" style="background: linear-gradient(135deg, #ff8500 0%, #ff5100 100%); border: 2px solid #ff8500;">
+                            <strong class="process-step-circle-content text-white">2</strong>
+                        </div>
+                        <div class="process-step-content">
+                            <div class="card card-sci-fi mb-3">
+                                <div class="card-body p-4">
+                                    <h4 class="mb-3 text-white font-weight-bold text-5">
+                                        <i class="fas fa-user-tie me-2" style="color: #ff8500;"></i>
+                                        Saha deneyimi olan danışmanlık
+                                    </h4>
+                                    <p class="mb-0 text-light" style="line-height: 1.8;">
+                                        Ekibimiz; üretim, inşaat, perakende ve hizmet sektörlerinde saha tecrübesi olan
+                                        isimlerden oluşur. Teoriyi değil, gerçekte çalışan modelleri öneriyoruz.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="process-step appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
+                        <div class="process-step-circle" style="background: linear-gradient(135deg, #ff8500 0%, #ff5100 100%); border: 2px solid #ff8500;">
+                            <strong class="process-step-circle-content text-white">3</strong>
+                        </div>
+                        <div class="process-step-content">
+                            <div class="card card-sci-fi mb-3">
+                                <div class="card-body p-4">
+                                    <h4 class="mb-3 text-white font-weight-bold text-5">
+                                        <i class="fas fa-cogs me-2" style="color: #ff8500;"></i>
+                                        Hazır paket değil, kuruma özel model
+                                    </h4>
+                                    <p class="mb-0 text-light" style="line-height: 1.8;">
+                                        "Standart paket" dayatmıyoruz. İşinizi, kültürünüzü ve ekibinizi analiz edip;
+                                        size özel süreç, organizasyon ve ERP mimarisi tasarlıyoruz.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="process-step appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800">
+                        <div class="process-step-circle" style="background: linear-gradient(135deg, #ff8500 0%, #ff5100 100%); border: 2px solid #ff8500;">
+                            <strong class="process-step-circle-content text-white">4</strong>
+                        </div>
+                        <div class="process-step-content">
+                            <div class="card card-sci-fi mb-3">
+                                <div class="card-body p-4">
+                                    <h4 class="mb-3 text-white font-weight-bold text-5">
+                                        <i class="fas fa-brain me-2" style="color: #ff8500;"></i>
+                                        ERP'de derin uzmanlık
+                                    </h4>
+                                    <p class="mb-0 text-light" style="line-height: 1.8;">
+                                        ERP'yi sadece kuran değil, modül, süreç, rol, yetki ve raporlama
+                                        yapısını birlikte tasarlayan bir ekibiz. Hedefimiz: ERP'yi günlük işleyişin doğal bir
+                                        parçası haline getirmek.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="process-step appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">
+                        <div class="process-step-circle" style="background: linear-gradient(135deg, #ff8500 0%, #ff5100 100%); border: 2px solid #ff8500;">
+                            <strong class="process-step-circle-content text-white">5</strong>
+                        </div>
+                        <div class="process-step-content">
+                            <div class="card card-sci-fi mb-3">
+                                <div class="card-body p-4">
+                                    <h4 class="mb-3 text-white font-weight-bold text-5">
+                                        <i class="fas fa-chart-line me-2" style="color: #ff8500;"></i>
+                                        Veri odaklı yönetim & şeffaf raporlama
+                                    </h4>
+                                    <p class="mb-0 text-light" style="line-height: 1.8;">
+                                        Kararların "hisse dayalı" değil, veri odaklı alınmasını sağlıyoruz. Yönetimin
+                                        kolay okuyabildiği, kârlılık, nakit, risk ve performans odaklı rapor setleri kuruyoruz.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="process-step appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1200">
+                        <div class="process-step-circle" style="background: linear-gradient(135deg, #ff8500 0%, #ff5100 100%); border: 2px solid #ff8500;">
+                            <strong class="process-step-circle-content text-white">6</strong>
+                        </div>
+                        <div class="process-step-content">
+                            <div class="card card-sci-fi mb-3">
+                                <div class="card-body p-4">
+                                    <h4 class="mb-3 text-white font-weight-bold text-5">
+                                        <i class="fas fa-users-cog me-2" style="color: #ff8500;"></i>
+                                        Değişim yönetimi ve kullanıcı odağı
+                                    </h4>
+                                    <p class="mb-0 text-light" style="line-height: 1.8;">
+                                        Kullanıcı deneyimini merkeze alıyor, ekiplerin sisteme adaptasyonunu hızlandırıyoruz.
+                                        Değişim sürecini yönetimsel ve eğitimsel destekle kolaylaştırıyoruz.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="process-step appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1400">
+                        <div class="process-step-circle" style="background: linear-gradient(135deg, #ff8500 0%, #ff5100 100%); border: 2px solid #ff8500;">
+                            <strong class="process-step-circle-content text-white">7</strong>
+                        </div>
+                        <div class="process-step-content">
+                            <div class="card card-sci-fi mb-3">
+                                <div class="card-body p-4">
+                                    <h4 class="mb-3 text-white font-weight-bold text-5">
+                                        <i class="fas fa-handshake me-2" style="color: #ff8500;"></i>
+                                        Uzun vadeli iş ortaklığı yaklaşımı
+                                    </h4>
+                                    <p class="mb-0 text-light" style="line-height: 1.8;">
+                                        Bizim için proje sonu bitiş çizgisi değil, başlangıçtır. Sürekli iyileştirme,
+                                        yeni ihtiyaçlar ve büyüme hedeflerinizde yanınızda kalmayı taahhüt ediyoruz.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
-
-
-
-
     </div>
 
+    {{-- CTA Section --}}
+    <section class="py-5 position-relative">
+        <div class="container">
+            <div class="card card-sci-fi text-center">
+                <div class="card-body p-5">
+                    <h3 class="text-white font-weight-bold mb-3">Dijital Dönüşüm Yolculuğunuza Başlayın</h3>
+                    <p class="text-light text-4 mb-4 opacity-8">
+                        Uzman ekibimizle tanışın, işletmeniz için özel çözümler keşfedin
+                    </p>
+                    <a href="{{ route('contact-us') }}"
+                       class="btn btn-rounded font-weight-bold text-3 px-5 py-3 d-inline-flex align-items-center text-color-light"
+                       style="background: linear-gradient(90deg, #ff8c00 0%, #ff5100 100%); border: none;">
+                        Hemen İletişime Geçin <i class="fas fa-chevron-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        /* Process Step Line Override */
+        .process.process-vertical .process-step:not(:last-child):after {
+            background: linear-gradient(to bottom, #ff8500 0%, rgba(255, 133, 0, 0.3) 100%);
+            width: 3px;
+            box-shadow: 0 0 10px rgba(255, 133, 0, 0.5);
+        }
+
+        /* Hover Effects */
+        .process-step:hover .card-sci-fi {
+            transform: translateX(10px);
+            box-shadow: 0 0 30px rgba(255, 133, 0, 0.4);
+        }
+
+        .card-sci-fi {
+            transition: all 0.3s ease;
+        }
+    </style>
 
 @endsection
