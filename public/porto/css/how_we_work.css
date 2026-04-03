@@ -448,3 +448,131 @@
     transform: translateZ(0);
     /* Hardware accelerate */
 }
+
+/* Modern Service Cards - Based on user design */
+.service-card-modern {
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 133, 0, 0.2);
+    border-radius: 20px;
+    padding: 30px 20px;
+    height: 100%;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card-modern::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at center, rgba(255, 133, 0, 0.05) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.service-card-modern:hover {
+    transform: translateY(-12px) scale(1.02);
+    border-color: rgba(255, 133, 0, 0.6);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 25px rgba(255, 133, 0, 0.25);
+    background: rgba(15, 23, 42, 0.8);
+}
+
+.service-card-icon-box {
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.service-card-icon-box i {
+    font-size: 3rem;
+    color: #ff8500;
+    filter: drop-shadow(0 0 10px rgba(255, 133, 0, 0.5));
+}
+
+.service-card-image-box {
+    width: 100%;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 1;
+}
+
+.service-card-image-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.service-card-modern:hover .service-card-image-box img {
+    transform: scale(1.08);
+}
+
+.service-card-title-bottom {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+    letter-spacing: 0.5px;
+    position: relative;
+    z-index: 1;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.service-card-modern:hover .service-card-title-bottom {
+    color: #ff8500;
+}
+
+/* Centering row adjustment */
+.services-row-centered {
+    justify-content: center !important;
+}
+
+
+
+
+/* Kutunun içindeki tüm elemanları dikeyde alt alta ve ortalayarak dizer */
+.stat-box-inner {
+    display: flex;
+    flex-direction: column;
+    /* Elemanları alt alta sıralar */
+    align-items: center;
+    /* Yatay eksende tam ortaya hizalar */
+    justify-content: center;
+    /* Dikey eksende ortalar (eğer kutu yüksekliği sabitiyse) */
+    text-align: center;
+    /* Metinleri kendi içinde ortalar */
+    gap: 15px;
+    /* İkon, sayı ve metin arasına eşit boşluk bırakır. İsteğe göre değiştirebilirsiniz */
+    padding: 20px;
+    /* İç boşluk vererek kenarlara yapışmasını engeller */
+}
+
+/* Paragrafın varsayılan boşluklarını sıfırlayıp, sayı ve '+' işaretini aynı hizada tutar */
+.stat-box-inner .stat-num {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    /* Rakam ile '+' işareti arasındaki boşluk */
+}
+
+/* İsteğe bağlı: İkon boyutunu ayarlamak için */
+.stat-box-inner .stat-icon {
+    font-size: 2.5rem;
+    /* İkonlar küçük geliyorsa buradan büyütebilirsiniz */
+}

@@ -2,7 +2,7 @@
 
 
 @section('content')
-<section class="page-header page-header-modern section position-relative border-0 m-0"
+<section class="page-header mt-5  page-header-modern section position-relative border-0 m-0"
     style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('images/modules/all.jpg') }}); background-position: center; background-size: cover;">
     <div class="container position-relative ">
 

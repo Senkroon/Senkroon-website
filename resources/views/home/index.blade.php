@@ -248,108 +248,91 @@
 <section class="container py-5 z-index-2 position-relative" id="services">
     <div class="row mb-5">
         <div class="col text-center">
-            <h2 class="font-weight-bold line-height-2 text-7 mb-1 text-white">Hizmetlerimiz</h2>
+            <h2 class="section-title-glow text-8 mb-2">Hizmetlerimiz</h2>
+            <p class="text-color-light opacity-7 text-4">İşletmenizin dijital dönüşüm yolculuğunda yanınızdayız</p>
         </div>
     </div>
-    <div class="row gx-4 gy-4">
-        <div class="col-12 col-md-6 col-lg-4 mb-4 appear-animation" data-appear-animation="fadeInUpShorter"
-            data-appear-animation-delay="200">
-            <div class="card card-sci-fi h-100">
-                <div class="card-body text-center p-4">
-                    <div class="mb-4 d-flex justify-content-center">
-                        <div class="sci-fi-icon-ring" style="width: 80px; height: 80px; font-size: 2.5rem;">
-                            <i class="fas fa-cogs"></i>
-                        </div>
-                    </div>
-                    <h4 class="card-title mb-3 text-5 font-weight-bold text-white">ERP Satış & Lisanslama</h4>
-                    <p class="card-text text-light">ERP'nin tüm modüllerini uygun fiyatlarla temin edin.
-                        Lisanslama, kurulum ve ilk konfigürasyon hizmetlerimizle işe başlayın.</p>
+    <div class="row gx-4 gy-4 services-row-centered">
+        <!-- Hizmet 1 -->
+        <div class="col-12 col-md-6 col-lg-4 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
+            <div class="service-card-modern">
+                <div class="service-card-icon-box">
+                    <i class="fas fa-cogs"></i>
                 </div>
+                <div class="service-card-image-box">
+                    <img src="{{ asset('images/services/erp_sales.png') }}" alt="ERP Satış & Lisanslama">
+                </div>
+                <h4 class="service-card-title-bottom">ERP Satış & Lisanslama</h4>
             </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4 mb-4 appear-animation" data-appear-animation="fadeInUpShorter"
-            data-appear-animation-delay="400">
-            <div class="card card-sci-fi h-100">
-                <div class="card-body text-center p-4">
-                    <div class="mb-4 d-flex justify-content-center">
-                        <div class="sci-fi-icon-ring" style="width: 80px; height: 80px; font-size: 2.5rem;">
-                            <i class="fas fa-project-diagram"></i>
-                        </div>
-                    </div>
-                    <h4 class="card-title mb-3 text-5 font-weight-bold text-white">Kurulum & Konfigürasyon</h4>
-                    <p class="card-text text-light">Uzman ekibimiz ERP'yi işletmenizin ihtiyaçlarına göre
-                        kurar ve konfigüre eder. Hızlı ve sorunsuz başlangıç garantisi.</p>
+        <!-- Hizmet 2 -->
+        <div class="col-12 col-md-6 col-lg-4 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
+            <div class="service-card-modern">
+                <div class="service-card-icon-box">
+                    <i class="fas fa-desktop"></i>
                 </div>
+                <div class="service-card-image-box">
+                    <img src="{{ asset('images/services/erp_config.png') }}" alt="Kurulum & Konfigürasyon">
+                </div>
+                <h4 class="service-card-title-bottom">Kurulum & Konfigürasyon</h4>
             </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4 mb-4 appear-animation" data-appear-animation="fadeInUpShorter"
-            data-appear-animation-delay="600">
-            <div class="card card-sci-fi h-100">
-                <div class="card-body text-center p-4">
-                    <div class="mb-4 d-flex justify-content-center">
-                        <div class="sci-fi-icon-ring" style="width: 80px; height: 80px; font-size: 2.5rem;">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                    </div>
-                    <h4 class="card-title mb-3 text-5 font-weight-bold text-white">Eğitim & Sertifikasyon</h4>
-                    <p class="card-text text-light">Kullanıcılarınız için kapsamlı ERP eğitimleri ve
-                        sertifikasyon programları. Sistem kullanımında uzmanlaşma sağlayın.</p>
+        <!-- Hizmet 3 -->
+        <div class="col-12 col-md-6 col-lg-4 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
+            <div class="service-card-modern">
+                <div class="service-card-icon-box">
+                    <i class="fas fa-graduation-cap"></i>
                 </div>
+                <div class="service-card-image-box">
+                    <img src="{{ asset('images/services/erp_training.png') }}" alt="Eğitim & Sertifikasyon">
+                </div>
+                <h4 class="service-card-title-bottom">Eğitim & Sertifikasyon</h4>
             </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4 mb-4 appear-animation" data-appear-animation="fadeInUpShorter"
-            data-appear-animation-delay="800">
-            <div class="card card-sci-fi h-100">
-                <div class="card-body text-center p-4">
-                    <div class="mb-4 d-flex justify-content-center">
-                        <div class="sci-fi-icon-ring" style="width: 80px; height: 80px; font-size: 2.5rem;">
-                            <i class="fas fa-users"></i>
-                        </div>
-                    </div>
-                    <h4 class="card-title mb-3 text-5 font-weight-bold text-white">Teknik Destek</h4>
-                    <p class="card-text text-light">ERP kullanımında karşılaştığınız tüm sorunlar için
-                        kesintisiz teknik destek hizmeti. Uzman ekibimiz her zaman yanınızda.</p>
+        <!-- Hizmet 4 -->
+        <div class="col-12 col-md-6 col-lg-4 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800">
+            <div class="service-card-modern">
+                <div class="service-card-icon-box">
+                    <i class="fas fa-headset"></i>
                 </div>
+                <div class="service-card-image-box">
+                    <img src="{{ asset('images/services/erp_support.png') }}" alt="7/24 Teknik Destek">
+                </div>
+                <h4 class="service-card-title-bottom">7/24 Teknik Destek</h4>
             </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4 mb-4 appear-animation" data-appear-animation="fadeInUpShorter"
-            data-appear-animation-delay="1000">
-            <div class="card card-sci-fi h-100">
-                <div class="card-body text-center p-4">
-                    <div class="mb-4 d-flex justify-content-center">
-                        <div class="sci-fi-icon-ring" style="width: 80px; height: 80px; font-size: 2.5rem;">
-                            <i class="fas fa-chart-bar"></i>
-                        </div>
-                    </div>
-                    <h4 class="card-title mb-3 text-5 font-weight-bold text-white">Özel Yazılım Geliştirme</h4>
-                    <p class="card-text text-light">Sektörünüze ve işletmenize özel yazılım çözümleri geliştiriyoruz.
-                        Standart çözümlerin yetmediği durumlarda tam uyumlu eklentiler.</p>
+        <!-- Hizmet 5 -->
+        <div class="col-12 col-md-6 col-lg-4 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">
+            <div class="service-card-modern">
+                <div class="service-card-icon-box">
+                    <i class="fas fa-lightbulb"></i>
                 </div>
+                <div class="service-card-image-box">
+                    <img src="{{ asset('images/services/erp_software.png') }}" alt="Özel Yazılım Çözümü">
+                </div>
+                <h4 class="service-card-title-bottom">Özel Yazılım Çözümü</h4>
             </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4 mb-4 appear-animation" data-appear-animation="fadeInUpShorter"
-            data-appear-animation-delay="1200">
-            <div class="card card-sci-fi h-100">
-                <div class="card-body text-center p-4">
-                    <div class="mb-4 d-flex justify-content-center">
-                        <div class="sci-fi-icon-ring" style="width: 80px; height: 80px; font-size: 2.5rem;">
-                            <i class="fas fa-digital-tachograph"></i>
-                        </div>
-                    </div>
-                    <h4 class="card-title mb-3 text-5 font-weight-bold text-white">Veri Migrasyon Hizmeti</h4>
-                    <p class="card-text text-light">Mevcut sisteminizdeki verileri ERP'ye güvenle taşıyoruz.
-                        Veri kaybı olmadan güvenli geçiş sağlıyoruz.</p>
+        <!-- Hizmet 6 -->
+        <div class="col-12 col-md-6 col-lg-4 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1200">
+            <div class="service-card-modern">
+                <div class="service-card-icon-box">
+                    <i class="fas fa-cloud-upload-alt"></i>
                 </div>
+                <div class="service-card-image-box">
+                    <img src="{{ asset('images/services/erp_migration.png') }}" alt="Veri Migrasyon Hizmeti">
+                </div>
+                <h4 class="service-card-title-bottom">Veri Migrasyon Hizmeti</h4>
             </div>
         </div>
     </div>
-
 </section>
+
 
 <hr class="sci-fi-divider">
 
@@ -490,8 +473,8 @@
     <div class="container">
         <div class="stats-inner stats-glow-panel text-white">
             <div class="row g-4">
-                <div class="col-12 col-md-6 col-lg-3 stat-box">
-                    <div class="stat-box-inner" data-tilt="data-tilt">
+                <div class="col-12 col-md-6 col-lg-3 stat-box ">
+                    <div class="stat-box-inner " data-tilt="data-tilt">
                         <i class="fas fa-diagram-project stat-icon" style="color: #ff8500;"></i>
                         <p class="stat-num">
                             <span class="counter" data-from="1" data-to="100" data-speed="3000" data-refresh-interval="50">0</span><span class="sign">+</span>

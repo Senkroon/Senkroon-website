@@ -8,18 +8,14 @@ use Illuminate\Support\Str;
 
 {{-- ===== HERO SECTION ===== --}}
 <section class="page-header mt-5 page-header-modern section position-relative border-0 m-0"
-    style="background-image: linear-gradient(rgba(3, 6, 18, 0.82), rgba(3, 6, 18, 0.82)), url({{ asset('images/modules/all.jpg') }}); background-position: center; background-size: cover; ">
+    style="background-image: linear-gradient(rgba(3, 6, 18, 0.82), rgba(3, 6, 18, 0.82)), url({{ asset('images/modules/all.jpg') }}); background-position: center; background-size: cover;">
     <div class="container position-relative d-flex align-items-center justify-content-center text-center">
         <div class="d-flex flex-column align-items-center">
-
-            <h1 class="text-white font-weight-bold  section-title-glow">{{ $module->title }}</h1>
+            <h1 class="text-white font-weight-bold section-title-glow">{{ $module->title }}</h1>
             <a href="{{ route('modules.index', $category) }}" class="btn btn-outline-light btn-sm mt-4 rounded-pill px-4">
                 <i class="fas fa-arrow-left me-2"></i>Tüm {{ ucfirst($category) }} Modülleri
             </a>
         </div>
-
-
-
     </div>
 </section>
 
@@ -27,15 +23,20 @@ use Illuminate\Support\Str;
 <div class="container py-5">
     <div class="row">
         <div class="col-lg-12">
+
             {{-- Ana İçerik Kartı --}}
             <div class="card card-sci-fi mb-4">
                 <div class="card-body p-4 p-md-5">
                     <div class="clearfix">
                         @if($module->cover_image)
+                        {{-- OPTİMİZASYON 1: loading="lazy" ve decoding="async" eklendi. --}}
+                        {{-- OPTİMİZASYON 2: box-shadow yayılımı 30px'den 15px'e düşürüldü (Scroll performansını artırır) --}}
                         <img src="{{ asset('storage/' . $module->cover_image) }}"
                             alt="{{ $module->title }}"
                             class="img-fluid float-start me-4 mb-3 rounded"
-                            style="max-width: 45%; height: auto; object-fit: cover; box-shadow: 0 0 30px rgba(255, 133, 0, 0.3);" />
+                            loading="lazy"
+                            decoding="async"
+                            style="max-width: 45%; height: auto; object-fit: cover; box-shadow: 0 0 15px rgba(255, 133, 0, 0.2);" />
                         @endif
 
                         <div class="text-content text-light">
@@ -62,10 +63,12 @@ use Illuminate\Support\Str;
                                 <div class="me-3 flex-shrink-0">
                                     @if ($childModule->cover_image)
                                     <div class="me-3">
+                                        {{-- OPTİMİZASYON 3: Tarayıcıyı yormamak için alt modül resimlerine tembel yükleme (lazy) eklendi --}}
                                         <img src="{{ asset($childModule->cover_image) }}"
                                             alt="{{ $childModule->title }}" width="45" height="45"
+                                            loading="lazy"
+                                            decoding="async"
                                             style="object-fit:contain;">
-
                                     </div>
                                     @else
                                     <div class="sci-fi-icon-ring" style="width: 60px; height: 60px; font-size: 1.5rem;">
@@ -75,8 +78,7 @@ use Illuminate\Support\Str;
                                 </div>
                                 <div class="flex-grow-1">
                                     <h5 class="mb-2 text-white font-weight-bold">
-                                        <a
-                                            class="text-decoration-none text-white">
+                                        <a class="text-decoration-none text-white">
                                             {{ $childModule->title }}
                                         </a>
                                     </h5>
@@ -104,6 +106,7 @@ use Illuminate\Support\Str;
                 </div>
             </div>
             @endif
+
         </div>
     </div>
 </div>
@@ -127,6 +130,6 @@ use Illuminate\Support\Str;
     </div>
 </section>
 
-</div>
-</section>
+{{-- OPTİMİZASYON 4: Sayfanın en altındaki hatalı ve fazladan olan </div> ve </section> etiketleri silindi --}}
+
 @endsection
