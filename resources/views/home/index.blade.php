@@ -433,7 +433,7 @@
                 <i class="fas fa-search"></i>
                 <div>
                     <strong> Firma Analizi</strong>
-                    Mevcut yapı netleşir
+                    Mevcut süreçlerinizi kullandığınız Erp/yazılımlar, Organizasyon yapınızı ve finansal işleyişinizi analiz ediyoruz.
                 </div>
             </div>
 
@@ -441,7 +441,8 @@
                 <i class="fas fa-tasks"></i>
                 <div>
                     <strong> Planlama</strong>
-                    Kapsam ve bütçe belirlenir
+                    Kapsam ve fazlar ve bütçe netleştirilir. Şeffaf ve süpriz maliyet oluşturmayan bir model kurulur.
+
                 </div>
             </div>
 
@@ -449,7 +450,7 @@
                 <i class="fas fa-sitemap"></i>
                 <div>
                     <strong> Tasarım</strong>
-                    Kuruma özel kurgulanır
+                    iş süreçleri, ekranlar ve raporlar kurulumunuza özel modellenir. Sistem gerçek işleyinize göre kurgulanır.
                 </div>
             </div>
 
@@ -457,7 +458,7 @@
                 <i class="fas fa-cogs"></i>
                 <div>
                     <strong> Uygulama</strong>
-                    Sahada hayat bulur
+                    Sistem test edilir ve devreye alınır. Kullanıcılar eğitilir.
                 </div>
             </div>
 
@@ -465,7 +466,7 @@
                 <i class="fas fa-sync-alt"></i>
                 <div>
                     <strong> İyileştirme</strong>
-                    Sürekli geliştirilir
+                    Canlıya geöiş sonrası destek ve geliştirme ve optimizasyon ile sistem sürekli iyileştirilir.
                 </div>
             </div>
         </div>
