@@ -15,7 +15,7 @@ Route::controller(Homecontroller::class)->group(function () {
     Route::get('/iletisim', 'contactUs')->name('contact-us');
     Route::post('/iletisim', 'contactUsSubmit')->name('contact-us.submit');
     Route::get('/neden-workcube', 'whyWorkcube')->name('home.workcube');
-    Route::get('/sss', 'faq')->name('home.faq');
+    Route::get('/sikca-sorulan-sorular', 'faq')->name('home.faq');
     Route::get('/urunler-ve-cozumler', 'productsAndSolutions')->name('home.products-and-solutions');
     Route::get('/kvkk-aydinlatma-metni', 'kvkk')->name('kvkk');
 

@@ -415,32 +415,32 @@
             <div class="orb-node node-1 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="200">
                 <i class="fas fa-search"></i>
                 <div>
-                    <strong> Firma Analizi</strong>
+                    <strong>1- Firma Analizi</strong>
                     Mevcut süreçlerinizi kullandığınız Erp/yazılımlar, Organizasyon yapınızı ve finansal işleyişinizi analiz ediyoruz.
                 </div>
             </div>
 
-            <div class="orb-node node-2 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="400">
+            <div class="orb-node node-4 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="400">
                 <i class="fas fa-tasks"></i>
                 <div>
-                    <strong> Planlama</strong>
+                    <strong>2- Planlama</strong>
                     Kapsam ve fazlar ve bütçe netleştirilir. Şeffaf ve süpriz maliyet oluşturmayan bir model kurulur.
 
                 </div>
             </div>
 
-            <div class="orb-node node-3 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="600">
+            <div class="orb-node node-2 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="600">
                 <i class="fas fa-sitemap"></i>
                 <div>
-                    <strong> Tasarım</strong>
+                    <strong>3- Tasarım</strong>
                     iş süreçleri, ekranlar ve raporlar kurulumunuza özel modellenir. Sistem gerçek işleyinize göre kurgulanır.
                 </div>
             </div>
 
-            <div class="orb-node node-4 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="800">
+            <div class="orb-node  node-3 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="800">
                 <i class="fas fa-cogs"></i>
                 <div>
-                    <strong> Uygulama</strong>
+                    <strong>4- Uygulama</strong>
                     Sistem test edilir ve devreye alınır. Kullanıcılar eğitilir.
                 </div>
             </div>
@@ -448,7 +448,7 @@
             <div class="orb-node node-5 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="1000">
                 <i class="fas fa-sync-alt"></i>
                 <div>
-                    <strong> İyileştirme</strong>
+                    <strong>5- İyileştirme</strong>
                     Canlıya geöiş sonrası destek ve geliştirme ve optimizasyon ile sistem sürekli iyileştirilir.
                 </div>
             </div>
