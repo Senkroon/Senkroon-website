@@ -64,7 +64,20 @@
                 </p>
             </div>
         </div>
-        <div class="col-lg-5 mb-5">
+        <div class="col-lg-5 mb-5 mt-2">
+
+            <div class="shorts-container d-flex justify-content-center ">
+                <iframe
+                    width="315"
+                    height="560"
+                    src="https://www.youtube.com/embed/GpPyrgBWx0U"
+                    title="Senkroon Vizyonu"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
             <div class="appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="300">
                 <img src="{{ asset('porto/simages/workcube-about-us.png') }}" class="img-fluid mt-5 rounded shadow-lg"
                     alt="Şirket Hikayesi">

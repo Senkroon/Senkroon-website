@@ -118,133 +118,6 @@
 </div>
 
 
-
-<!-- <div class="row py-2 mx-5">
-    <div class="col-lg-7  mb-lg-0">
-        <div class="appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="300">
-            <h3 class="font-weight-bold  ">Hakkımızda</h3>
-            <h4 class="text-color-primary font-weight-bold text-4 mb-2">Dönüşümün Mimarı, İşinizin Stratejik Ortağı</h4>
-
-            <p class="text-3 mb-4">
-                Senkroon, danışmanlık, yazılım ve dijital dönüşüm alanlarında uzmanlaşmış; işletmelerin dijital ve
-                operasyonel yolculuklarında sadece bir rehber değil, uçtan uca dönüşümü yöneten stratejik bir iş
-                ortağıdır. ERP danışmanlığından iş süreçleri tasarımına, muhasebe ve finansal yapılandırmadan
-                kurumsal yazılım çözümlerine kadar geniş bir yelpazede,
-                modern iş dünyasının karmaşık ihtiyaçlarına yanıt veriyoruz.
-            </p>
-
-            <h4 class="text-color-primary font-weight-bold text-4 mb-2">Çok Boyutlu Yazılım ve Süreç Yönetimi</h4>
-            <p class="text-3 mb-3">
-                Bizim için teknoloji, işinizin yaşayan bir parçasıdır. Sahadaki derin deneyimimizi analitik bakış
-                açısı ve teknolojiyle birleştirerek; işletmenizin ihtiyaç duyduğu her alanda yanınızdayız:
-            </p>
-            <ul class="text-3 mb-4 ps-3">
-                <li>Uçtan Uca Yönetim: ERP süreç yönetimi, CRM (Müşteri İlişkileri Yönetimi), İnsan Kaynakları ve Proje Yönetimi sistemleri.</li>
-                <li>Varlık ve İçerik Kontrolü: Fiziki Varlık Yönetimi, İçerik Yönetimi ve Intranet çözümleri.</li>
-                <li>Dijital Ticaret: B2B, B2C ve e-ticaret platformlarının iş modelinize tam entegrasyonu.</li>
-            </ul>
-
-            <h4 class="text-color-primary font-weight-bold text-4 mb-2">Yaklaşımımız: Analitik Güç, Sahadaki Tecrübe</h4>
-            <p class="text-3 mb-3">
-                Hazır kalıplar yerine; kurum kültürünüze, çalışma biçiminize ve güncel ihtiyaçlarınıza en uygun
-                "terzi usulü" iş modelleri tasarlıyoruz. Standart yazılımların sınırlarını zorlayarak,
-                taleplerinize %100 uyum sağlayan özel yazılım kurguları inşa ediyor; veri disiplinini operasyonel
-                hız ve şeffaflıkla birleştiriyoruz.
-            </p>
-            <ul class="text-3 mb-4 ps-3">
-                <li>Süreç ve Organizasyon Tasarımı: Karmaşıklığı gideriyor, verimliliği standardize ediyoruz.</li>
-                <li>Muhasebe ve Finansal Modelleme: Güçlü bir finansal yapılandırma ile geleceği öngörülebilir kılıyoruz.</li>
-                <li>Stratejik Entegrasyon: Teknolojiyi tek başına bir araç değil, işinizin omurgasını güçlendiren stratejik bir yapı hâline getiriyoruz.</li>
-            </ul>
-
-            <h4 class="text-color-primary font-weight-bold text-4 mb-2">Amacımız: Veriyle Yönetilen Sürdürülebilir Gelecek</h4>
-            <p class="text-3 mb-0">
-                Temel hedefimiz; her aşamada güvenilir, ölçülebilir ve sürdürülebilir bir yönetim altyapısı
-                kurmaktır. Senkroon ile dijital dönüşüm; sadece bir sistem geçişi değil, işletmenize rekabet
-                avantajı sağlayan ve stratejik karar alma mekanizmanızı güçlendirerek geleceği bugünden inşa eden
-                bir başarı hikayesidir.
-            </p>
-        </div>
-    </div>
-    <div class="col-lg-5 mb-5">
-        <div class="appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="300">
-            <img src="{{ asset('porto/simages/workcube-about-us.png') }}" class="img-fluid mt-5 rounded shadow-lg"
-                alt="Şirket Hikayesi">
-        </div>
-    </div>
-</div> -->
-
-<!-- about us  -->
-<!-- <section class="section section-default border-0  appear-animation animated fadeIn appear-animation-visible"
-    data-appear-animation="fadeIn" data-appear-animation-delay="750" style="animation-delay: 750ms;">
-    <div class="container py-4">
-
-        <div class="row align-items-center">
-
-            <div class="col-md-6">
-                <div class="overflow-hidden mb-2">
-                    <h2 class="text-color-primary font-weight-bold text-7 mb-0 pt-0 mt-0 appear-animation animated maskUp appear-animation-visible"
-                        data-appear-animation="maskUp" data-appear-animation-delay="1200"
-                        style="animation-delay: 1200ms;">Hakkımızda </h2>
-                </div>
-                <div class="appear-animation" data-appear-animation="fadeInLeftShorter"
-                    data-appear-animation-delay="300">
-                    <p class="text-3 mb-4">
-                        Senkroon ; ERP danışmanlığı, iş süreçleri ve organizasyon tasarımı ile muhasebe ve finansal
-                        yapılandırma alanlarında uzmanlaşmış, işletmelerin uçtan uca dijital dönüşümünü hedefleyen bir
-                        iş ortağıdır.
-
-                    </p>
-                    <p class=" text-3 mb-4">
-                        ERP projelerinde; Süreç envanteri çıkarımı, rol ve yetki mimarisi, ana veri yönetişimi ve
-                        modüler kurgu (Finans-Muhasebe, Satınalma, Satış, Stok, Üretim, MRP, Proje, CRM) üzerine kurulu
-                        bir işletim modeli tasarlarız. Entegrasyon mimarisi (banka, e-belge, dış sistemler), veri
-                        migrasyonu, iç kontrol ve denetim mekanizmaları, KPI setleri ve yönetim raporlaması ile finansal
-                        doğruluk, operasyonel izlenebilirlik ve gerçek zamanlı karar destek altyapısını tek bir entegre
-                        platformda tesis ederiz.
-                    </p>
-                    <p class=" text-3 mb-4">
-                        ERP’nin konumlandırılması ve devreye alınmasının yanı sıra, ihtiyaç duyulan ölçek ve yapılarda
-                        kurumsal yazılım çözümlerinin doğru mimariyle kurgulanmasını sağlayan entegre hizmet sunarız.
-
-                        Saha yönetimi ve operasyon deneyimimizi analitik ve teknoloji odaklı bir yaklaşımla birleştirir;
-                        hazır kalıplar yerine kurum kültürünüze ve çalışma biçiminize uyumlu, size özgü iş modelleri
-                        geliştiririz. Hedefimiz; veriye dayalı, güvenilir ve ölçülebilir bir yönetim altyapısı kurarak
-                        ERP’yi bir yazılım olmaktan çıkarıp işinizin omurgası hâline getirmektir.
-                    </p>
-                </div>
-            </div>
-
-
-            <div class="col-md-6 appear-animation animated fadeInLeftShorter appear-animation-visible"
-                data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="1000"
-                style="animation-delay: 1000ms;">
-                <div class="owl-carousel owl-theme nav-inside mb-0 owl-loaded owl-drag owl-carousel-init"
-                    data-plugin-options="{'items': 1, 'margin': 10, 'animateOut': 'fadeOut', 'autoplay': true, 'autoplayTimeout': 6000, 'loop': true}"
-                    style="height: auto;">
-
-
-                    <div class="owl-stage-outer">
-                        <div class="owl-stage"
-                            style="transform: translate3d(-932px, 0px, 0px); transition: all; width: 2796px;">
-
-
-                            <div class="owl-item " style="width: 456px; margin-right: 10px;">
-                                <div>
-                                    <img alt="Senkroon Yazilim ERP danismanligi hakkimizda gorseli" class="img-fluid"
-                                        src="{{ asset('porto/simages/workcube-about-us.png') }}">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-</section> -->
-
 <section class="container py-5 z-index-2 position-relative" id="services">
     <div class="row mb-5">
         <div class="col text-center">
@@ -260,7 +133,7 @@
                     <i class="fas fa-cogs"></i>
                 </div>
                 <div class="service-card-image-box">
-                    <img src="{{ asset('images/services/erp_sales.png') }}" alt="ERP Satış & Lisanslama">
+                    <img src="{{ asset('images/services/6.png') }}" alt="ERP Satış & Lisanslama">
                 </div>
                 <h4 class="service-card-title-bottom">ERP Satış & Lisanslama</h4>
             </div>
@@ -273,7 +146,7 @@
                     <i class="fas fa-desktop"></i>
                 </div>
                 <div class="service-card-image-box">
-                    <img src="{{ asset('images/services/erp_config.png') }}" alt="Kurulum & Konfigürasyon">
+                    <img src="{{ asset('images/services/4.png') }}" alt="Kurulum & Konfigürasyon">
                 </div>
                 <h4 class="service-card-title-bottom">Kurulum & Konfigürasyon</h4>
             </div>
@@ -286,7 +159,7 @@
                     <i class="fas fa-graduation-cap"></i>
                 </div>
                 <div class="service-card-image-box">
-                    <img src="{{ asset('images/services/erp_training.png') }}" alt="Eğitim & Sertifikasyon">
+                    <img src="{{ asset('images/services/2.png') }}" alt="Eğitim & Sertifikasyon">
                 </div>
                 <h4 class="service-card-title-bottom">Eğitim & Sertifikasyon</h4>
             </div>
@@ -299,7 +172,7 @@
                     <i class="fas fa-headset"></i>
                 </div>
                 <div class="service-card-image-box">
-                    <img src="{{ asset('images/services/erp_support.png') }}" alt="7/24 Teknik Destek">
+                    <img src="{{ asset('images/services/3.png') }}" alt="7/24 Teknik Destek">
                 </div>
                 <h4 class="service-card-title-bottom">7/24 Teknik Destek</h4>
             </div>
@@ -312,7 +185,7 @@
                     <i class="fas fa-lightbulb"></i>
                 </div>
                 <div class="service-card-image-box">
-                    <img src="{{ asset('images/services/erp_software.png') }}" alt="Özel Yazılım Çözümü">
+                    <img src="{{ asset('images/services/1.png') }}" alt="Özel Yazılım Çözümü">
                 </div>
                 <h4 class="service-card-title-bottom">Özel Yazılım Çözümü</h4>
             </div>
@@ -325,7 +198,7 @@
                     <i class="fas fa-cloud-upload-alt"></i>
                 </div>
                 <div class="service-card-image-box">
-                    <img src="{{ asset('images/services/erp_migration.png') }}" alt="Veri Migrasyon Hizmeti">
+                    <img src="{{ asset('images/services/5.png') }}" alt="Veri Migrasyon Hizmeti">
                 </div>
                 <h4 class="service-card-title-bottom">Veri Migrasyon Hizmeti</h4>
             </div>
@@ -507,141 +380,6 @@
         </div>
     </div>
 </section>
-
-
-
-{{--<hr class="mb-5">
-
-   <section class="container mb-5">
-        <div class="row">
-            <div class="col">
-                <h4>Referanslarımız</h4>
-                <div class="owl-carousel owl-theme stage-margin nav-style-1 owl-loaded owl-drag owl-carousel-init"
-                    data-plugin-options="{'items': 2, 'margin': 10, 'loop': false, 'nav': true, 'dots': false, 'stagePadding': 40}"
-                    style="height: auto;">
-
-                    <div class="owl-stage-outer">
-                        <div class="owl-stage"
-                            style="transform: translate3d(0px, 0px, 0px); transition: all; width: 2967px; padding-left: 40px; padding-right: 40px;">
-                            <div class="owl-item active" style="width: 278.667px; margin-right: 10px;">
-                                <div>
-                                    <img alt="Netline firmasina sunulan ERP danismanlik referans gorseli" class="img-fluid rounded" src="{{ asset('porto/simages/netline.png') }}">
-</div>
-</div>
-<div class="owl-item active" style="width: 278.667px; margin-right: 10px;">
-    <div>
-        <img alt="YGZ firmasina sunulan ERP danismanlik referans gorseli" class="img-fluid rounded" src="{{ asset('porto/simages/ygz.png') }}">
-    </div>
-</div>
-<div class="owl-item active" style="width: 278.667px; margin-right: 10px;">
-    <div>
-        <img alt="Ekomaxi firmasina sunulan ERP cozumleri referans gorseli" class="img-fluid rounded" src="{{ asset('porto/simages/ekomaxi.png') }}">
-    </div>
-</div>
-<div class="owl-item" style="width: 278.667px; margin-right: 10px;">
-    <div>
-        <img alt="Teknosis firmasina sunulan ERP danismanlik referans gorseli" class="img-fluid rounded" src="{{ asset('porto/simages/teknosis.png') }}">
-    </div>
-</div>
-</div>
-</div>
-<div class="owl-nav"><button type="button" role="presentation"
-        class="owl-prev disabled"></button><button type="button" role="presentation"
-        class="owl-next"></button></div>
-<div class="owl-dots disabled"></div>
-</div>
-</div>
-</div>
-</section> --}}
-
-
-
-
-
-
-{{-- <div class="container py-4 my-5 mb-5" id="news">
-        <div class="row">
-            <div class="col text-center">
-                <h2 class="font-weight-bold line-height-2 text-7 mb-1">Haberler & Blog</h2>
-                <span class="d-block text-color-dark text-5 pb-2 mb-4 opacity-7">Workcube ERP Bayisi</span>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 mb-5 mb-md-0">
-                <article>
-                    <a href="#" class="text-decoration-none">
-                        <span class="thumb-info thumb-info-no-borders custom-thumb-info-style-1 pb-2 mb-2 mb-md-4">
-                            <span class="thumb-info-wrapper">
-                                <img src="img/demos/seo/blog/blog-1.jpg" class="img-fluid" alt="Workcube ERP neden tercih edilmeli blog kapak gorseli">
-                                <span class="custom-thumb-info-date text-color-light bg-primary">
-                                    27
-                                    <span>KAS</span>
-                                </span>
-                            </span>
-                        </span>
-                    </a>
-                    <h2 class="font-weight-semibold custom-fs-1 line-height-3 ls-0 mb-2"><a href="#"
-                            class="text-color-dark text-decoration-none">Workcube ERP Neden Tercih Edilmeli?</a>
-                    </h2>
-                    <p class="mb-0">Modern işletmelerin dijital dönüşüm ihtiyaçları her geçen gün artarken,
-                        doğru ERP seçimi
-                        kritik önem taşıyor. Workcube ERP'nin esnek yapısı ve güçlü özellikleri ile işletmenizi
-                        nasıl dönüştürebileceğinizi keşedin..."
-                </article>
-            </div>
-            <div class="col-md-4 mb-5 mb-md-0">
-                <article>
-                    <a href="#" class="text-decoration-none">
-                        <span class="thumb-info thumb-info-no-borders custom-thumb-info-style-1 pb-2 mb-2 mb-md-4">
-                            <span class="thumb-info-wrapper">
-                                <img src="img/demos/seo/blog/blog-2.jpg" class="img-fluid" alt="Workcube ERP modulleri ve ozellikleri blog kapak gorseli">
-                                <span class="custom-thumb-info-date text-color-light bg-primary">
-                                    12
-                                    <span>ARA</span>
-                                </span>
-                            </span>
-                        </span>
-                    </a>
-                    <h2 class="font-weight-semibold custom-fs-1 line-height-3 ls-0 mb-2"><a href="#"
-                            class="text-color-dark text-decoration-none">Workcube ERP Modülleri ve
-                            Özellikleri</a></h2>
-                    <p class="mb-0">Workcube ERP'nin sunduğu zengin modül yelpazesi ile işletmenizin her
-                        departmanının
-                        ihtiyaçlarını karşılayabilirsiniz. Finansman, İK, CRM, üretim, lojistik ve daha
-                        fazlası...
-                        Hangi modülün işletmenize uygun olduğunu keşedin...</p>
-                </article>
-            </div>
-            <div class="col-md-4">
-                <article>
-                    <a href="#" class="text-decoration-none">
-                        <span class="thumb-info thumb-info-no-borders custom-thumb-info-style-1 pb-2 mb-2 mb-md-4">
-                            <span class="thumb-info-wrapper">
-                                <img src="img/demos/seo/blog/blog-3.jpg" class="img-fluid" alt="Workcube ERP basari hikayeleri blog kapak gorseli">
-                                <span class="custom-thumb-info-date text-color-light bg-primary">
-                                    12
-                                    <span>ARA</span>
-                                </span>
-                            </span>
-                        </span>
-                    </a>
-                    <h2 class="font-weight-semibold custom-fs-1 line-height-3 ls-0 mb-2"><a href="#"
-                            class="text-color-dark text-decoration-none">Workcube ERP Başarı Hikayeleri</a></h2>
-                    <p class="mb-0">Workcube ERP ile dijital dönüşümünü tamamlayan işletmelerin gerçek
-                        deneyimlerini okuyun.
-                        Farklı sektörlerden referanslarımızın Workcube ERP ile elde ettiği verimlilik artışı ve
-                        maliyet tasarrufu hikayelerini keşfedin...</p>
-                </article>
-            </div>
-        </div>
-        <div class="row mt-5">
-            <div class="col text-center">
-                <a href="#"
-                    class="btn btn-primary btn-outline btn-rounded font-weight-semibold text-4 btn-px-5 btn-py-2">Tüm
-                    Yazıları Görüntüle</a>
-            </div>
-        </div>
-    </div> --}}
 
 
 <script>
