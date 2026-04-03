@@ -50,7 +50,7 @@
 
      <!-- Theme Custom CSS -->
      <link rel="stylesheet" href="{{ asset('porto/css/custom_v1.css') }}">
-     <link rel="stylesheet" href="{{ asset('porto/css/how_we_work.css') }}">
+     <link rel="stylesheet" href="{{ asset('porto/css/how_we_work_v1.css') }}">
 
 
  </head>
