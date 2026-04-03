@@ -556,7 +556,7 @@ body {
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1) !important;
     border-radius: 10px;
-    margin-bottom: 15px !important;
+    /* margin-bottom: 15px !important; */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -577,6 +577,10 @@ body {
     color: #cbd5e1 !important;
     border: none !important;
     padding: 20px;
+}
+
+.toggle-content>p {
+    color: #cbd5e1 !important;
 }
 
 /* --------------------------------- */

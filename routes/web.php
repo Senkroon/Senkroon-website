@@ -31,9 +31,6 @@ Route::prefix('{category}-modulleri')->where(['category' => 'workcube|uyumsoft']
 });
 
 
-
-
-
 Route::prefix('sektorel-uygulamalar')->group(function () {
     Route::get('/', [SectorController::class, 'index'])->name('sectors.index');
     Route::get('/{slug}', [SectorController::class, 'show'])->name('sectors.show');

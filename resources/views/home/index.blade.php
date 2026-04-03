@@ -459,16 +459,7 @@
     </div>
 </section>
 <!-- SCI-FI PROCESS SECTION END -->
-
-
-
-
-
-
-
-
 <hr class="sci-fi-divider">
-
 <section class="stats stats-section js-stats-counter mega-section mb-0 pb-5">
     <div class="container">
         <div class="stats-inner stats-glow-panel text-white">
