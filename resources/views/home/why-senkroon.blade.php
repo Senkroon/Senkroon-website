@@ -18,7 +18,7 @@
     <div class="row">
         <div class="col">
             <div class="card card-sci-fi mb-5">
-                <div class="card-body p-4 p-md-5">
+                <div class="card-body p-2 p-md-2">
                     <h4 class="mb-4 text-white font-weight-bold text-6">
                         <i class="fas fa-star me-2" style="color: #ff8500;"></i>
                         Neden Senkroon Yazılım?
