@@ -146,7 +146,7 @@
                     <i class="fas fa-desktop"></i>
                 </div>
                 <div class="service-card-image-box">
-                    <img src="{{ asset('images/services/4.png') }}" alt="Kurulum & Konfigürasyon">
+                    <img src="{{ asset('images/services/urun_conf.png') }}" alt="Kurulum & Konfigürasyon">
                 </div>
                 <h4 class="service-card-title-bottom">Kurulum & Konfigürasyon</h4>
             </div>
