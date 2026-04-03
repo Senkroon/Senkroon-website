@@ -49,7 +49,7 @@
      <link id="skinCSS" rel="stylesheet" href="{{ asset('porto/css/skins/skin-insurance.css') }}">
 
      <!-- Theme Custom CSS -->
-     <link rel="stylesheet" href="{{ asset('porto/css/custom.css') }}">
+     <link rel="stylesheet" href="{{ asset('porto/css/custom_v1.css') }}">
      <link rel="stylesheet" href="{{ asset('porto/css/how_we_work.css') }}">
 
 
