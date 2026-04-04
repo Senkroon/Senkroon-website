@@ -235,7 +235,7 @@
                                     </div>
                                     <h5 class="card-title font-weight-bold text-white mb-0" style="line-height:1.3;">{{ $advisor->title }}</h5>
                                 </div>
-                                <p class="card-text text-light" style="font-size: 0.95rem;">{!! Str::limit($advisor->description, 100) !!}</p>
+                                <p class="card-text text-light text-white" style="font-size: 0.95rem;">{!! Str::limit($advisor->description, 100) !!}</p>
                                 @if ($advisor->slug)
                                 <a href="{{ route('advisors.show', $advisor->slug) }}" class="btn sci-fi-btn btn-rounded mt-3 w-100">Detayları
                                     Görüntüle</a>
