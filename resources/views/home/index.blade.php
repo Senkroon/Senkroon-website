@@ -172,9 +172,9 @@
                     <i class="fas fa-headset"></i>
                 </div>
                 <div class="service-card-image-box">
-                    <img src="{{ asset('images/services/3.png') }}" alt="7/24 Teknik Destek">
+                    <img src="{{ asset('images/services/3.png') }}" alt=" Teknik Destek">
                 </div>
-                <h4 class="service-card-title-bottom">7/24 Teknik Destek</h4>
+                <h4 class="service-card-title-bottom"> Teknik Destek</h4>
             </div>
         </div>
 
@@ -302,7 +302,7 @@
                 </div>
             </div>
 
-            <div class="orb-node node-2 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="600">
+            <div class="orb-node   node-5  appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="600">
                 <i class="fas fa-sitemap"></i>
                 <div>
                     <strong>3- Tasarım</strong>
@@ -318,11 +318,11 @@
                 </div>
             </div>
 
-            <div class="orb-node node-5 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="1000">
+            <div class="orb-node  node-2 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="1000">
                 <i class="fas fa-sync-alt"></i>
                 <div>
                     <strong>5- İyileştirme</strong>
-                    Canlıya geöiş sonrası destek ve geliştirme ve optimizasyon ile sistem sürekli iyileştirilir.
+                    Canlıya geçiş sonrası destek ve geliştirme ve optimizasyon ile sistem sürekli iyileştirilir.
                 </div>
             </div>
         </div>
