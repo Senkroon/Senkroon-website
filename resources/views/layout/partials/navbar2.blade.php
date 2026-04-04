@@ -240,9 +240,6 @@
                                             </ul>
                                         </li>
                                         <li class="d-lg-none">
-                                            <a class="nav-link" href="{{ route('sectors.index') }}">Sektörler</a>
-                                        </li>
-                                        <li class="d-lg-none">
                                             <a class="nav-link" href="{{ route('home.about') }}">Hakkımızda</a>
                                         </li>
                                         <li class="d-lg-none">
