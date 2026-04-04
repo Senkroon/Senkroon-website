@@ -12,7 +12,7 @@ class ModuleController extends Controller
     {
         // SEO için category'ye göre başlık ayarla
 
-        if($category === 'uyumsoft') {
+        if ($category === 'uyumsoft') {
             SEOTools::setTitle('Uyumsoft Girus Ticari Yazılım Çözümleri | Senkroon Yazılım');
             SEOTools::setDescription('Uyumsoft Girus Ticari Yönetim Sistemi ile muhasebe, depo yönetimi ve ticari işlemleri entegre şekilde yönetin. KOBİ\'ler için ideal çözüm.');
             SEOTools::metatags()->setKeywords(['Uyumsoft', 'Girus Ticari', 'Ticari yönetim sistemi', 'Muhasebe yazılımı', 'Depo yönetimi', 'KOBİ yazılımı', 'Malatya Uyumsoft', 'Ticari yazılım çözümleri']);
@@ -136,6 +136,14 @@ class ModuleController extends Controller
         // Category'ye göre view seç
         $viewName = 'modules.show';
 
-        return view($viewName, compact('module'));
+        // Aynı kategorideki diğer modülleri getir (sidebar için)
+        $relatedModules = Module::where('is_active', true)
+            ->where('category', $category)
+            ->whereNull('parent_id')
+            ->where('id', '!=', $module->id)
+            ->orderBy('order')
+            ->get();
+
+        return view($viewName, compact('module', 'category', 'relatedModules'));
     }
 }
