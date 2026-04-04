@@ -1,5 +1,5 @@
 .sci-fi-section {
-    background: #02040a url('/images/backgorund.png') center center/cover no-repeat fixed;
+    background: #02040a url('/images/backgorund.webp') center center/cover no-repeat fixed;
     color: #e0e6ed;
     position: relative;
     overflow: hidden;
@@ -409,7 +409,7 @@
 
 /* Global Dark Theme additions for entire background */
 .sci-fi-theme-main {
-    background: #060a17 url('/images/backgorund.png') center center/cover no-repeat fixed;
+    background: #060a17 url('/images/backgorund.webp') center center/cover no-repeat fixed;
     /* Fallback solid color */
     color: #e0e6ed;
     position: relative;

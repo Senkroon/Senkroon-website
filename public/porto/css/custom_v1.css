@@ -518,7 +518,7 @@ body {
 
 #footer {
     margin-top: 0 !important;
-    background: linear-gradient(rgba(10, 15, 30, 0.85), rgba(10, 15, 30, 0.95)), url('/images/backgorund.png') !important;
+    background: linear-gradient(rgba(10, 15, 30, 0.85), rgba(10, 15, 30, 0.95)), url('/images/backgorund.webp') !important;
     background-size: cover !important;
     background-position: center bottom !important;
     background-attachment: fixed !important;
