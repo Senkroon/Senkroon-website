@@ -6,6 +6,7 @@ use App\Http\Controllers\Homecontroller;
 use App\Http\Controllers\ModuleController;
 use App\Http\Controllers\SectorController;
 use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\ServiceController;
 
 
 
@@ -47,4 +48,9 @@ Route::prefix("danismanlik-cozumleri")->group(function () {
 Route::prefix("projelerimiz")->group(function () {
     Route::get('/', [ProjectController::class, 'index'])->name('projects.index');
     Route::get('/{slug}', [ProjectController::class, 'show'])->name('projects.show');
+});
+
+
+Route::prefix("hizmetlerimiz")->group(function () {
+    Route::get('/{slug}', [ServiceController::class, 'show'])->name('services.show');
 });
