@@ -255,4 +255,41 @@ class Homecontroller extends Controller
 
         return view('home.why-senkroon');
     }
+
+    public function media()
+    {
+        SEOTools::setTitle('Medya Galerisi | Senkroon Yazılım Ofis ve Etkinlikler');
+        SEOTools::setDescription('Senkroon Yazılım ofis ortamı, ekip çalışmaları, etkinlikler ve projelerimizden kareler. Medya galerimizdeki fotoğraflarla bizi daha yakından tanıyın.');
+        SEOTools::metatags()->setKeywords(['Senkroon medya', 'ofis fotoğrafları', 'yazılım ekibi', 'şirket galerisi', 'Malatya yazılım ofisi']);
+        SEOTools::metatags()->addMeta('robots', 'index,follow');
+        SEOTools::metatags()->addMeta('author', 'Senkroon Yazılım');
+        SEOTools::opengraph()->setUrl(url()->current());
+        SEOTools::setCanonical(url()->current());
+        SEOTools::opengraph()->addProperty('type', 'website');
+        SEOTools::opengraph()->addProperty('site_name', 'Senkroon Yazılım');
+        SEOTools::opengraph()->addProperty('locale', 'tr_TR');
+        SEOTools::opengraph()->addImage(asset('porto/simages/senkroonlogo2.png'));
+
+        // images/media klasöründeki fotoğrafları tara
+        $mediaPath = public_path('images/media');
+        $photos = [];
+
+        if (is_dir($mediaPath)) {
+            $files = scandir($mediaPath);
+            $allowedExtensions = ['jpg', 'jpeg', 'png', 'webp', 'gif'];
+
+            foreach ($files as $file) {
+                if ($file === '.' || $file === '..') continue;
+                $ext = strtolower(pathinfo($file, PATHINFO_EXTENSION));
+                if (in_array($ext, $allowedExtensions)) {
+                    $photos[] = [
+                        'src' => asset('images/media/' . $file),
+                        'alt' => pathinfo($file, PATHINFO_FILENAME),
+                    ];
+                }
+            }
+        }
+
+        return view('home.media', compact('photos'));
+    }
 }

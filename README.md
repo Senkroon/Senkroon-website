@@ -8,3 +8,4 @@ docker exec -it $(docker ps -qf name=php-fpm-mailcow) php -r "echo '{BLF-CRYPT}'
 php artisan 
 
 php artisan serve --host=0.0.0.0 --port=8000
+php artisan db:seed --class=DiaSeeder

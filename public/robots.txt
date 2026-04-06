@@ -1,44 +1,23 @@
 # Senkroon Yazılım - Workcube Yetkili Bayisi
 # Modern Yazılım Çözümleri ve IT Danışmanlık Hizmetleri
 
-# Google ve diğer tüm arama motorları için
 User-agent: *
 
-# İzin verilen dizinler
-Allow: /
+# Uygulama içi rotalar ve dinamik parametreleri engelleme
+Disallow: /admin/
+Disallow: /api/
+Disallow: /*?search=
+Disallow: /*?sort=
+
+# Arama motorlarının sayfanın görsel bütünlüğünü okuyabilmesi için statik dosyalara izin
+Allow: /build/
 Allow: /images/
 Allow: /css/
 Allow: /js/
-Allow: /build/
 
-# Yasaklanan dizinler ve dosyalar
-Disallow: /admin/
-Disallow: /api/
-Disallow: /vendor/
-Disallow: /storage/
-Disallow: /config/
-Disallow: /database/
-Disallow: /app/
-Disallow: /bootstrap/
-Disallow: /tests/
-Disallow: /routes/
-Disallow: /resources/
-Disallow: /*.log$
-Disallow: /*.env$
-Disallow: /*.md$
-Disallow: /composer.json
-Disallow: /composer.lock
-Disallow: /package.json
-Disallow: /artisan
-
-# Özel bot yapılandırmaları
-User-agent: Googlebot
-Allow: /
-Crawl-delay: 1
-
+# Bingbot için isteğe bağlı tarama gecikmesi (Sunucu yükünü hafifletmek için)
 User-agent: Bingbot
-Allow: /
 Crawl-delay: 1
 
-# Sitemap lokasyonu
-Sitemap: https://www.Senkroonyazilim.com/sitemap.xml
+# Sitemap lokasyonu (URL tam olarak nasıl indeksleniyorsa öyle olmalı)
+Sitemap: https://senkroon.com/sitemap.xml

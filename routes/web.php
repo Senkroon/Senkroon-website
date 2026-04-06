@@ -22,11 +22,12 @@ Route::controller(Homecontroller::class)->group(function () {
 
 
     Route::get('/neden-senkroon', 'whySenkroon')->name('home.why-senkroon');
+    Route::get('/medya', 'media')->name('home.media');
 });
 
 
 // Birleştirilmiş module route'ları - category ile gruplanmış mikro kaldıırldı
-Route::prefix('{category}-modulleri')->where(['category' => 'workcube|uyumsoft'])->group(function () {
+Route::prefix('{category}-modulleri')->where(['category' => 'workcube|uyumsoft|dia'])->group(function () {
     Route::get('/', [ModuleController::class, 'index'])->name('modules.index');
     Route::get('/{module}', [ModuleController::class, 'show'])->name('modules.show');
 });

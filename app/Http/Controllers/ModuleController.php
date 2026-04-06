@@ -17,6 +17,11 @@ class ModuleController extends Controller
             SEOTools::setDescription('Uyumsoft Girus Ticari Yönetim Sistemi ile muhasebe, depo yönetimi ve ticari işlemleri entegre şekilde yönetin. KOBİ\'ler için ideal çözüm.');
             SEOTools::metatags()->setKeywords(['Uyumsoft', 'Girus Ticari', 'Ticari yönetim sistemi', 'Muhasebe yazılımı', 'Depo yönetimi', 'KOBİ yazılımı', 'Malatya Uyumsoft', 'Ticari yazılım çözümleri']);
             SEOTools::jsonLd()->addValue('name', 'Uyumsoft Çözümleri');
+        } elseif ($category === 'dia') {
+            SEOTools::setTitle('DİA ERP ve Ticari Yazılım Çözümleri | Senkroon Yazılım');
+            SEOTools::setDescription('DİA ERP, CRM, E-Dönüşüm ve Sektörel yazılımlarla işletmenizin tüm süreçlerini bulutta yönetin.');
+            SEOTools::metatags()->setKeywords(['DİA Yazılım', 'DİA ERP', 'Bulut ERP', 'Ticari yazılım', 'E-Dönüşüm', 'DİA CRM', 'Malatya DİA', 'Ön Muhasebe']);
+            SEOTools::jsonLd()->addValue('name', 'DİA Çözümleri');
         } else {
             // Jenerik "Özel çözümler" yerine Workcube, OSB ve ERP odaklı terimler eklendi
             SEOTools::setTitle('Workcube ERP Modülleri | Üretim, Finans ve CRM Yönetimi');
