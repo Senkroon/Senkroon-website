@@ -222,6 +222,11 @@ section.page-header {
     text-align: center;
 }
 
+.wa-body>p {
+
+    color: var(--dark);
+}
+
 .wa-btn {
     display: block;
     margin-top: 10px;
