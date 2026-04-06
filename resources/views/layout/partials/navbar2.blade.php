@@ -92,7 +92,7 @@
                                                                 <a href="{{ route('modules.index', 'workcube') }}" class="d-block mb-3">
                                                                     <img src="{{ asset('porto/simages/W3_logo.png') }}"
                                                                         alt="Workcube" class="img-fluid rounded mb-2">
-                                                                    <p class="text-2 mb-0">ERP + CRM + HR + PMS + PAM + CMS + DAM + LMS SUBO + Intranet + E-Devlet ve daha fazlası...</p>
+                                                                    <p class="text-2 mb-0 text-default ">ERP + CRM + HR + PMS + PAM + CMS + DAM + LMS SUBO + Intranet + E-Devlet ve daha fazlası...</p>
                                                                 </a>
                                                                 <div class="dropdown-mega-sub-nav">
                                                                     <div class="row">
@@ -127,7 +127,7 @@
                                                                 <a href="{{ route('modules.index', 'uyumsoft') }}" class="d-block mb-3">
                                                                     <img src="{{ asset('porto/simages/uyumsoft.png') }}"
                                                                         alt="Uyumsoft" class="img-fluid rounded mb-2">
-                                                                    <p class="text-2 mb-0">Girus Ticari + Girus CRM + Girus HR ile ticari, müşteri ve insan kaynakları süreçlerinizi tek platformda yönetin.</p>
+                                                                    <p class="text-2 mb-0 text-default ">Girus Ticari + Girus CRM + Girus HR ile ticari, müşteri ve insan kaynakları süreçlerinizi tek platformda yönetin.</p>
                                                                 </a>
                                                                 <div class="dropdown-mega-sub-nav">
                                                                     <div class="row">
