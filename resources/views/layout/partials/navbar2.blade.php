@@ -83,7 +83,7 @@
                                                     <div class="dropdown-mega-content">
                                                         <div class="row">
                                                             {{-- Workcube --}}
-                                                            <div class="col-lg-4">
+                                                            <div class="col-lg-3">
                                                                 <div class="dropdown-mega-sub-title">
                                                                     <a class="font-weight-bold text-4"
                                                                         href="{{ route('modules.index', 'workcube') }}">
@@ -118,7 +118,7 @@
                                                             </div>
 
                                                             {{-- Uyumsoft --}}
-                                                            <div class="col-lg-4">
+                                                            <div class="col-lg-3">
                                                                 <div class="dropdown-mega-sub-title">
                                                                     <a class="font-weight-bold text-4"
                                                                         href="{{ route('modules.index', 'uyumsoft') }}">
@@ -149,8 +149,45 @@
                                                                 </div>
                                                             </div>
 
+                                                            {{-- Dia --}}
+                                                            <div class="col-lg-3">
+                                                                <div class="dropdown-mega-sub-title">
+                                                                    <a class="font-weight-bold text-4"
+                                                                        href="{{ route('modules.index', 'dia') }}">
+                                                                        Tüm DİA Çözümleri</a>
+                                                                </div>
+
+
+                                                                <a href="{{ route('modules.index', 'dia') }}" class="d-block mb-3">
+                                                                    <img src="{{ asset('porto/simages/dia.png') }}"
+                                                                        alt="dia" class="img-fluid rounded mb-2">
+                                                                    <p class="text-2 mb-0 text-default ">Ön muhasebe, genel muhasebe, stok-depo ve daha fazlası.</p>
+                                                                </a>
+
+
+                                                                <div class="dropdown-mega-sub-nav">
+                                                                    <div class="row">
+                                                                        <div class="col-6">
+                                                                            <ul class="list list-unstyled">
+                                                                                <li><a class="dropdown-item" href="{{ route('modules.show', ['dia', 'dia-erp']) }}">DİA ERP</a></li>
+                                                                                <li><a class="dropdown-item" href="{{ route('modules.show', ['dia', 'dia-crm']) }}">DİA CRM</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="col-6">
+                                                                            <ul class="list list-unstyled">
+                                                                                <li><a class="dropdown-item" href="{{ route('modules.show', ['dia', 'dia-e-donusum']) }}">E-Dönüşüm</a></li>
+                                                                                <li><a class="dropdown-item" href="{{ route('modules.show', ['dia', 'dia-e-ticaret']) }}">E-Ticaret</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a href="{{ route('modules.index', 'dia') }}" class="btn btn-link text-decoration-none ps-0">
+                                                                        <i class="fas fa-angle-right me-1"></i>Tüm DİA Çözümleri
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+
                                                             {{-- Danışmanlık --}}
-                                                            <div class="col-lg-4">
+                                                            <div class="col-lg-3">
                                                                 <div class="dropdown-mega-sub-title">
                                                                     <a class="font-weight-bold text-4"
                                                                         href="{{ route('advisors.index') }}">
@@ -198,6 +235,11 @@
                                                         <i class="fas fa-star me-2 text-muted"></i>Neden Senkroon?
                                                     </a>
                                                 </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="{{ route('home.media') }}">
+                                                        <i class="fas fa-images me-2 text-muted"></i>Medya Galerisi
+                                                    </a>
+                                                </li>
                                             </ul>
                                         </li>
                                         <li class="navbar-separator d-none d-lg-block"><span>|</span></li>
@@ -230,6 +272,11 @@
                                                 <li><a class="dropdown-item py-2" href="{{ route('modules.show', ['uyumsoft', 'girus-ticari']) }}"><i class="fas fa-briefcase me-2 text-muted"></i>Girus Ticari</a></li>
                                                 <li><a class="dropdown-item py-2" href="{{ route('modules.show', ['uyumsoft', 'girus-crm']) }}"><i class="fas fa-address-book me-2 text-muted"></i>Girus CRM</a></li>
                                                 <li><a class="dropdown-item py-2" href="{{ route('modules.show', ['uyumsoft', 'girus-hr']) }}"><i class="fas fa-user-friends me-2 text-muted"></i>Girus HR</a></li>
+
+                                                <li class="dropdown-header text-primary fw-bold mt-2"><i class="fas fa-cloud me-1"></i> DİA Çözümleri</li>
+                                                <li><a class="dropdown-item py-2" href="{{ route('modules.show', ['dia', 'dia-erp']) }}"><i class="fas fa-cubes me-2 text-muted"></i>DİA ERP</a></li>
+                                                <li><a class="dropdown-item py-2" href="{{ route('modules.show', ['dia', 'dia-crm']) }}"><i class="fas fa-handshake me-2 text-muted"></i>DİA CRM</a></li>
+                                                <li><a class="dropdown-item py-2" href="{{ route('modules.show', ['dia', 'dia-e-donusum']) }}"><i class="fas fa-exchange-alt me-2 text-muted"></i>E-Dönüşüm</a></li>
                                                 <li>
                                                     <hr class="dropdown-divider my-2">
                                                 </li>
@@ -241,6 +288,9 @@
                                         </li>
                                         <li class="d-lg-none">
                                             <a class="nav-link" href="{{ route('home.about') }}">Hakkımızda</a>
+                                        </li>
+                                        <li class="d-lg-none">
+                                            <a class="nav-link" href="{{ route('home.media') }}">Medya Galerisi</a>
                                         </li>
                                         <li class="d-lg-none">
                                             <a class="nav-link" href="{{ route('contact-us') }}">İletişim</a>

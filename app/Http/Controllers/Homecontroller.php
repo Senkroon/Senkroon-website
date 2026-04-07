@@ -233,7 +233,11 @@ class Homecontroller extends Controller
             ->whereNull('parent_id')
             ->where('is_active', true)
             ->get();
-        return view('home.products-and-solutions', compact('advisors', 'WorkcubeModules', 'uyumsoftModules'));
+         $diaModules = Module::where('category', 'dia')
+            ->whereNull('parent_id')
+            ->where('is_active', true)
+            ->get();
+        return view('home.products-and-solutions', compact('advisors', 'WorkcubeModules', 'uyumsoftModules', 'diaModules'));
     }
 
     public function kvkk()
