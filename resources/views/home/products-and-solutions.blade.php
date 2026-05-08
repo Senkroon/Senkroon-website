@@ -15,6 +15,64 @@
 
 
 
+<section class="container mb-5">
+    <div class="row">
+        <div class="col">
+            <div class="row mb-5">
+                <div class="col text-center">
+                    <h2 class="font-weight-bold line-height-2 text-7 mb-1 text-white">Odoo</h2>
+                    <span class="d-block text-light text-5 pb-2 mb-2 opacity-7">Açık kaynaklı, tam entegre ve tamamen ölçeklenebilir ERP çözümü</span>
+                </div>
+            </div>
+
+            <div class="container pb-5 mb-5">
+                <div class="row">
+                    @foreach ($odooModules->take(3) as $module)
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card card-sci-fi h-80">
+                            @if($module->cover_image_url)
+                            <div class="card-img-top d-flex align-items-center justify-content-center position-relative" style="height: 180px; overflow: hidden; border-bottom: 1px solid rgba(255,255,255,0.05); background: #0c101a;">
+                                <div style="position: absolute; inset: 0; opacity: 0.15; background-image: url('{{ $module->cover_image_url }}'); background-size: cover; background-position: center; filter: blur(15px); transform: scale(1.2);"></div>
+                                <img src="{{ $module->cover_image_url }}" alt="{{ $module->title }}" style="width: 100px; height: 100px; object-fit: contain; position: relative; z-index: 1; filter: drop-shadow(0 10px 15px rgba(0,0,0,0.5));">
+                            </div>
+                            @else
+                            <div class="card-img-top d-flex align-items-center justify-content-center bg-dark" style="height: 180px; border-bottom: 1px solid rgba(255,255,255,0.1);">
+                                <i class="{{ $module->icon }} fa-4x text-primary opacity-7"></i>
+                            </div>
+                            @endif
+                            <div class="card-body p-4">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="sci-fi-icon-ring me-3">
+                                        <i class="{{ $module->icon ?? 'fas fa-cloud' }}"></i>
+                                    </div>
+                                    <h5 class="card-title font-weight-bold text-white mb-0" style="line-height:1.3;">{{ $module->title }}</h5>
+                                </div>
+                                <p class="card-text text-light" style="font-size: 0.95rem;">{!! Str::limit($module->short_description, 100) !!}</p>
+                                @if ($module->slug)
+                                <a href="{{ route('modules.show', ['odoo', $module->slug]) }}"
+                                    class="btn sci-fi-btn btn-rounded mt-3 w-100">Detayları Görüntüle</a>
+                                @endif
+                            </div>
+                        </div>
+                    </div>
+                    @endforeach
+                </div>
+
+                @if ($odooModules->count() > 3)
+                <div class="row">
+                    <div class="col text-center">
+                        <a href="{{ route('modules.index', ['odoo']) }}"
+                            class="btn btn-primary btn-outline btn-rounded font-weight-semibold text-3 btn-px-4 btn-py-2">
+                            Tüm Odoo Modüllerini Görüntüle
+                        </a>
+                    </div>
+                </div>
+                @endif
+            </div>
+        </div>
+    </div>
+</section>
+<hr class="sci-fi-divider my-5">
 
 
 
@@ -185,64 +243,6 @@
 </section>
 <hr class="sci-fi-divider my-5">
 
-<section class="container mb-5">
-    <div class="row">
-        <div class="col">
-            <div class="row mb-5">
-                <div class="col text-center">
-                    <h2 class="font-weight-bold line-height-2 text-7 mb-1 text-white">Odoo</h2>
-                    <span class="d-block text-light text-5 pb-2 mb-2 opacity-7">Açık kaynaklı, tam entegre ve tamamen ölçeklenebilir ERP çözümü</span>
-                </div>
-            </div>
-
-            <div class="container pb-5 mb-5">
-                <div class="row">
-                    @foreach ($odooModules->take(3) as $module)
-                    <div class="col-md-6 col-lg-4 mb-4">
-                        <div class="card card-sci-fi h-80">
-                            @if($module->cover_image_url)
-                            <div class="card-img-top d-flex align-items-center justify-content-center position-relative" style="height: 180px; overflow: hidden; border-bottom: 1px solid rgba(255,255,255,0.05); background: #0c101a;">
-                                <div style="position: absolute; inset: 0; opacity: 0.15; background-image: url('{{ $module->cover_image_url }}'); background-size: cover; background-position: center; filter: blur(15px); transform: scale(1.2);"></div>
-                                <img src="{{ $module->cover_image_url }}" alt="{{ $module->title }}" style="width: 100px; height: 100px; object-fit: contain; position: relative; z-index: 1; filter: drop-shadow(0 10px 15px rgba(0,0,0,0.5));">
-                            </div>
-                            @else
-                            <div class="card-img-top d-flex align-items-center justify-content-center bg-dark" style="height: 180px; border-bottom: 1px solid rgba(255,255,255,0.1);">
-                                <i class="{{ $module->icon }} fa-4x text-primary opacity-7"></i>
-                            </div>
-                            @endif
-                            <div class="card-body p-4">
-                                <div class="d-flex align-items-center mb-3">
-                                    <div class="sci-fi-icon-ring me-3">
-                                        <i class="{{ $module->icon ?? 'fas fa-cloud' }}"></i>
-                                    </div>
-                                    <h5 class="card-title font-weight-bold text-white mb-0" style="line-height:1.3;">{{ $module->title }}</h5>
-                                </div>
-                                <p class="card-text text-light" style="font-size: 0.95rem;">{!! Str::limit($module->short_description, 100) !!}</p>
-                                @if ($module->slug)
-                                <a href="{{ route('modules.show', ['odoo', $module->slug]) }}"
-                                    class="btn sci-fi-btn btn-rounded mt-3 w-100">Detayları Görüntüle</a>
-                                @endif
-                            </div>
-                        </div>
-                    </div>
-                    @endforeach
-                </div>
-
-                @if ($odooModules->count() > 3)
-                <div class="row">
-                    <div class="col text-center">
-                        <a href="{{ route('modules.index', ['odoo']) }}"
-                            class="btn btn-primary btn-outline btn-rounded font-weight-semibold text-3 btn-px-4 btn-py-2">
-                            Tüm Odoo Modüllerini Görüntüle
-                        </a>
-                    </div>
-                </div>
-                @endif
-            </div>
-        </div>
-    </div>
-</section>
-<hr class="sci-fi-divider my-5">
 
 
 <section class="container mb-5">
