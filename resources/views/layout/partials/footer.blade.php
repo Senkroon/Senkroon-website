@@ -31,6 +31,8 @@
                             class="link-hover-style-1 ms-1 text-color-light opacity-8"> Anasayfa</a></li>
                     <li><i class="fas fa-angle-right text-color-primary"></i><a href="{{ route('modules.index', 'workcube') }}"
                             class="link-hover-style-1 ms-1 text-color-light opacity-8"> Workcube Modülleri</a></li>
+                    <li><i class="fas fa-angle-right text-color-primary"></i><a href="{{ route('modules.index', 'odoo') }}"
+                            class="link-hover-style-1 ms-1 text-color-light opacity-8"> Odoo Modülleri</a></li>
                     <li><i class="fas fa-angle-right text-color-primary"></i><a href="{{ route('advisors.index') }}"
                             class="link-hover-style-1 ms-1 text-color-light opacity-8"> Danışmanlık Çözümleri</a></li>
                     <li><i class="fas fa-angle-right text-color-primary"></i><a href="{{ route('contact-us') }}"
