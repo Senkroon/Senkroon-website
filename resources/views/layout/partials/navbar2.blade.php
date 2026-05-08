@@ -98,8 +98,8 @@
                                                                     <div class="row">
                                                                         <div class="col-12">
                                                                             <ul class="list list-unstyled">
-                                                                                <li><a class="dropdown-item" href="{{ route('modules.show', ['odoo', 'odoo-erp']) }}">Odoo ERP</a></li>
-                                                                                <li><a class="dropdown-item" href="{{ route('modules.show', ['odoo', 'odoo-crm']) }}">Odoo CRM</a></li>
+                                                                                <li><a class="dropdown-item" href="{{ route('modules.show', ['odoo', 'odoo-envanter-uretim']) }}">Odoo Envanter & Üretim</a></li>
+                                                                                <li><a class="dropdown-item" href="{{ route('modules.show', ['odoo', 'odoo-finans']) }}">Odoo Finans</a></li>
                                                                                 <li><a class="dropdown-item" href="{{ route('modules.show', ['odoo', 'odoo-insan-kaynaklari']) }}">Odoo İK</a></li>
                                                                             </ul>
                                                                         </div>
