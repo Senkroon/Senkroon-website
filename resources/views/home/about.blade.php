@@ -5,11 +5,21 @@
 
 
 
-<section class=" page-header mt-5 page-header-modern section position-relative border-0 m-0"
-    style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('images/modules/all.jpg') }}); background-position: center; background-size: cover;">
+<!-- Desktop / Büyük Ekranlar İçin Banner (about-cover.png) -->
+<section class="page-header mt-5 page-header-modern section position-relative border-0 m-0 py-3 d-none d-md-flex"
+    style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('porto/simages/about-cover.png') }}); background-position: center; background-size: cover; min-height: 350px; align-items: center;">
     <div class="col-md-12 align-self-center p-static order-2 text-center">
         <h1 class="text-light font-weight-bold text-8">Hakkımızda</h1>
-        <span class="sub-title text-light">Dijital Dönüşümde Güvenilir Ortağınız</span>
+        <span class="sub-title text-light text-4">Dijital Dönüşümde Güvenilir Ortağınız</span>
+    </div>
+</section>
+
+<!-- Mobil / Küçük Ekranlar İçin Banner (all.jpg) -->
+<section class="page-header page-header-modern section position-relative border-0 m-0 d-block d-md-none py-4"
+    style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('images/modules/all.jpg') }}); background-position: center; background-size: cover;">
+    <div class="col-md-12 align-self-center p-static order-2 text-center">
+        <h1 class="text-light font-weight-bold text-6 mb-1">Hakkımızda</h1>
+        <span class="sub-title text-light text-3">Dijital Dönüşümde Güvenilir Ortağınız</span>
     </div>
 </section>
 
