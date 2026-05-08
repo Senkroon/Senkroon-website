@@ -82,8 +82,36 @@
                                                 <li>
                                                     <div class="dropdown-mega-content">
                                                         <div class="row">
+                                                            {{-- Odoo --}}
+                                                            <div class="col-lg">
+                                                                <div class="dropdown-mega-sub-title">
+                                                                    <a class="font-weight-bold text-4"
+                                                                        href="{{ route('modules.index', 'odoo') }}">
+                                                                        Tüm Odoo Çözümleri</a>
+                                                                </div>
+                                                                <a href="{{ route('modules.index', 'odoo') }}" class="d-block mb-3">
+                                                                    <img src="{{ asset('porto/simages/odoo.png') }}"
+                                                                        alt="Odoo" class="img-fluid rounded mb-2" style=" object-fit: contain;">
+                                                                    <p class="text-2 mb-0 text-default ">Açık kaynaklı, esnek ve kapsamlı kurumsal yönetim sistemi.</p>
+                                                                </a>
+                                                                <div class="dropdown-mega-sub-nav">
+                                                                    <div class="row">
+                                                                        <div class="col-12">
+                                                                            <ul class="list list-unstyled">
+                                                                                <li><a class="dropdown-item" href="{{ route('modules.show', ['odoo', 'odoo-erp']) }}">Odoo ERP</a></li>
+                                                                                <li><a class="dropdown-item" href="{{ route('modules.show', ['odoo', 'odoo-crm']) }}">Odoo CRM</a></li>
+                                                                                <li><a class="dropdown-item" href="{{ route('modules.show', ['odoo', 'odoo-insan-kaynaklari']) }}">Odoo İK</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a href="{{ route('modules.index', 'odoo') }}" class="btn btn-link text-decoration-none ps-0">
+                                                                        <i class="fas fa-angle-right me-1"></i>Tüm Odoo Çözümleri
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+
                                                             {{-- Workcube --}}
-                                                            <div class="col-lg-3">
+                                                            <div class="col-lg">
                                                                 <div class="dropdown-mega-sub-title">
                                                                     <a class="font-weight-bold text-4"
                                                                         href="{{ route('modules.index', 'workcube') }}">
@@ -118,7 +146,7 @@
                                                             </div>
 
                                                             {{-- Uyumsoft --}}
-                                                            <div class="col-lg-3">
+                                                            <div class="col-lg">
                                                                 <div class="dropdown-mega-sub-title">
                                                                     <a class="font-weight-bold text-4"
                                                                         href="{{ route('modules.index', 'uyumsoft') }}">
@@ -150,7 +178,7 @@
                                                             </div>
 
                                                             {{-- Dia --}}
-                                                            <div class="col-lg-3">
+                                                            <div class="col-lg">
                                                                 <div class="dropdown-mega-sub-title">
                                                                     <a class="font-weight-bold text-4"
                                                                         href="{{ route('modules.index', 'dia') }}">
@@ -187,7 +215,7 @@
                                                             </div>
 
                                                             {{-- Danışmanlık --}}
-                                                            <div class="col-lg-3">
+                                                            <div class="col-lg">
                                                                 <div class="dropdown-mega-sub-title">
                                                                     <a class="font-weight-bold text-4"
                                                                         href="{{ route('advisors.index') }}">
@@ -260,6 +288,14 @@
                                                 Çözümler & Hizmetlerimiz
                                             </a>
                                             <ul class="dropdown-menu">
+                                                <li class="dropdown-header text-primary fw-bold"><i class="fas fa-cube me-1"></i> Odoo Çözümleri</li>
+                                                <li><a class="dropdown-item py-2" href="{{ route('modules.show', ['odoo', 'odoo-erp']) }}"><i class="fas fa-chart-line me-2 text-muted"></i>Odoo ERP</a></li>
+                                                <li><a class="dropdown-item py-2" href="{{ route('modules.show', ['odoo', 'odoo-crm']) }}"><i class="fas fa-users me-2 text-muted"></i>Odoo CRM</a></li>
+                                                <li><a class="dropdown-item py-2" href="{{ route('modules.show', ['odoo', 'odoo-insan-kaynaklari']) }}"><i class="fas fa-user-tie me-2 text-muted"></i>Odoo İK</a></li>
+                                                <li><a class="dropdown-item fw-bold text-primary py-2" href="{{ route('modules.index', 'odoo') }}"><i class="fas fa-arrow-right me-2"></i>Tüm Odoo Çözümleri</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider my-2">
+                                                </li>
                                                 <li class="dropdown-header text-primary fw-bold"><i class="fas fa-cube me-1"></i> Workcube Çözümleri</li>
                                                 <li><a class="dropdown-item py-2" href="{{ route('modules.show', ['workcube', 'erp-satis-satinalma-dagitim-sd-scm']) }}"><i class="fas fa-chart-line me-2 text-muted"></i>Workcube ERP</a></li>
                                                 <li><a class="dropdown-item py-2" href="{{ route('modules.show', ['workcube', 'crm-musteri-iliskileri-yonetimi']) }}"><i class="fas fa-users me-2 text-muted"></i>Workcube CRM</a></li>
