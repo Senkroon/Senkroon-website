@@ -41,9 +41,15 @@ class Module extends Model
 
     public function getCoverImageUrlAttribute()
     {
-        return $this->cover_image
-            ? Storage::url($this->cover_image)
-            : null;
+        if (!$this->cover_image) {
+            return null;
+        }
+
+        if (Str::startsWith($this->cover_image, ['http://', 'https://'])) {
+            return $this->cover_image;
+        }
+
+        return Storage::url($this->cover_image);
     }
 
     /**

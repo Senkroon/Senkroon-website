@@ -22,6 +22,11 @@ class ModuleController extends Controller
             SEOTools::setDescription('DİA ERP, CRM, E-Dönüşüm ve Sektörel yazılımlarla işletmenizin tüm süreçlerini bulutta yönetin.');
             SEOTools::metatags()->setKeywords(['DİA Yazılım', 'DİA ERP', 'Bulut ERP', 'Ticari yazılım', 'E-Dönüşüm', 'DİA CRM', 'Malatya DİA', 'Ön Muhasebe']);
             SEOTools::jsonLd()->addValue('name', 'DİA Çözümleri');
+        } elseif ($category === 'odoo') {
+            SEOTools::setTitle('Odoo Açık Kaynak ERP Çözümleri | Senkroon Yazılım');
+            SEOTools::setDescription('Odoo ERP ile tüm iş süreçlerinizi tek platformdan yönetin. Satış, muhasebe, envanter, üretim ve İK çözümlerini hemen keşfedin.');
+            SEOTools::metatags()->setKeywords(['Odoo ERP', 'Açık Kaynak ERP', 'Odoo Türkiye', 'İşletme Yönetim Sistemi', 'Odoo CRM', 'Odoo Satış', 'Malatya Odoo']);
+            SEOTools::jsonLd()->addValue('name', 'Odoo Çözümleri');
         } else {
             // Jenerik "Özel çözümler" yerine Workcube, OSB ve ERP odaklı terimler eklendi
             SEOTools::setTitle('Workcube ERP Modülleri | Üretim, Finans ve CRM Yönetimi');

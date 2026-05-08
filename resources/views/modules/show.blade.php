@@ -31,7 +31,7 @@ use Illuminate\Support\Str;
                         @if($module->cover_image)
                         {{-- OPTİMİZASYON 1: loading="lazy" ve decoding="async" eklendi. --}}
                         {{-- OPTİMİZASYON 2: box-shadow yayılımı 30px'den 15px'e düşürüldü (Scroll performansını artırır) --}}
-                        <img src="{{ asset('storage/' . $module->cover_image) }}"
+                        <img src="{{ $module->cover_image_url }}"
                             alt="{{ $module->title }}"
                             class="img-fluid float-start me-4 mb-3 rounded"
                             loading="lazy"
@@ -64,15 +64,19 @@ use Illuminate\Support\Str;
                                     @if ($childModule->cover_image)
                                     <div class="me-3">
                                         {{-- OPTİMİZASYON 3: Tarayıcıyı yormamak için alt modül resimlerine tembel yükleme (lazy) eklendi --}}
-                                        <img src="{{ asset($childModule->cover_image) }}"
+                                        <img src="{{ $childModule->cover_image_url }}"
                                             alt="{{ $childModule->title }}" width="45" height="45"
                                             loading="lazy"
                                             decoding="async"
                                             style="object-fit:contain;">
                                     </div>
                                     @else
-                                    <div class="sci-fi-icon-ring" style="width: 60px; height: 60px; font-size: 1.5rem;">
+                                    <div class="sci-fi-icon-ring d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; font-size: 1.5rem;">
+                                        @if(Str::contains($childModule->icon, ['.svg', '.png', '.jpg', 'http']))
+                                        <img src="{{ $childModule->icon }}" alt="{{ $childModule->title }}" width="30" height="30" style="object-fit:contain;">
+                                        @else
                                         <i class="{{ $childModule->icon ?: 'fas fa-cube' }}"></i>
+                                        @endif
                                     </div>
                                     @endif
                                 </div>

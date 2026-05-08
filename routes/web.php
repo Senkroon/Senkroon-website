@@ -27,7 +27,7 @@ Route::controller(Homecontroller::class)->group(function () {
 
 
 // Birleştirilmiş module route'ları - category ile gruplanmış mikro kaldıırldı
-Route::prefix('{category}-modulleri')->where(['category' => 'workcube|uyumsoft|dia'])->group(function () {
+Route::prefix('{category}-modulleri')->where(['category' => 'workcube|uyumsoft|dia|odoo'])->group(function () {
     Route::get('/', [ModuleController::class, 'index'])->name('modules.index');
     Route::get('/{module}', [ModuleController::class, 'show'])->name('modules.show');
 });

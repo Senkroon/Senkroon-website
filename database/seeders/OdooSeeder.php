@@ -20,6 +20,7 @@ class OdooSeeder extends Seeder
                 'short_description' => 'Web sitesi, e-ticaret ve dijital varlığınızı oluşturun ve yönetin.',
                 'content' => '<p>Web sitesi, e-ticaret, blog, forum ve e-öğrenme gibi dijital çözümlerle çevrimiçi varlığınızı güçlendirin.</p>',
                 'icon' => 'fas fa-globe',
+                'cover_image' => asset('images/modules/odoo/website.svg'),
                 'order' => 10,
                 'children' => [
                     [
@@ -60,6 +61,7 @@ class OdooSeeder extends Seeder
                 'short_description' => 'Müşteri ilişkileri, satış ve abonelik süreçlerinizi yönetin.',
                 'content' => '<p>Müşteri adaylarını takip edin, teklifler oluşturun ve satışlarınızı tek bir platformdan yönetin.</p>',
                 'icon' => 'fas fa-shopping-cart',
+                'cover_image' => asset('images/modules/odoo/satış.svg'),
                 'order' => 20,
                 'children' => [
                     [
@@ -95,6 +97,7 @@ class OdooSeeder extends Seeder
                 'short_description' => 'Muhasebe, faturalama ve masraf süreçlerinizi kolaylaştırın.',
                 'content' => '<p>Mali muhasebe, faturalama ve gider yönetimi operasyonlarınızı verimli bir şekilde yürütün.</p>',
                 'icon' => 'fas fa-chart-line',
+                'cover_image' => asset('images/modules/odoo/muhasebe.svg'),
                 'order' => 30,
                 'children' => [
                     [
@@ -135,6 +138,7 @@ class OdooSeeder extends Seeder
                 'short_description' => 'Stok, üretim ve satın alma işlemlerinizi optimize edin.',
                 'content' => '<p>Lojistik, üretim planlama ve kalite kontrol süreçlerinizi tam entegre olarak kontrol altında tutun.</p>',
                 'icon' => 'fas fa-industry',
+                'cover_image' => asset('images/modules/odoo/envanter.svg'),
                 'order' => 40,
                 'children' => [
                     [
@@ -175,6 +179,7 @@ class OdooSeeder extends Seeder
                 'short_description' => 'İşe alım, çalışan yönetimi ve izin süreçlerini otomatikleştirin.',
                 'content' => '<p>Tüm personel, işe alım, değerlendirme ve filo yönetim operasyonlarınızı kolaylıkla yönetin.</p>',
                 'icon' => 'fas fa-users',
+                'cover_image' => asset('images/modules/odoo/calışanlar.svg'),
                 'order' => 50,
                 'children' => [
                     [
@@ -215,6 +220,7 @@ class OdooSeeder extends Seeder
                 'short_description' => 'Pazarlama otomasyonu, e-posta ve sosyal medya kampanyalarınızı yönetin.',
                 'content' => '<p>Pazarlama faaliyetlerinizi planlayın, otomatikleştirin ve müşteri etkileşimlerinizi artırın.</p>',
                 'icon' => 'fas fa-bullhorn',
+                'cover_image' => asset('images/modules/odoo/pazarlama_otomasyonu.svg'),
                 'order' => 60,
                 'children' => [
                     [
@@ -255,6 +261,7 @@ class OdooSeeder extends Seeder
                 'short_description' => 'Projelerinizi, yardım masasını ve randevularınızı düzenleyin.',
                 'content' => '<p>Hizmet operasyonlarınızı, saha hizmetlerini ve müşteri destek süreçlerini yönetin.</p>',
                 'icon' => 'fas fa-concierge-bell',
+                'cover_image' => asset('images/modules/odoo/proje_yonetimi.svg'),
                 'order' => 70,
                 'children' => [
                     [
@@ -295,6 +302,7 @@ class OdooSeeder extends Seeder
                 'short_description' => 'İç iletişim, bilgi yönetimi ve onay süreçlerinizi iyileştirin.',
                 'content' => '<p>Sohbet, bilgi bankası ve IoT çözümleri ile takımınızın üretkenliğini en üst düzeye çıkarın.</p>',
                 'icon' => 'fas fa-bolt',
+                'cover_image' => asset('images/modules/odoo/sohbet.svg'),
                 'order' => 80,
                 'children' => [
                     [
@@ -330,6 +338,7 @@ class OdooSeeder extends Seeder
                 'short_description' => 'Uygulamalarınızı ihtiyaçlarınıza göre kişiselleştirin.',
                 'content' => '<p>Odoo uygulamalarınızı oluşturun ve süreçlerinize en uygun şekilde uyarlayın.</p>',
                 'icon' => 'fas fa-sliders-h',
+                'cover_image' => asset('images/modules/odoo/studio.svg'),
                 'order' => 90,
                 'children' => [
                     [
@@ -353,7 +362,7 @@ class OdooSeeder extends Seeder
                     'content' => $main['content'],
                     'category' => 'odoo',
                     'icon' => $main['icon'],
-                    'cover_image' => null,
+                    'cover_image' => $main['cover_image'],
                     'extra_description' => null,
                     'is_active' => 1,
                     'order' => $main['order'],
@@ -379,7 +388,7 @@ class OdooSeeder extends Seeder
                     ]
                 );
 
-                $this->command->info('   └─ Alt modül: ' . $child['title']);
+                $this->command->info('└─ Alt modül: ' . $child['title']);
             }
         }
 

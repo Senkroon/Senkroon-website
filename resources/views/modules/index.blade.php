@@ -12,6 +12,10 @@
             <h1 class="section-title-glow text-white font-weight-bold ">
                 @if ($category === 'uyumsoft')
                 Uyumsoft Çözümleri
+                @elseif ($category === 'dia')
+                DİA Çözümleri
+                @elseif ($category === 'odoo')
+                Odoo Çözümleri
                 @else
                 Workcube Modülleri
                 @endif
@@ -29,7 +33,20 @@
         <div class="col-md-6 col-lg-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="{{ $loop->index * 80 }}">
             <div class="card card-sci-fi h-100 border-0 overflow-hidden">
                 <div class="position-relative" style="height: 180px; overflow: hidden;">
+                    @if($cardImg)
+                    @if($category === 'odoo')
+                    <div class="w-100 h-100 d-flex align-items-center justify-content-center position-relative" style="background: #0c101a;">
+                        <div style="position: absolute; inset: 0; opacity: 0.15; background-image: url('{{ $cardImg }}'); background-size: cover; background-position: center; filter: blur(15px); transform: scale(1.2);"></div>
+                        <img src="{{ $cardImg }}" style="width: 100px; height: 100px; object-fit: contain; position: relative; z-index: 1; filter: drop-shadow(0 10px 15px rgba(0,0,0,0.5));" alt="{{ $m->title }}">
+                    </div>
+                    @else
                     <img src="{{ $cardImg }}" class="w-100 h-100" style="object-fit: cover;" alt="{{ $m->title }}">
+                    @endif
+                    @else
+                    <div class="w-100 h-100 d-flex align-items-center justify-content-center bg-dark">
+                        <i class="{{ $m->icon }} fa-4x text-primary opacity-7"></i>
+                    </div>
+                    @endif
                     <div style="position: absolute; inset: 0; background: linear-gradient(to bottom, transparent 40%, rgba(3,6,18,0.85));"></div>
                 </div>
                 <div class="card-body p-4 d-flex flex-column">
