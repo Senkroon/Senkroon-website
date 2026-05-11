@@ -23,6 +23,7 @@ Route::controller(Homecontroller::class)->group(function () {
 
     Route::get('/neden-senkroon', 'whySenkroon')->name('home.why-senkroon');
     Route::get('/medya', 'media')->name('home.media');
+    Route::get('/e-imza-kurulum', 'eImzaKurulum')->name('home.e-imza');
 });
 
 

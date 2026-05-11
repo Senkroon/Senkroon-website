@@ -158,22 +158,19 @@
                                                                     <p class="text-2 mb-0 text-default ">Girus Ticari + Girus CRM + Girus HR ile ticari, müşteri ve insan kaynakları süreçlerinizi tek platformda yönetin.</p>
                                                                 </a>
                                                                 <div class="dropdown-mega-sub-nav">
-                                                                    <div class="row">
-                                                                        <div class="col-6">
-                                                                            <ul class="list list-unstyled">
-                                                                                <li><a class="dropdown-item" href="{{ route('modules.show', ['uyumsoft', 'girus-ticari']) }}">Girus Ticari</a></li>
-                                                                                <li><a class="dropdown-item" href="{{ route('modules.show', ['uyumsoft', 'girus-crm']) }}">Girus CRM</a></li>
-                                                                            </ul>
-                                                                        </div>
-                                                                        <div class="col-6">
-                                                                            <ul class="list list-unstyled">
-                                                                                <li><a class="dropdown-item" href="{{ route('modules.show', ['uyumsoft', 'girus-hr']) }}">Girus HR</a></li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </div>
                                                                     <a href="{{ route('modules.index', 'uyumsoft') }}" class="btn btn-link text-decoration-none ps-0">
-                                                                        <i class="fas fa-angle-right me-1"></i>Tüm Uyumsoft Çözümleri
+                                                                        <i class="fas fa-angle-right me-1" style="font-size: 14px;"></i>Tüm Uyumsoft Çözümleri
                                                                     </a>
+                                                                    <hr>
+                                                                    <div class="dropdown-mega-sub-title mt-4">
+                                                                        <a class="font-weight-bold text-4"
+                                                                            href="{{ route('home.e-imza') }}">
+                                                                            E-İmza Çözümleri</a>
+
+                                                                    </div>
+                                                                    <ul class="list list-unstyled" style="font-size: 14px;">
+                                                                        <li><a class="dropdown-item d-flex align-items-center" href="{{ route('home.e-imza') }}"><i class="fas fa-pen-nib me-2 text-muted"></i>E-İmza Kurulumu</a></li>
+                                                                    </ul>
                                                                 </div>
                                                             </div>
 
@@ -308,6 +305,12 @@
                                                 <li><a class="dropdown-item py-2" href="{{ route('modules.show', ['uyumsoft', 'girus-ticari']) }}"><i class="fas fa-briefcase me-2 text-muted"></i>Girus Ticari</a></li>
                                                 <li><a class="dropdown-item py-2" href="{{ route('modules.show', ['uyumsoft', 'girus-crm']) }}"><i class="fas fa-address-book me-2 text-muted"></i>Girus CRM</a></li>
                                                 <li><a class="dropdown-item py-2" href="{{ route('modules.show', ['uyumsoft', 'girus-hr']) }}"><i class="fas fa-user-friends me-2 text-muted"></i>Girus HR</a></li>
+
+                                                <li>
+                                                    <hr class="dropdown-divider my-2">
+                                                </li>
+                                                <li class="dropdown-header text-primary fw-bold"><i class="fas fa-signature me-1"></i> E-İmza Çözümleri</li>
+                                                <li><a class="dropdown-item py-2" href="{{ route('home.e-imza') }}"><i class="fas fa-pen-nib me-2 text-muted"></i>E-İmza Kurulumu</a></li>
 
                                                 <li class="dropdown-header text-primary fw-bold mt-2"><i class="fas fa-cloud me-1"></i> DİA Çözümleri</li>
                                                 <li><a class="dropdown-item py-2" href="{{ route('modules.show', ['dia', 'dia-erp']) }}"><i class="fas fa-cubes me-2 text-muted"></i>DİA ERP</a></li>

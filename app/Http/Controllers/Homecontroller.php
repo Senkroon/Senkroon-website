@@ -300,4 +300,15 @@ class Homecontroller extends Controller
 
         return view('home.media', compact('photos'));
     }
+
+    public function eImzaKurulum()
+    {
+        SEOTools::setTitle('e-İmza Kurulum Rehberi | Senkroon Yazılım');
+        SEOTools::setDescription('e-İmza kurulumu hakkında detaylı bilgi, kolay kurulum aşamaları ve e-İmza uygulaması indirme bağlantısı.');
+        SEOTools::metatags()->addMeta('robots', 'index,follow');
+        SEOTools::opengraph()->setUrl(url()->current());
+        SEOTools::setCanonical(url()->current());
+
+        return view('home.e-imza-kurulum');
+    }
 }
