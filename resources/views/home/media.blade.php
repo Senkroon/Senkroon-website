@@ -16,6 +16,51 @@
     </div>
 </section>
 
+{{-- ===== VİDEO BÖLÜMÜ ===== --}}
+<div class="container py-4 pb-3">
+    <div class="text-center mb-5">
+        <div class="d-inline-flex align-items-center gap-2 mb-3">
+            <span class="media-section-line"></span>
+            <span class="media-section-badge">
+                <i class="fas fa-play-circle me-1"></i> Videolarımız
+            </span>
+            <span class="media-section-line"></span>
+        </div>
+        <h2 class="text-white font-weight-bold text-6 mb-2">Video İçeriklerimiz</h2>
+        <p class="text-light opacity-7 mb-0 text-3">Senkroon hakkında en güncel video içeriklerimize göz atın</p>
+    </div>
+
+    <div class="media-video-grid">
+        {{-- Video 1: Normal YouTube Video --}}
+        <div class="media-video-card appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
+            <div class="media-video-wrapper media-video-landscape">
+                <iframe
+                    src="https://www.youtube.com/embed/2ZxjReieO3c?si=67P7FsUJsePyD8KM"
+                    title="Senkroon Tanıtım Videosu"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        {{-- Video 2: YouTube Shorts --}}
+        <div class="media-video-card appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
+            <div class="media-video-wrapper media-video-shorts">
+                <iframe
+                    src="https://www.youtube.com/embed/GpPyrgBWx0U?si=rBbZ-njppkwKtkse"
+                    title="Senkroon Shorts"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
 {{-- ===== GALERİ İÇERİK ===== --}}
 <div class="container py-4 pb-5">
 
@@ -56,7 +101,7 @@
     @else
 
     {{-- Boş Durum --}}
-    <div class="text-center py-5">
+    <!-- <div class="text-center py-5">
         <div class="card card-sci-fi mx-auto" style="max-width: 600px;">
             <div class="card-body p-5">
                 <div class="sci-fi-icon-ring mx-auto mb-4" style="width: 80px; height: 80px; font-size: 2rem;">
@@ -80,7 +125,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     @endif
 </div>
@@ -104,6 +149,110 @@
 </div>
 
 <style>
+    /* ===== VİDEO BÖLÜMÜ ===== */
+    .media-section-line {
+        display: inline-block;
+        width: 40px;
+        height: 1px;
+        background: linear-gradient(90deg, transparent, #ff8c00, transparent);
+    }
+
+    .media-section-badge {
+        display: inline-flex;
+        align-items: center;
+        background: rgba(255, 140, 0, 0.1);
+        border: 1px solid rgba(255, 140, 0, 0.25);
+        color: #ff8c00;
+        padding: 0.35rem 1rem;
+        border-radius: 50px;
+        font-size: 0.8rem;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+    }
+
+    .media-video-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        align-items: start;
+    }
+
+    @media (min-width: 768px) {
+        .media-video-grid {
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+        }
+    }
+
+    .media-video-card {
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 16px;
+        overflow: hidden;
+        transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    .media-video-card:hover {
+        border-color: rgba(255, 140, 0, 0.35);
+        box-shadow: 0 12px 40px rgba(255, 140, 0, 0.1), 0 0 20px rgba(255, 140, 0, 0.05);
+        transform: translateY(-4px);
+    }
+
+    .media-video-wrapper {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .media-video-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 16px;
+    }
+
+    /* 16:9 landscape video */
+    .media-video-landscape {
+        padding-bottom: 56.25%;
+        /* 16:9 */
+    }
+
+    /* 9:16 shorts video */
+    .media-video-shorts {
+        padding-bottom: 177.78%;
+        /* 9:16 */
+        max-width: 100%;
+    }
+
+    @media (min-width: 768px) {
+        .media-video-shorts {
+            max-width: 100%;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .media-video-grid {
+            gap: 1.2rem;
+        }
+
+        .media-video-shorts {
+            max-width: 280px;
+            margin: 0 auto;
+        }
+
+        .media-video-card {
+            border-radius: 12px;
+        }
+
+        .media-video-wrapper iframe {
+            border-radius: 12px;
+        }
+    }
+
     /* ===== GALERİ GRID ===== */
     .media-gallery-grid {
         display: grid;
