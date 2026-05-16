@@ -245,6 +245,8 @@
 
 
 
+
+
 <section class="container mb-5">
     <div class="row">
         <div class="col">
@@ -294,7 +296,40 @@
         </div>
     </div>
 </section>
+<hr class="sci-fi-divider my-5">
 
+<section class="container mb-5">
+    <div class="row">
+        <div class="col">
+            <div class="row mb-5">
+                <div class="col text-center">
+                    <h2 class="font-weight-bold line-height-2 text-7 mb-1 text-white">E-İmza Çözümleri</h2>
+                    <span class="d-block text-light text-5 pb-2 mb-2 opacity-7">Güvenli elektronik imza ile dijital dönüşümünüzü hızlandırın</span>
+                </div>
+            </div>
 
+            <div class="container pb-5 mb-5">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 col-lg-6 mb-4">
+                        <div class="card card-sci-fi h-100">
+                            <img src="{{ asset('images/e-imza-cozumleri.png') }}" class="card-img-top" alt="E-İmza Çözümleri" style="height: 300px; object-fit: contain; background: linear-gradient(135deg, #0c101a 0%, #1a1f2e 100%); padding: 20px 10px;">
+                            <div class="card-body p-4">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="sci-fi-icon-ring me-3">
+                                        <i class="fas fa-file-signature"></i>
+                                    </div>
+                                    <h5 class="card-title font-weight-bold text-white mb-0" style="line-height:1.3;">E-İmza Kurulum & Destek</h5>
+                                </div>
+                                <p class="card-text text-light" style="font-size: 0.95rem;">Elektronik imza başvurusu, kurulumu ve teknik destek hizmetleri ile dijital imza süreçlerinizi kolayca yönetin. Uzman ekibimizle saniyeler içinde kullanıma hazır.</p>
+                                <a href="{{ route('home.e-imza') }}"
+                                    class="btn sci-fi-btn btn-rounded mt-3 w-100">Detayları Görüntüle</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 @endsection
