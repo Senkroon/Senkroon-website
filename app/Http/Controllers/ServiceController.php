@@ -15,7 +15,7 @@ class ServiceController extends Controller
             'erp-satis-lisanslama' => [
                 'title' => 'ERP Satış & Lisanslama',
                 'icon' => 'fas fa-cogs',
-                'image' => 'images/services/6.png',
+                'image' => 'images/services/1.png',
                 'short' => 'İşletmenize en uygun ERP çözümünü belirliyor, lisanslama sürecini uçtan uca yönetiyoruz.',
                 'description' => '
                     <h3>ERP Satış & Lisanslama Hizmeti</h3>
@@ -38,7 +38,7 @@ class ServiceController extends Controller
             'kurulum-konfigurasyon' => [
                 'title' => 'Kurulum & Konfigürasyon',
                 'icon' => 'fas fa-desktop',
-                'image' => 'images/services/urun_conf.png',
+                'image' => 'images/services/2.png',
                 'short' => 'ERP sisteminizi işletmenize özel yapılandırıyor, sorunsuz bir geçiş süreci sağlıyoruz.',
                 'description' => '
                     <h3>Kurulum & Konfigürasyon Hizmeti</h3>
@@ -61,7 +61,7 @@ class ServiceController extends Controller
             'egitim-sertifikasyon' => [
                 'title' => 'Eğitim & Sertifikasyon',
                 'icon' => 'fas fa-graduation-cap',
-                'image' => 'images/services/2.png',
+                'image' => 'images/services/3.png',
                 'short' => 'Ekiplerinizin ERP sistemini etkin kullanabilmesi için kapsamlı eğitim programları sunuyoruz.',
                 'description' => '
                     <h3>Eğitim & Sertifikasyon Hizmeti</h3>
@@ -83,7 +83,7 @@ class ServiceController extends Controller
             'teknik-destek' => [
                 'title' => 'Teknik Destek',
                 'icon' => 'fas fa-headset',
-                'image' => 'images/services/3.png',
+                'image' => 'images/services/4.png',
                 'short' => 'ERP sisteminizin kesintisiz çalışması için 7/24 teknik destek hizmeti sağlıyoruz.',
                 'description' => '
                     <h3>Teknik Destek Hizmeti</h3>
@@ -114,7 +114,7 @@ class ServiceController extends Controller
             'ozel-yazilim-cozumu' => [
                 'title' => 'Özel Yazılım Çözümü',
                 'icon' => 'fas fa-lightbulb',
-                'image' => 'images/services/1.png',
+                'image' => 'images/services/5.png',
                 'short' => 'İşletmenize özel web, mobil ve masaüstü yazılım çözümleri geliştiriyoruz.',
                 'description' => '
                     <h3>Özel Yazılım Çözümü</h3>
@@ -137,7 +137,7 @@ class ServiceController extends Controller
             'veri-migrasyon-hizmeti' => [
                 'title' => 'Veri Migrasyon Hizmeti',
                 'icon' => 'fas fa-cloud-upload-alt',
-                'image' => 'images/services/5.png',
+                'image' => 'images/services/6.png',
                 'short' => 'Mevcut sistemlerinizdeki verileri güvenli ve eksiksiz şekilde yeni ERP\'nize aktarıyoruz.',
                 'description' => '
                     <h3>Veri Migrasyon Hizmeti</h3>

@@ -134,7 +134,7 @@
                         <i class="fas fa-cogs"></i>
                     </div>
                     <div class="service-card-image-box">
-                        <img src="{{ asset('images/services/6.png') }}" alt="ERP Satış & Lisanslama">
+                        <img src="{{ asset('images/services/1.png') }}" alt="ERP Satış & Lisanslama">
                     </div>
                     <h4 class="service-card-title-bottom">ERP Satış & Lisanslama</h4>
                 </div>
@@ -149,7 +149,7 @@
                         <i class="fas fa-desktop"></i>
                     </div>
                     <div class="service-card-image-box">
-                        <img src="{{ asset('images/services/urun_conf.png') }}" alt="Kurulum & Konfigürasyon">
+                        <img src="{{ asset('images/services/2.png') }}" alt="Kurulum & Konfigürasyon">
                     </div>
                     <h4 class="service-card-title-bottom">Kurulum & Konfigürasyon</h4>
                 </div>
@@ -164,7 +164,7 @@
                         <i class="fas fa-graduation-cap"></i>
                     </div>
                     <div class="service-card-image-box">
-                        <img src="{{ asset('images/services/2.png') }}" alt="Eğitim & Sertifikasyon">
+                        <img src="{{ asset('images/services/3.png') }}" alt="Eğitim & Sertifikasyon">
                     </div>
                     <h4 class="service-card-title-bottom">Eğitim & Sertifikasyon</h4>
                 </div>
@@ -179,7 +179,7 @@
                         <i class="fas fa-headset"></i>
                     </div>
                     <div class="service-card-image-box">
-                        <img src="{{ asset('images/services/3.png') }}" alt=" Teknik Destek">
+                        <img src="{{ asset('images/services/4.png') }}" alt=" Teknik Destek">
                     </div>
                     <h4 class="service-card-title-bottom"> Teknik Destek</h4>
                 </div>
@@ -194,7 +194,7 @@
                         <i class="fas fa-lightbulb"></i>
                     </div>
                     <div class="service-card-image-box">
-                        <img src="{{ asset('images/services/1.png') }}" alt="Özel Yazılım Çözümü">
+                        <img src="{{ asset('images/services/5.png') }}" alt="Özel Yazılım Çözümü">
                     </div>
                     <h4 class="service-card-title-bottom">Özel Yazılım Çözümü</h4>
                 </div>
@@ -209,7 +209,7 @@
                         <i class="fas fa-cloud-upload-alt"></i>
                     </div>
                     <div class="service-card-image-box">
-                        <img src="{{ asset('images/services/5.png') }}" alt="Veri Migrasyon Hizmeti">
+                        <img src="{{ asset('images/services/6.png') }}" alt="Veri Migrasyon Hizmeti">
                     </div>
                     <h4 class="service-card-title-bottom">Veri Migrasyon Hizmeti</h4>
                 </div>
