@@ -16,8 +16,8 @@ class Homecontroller extends Controller
 
     public function index()
     {
-        SEOTools::setTitle('Senkroon Yazılım | Malatya Workcube ERP & Özel Yazılım Çözümleri');
-        SEOTools::setDescription('Malatya ve OSB sanayi işletmeleri için Workcube ERP entegrasyonu, üretim takip (MES), stok yönetimi ve kurumsal kaynak planlama hizmetleri sunan yetkili bayi.');
+        SEOTools::setTitle('Workcube, Odoo ve DİA ERP Çözüm Ortağı | Senkroon Yazılım');
+        SEOTools::setDescription('İşletmenize özel yazılım çözümleri ve kurumsal danışmanlık hizmetleri ile dijitalleşmeye ilk adımı atın.');
         SEOTools::metatags()->setKeywords(['Malatya ERP yazılımı', 'Workcube bayisi', 'Kurumsal kaynak planlama', 'Stok takip programı', 'Organize sanayi bölgesi ERP', 'Özel yazılım geliştirme Malatya', 'KOBİ ERP sistemleri', 'Üretim yönetim sistemi']);
         SEOTools::metatags()->addMeta('robots', 'index,follow');
         SEOTools::metatags()->addMeta('author', 'Senkroon Yazılım');

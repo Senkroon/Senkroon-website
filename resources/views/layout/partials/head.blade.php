@@ -3,6 +3,7 @@
      <!-- Basic -->
      <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta name="facebook-domain-verification" content="rmrihwjhjbeplt8w9kion7c5fve95p" />
      @php
      use Artesaos\SEOTools\Facades\SEOTools;
 
